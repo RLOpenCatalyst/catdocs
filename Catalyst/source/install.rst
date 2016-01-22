@@ -1,4 +1,4 @@
-.. _installing-Catalyst:
+.. _install-Catalyst:
 
 Installation
 ============
@@ -109,3 +109,4 @@ Access Catalyst::
     localhost:3001
     username- superadmin
     pass - superadmin@123
+
