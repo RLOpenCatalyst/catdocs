@@ -110,3 +110,142 @@ Access Catalyst::
     username- superadmin
     pass - superadmin@123
 
+
+Centos7
+^^^^^^^
+
+Here is a step by step plan on how to install Catalyst on Centos7 machine.
+
+Update your System with yum::
+
+    yum update
+
+
+
+To Install node.js & npm::
+
+
+    # Install the repository
+    rpm -Uvh https://rpm.nodesource.com/pub_4.x/el/7/x86_64/nodesource-release-el7-1.noarch.rpm
+
+    # Install NodeJS
+    yum install nodejs
+
+    checking the node version
+    node -v
+    4.2.5
+
+    Checking the npm version 
+    npm -v
+    2.4.12
+
+    upgrade the npm version
+    npm install npm -g
+    checking the npm version
+    npm -v
+    3.5.3 
+
+
+
+
+To Install MongoDb (version 3.x)::
+
+    Go to directory /etc/yum.repos.d/
+
+    Create a file mongodb-enterprise.repo
+    cat > mongodb-enterprise.repo
+    Edit the above file and add the contents
+
+    [MongoDB]
+    name=MongoDB Repository
+    baseurl=http://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.2/x86_64/
+    gpgcheck=0
+    enabled=1
+
+    Save the file 
+
+    Run the Command 
+    yum install mongodb-org
+
+    check the mongo version
+    mongod --version
+    3.2.1
+    
+
+NOTE::
+
+             npm version 3.5.3
+             node version 4.2.5
+             monogd verison 3.2.1
+
+
+
+
+To Install Chef-Client (version 12.6.0)::
+    
+
+    curl -L https://www.opscode.com/chef/install.sh | sudo bash
+    To check the chef client version
+    knife -v
+    Chef:12.6.0
+
+
+
+To Install git::
+
+    yum install git
+    To check the git version
+    git –version
+    1.7.x
+
+
+
+To Install Catalyst and to create a db path folder::
+
+    To pull the catalyst code
+    git clone https://catalyst-engg:catalyst_123@github.com/RLIndia/D4D.git
+    Check the current directory for the presence of catalyst code i.e D4D folder.
+    
+    NOTE – Take the latest code from dev_catalyst.
+
+    Run the command
+    git status
+    git checkout dev_catalyst
+    git pull
+
+    Create a db path folder
+    mongo db path -  mkdir -p /data/db/
+
+    Go to cd D4D/server
+    npm install
+
+
+
+To Install gcc library::
+ 
+    yum install gcc-g++
+
+
+To Install the seed data::
+
+    node install --seed-data
+
+
+To Start the Application::
+
+    Run (node app) to start your application.
+    npm install forever –g
+    node start app.js
+
+
+To run the apllication forever::
+
+    forever start app.js
+
+
+
+Access Catalyst::
+
+    localhost:3001
+    username- superadmin
+    pass - superadmin@123

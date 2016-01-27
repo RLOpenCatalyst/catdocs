@@ -1,4 +1,4 @@
-Menu Options - Catalyst
+Introduction - Catalyst
 =======================
 
 **RL Catalyst provides four main menu options** -
