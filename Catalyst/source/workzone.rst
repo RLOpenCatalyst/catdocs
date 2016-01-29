@@ -146,7 +146,6 @@ How to Import an Instance using IP?
 
  * Click **Import** to start importing the Instance.
 
-
  .. image:: /images/importbyIP.JPG
 
 
@@ -334,9 +333,7 @@ To add a Chef Server New Task
 
  * The task is added to the **Orchestration** list.
 
-
  .. image:: /images/orcList.JPG
-
 
 
 
@@ -360,13 +357,12 @@ To add a Jenkins New Task
 
 
 
- * Click Save button to save the task.
+ * Click Save button to save the task.  
 
  * The task is added to the Orchestration list.
 
 
- .. image:: /images/taskli.JPG
-
+ .. image:: /images/tasklis.JPG
 
 
 
