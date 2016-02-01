@@ -30,13 +30,9 @@ Ubuntu
 
 Here is a step by step plan on how to install Catalyst on Ubuntu machine.
 
-Install Java::
+Update the System::
 
     sudo apt-get update
-    sudo add-apt-repository ppa:webupd8team/java
-    sudo apt-get install oracle-java8-installer
-    sudo update-alternatives --config java
-    java –version and javac –version
 
 
 Install MongoDB
@@ -56,73 +52,115 @@ Reload local package database & install MongoDB::
     sudo apt-get update
     sudo apt-get install -y mongodb-org
 
-    [Alternate Way]
 
-    sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
-    echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
-    sudo apt-get update
-    sudo apt-get install -y mongodb-org
-    mongo
+To check the Mongo version::
 
-Install NodeJs::
+    mongo -version
+    3.2.x
+    
 
-     sudo apt-get update
+
+
+
+Install NodeJs & Curl::
+
      sudo apt-get install curl
-     sudo curl -L https://www.opscode.com/chef/install.sh | sudo bash
-     curl -L http://git.io/n-install | bash
 
-To Install the Current Version 4.x supported by Catalyst::
+To Install Nodejs version 4.x::
 
-    curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -sudo apt-get install -y nodejs
+     curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+     sudo apt-get install -y nodejs
+
 
 To Check the version of node::
 
     node -v
+    v4.2.x
+
+
+To Check the version of npm::
+    
+    npm -v
+    2.4.x
+
+    NOTE - Upgrade the npm version
+           sudo apt-get update
+           sudo npm install npm -g
+
+    Now check the npm version
+    npm -v
+    3.6.x
+
+
+
 
 Install Git::
 
     sudo apt-get install git
-
-Install npm::
     
-    sudo apt-get update 
-    sudo apt-get install npm -g
-    Note: Catalyst currently supports node version 4.22 and npm version 3.4.x
+    Check the git version
+    git --version
+    1.9.x
 
-Install knife and ChefClient::
 
-    sudo apt-get update
-    wget https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef-server_11.0.10-1.ubuntu.12.04_amd64.deb
-    sudo dpkg -i chef-server*
+NOTE::
 
-Install Catalyst::
+    Node Version - 4.2.x
+    npm version - 3.4.x
+    monogo version - 3.2.x
 
-    mkdir Catalyst
-    cd Catalyst
-    git clone https://www.github.com/RLIndia/D4D.git
-    Note: This is will create a main folder D4D.(Inside D4D- client,server..)
+
+Clone the repository to get the Catalyst code::
+
+    sudo git clone https://catalyst-engg:catalyst_123@github.com/RLIndia/D4D.git
+
+    NOTE -  It will a main folder D4D.(Inside D4D- client,server..)
+
+    NOTE - Take the Latest code from dev_catalyst branch
+           Go to D4D folder i.e cd D4D
+           sudo git checkout dev_catalyst
+           sudo git pull
+
+
+Create a Mongodb path::
+
+    sudo mkdir -p /data/db/ 
+
+
+
+Install ChefClient::
+
+    sudo curl -L https://www.opscode.com/chef/install.sh | sudo bash
+    To Check the chef client version
+    knife -v
+    12.6.x
+
+
+Install the make , g++ , Keerberos & library::
+
+    sudo apt-get install make
+    sudo apt-get install g++
+    sudo apt-get install libkrb5-dev
+    sudo npm install -g kerberos
+
+
 
 Run the Server::
 
     cd D4D/server
     Install node packages - sudo npm install
-    Install seed data - sudo node install --seed-data 
-    Install Forever - sudo npm install forever --global
+
+
+To Install seed data::
+
+    sudo node install --seed-data
+
+
+To Install forever & start the catalyst Application::
+
+    sudo npm install forever --global
     Run the app - sudo forever start app.js
 
-Any issues regarding the Mongo Running Status::
-
-    sudo mongod
-    sudo killall mongod
-    sudo service mongod start
-
-Set the Mongo Path(if required)::
-
-    sudo mkdir -p /data/db/ 
-
-To Run Mongo as a daemon::
-
-    sudo update-rc.d mongodb defaults
 
 Access Catalyst::
     
