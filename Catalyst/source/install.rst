@@ -3,7 +3,7 @@
 Installation
 ============
 
-This is a documentation that gives the developer and the user an overview how to install Catalyst on a local instance.
+This is a documentation that gives the developer and the user an overview of how to install Catalyst on a local instance.
 
 
 Software Requirements
