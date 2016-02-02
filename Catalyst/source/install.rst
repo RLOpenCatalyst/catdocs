@@ -23,7 +23,7 @@ Software Requirements
 
 Catalyst can be installed using one of the following methods
 
-Install directly from source
+Install Directly From Source
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 You can install Catalyst locally by downloading the code from our Github Code Repository. The following section gives the instructions to do the Catalyst Installation from source
 
@@ -300,3 +300,9 @@ Access Catalyst::
     localhost:3001
     username- superadmin
     pass - superadmin@123
+    
+Install Using QuickInstaller  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RLCatalyst can be installed quickly using a chef-based installer. This installer will be available for installing on Centos, Ubuntu and Windows. The catalyst installer will install RLCatalyst and Open Source Chef. Basic seed data to start the application will also be taken care by the installer
+
+Please download the installer from <Link>
