@@ -154,11 +154,10 @@ To Install forever & start the catalyst Application::
     Run the app - sudo forever start app.js
 
 
-Access Catalyst::
+Now you can access RLCatalyst at http://localhost:3001 ::
     
-    localhost:3001
-    username- superadmin
-    pass - superadmin@123
+    Login Credentials
+    superadmin/superadmin@123
 
 
 Centos7
