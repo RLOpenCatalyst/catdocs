@@ -5,6 +5,7 @@ Installation
 This is a documentation that gives the developer and the user an overview of how to install Catalyst on a local instance 
 
 **Supported Platforms**
+
 RLCatalyst is currently supported on
  * Ubuntu 14.04
  * CentOS 7
