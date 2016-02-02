@@ -4,6 +4,10 @@ Installation
 ============
 This is a documentation that gives the developer and the user an overview of how to install Catalyst on a local instance 
 
+**Supported Platforms**
+RLCatalyst is currently supported on
+ * Ubuntu 14.04
+ * CentOS 7
 
 Software Requirements
 ^^^^^^^^^^^^^^^^^^^^^
@@ -162,7 +166,7 @@ Now you can access RLCatalyst at http://localhost:3001 ::
     superadmin/superadmin@123
 
 
-Installation steps for Centos7
+Installation Steps for Centos7
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Here is a step by step plan on how to install Catalyst on Centos7 machine.
