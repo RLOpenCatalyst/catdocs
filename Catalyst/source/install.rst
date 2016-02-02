@@ -2,8 +2,7 @@
 
 Installation
 ============
-
-This is a documentation that gives the developer and the user an overview of how to install Catalyst on a local instance.
+This is a documentation that gives the developer and the user an overview of how to install Catalyst on a local instance 
 
 
 Software Requirements
@@ -22,11 +21,14 @@ Software Requirements
     
     SCM – Any version of GIT or SVN
 
+Catalyst can be installed using one of the following methods
 
+Install directly from source
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+You can install Catalyst locally by downloading the code from our Github Code Repository. The following section gives the instructions to do the Catalyst Installation from source
 
-
-Ubuntu
-^^^^^^
+Installation Steps for Ubuntu
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Here is a step by step plan on how to install Catalyst on Ubuntu machine.
 
@@ -160,8 +162,8 @@ Now you can access RLCatalyst at http://localhost:3001 ::
     superadmin/superadmin@123
 
 
-Centos7
-^^^^^^^
+Installation steps for Centos7
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Here is a step by step plan on how to install Catalyst on Centos7 machine.
 
