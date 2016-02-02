@@ -112,9 +112,6 @@ Clone the repository to get the Catalyst code::
 
     sudo git clone https://github.com/RLOpenCatalyst/D4D.git
 
-    
-
-    NOTE - cd D4D
 
 
 Create a Mongodb path::
