@@ -30,7 +30,7 @@ Ubuntu
 
 Here is a step by step plan on how to install Catalyst on Ubuntu machine.
 
-Update the System::
+Start by updating the System::
 
     sudo apt-get update
 
@@ -53,7 +53,7 @@ Reload local package database & install MongoDB::
     sudo apt-get install -y mongodb-org
 
 
-To check the Mongo version::
+Check the Mongo version::
 
     mongo -version
     3.2.x
@@ -62,7 +62,7 @@ To check the Mongo version::
 
 
 
-Install NodeJs & Curl::
+Install NodeJs 4.x & Curl::
 
      sudo apt-get install curl
 
@@ -72,18 +72,18 @@ To Install Nodejs version 4.x::
      sudo apt-get install -y nodejs
 
 
-To Check the version of node::
+Check the version of node after installation.It should be 4.2.x ::
 
     node -v
     v4.2.x
 
 
-To Check the version of npm::
+Check the version of npm ::
     
     npm -v
     2.4.x
 
-    NOTE - Upgrade the npm version
+    NOTE - The npm version required is 3.6.x . If an older version got installed, upgrade the npm version
            sudo apt-get update
            sudo npm install npm -g
 
@@ -94,13 +94,11 @@ To Check the version of npm::
 
 
 
-Install Git::
+Install Git(1.9.x) ::
 
     sudo apt-get install git
     
-    Check the git version
-    git --version
-    1.9.x
+    
 
 
 NOTE::
@@ -112,14 +110,11 @@ NOTE::
 
 Clone the repository to get the Catalyst code::
 
-    sudo git clone https://catalyst-engg:catalyst_123@github.com/RLIndia/D4D.git
+    sudo git clone https://github.com/RLOpenCatalyst/D4D.git
 
-    NOTE -  It will a main folder D4D.(Inside D4D- client,server..)
+    
 
-    NOTE - Take the Latest code from dev_catalyst branch
-           Go to D4D folder i.e cd D4D
-           sudo git checkout dev_catalyst
-           sudo git pull
+    NOTE - cd D4D
 
 
 Create a Mongodb path::
