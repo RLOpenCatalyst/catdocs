@@ -146,7 +146,7 @@ How to Import an Instance using IP?
 
  * Click **Import** to start importing the Instance.
 
- .. image:: /images/importbyIP.JPG
+ .. image:: /images/importbyIP.jpg
 
 
 
