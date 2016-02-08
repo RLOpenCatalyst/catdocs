@@ -15,7 +15,8 @@ Few of the highlights of Catalyst are:
  .. image:: /images/Cat_Devops_Platform.png
 
  
- RLCatalyst Usage can be broadly classified around:
+ 
+ **RLCatalyst Usage can be broadly classified around:**
  **Standardize **
  RLCatalyst gives out the flexibility to standardize your day-to-day DevOps needs by creating re-usable standard templates .The templates can be created for infrastructure provisioning, various CI/CD requirements, orchestration, monitoring and tracking  . There is this provision to choose the desired components like cloud providers, base images , CI/CD tools, CMDB tools etc in the templates. This helps in faster provisioning, and better standardization and compliance
  	
