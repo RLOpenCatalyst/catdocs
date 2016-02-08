@@ -18,12 +18,12 @@ Few of the highlights of Catalyst are:
 
  Standardize 
  ===========
- RLCatalyst gives out the flexibility to standardize your day-to-day DevOps needs by templatizing 
- 	* Infrastructure Provisioning
- 	* Application Deployment
- 	* Monitoring services
- 	* Bulk Upgrdations
-
+ RLCatalyst gives out the flexibility to standardize your day-to-day DevOps needs by creating re-usable standard templates .The templates can be created for infrastructure provisioning, various CI/CD requirements, orchestration, monitoring and tracking  . There is this provision to choose the desired components like cloud providers, base images , CI/CD tools, CMDB tools etc in the templates. This helps in faster provisioning, and better standardization and compliance
+ 	
  Automate
  ========
+Using the templates as the base, you can automate all your DevOps needs using Catalyst. RLCatalyst provides automation libraries for configuration, installation, deployment and monitoring of varios components in your infra/application which can be based on different automation tools like Chef, Docker, AWS Cloud Formation templates, Microsoft ARM templates etc. By default, RLCatalyst provides a set of 25+ automation libraries on Chef which can be located at <link> . It gives you the flexibility to use your own libraries from your configuration management systems like Chef or Puppet. 
 
+Orchestrate
+===========
+RLCatalyst provides a variety of orchestration services to ease and manage your DevOps activities - Infrastructure Automation, Application Deployment, Application Testing, Release Management, Application/Infra Monitoring, Analytics and Tracking, Application Health, Log monitoring etc , to name a few.
