@@ -41,10 +41,3 @@ Settings provides you six different options:
    :maxdepth: 2
 
    trackSetup
-
-.. _user-info:
-
-.. toctree::
-   :maxdepth: 2
-
-   userInfo
