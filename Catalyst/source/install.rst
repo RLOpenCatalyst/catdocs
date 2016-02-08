@@ -195,6 +195,7 @@ To Install node.js & npm::
     npm -v
     2.4.12
 
+
     NOTE - The npm version required is 3.5.x . If an older version got installed, upgrade the npm version.
            npm install npm -g
     
