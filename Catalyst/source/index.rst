@@ -1,3 +1,5 @@
+
+
 Welcome to Catalyst Documentation
 =================================
 
@@ -9,9 +11,17 @@ Think of it as *Continuous Documentation*.
 
 The main documentation for the site is organized into a couple sections:
 
-.. * :ref:`about-docs`
+* :ref:`about-docs`
 * :ref:`user-docs`
-* :ref:`feature-docs`
+* :ref:`developer-docs`
+
+.. _about-docs:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: About Catalyst
+
+   overview
 
 
 .. _user-docs:
@@ -27,7 +37,7 @@ The main documentation for the site is organized into a couple sections:
    workzone
 
 
-.. _feature-docs:
+.. _developer-docs:
 
 .. toctree::
    :maxdepth: 2

@@ -294,7 +294,7 @@ To Start the Application::
     node start app.js
 
 
-To run the apllication forever::
+To run the application forever::
 
     forever start app.js
 
