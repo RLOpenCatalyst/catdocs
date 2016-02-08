@@ -10,7 +10,7 @@ Few of the highlights of Catalyst are:
  * Powered by Chef and integrated with Docker
 
  RLCatalyst DevOps Platform
- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ ==========================
 
  .. image:: /images/Cat_Devops_Platform.png
 
