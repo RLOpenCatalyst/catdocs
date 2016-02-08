@@ -279,7 +279,7 @@ To Install Catalyst and to create a db path folder::
 
 To Install gcc library::
  
-    yum install gcc-g++
+    yum install gcc-c++
 
 
 To Install the seed data::
