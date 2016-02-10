@@ -1,5 +1,5 @@
-Contribution
-============
+Code Contributions
+==================
 
 **Code of Conduct**
 The Code of Conduct explains the bare minimum behavior expectations Relevance Lab requires of its contributors.
