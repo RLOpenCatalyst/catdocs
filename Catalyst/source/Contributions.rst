@@ -1,25 +1,26 @@
 Code Contributions
 ==================
 
-**Code of Conduct**
+**Code of Conduct** 
+
 The Code of Conduct explains the bare minimum behavior expectations Relevance Lab requires of its contributors.
 
 This project adheres to the [Open Code of Conduct][code-of-conduct]. By participating, you are expected to honor this code.
 [code-of-conduct]: http://todogroup.org/opencodeofconduct/#RLCatalyst/kaushik.mukherjee@relevancelab.com
 
 
-**Issue Contributions**
+**Issue Contributions** 
 
 When opening new issues or commenting on existing issues please make sure discussions are related to concrete technical issues with the RLCatalyst software.
-
-Discussion of non-technical topics including subjects like intellectual property, trademark and high level project questions should be directed to support@relevancelab.com
+  Discussion of non-technical topics including subjects like intellectual property, trademark and high level project questions should be directed to support@relevancelab.com
 
 
 **Branching Strategy**
 
 The central repository will have two branches with infinite lifetime
-* master
-* dev
+
+* master 
+* dev 
 
 *Supported Branches* 
 For contributions to RLCatalyst create a feature or hot fix branch and make changes. Usage of the branches shall be explained in the following section.
@@ -102,20 +103,17 @@ Otherwise you can file your issue in the RLCatalyst project and we will make sur
 
 To decrease the back and forth in issues, and to help us get to the bottom of them quickly, we use the issue template below. You can copy/paste this template into the issue you are opening and edit it accordingly::
 
-### Version:
-[Version of the project installed]
 
-### Environment:
-[Details about the environment such as the Operating System, cookbook details, etc.]
+Version:[Version of the project installed]
 
-### Scenario:
-[What you are trying to achieve and you can't?]
+Environment:[Details about the environment such as the Operating System, cookbook details, etc.]
 
-### Steps to Reproduce:
-[If you are filing an issue, what are the things we need to do to reproduce your problem?]
+Scenario:[What you are trying to achieve and you can't?]
 
-### Expected Result:
-[What are you expecting to happen as the consequence of the reproduction steps above?]
+Steps to Reproduce:[If you are filing an issue, what are the things we need to do to reproduce your problem?]
 
-### Actual Result:
-[What actually happens after the reproduction steps?]
+Expected Result:[What are you expecting to happen as the consequence of the reproduction steps above?]
+
+Actual Result:[What actually happens after the reproduction steps?]
+
+
