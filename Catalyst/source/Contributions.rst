@@ -11,8 +11,7 @@ This project adheres to the [Open Code of Conduct][code-of-conduct]. By particip
 
 **Issue Contributions** 
 
-When opening new issues or commenting on existing issues please make sure discussions are related to concrete technical issues with the RLCatalyst software.
-  Discussion of non-technical topics including subjects like intellectual property, trademark and high level project questions should be directed to support@relevancelab.com
+When opening new issues or commenting on existing issues please make sure discussions are related to concrete technical issues with the RLCatalyst software
 
 
 **Branching Strategy**
@@ -30,8 +29,8 @@ For contributions to RLCatalyst create a feature or hot fix branch and make chan
 
 *Step 1: Fork*
 
-$ git clone git@github.com:username/rlcat-core.git
-$ cd rlcatalyst
+$ git clone git@github.com:username/core.git
+$ cd core
 $ git remote add upstream git://github.com/RLOpenCatalyst/core.git
 
 *Step 2: Branch*
@@ -92,6 +91,8 @@ Each Github pull request will go through 3 step before merge:
 2. If tests pass, the RLCatalyst engineering team member will do the review of the changes. Technical communication possible via github.com pull request page. When ready, your pull request will be tagged with label Ready For Merge.
 
 3. Your patch will be merged into master including necessary documentation updates.
+
+4. After merge the feature branch will be deleted.
 
 **Issue Contributions**
 
