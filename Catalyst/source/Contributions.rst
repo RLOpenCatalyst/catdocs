@@ -1,10 +1,13 @@
 Code Contributions
 ==================
 
+**Contributor License Agreement**
 
-**Issue Contributions** 
+If you are contributing to this repository you must agree the following :
 
-When opening new issues or commenting on existing issues please make sure discussions are related to concrete technical issues with the RLCatalyst software
+* The code I’m contributing is mine, and I have the right to license it.
+
+* I’m granting you a license to distribute said code under the terms of this agreement (typically “as you see fit” or “under an OSI-approved license” or whatever).
 
 
 **Branching Strategy**
@@ -96,7 +99,9 @@ Each Github pull request will go through 3 step before merge:
 
 Release from master branch will be tagged with release_<X.X>
 
+
 **Issue Contributions**
+When opening new issues or commenting on existing issues please make sure discussions are related to concrete technical issues with the RLCatalyst software
 
 RLCatalyst Issue Tracking is handled using Github Issues.
 
