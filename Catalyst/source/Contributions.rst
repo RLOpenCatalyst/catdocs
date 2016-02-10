@@ -1,13 +1,6 @@
 Code Contributions
 ==================
 
-**Code of Conduct** 
-
-The Code of Conduct explains the bare minimum behavior expectations Relevance Lab requires of its contributors.
-
-This project adheres to the [Open Code of Conduct][code-of-conduct]. By participating, you are expected to honor this code.
-[code-of-conduct]: http://todogroup.org/opencodeofconduct/#RLCatalyst/kaushik.mukherjee@relevancelab.com
-
 
 **Issue Contributions** 
 
@@ -93,6 +86,10 @@ Each Github pull request will go through 3 step before merge:
 3. Your patch will be merged into master including necessary documentation updates.
 
 4. After merge the feature branch will be deleted.
+
+** Release Strategy**
+
+Release from master branch will be tagged with release_<X.X>
 
 **Issue Contributions**
 
