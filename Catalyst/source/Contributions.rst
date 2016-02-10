@@ -92,7 +92,7 @@ Each Github pull request will go through 3 step before merge:
 
 4. After merge the feature branch will be deleted.
 
-** Release Strategy**
+**Release Strategy**
 
 Release from master branch will be tagged with release_<X.X>
 
