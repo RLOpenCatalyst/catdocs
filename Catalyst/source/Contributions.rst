@@ -23,7 +23,9 @@ For contributions to RLCatalyst create a feature or hot fix branch and make chan
 *Step 1: Fork*
 
 $ git clone git@github.com:username/core.git
+
 $ cd core
+
 $ git remote add upstream git://github.com/RLOpenCatalyst/core.git
 
 *Step 2: Branch*
@@ -37,7 +39,9 @@ $ git checkout -b my-feature-branch -t origin/master
 Make sure git knows your name and email address:
 
 $ git config --global user.name "J. Random User"
+
 $ git config --global user.email "j.random.user@example.com"
+
 Writing good commit logs is important. A commit log should describe what changed and why. Follow these guidelines when writing one:
 
 The first line should be 50 characters or less and contain a short description of the change prefixed with the name of the changed subsystem (e.g. "net: add localAddress and localPort to Socket").
@@ -64,6 +68,7 @@ Check the output of git log --oneline files_that_you_changed to find out what su
 Use git rebase (not git merge) to sync your work from time to time.
 
 $ git fetch upstream
+
 $ git rebase upstream/master
 
 *Step 5: Tests*
