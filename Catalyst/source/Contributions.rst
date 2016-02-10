@@ -100,9 +100,7 @@ If you are familiar with RLCatalyst and know the repository that is causing you 
 
 Otherwise you can file your issue in the RLCatalyst project and we will make sure it gets filed against the appropriate project.
 
-To decrease the back and forth in issues, and to help us get to the bottom of them quickly, we use the issue template below. You can copy/paste this template into the issue you are opening and edit it accordingly.
-
-
+To decrease the back and forth in issues, and to help us get to the bottom of them quickly, we use the issue template below. You can copy/paste this template into the issue you are opening and edit it accordingly::
 
 ### Version:
 [Version of the project installed]
