@@ -103,17 +103,16 @@ Otherwise you can file your issue in the RLCatalyst project and we will make sur
 
 To decrease the back and forth in issues, and to help us get to the bottom of them quickly, we use the issue template below. You can copy/paste this template into the issue you are opening and edit it accordingly::
 
+ Version:[Version of the project installed]
 
-Version:[Version of the project installed]
+ Environment:[Details about the environment such as the Operating System, cookbook details, etc.]
 
-Environment:[Details about the environment such as the Operating System, cookbook details, etc.]
+ Scenario:[What you are trying to achieve and you can't?]
 
-Scenario:[What you are trying to achieve and you can't?]
+ Steps to Reproduce:[If you are filing an issue, what are the things we need to do to reproduce your problem?]
 
-Steps to Reproduce:[If you are filing an issue, what are the things we need to do to reproduce your problem?]
+ Expected Result:[What are you expecting to happen as the consequence of the reproduction steps above?]
 
-Expected Result:[What are you expecting to happen as the consequence of the reproduction steps above?]
-
-Actual Result:[What actually happens after the reproduction steps?]
+ Actual Result:[What actually happens after the reproduction steps?]
 
 
