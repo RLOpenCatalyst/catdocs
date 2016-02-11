@@ -41,7 +41,7 @@ The main documentation for the site is organized into a couple sections:
 .. _developer-docs:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Developer Documentation
 
    install

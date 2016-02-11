@@ -1,0 +1,342 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Design &mdash; Catalyst latest documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Catalyst latest documentation" href="index.html"/>
+        <link rel="next" title="Workzone" href="workzone.html"/>
+        <link rel="prev" title="Track Setup" href="trackSetup.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Catalyst
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">About Catalyst</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">About RLCatalyst</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="menu-options.html">Introduction - Catalyst</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workzone.html">Workzone</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contributions.html">Code Contributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automationbasics.html">Automation Framework</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Catalyst</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Design</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/design.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="design">
+<h1>Design<a class="headerlink" href="#design" title="Permalink to this headline">¶</a></h1>
+<p>RL Catalyst Design options allows you to create Blueprints by using predefine templates.</p>
+<p><strong>Creating BluePrints for Sofware Stack Template Type</strong></p>
+<p>Blueprints are predefined templates which can be used by service consumers to launch the instances. Blueprints are designed by service designers.
+Each blueprint stores the metadata of the instance, variables, actions and activity. Follow the steps for creating BluePrints.</p>
+<blockquote>
+<div><ul class="simple">
+<li>From the Design page choose a Software Stack Template Type and click Next</li>
+</ul>
+<img alt="_images/templateTypeList.JPG" src="_images/templateTypeList.JPG" />
+<ul class="simple">
+<li>From the Template cards choose template and click Next</li>
+</ul>
+<img alt="_images/templateList.JPG" src="_images/templateList.JPG" />
+<ul class="simple">
+<li>Once you choose the Template, Enter the details for creating the BluePrint</li>
+</ul>
+<ol class="loweralpha simple">
+<li>In the Configure Providers Parameters option,  choose the operating system from Choose Operating System drop down list</li>
+<li>Choose the provider from the Choose Provider drop down list</li>
+<li>Choose the image that you want to use from the Choose Available Images drop down list</li>
+<li>Choose the region from the Choose Region drop down list</li>
+<li>Choose the VPC from the Select VPC drop down list</li>
+<li>Choose the subnet from the Select Subnet drop down list</li>
+<li>Choose the key pair from the Select Key Pair drop down list</li>
+<li>Choose the instance size from the Select Instant Size drop down list</li>
+<li>Choose the security group from the Choose Security Group drop down list</li>
+</ol>
+<img alt="_images/bpCreation.png" src="_images/bpCreation.png" />
+<ol class="loweralpha simple" start="10">
+<li>In the Configure Organization Paramteres option, Choose the Organization, Enter blueprint name, Choose Business group and Project names</li>
+<li>In the Configure Runlist Parameter  option, Click on +  icon (Edit Runlist), select the Cookbooks from the left frame and Click the arrow button to add to the Runlist. You can deselect the selected Cookbooks from the Order Runlist by clicking the arrow button to the Select Runlist box again</li>
+<li>You can customize the order of Order Runlist. First select the item and then use the up arrow and down arrow provided to change the order of the Order Runlist</li>
+<li>Click on Update runlist button</li>
+</ol>
+<img alt="_images/runlistUpdate.JPG" src="_images/runlistUpdate.JPG" />
+<ol class="loweralpha simple" start="14">
+<li>In the Configure Application URL option, you can view the application URL available for the BluePrint</li>
+<li>If you want to add a new URL, click on the New button</li>
+<li>Add Application window will pop up</li>
+<li>Provide the application name in the Name box and the host URL  in the URL box</li>
+<li>Click Add button, to the add the Application URL</li>
+</ol>
+<img alt="_images/appUrl.JPG" src="_images/appUrl.JPG" />
+<ol class="loweralpha simple" start="19">
+<li>Click on Next button</li>
+<li>Now blueprint is created for Software Stack Template type</li>
+</ol>
+<img alt="_images/creationSuccess.JPG" src="_images/creationSuccess.JPG" />
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>Creating BluePrints for Docker Template Type</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>From the Design page choose a Docker Template Type and click Next</li>
+</ul>
+<img alt="_images/dockerTT.JPG" src="_images/dockerTT.JPG" />
+<ul class="simple">
+<li>Choose the available Template and click Next</li>
+</ul>
+<img alt="_images/dockerTempleteList.JPG" src="_images/dockerTempleteList.JPG" />
+<ul class="simple">
+<li>Choose your Organization name form Choose Organization dropdown</li>
+<li>Provide name in Enter Blueprint Name textfield</li>
+<li>Choose your business group from Choose Business Group dropdown</li>
+<li>Choose your project from Choose Project dropdown</li>
+</ul>
+<img alt="_images/createBpDocker.JPG" src="_images/createBpDocker.JPG" />
+<ul>
+<li><p class="first">Click on Launch Parameters icon</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li>Enter Container Name</li>
+<li>Enter Port mappings</li>
+<li>Enter Volumes</li>
+<li>Enter Volumes-from</li>
+<li>Enter Linked Container name</li>
+<li>Enter Environment variables</li>
+<li>Enter Start up Command</li>
+</ol>
+<p>h. Enter Additional StartUp command
+I. Click on Add button</p>
+</div></blockquote>
+</li>
+</ul>
+<img alt="_images/dockerPopup.JPG" src="_images/dockerPopup.JPG" />
+<ul class="simple">
+<li>Click Next button</li>
+<li>Click OK in confirmation popup</li>
+<li>Now Docker blueprint saved successfully</li>
+</ul>
+<img alt="_images/dockerConfirm.JPG" src="_images/dockerConfirm.JPG" />
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>Creating BluePrints for Cloud Formation Template Type</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>From the Design page choose a Cloud Formation Template Type and click Next</li>
+</ul>
+<img alt="_images/cftTemplateType.JPG" src="_images/cftTemplateType.JPG" />
+<ul class="simple">
+<li>Choose the available Template and click Next</li>
+</ul>
+<img alt="_images/cftTemplateList.JPG" src="_images/cftTemplateList.JPG" />
+<ul class="simple">
+<li>Click on Configure Organization Parameters</li>
+<li>Choose your Organization name form Choose Organization dropdown</li>
+<li>Provide name in Enter Blueprint Name textfield</li>
+<li>Choose your business group from Choose Business Group dropdown</li>
+<li>Choose your project from Choose Project dropdown</li>
+</ul>
+<img alt="_images/cftCreate.JPG" src="_images/cftCreate.JPG" />
+<ul class="simple">
+<li>Click on Configure Stack Parameters</li>
+<li>Choose the region from the Choose Region drop down list</li>
+<li>Choose the provider from the Choose Provider drop down list</li>
+<li>Choose the Keyname from the Choose Keyname drop down list</li>
+<li>Choose the Subnet from the Choose Subnet down list.</li>
+<li>Choose the Security Group from the Choose Security Group list</li>
+<li>Choose the AMImageID from the Choose AMImageID  list</li>
+<li>Choose the Instance Type from the Choose Instance Type  list</li>
+<li>Click on Next button</li>
+<li>Now blueprint is created for Cloud Formation Template</li>
+</ul>
+<img alt="_images/cftCreateLast.JPG" src="_images/cftCreateLast.JPG" />
+</div></blockquote>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="workzone.html" class="btn btn-neutral float-right" title="Workzone" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="trackSetup.html" class="btn btn-neutral" title="Track Setup" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Srikanth V.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'latest',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

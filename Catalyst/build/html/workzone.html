@@ -1,0 +1,496 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Workzone &mdash; Catalyst latest documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Catalyst latest documentation" href="index.html"/>
+        <link rel="next" title="Installation" href="install.html"/>
+        <link rel="prev" title="Design" href="design.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Catalyst
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">About Catalyst</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">About RLCatalyst</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="menu-options.html">Introduction - Catalyst</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Design</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Workzone</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contributions.html">Code Contributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automationbasics.html">Automation Framework</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Catalyst</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Workzone</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/workzone.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="workzone">
+<h1>Workzone<a class="headerlink" href="#workzone" title="Permalink to this headline">¶</a></h1>
+<p>RL Catalyst Workzone is an option all the settings take action. Workzone has below options.</p>
+<dl class="docutils">
+<dt><strong>Infrastructure</strong>:</dt>
+<dd><ol class="first last loweralpha simple">
+<li>Instances : It displays the numbers of instances that currently launched and running.</li>
+<li>Blueprints : This options allows you to launch instances.</li>
+<li>Cloud Formation : It displays the list of stacks launched from cloud formation blueprints.</li>
+<li>Containers : Container details launched from docker blueprints.</li>
+</ol>
+</dd>
+</dl>
+<p><strong>Orchestration</strong>: This options allows you to execute one or more tasks/actions on multiple nodes.</p>
+<p><strong>Applications</strong>: Here user can deploy new applications and deployed applications will be shown in card or table view will all details.</p>
+<dl class="docutils">
+<dt>How to Launch Instances?</dt>
+<dd><p class="first">Instances are launched from Blueprints. Follow below steps to launch Instances from blueprints.</p>
+<ul class="simple">
+<li>Go to Workzone → Click on Infrastructure drop down → Choose Blueprints.</li>
+</ul>
+<img alt="_images/softBlueprint.JPG" src="_images/softBlueprint.JPG" />
+<ul class="simple">
+<li>Select the Blueprint and click on Launch button. Once the ‘Launch’ button is clicked, the instance will be launched in 5-8 minutes.</li>
+<li>Go to Instances tab to view the launched instance.</li>
+</ul>
+<img alt="_images/instances.JPG" class="last" src="_images/instances.JPG" />
+</dd>
+<dt>Instance Actions:</dt>
+<dd><blockquote class="first">
+<div><p>On the launched instance user can perform below actions.</p>
+<ul class="simple">
+<li>Chef Client Run</li>
+<li>SSH</li>
+<li>Stop / Start</li>
+<li>MoreInfo</li>
+</ul>
+</div></blockquote>
+<ul class="last simple">
+<li><strong>Chef Client Run</strong> option allows you to update the Chef Client Runlist. You can add new software to the Runlist and click on <strong>Update</strong>.</li>
+<li><strong>SSH</strong>, this option allows you to open the command prompt Terminal. You can execute your commands directly using this option.</li>
+<li><strong>Stop</strong>, This option allows you to start and stop an Instance.</li>
+<li><strong>More Info</strong>, This option displays the information about the Instance. You can view the logs of the Instance.</li>
+</ul>
+</dd>
+<dt>How to perform Chef Client Run action on launched instance?</dt>
+<dd>Any extra action on the running instance can be performed via the Chef client Run icon, which is displayed at the bottom left corner. Installing new software, upgrading a software etc can be performed using this icon.</dd>
+</dl>
+<p>Follow below steps to run chef client run.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Click on Chef client run icon.</li>
+</ul>
+<img alt="_images/chefClientRun.JPG" src="_images/chefClientRun.JPG" />
+<ul class="simple">
+<li>Select any cookbook cookbook and move to Runlist by clicking &gt; icon.</li>
+<li>Click on Update button.</li>
+<li>Click OK on confirmation popup to update runlist.</li>
+</ul>
+<img alt="_images/confirmChefClient.JPG" src="_images/confirmChefClient.JPG" />
+<ul class="simple">
+<li>Instance Logs window will be displayed to see the logs.</li>
+</ul>
+<img alt="_images/instanceLogs.JPG" src="_images/instanceLogs.JPG" />
+<ul class="simple">
+<li>Click on Close button to close the Instance logs window.</li>
+</ul>
+</div></blockquote>
+<dl class="docutils">
+<dt>How to Perform SSH action on the Instance?</dt>
+<dd><ul class="first simple">
+<li>Click on the SSH icon present on the instance.</li>
+<li>Enter the Username of the Instance.</li>
+<li>Select the authentication type by selecting password / pem file.</li>
+<li>Enter the Password or Browse the Pem file.</li>
+</ul>
+<img alt="_images/sshTerminal.JPG" src="_images/sshTerminal.JPG" />
+<ul class="simple">
+<li>Click on Submit button.</li>
+</ul>
+<img alt="_images/sshShell.JPG" class="last" src="_images/sshShell.JPG" />
+</dd>
+<dt>How to Stop running instance from Catalyst?</dt>
+<dd><ul class="first simple">
+<li>Click on the Stop icon present on the instance.</li>
+<li>Click OK on confirmation popup.</li>
+</ul>
+<img alt="_images/stopConfirm.JPG" src="_images/stopConfirm.JPG" />
+<ul class="simple">
+<li>Instance status is showing as stopped and red icon will be shown.</li>
+</ul>
+<blockquote class="last">
+<div><p><strong>Note:</strong> User can perform stop / start action only for the launched node from catalyst.</p>
+<p><strong>Note:</strong> For the imported node from IP address Stop button will be grayed out will be shown later.</p>
+<p><strong>Note:</strong> For the Stopped Instance, Chef client SSH buttons will be disabled.</p>
+<blockquote>
+<div><img alt="_images/stoppedInstance.JPG" src="_images/stoppedInstance.JPG" />
+</div></blockquote>
+</div></blockquote>
+</dd>
+<dt>How to Start an Instance from Catalyst?</dt>
+<dd><ul class="first simple">
+<li>Click on the <strong>Start</strong> icon of the stopped instance.</li>
+<li>Instance will be started and turn to Green color. Chef Client , SSH button will be enabled.</li>
+</ul>
+<img alt="_images/startedInstance.JPG" class="last" src="_images/startedInstance.JPG" />
+</dd>
+<dt>How to Import an Instance using IP?</dt>
+<dd><p class="first">In the Instances page, you can import Instances using the Import By IP option, follow these steps to import.</p>
+<ul class="simple">
+<li>Click on Import by IP icon.</li>
+<li>In the <strong>Import Instance By IP</strong> window.</li>
+<li>Provide the IP address which needs to be Imported.</li>
+<li>Choose the operating system from <strong>Choose Operating System</strong> drop down list.</li>
+<li>Provide the user name in the <strong>Username</strong> box.</li>
+<li>Choose authentication type from the <strong>Choose Authentication Type</strong> drop down list. RL Catalyst provide two types of authentication, you can choose Password or by uploading PEM file.</li>
+<li>Type <strong>Password or upload PEM file</strong>.</li>
+<li>Provide the application name in the <strong>Name</strong> box and the host <strong>URL</strong> in the URL box.</li>
+<li>You can also Add new application by clicking on the Add Application URL option.</li>
+<li>Click <strong>Import</strong> to start importing the Instance.</li>
+</ul>
+<img alt="_images/importbyIP.jpg" src="_images/importbyIP.jpg" />
+<ul class="simple">
+<li>Node will be imported and displayed in the instances tab. For the imported node Stop button will be disabled.</li>
+</ul>
+<img alt="_images/importNode.JPG" class="last" src="_images/importNode.JPG" />
+</dd>
+<dt>How to launch Cloud Formation Blueprints?</dt>
+<dd><p class="first">Follow below steps to launch Cloud formation blueprints.</p>
+<ul class="simple">
+<li>Go to Workzone → Click on Infrastructure dropdown → Select Blueprints option → Click on <strong>&#8216;Cloud Formation&#8217;</strong> template type.</li>
+</ul>
+<img alt="_images/cftBlueprint.JPG" src="_images/cftBlueprint.JPG" />
+<ul class="simple">
+<li>Select the cloud formation blueprint and click on Launch button.</li>
+<li>Enter the Unique Stack Name in the popup window.</li>
+</ul>
+<img alt="_images/cftPopup.JPG" src="_images/cftPopup.JPG" />
+<ul class="simple">
+<li>Click on Submit button.</li>
+<li>Confirmation pop will be displayed with Stack ID.</li>
+</ul>
+<img alt="_images/cftStackid.JPG" src="_images/cftStackid.JPG" />
+<ul class="simple">
+<li>Close the popup.</li>
+<li>Go to Infrastructure - &gt; Cloud Formation , the CFT stack will be listed.</li>
+</ul>
+<img alt="_images/cftStacks.JPG" src="_images/cftStacks.JPG" />
+<ul class="last simple">
+<li>Go to Instances tab to see the launched Instance.</li>
+</ul>
+</dd>
+<dt>How to launch Docker blueprints?</dt>
+<dd><p class="first">Follow below steps to launch docker blueprints.</p>
+<ul class="simple">
+<li>Go to Workzone → Click on Infrastructure dropdown → Select Blueprints option → Click on <strong>&#8216;Docker&#8217;</strong> template type.</li>
+</ul>
+<img alt="_images/dockerBlueprint.JPG" src="_images/dockerBlueprint.JPG" />
+<ul class="simple">
+<li>Select the docker template which is listed and click on Launch button.</li>
+<li>Click OK on the Confirmation popup.</li>
+<li>Click Next button in the Launch docker blueprint window.</li>
+</ul>
+<img alt="_images/launchDocker.JPG" src="_images/launchDocker.JPG" />
+<ul class="simple">
+<li>Select the node on which you are going to launch docker blueprint and click on <strong>Start</strong> button.</li>
+</ul>
+<img alt="_images/selectNode.JPG" src="_images/selectNode.JPG" />
+<ul class="simple">
+<li>Logs window will be displayed and wait until the installation successful.</li>
+<li>Go to Infrastructure - &gt; Containers tab, the container details will be listed.</li>
+</ul>
+<img alt="_images/docker.JPG" class="last" src="_images/docker.JPG" />
+</dd>
+<dt>Control Panel</dt>
+<dd><p class="first">The <strong>Control Panel</strong> option displays the detailed information on the selected <strong>Instance</strong>    .  It displays information such as Blueprint Information , Hardware information, Software Information, Configuration Management, Additional Parameters, Services, Actions and Logs.</p>
+<img alt="_images/controlPanel.JPG" class="last" src="_images/controlPanel.JPG" />
+</dd>
+<dt>How to Inspect Software on the Instance?</dt>
+<dd><p class="first">Inspect functionality allows user to know the installed software on the Instance.</p>
+<ul class="simple">
+<li>Go to Instance Control panel.</li>
+<li>Click on Inspect Software button.</li>
+<li>Popup is displayed to know the installed software on the instance.</li>
+</ul>
+<img alt="_images/inspect.JPG" class="last" src="_images/inspect.JPG" />
+</dd>
+<dt>How to Convert to Workstation in Instance?</dt>
+<dd><ul class="first simple">
+<li>Go to Instance Control panel → Services tab.</li>
+<li>Click on &#8216;Convert To Workstation&#8217; button.</li>
+<li>Click on &#8216;OK&#8217; button.</li>
+<li>Confirmation pop up is displayed saying <strong>&#8216;Your workstation has been setup successfully. The .chef folder is available in Home&#8217;.</strong></li>
+</ul>
+<img alt="_images/workStation.JPG" src="_images/workStation.JPG" />
+<ul class="last simple">
+<li>Click on <strong>OK</strong>  button to close the popup.</li>
+</ul>
+</dd>
+<dt>How to View the Action History on Instance?</dt>
+<dd><p class="first">Action history feature allows user to view the history of the actions performed on the Instances with complete details.</p>
+<ul class="simple">
+<li>Go to Instance Control panel.</li>
+<li>Click on Action History tab.</li>
+</ul>
+<img alt="_images/actionHistory.JPG" class="last" src="_images/actionHistory.JPG" />
+</dd>
+<dt>How to View Instances in Table View?</dt>
+<dd><p class="first">RL Catalyst on the Instances page provides you two kinds of views.</p>
+<ul class="last simple">
+<li>Grid View</li>
+<li>Table View</li>
+</ul>
+</dd>
+</dl>
+<p>You can click on the respective button to view the instances.</p>
+<blockquote>
+<div><img alt="_images/tableView.JPG" src="_images/tableView.JPG" />
+</div></blockquote>
+<dl class="docutils">
+<dt>Orchestration</dt>
+<dd>Orchestration option allows you to execute one or more tasks/actions on multiple nodes.</dd>
+<dt>To add a Chef Server New Task</dt>
+<dd><ul class="first simple">
+<li>To add a new task click on the <strong>New</strong> button.</li>
+<li>Select the task type from the <strong>Select Task Type</strong> drop down list (Chef).</li>
+<li>Enter a task name in the <strong>Task Name</strong> box.</li>
+<li>Select the nodes from the <strong>Select Nodes</strong> list for which you want to assign task.</li>
+<li>Click on <strong>Edit Runlist</strong> icon and add cookbooks to the runlist.</li>
+<li>Click on <strong>Update runlist</strong> button.</li>
+<li>You can also select the <strong>Cookbook Attributes</strong>.</li>
+</ul>
+<img alt="_images/orchestration.JPG" src="_images/orchestration.JPG" />
+<ul class="simple">
+<li>Click Save button to save the task.</li>
+<li>The task is added to the <strong>Orchestration</strong> list.</li>
+</ul>
+<img alt="_images/orcList.JPG" class="last" src="_images/orcList.JPG" />
+</dd>
+<dt>To add a Jenkins New Task</dt>
+<dd><ul class="first simple">
+<li>To add a new task click on the <strong>New</strong> button.</li>
+<li>Select the task type from the <strong>Select Task Type</strong> drop down list (Jenkins).</li>
+<li>Enter a task name in the <strong>Task Name</strong> box.</li>
+<li>Select the server from the <strong>Select Jenkins Server</strong> drop down list.</li>
+<li>Select the job from the <strong>Select Job</strong> drop down list.</li>
+<li>Select the Auto synch button to <strong>&#8216;Yes&#8217;</strong> [ This will shows the task execution history].</li>
+<li>Add Job links for the Jenkins task.</li>
+</ul>
+<img alt="_images/jenkinsTask.JPG" src="_images/jenkinsTask.JPG" />
+<ul class="simple">
+<li>Click Save button to save the task.</li>
+<li>The task is added to the Orchestration list.</li>
+</ul>
+<img alt="_images/tasklis.JPG" class="last" src="_images/tasklis.JPG" />
+</dd>
+<dt>How to Edit or Remove a Task?</dt>
+<dd><p class="first">You can edit or remove a task. Follow the steps below.</p>
+<ul class="last simple">
+<li>Click on Edit button to edit a task from the Orchestration list.</li>
+<li>Click on Delete button to remove a task from the Orchestration list.</li>
+</ul>
+</dd>
+<dt>How to Execute a Task (Chef and Jenkins)?</dt>
+<dd><p class="first">You can execute a task (Chef and Jenkins) by clicking Execute button in the list of tasks page.</p>
+<p class="last">Once you execute the task, Execute logs window will pop-up shows the status of the execution.</p>
+</dd>
+<dt>How to view Task History?</dt>
+<dd><p class="first">You can view the task history by clicking the History button in the list of tasks page. Once you click on the history button, Task History window will pop-up and shows the history of the task.</p>
+<p>The following information is shown in the history of task:</p>
+<ul class="simple">
+<li>Job number</li>
+<li>Job output links including logs info</li>
+<li>Status</li>
+<li>Start time</li>
+<li>Endtime</li>
+<li>Logs</li>
+</ul>
+<img alt="_images/history.JPG" class="last" src="_images/history.JPG" />
+</dd>
+</dl>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="install.html" class="btn btn-neutral float-right" title="Installation" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="design.html" class="btn btn-neutral" title="Design" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Srikanth V.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'latest',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

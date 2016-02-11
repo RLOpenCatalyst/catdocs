@@ -1,0 +1,519 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installation &mdash; Catalyst latest documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Catalyst latest documentation" href="index.html"/>
+        <link rel="next" title="Code Contributions" href="Contributions.html"/>
+        <link rel="prev" title="Workzone" href="workzone.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Catalyst
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">About Catalyst</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">About RLCatalyst</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="menu-options.html">Introduction - Catalyst</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workzone.html">Workzone</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#software-requirements">Software Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-directly-from-source">Install Directly From Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-steps-for-ubuntu">Installation Steps for Ubuntu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-steps-for-centos7">Installation Steps for Centos7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-using-quickinstaller">Install Using QuickInstaller</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Contributions.html">Code Contributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automationbasics.html">Automation Framework</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Catalyst</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Installation</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/install.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installation">
+<span id="install-catalyst"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>This is a documentation that gives the developer and the user an overview of how to install Catalyst on a local instance</p>
+<p><strong>Supported Platforms</strong></p>
+<dl class="docutils">
+<dt>RLCatalyst is currently supported on</dt>
+<dd><ul class="first last simple">
+<li>Ubuntu 14.04</li>
+<li>CentOS 7</li>
+</ul>
+</dd>
+</dl>
+<div class="section" id="software-requirements">
+<h2>Software Requirements<a class="headerlink" href="#software-requirements" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="84%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Softwares</th>
+<th class="head">Versions</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>MongoDB</td>
+<td>3.2</td>
+</tr>
+<tr class="row-odd"><td>Node.JS</td>
+<td>4.22 and above</td>
+</tr>
+<tr class="row-even"><td>Npm</td>
+<td>3.4 and above</td>
+</tr>
+<tr class="row-odd"><td>Chef Server</td>
+<td>12.3 Open Source or Latest Enterprise Chef Server version.</td>
+</tr>
+<tr class="row-even"><td>Chef Client</td>
+<td>12.6</td>
+</tr>
+<tr class="row-odd"><td>LDAP Server</td>
+<td>OpenLDAP 2.4.39 or an existing corporate LDAP server.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>SCM – Any version of GIT or SVN</p>
+</div></blockquote>
+<p>Catalyst can be installed using one of the following methods</p>
+</div>
+<div class="section" id="install-directly-from-source">
+<h2>Install Directly From Source<a class="headerlink" href="#install-directly-from-source" title="Permalink to this headline">¶</a></h2>
+<p>You can install Catalyst locally by downloading the code from our Github Code Repository. The following section gives the instructions to do the Catalyst Installation from source</p>
+</div>
+<div class="section" id="installation-steps-for-ubuntu">
+<h2>Installation Steps for Ubuntu<a class="headerlink" href="#installation-steps-for-ubuntu" title="Permalink to this headline">¶</a></h2>
+<p>Here is a step by step plan on how to install Catalyst on Ubuntu machine.</p>
+<p>Start by updating the System:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo apt-get update
+</pre></div>
+</div>
+<p>Install MongoDB</p>
+<p>Import the public key used by the package management system.The Ubuntu package management tools (i.e.&nbsp;dpkg&nbsp;and&nbsp;apt) ensure package consistency and authenticity by requiring that distributors sign packages with GPG keys.</p>
+<p>Issue the following command to import the&nbsp;MongoDB public GPG Key:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+</pre></div>
+</div>
+<p>Create a list file for MongoDB:</p>
+<div class="highlight-python"><div class="highlight"><pre>echo &quot;deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.2 multiverse&quot; | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+</pre></div>
+</div>
+<p>Reload local package database &amp; install MongoDB:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo apt-get update
+sudo apt-get install -y mongodb-org
+</pre></div>
+</div>
+<p>Check the Mongo version:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">mongo</span> <span class="o">-</span><span class="n">version</span>
+<span class="mf">3.2</span><span class="o">.</span><span class="n">x</span>
+</pre></div>
+</div>
+<p>Install NodeJs 4.x &amp; Curl:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo apt-get install curl
+</pre></div>
+</div>
+<p>To Install Nodejs version 4.x:</p>
+<div class="highlight-python"><div class="highlight"><pre>curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+sudo apt-get install -y nodejs
+</pre></div>
+</div>
+<p>Check the version of node after installation.It should be 4.2.x</p>
+<div class="highlight-python"><div class="highlight"><pre>node -v
+v4.2.x
+</pre></div>
+</div>
+<p>Check the version of npm</p>
+<div class="highlight-python"><div class="highlight"><pre>npm -v
+2.4.x
+
+NOTE - The npm version required is 3.6.x . If an older version got installed, upgrade the npm version
+       sudo apt-get update
+       sudo npm install npm -g
+
+Now check the npm version
+npm -v
+3.6.x
+</pre></div>
+</div>
+<p>Install Git(1.9.x)</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo apt-get install git
+</pre></div>
+</div>
+<p>NOTE:</p>
+<div class="highlight-python"><div class="highlight"><pre>Node Version - 4.2.x
+npm version - 3.4.x
+monogo version - 3.2.x
+</pre></div>
+</div>
+<p>Clone the repository to get the Catalyst code:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo git clone https://github.com/RLOpenCatalyst/D4D.git
+</pre></div>
+</div>
+<p>Create a Mongodb path:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo mkdir -p /data/db/
+</pre></div>
+</div>
+<p>Install ChefClient:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo curl -L https://www.opscode.com/chef/install.sh | sudo bash
+To Check the chef client version
+knife -v
+12.6.x
+</pre></div>
+</div>
+<p>Install the make , g++ , Keerberos &amp; library:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo apt-get install make
+sudo apt-get install g++
+sudo apt-get install libkrb5-dev
+sudo npm install -g kerberos
+</pre></div>
+</div>
+<p>Run the Server:</p>
+<div class="highlight-python"><div class="highlight"><pre>cd D4D/server
+Install node packages - sudo npm install
+</pre></div>
+</div>
+<p>To Install seed data:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo node install --seed-data
+</pre></div>
+</div>
+<p>To Install forever &amp; start the catalyst Application:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo npm install forever --global
+Run the app - sudo forever start app.js
+</pre></div>
+</div>
+<p>Now you can access RLCatalyst at <a class="reference external" href="http://localhost:3001">http://localhost:3001</a></p>
+<div class="highlight-python"><div class="highlight"><pre>Login Credentials
+superadmin/superadmin@123
+</pre></div>
+</div>
+</div>
+<div class="section" id="installation-steps-for-centos7">
+<h2>Installation Steps for Centos7<a class="headerlink" href="#installation-steps-for-centos7" title="Permalink to this headline">¶</a></h2>
+<p>Here is a step by step plan on how to install Catalyst on Centos7 machine.</p>
+<p>Update your System with yum:</p>
+<div class="highlight-python"><div class="highlight"><pre>yum update
+</pre></div>
+</div>
+<p>To Install node.js &amp; npm:</p>
+<div class="highlight-python"><div class="highlight"><pre># Install the repository
+rpm -Uvh https://rpm.nodesource.com/pub_4.x/el/7/x86_64/nodesource-release-el7-1.noarch.rpm
+
+# Install NodeJS
+yum install nodejs
+
+checking the node version
+node -v
+4.2.5
+
+Check the npm version
+npm -v
+2.4.12
+
+
+NOTE - The npm version required is 3.5.x . If an older version got installed, upgrade the npm version.
+       npm install npm -g
+
+Now check the npm version
+npm -v
+3.5.3
+</pre></div>
+</div>
+<p>To Install MongoDb (version 3.x):</p>
+<div class="highlight-python"><div class="highlight"><pre>Go to directory /etc/yum.repos.d/
+
+Create a file mongodb-enterprise.repo
+cat &gt; mongodb-enterprise.repo
+Edit the above file and add the contents
+
+[MongoDB]
+name=MongoDB Repository
+baseurl=http://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.2/x86_64/
+gpgcheck=0
+enabled=1
+
+Save the file
+
+Run the Command
+yum install mongodb-org
+
+check the mongo version
+mongod --version
+3.2.1
+</pre></div>
+</div>
+<p>NOTE:</p>
+<div class="highlight-python"><div class="highlight"><pre>npm version 3.5.3
+node version 4.2.5
+monogd verison 3.2.1
+</pre></div>
+</div>
+<p>To Install Chef-Client (version 12.6.0):</p>
+<div class="highlight-python"><div class="highlight"><pre>curl -L https://www.opscode.com/chef/install.sh | sudo bash
+To check the chef client version
+knife -v
+Chef:12.6.0
+</pre></div>
+</div>
+<p>To Install git:</p>
+<div class="highlight-python"><div class="highlight"><pre>yum install git
+To check the git version
+git –version
+1.7.x
+</pre></div>
+</div>
+<p>To Install Catalyst and to create a db path folder:</p>
+<div class="highlight-python"><div class="highlight"><pre>To pull the catalyst code
+git clone https://github.com/RLOpenCatalyst/D4D.git
+Check the current directory for the presence of catalyst code i.e D4D folder.
+
+NOTE – Take the latest code from dev_catalyst.
+
+Run the command
+git status
+git checkout dev_catalyst
+git pull
+
+Create a db path folder
+mongo db path -  mkdir -p /data/db/
+
+Go to cd D4D/server
+npm install
+</pre></div>
+</div>
+<p>Start the mongodb:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo service mongod start
+</pre></div>
+</div>
+<p>To Install gcc library:</p>
+<div class="highlight-python"><div class="highlight"><pre>yum install gcc-c++
+</pre></div>
+</div>
+<p>To Install the seed data:</p>
+<div class="highlight-python"><div class="highlight"><pre>node install --seed-data
+</pre></div>
+</div>
+<p>To Start the Application:</p>
+<div class="highlight-python"><div class="highlight"><pre>Run (node app) to start your application.
+npm install forever –g
+node start app.js
+</pre></div>
+</div>
+<p>To run the application forever:</p>
+<div class="highlight-python"><div class="highlight"><pre>forever start app.js
+</pre></div>
+</div>
+<p>Access Catalyst:</p>
+<div class="highlight-python"><div class="highlight"><pre>localhost:3001
+username- superadmin
+pass - superadmin@123
+</pre></div>
+</div>
+</div>
+<div class="section" id="install-using-quickinstaller">
+<h2>Install Using QuickInstaller<a class="headerlink" href="#install-using-quickinstaller" title="Permalink to this headline">¶</a></h2>
+<p>RLCatalyst can be installed quickly using a chef-based installer. This installer will be available for installing on Centos, Ubuntu and Windows. The catalyst installer will install RLCatalyst and Open Source Chef. Basic seed data to start the application will also be taken care by the installer</p>
+<p>Please download the installer from <a class="reference external" href="https://github.com/RLOpenCatalyst/RLCatInstallers">https://github.com/RLOpenCatalyst/RLCatInstallers</a></p>
+<blockquote>
+<div><strong>How to Run the script</strong></div></blockquote>
+<ol class="arabic simple">
+<li>Move installer.sh into the folder in which you are installing RLCatalyst</li>
+<li>Run ./installer.sh</li>
+<li>If you have a Chef server, please skip the part to install Chef server.Once Catalyst is installed, go ahead and add your chef server details in Settings</li>
+<li>If you dont have a Chef server, please follow the instructions from the installer script</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Contributions.html" class="btn btn-neutral float-right" title="Code Contributions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="workzone.html" class="btn btn-neutral" title="Workzone" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Srikanth V.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'latest',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
