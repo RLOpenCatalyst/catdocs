@@ -1,18 +1,13 @@
 Code Contributions
 ==================
 
-**Code of Conduct** 
+**Contributor License Agreement**
 
-The Code of Conduct explains the bare minimum behavior expectations Relevance Lab requires of its contributors.
+If you are contributing to this repository you must agree the following :
 
-This project adheres to the [Open Code of Conduct][code-of-conduct]. By participating, you are expected to honor this code.
-[code-of-conduct]: http://todogroup.org/opencodeofconduct/#RLCatalyst/kaushik.mukherjee@relevancelab.com
+* The code I’m contributing is mine, and I have the right to license it.
 
-
-**Issue Contributions** 
-
-When opening new issues or commenting on existing issues please make sure discussions are related to concrete technical issues with the RLCatalyst software.
-  Discussion of non-technical topics including subjects like intellectual property, trademark and high level project questions should be directed to support@relevancelab.com
+* I’m granting you a license to distribute said code under the terms of this agreement (typically “as you see fit” or “under an OSI-approved license” or whatever).
 
 
 **Branching Strategy**
@@ -30,8 +25,10 @@ For contributions to RLCatalyst create a feature or hot fix branch and make chan
 
 *Step 1: Fork*
 
-$ git clone git@github.com:username/rlcat-core.git
-$ cd rlcatalyst
+$ git clone git@github.com:username/core.git
+
+$ cd core
+
 $ git remote add upstream git://github.com/RLOpenCatalyst/core.git
 
 *Step 2: Branch*
@@ -45,7 +42,9 @@ $ git checkout -b my-feature-branch -t origin/master
 Make sure git knows your name and email address:
 
 $ git config --global user.name "J. Random User"
+
 $ git config --global user.email "j.random.user@example.com"
+
 Writing good commit logs is important. A commit log should describe what changed and why. Follow these guidelines when writing one:
 
 The first line should be 50 characters or less and contain a short description of the change prefixed with the name of the changed subsystem (e.g. "net: add localAddress and localPort to Socket").
@@ -72,6 +71,7 @@ Check the output of git log --oneline files_that_you_changed to find out what su
 Use git rebase (not git merge) to sync your work from time to time.
 
 $ git fetch upstream
+
 $ git rebase upstream/master
 
 *Step 5: Tests*
@@ -93,7 +93,15 @@ Each Github pull request will go through 3 step before merge:
 
 3. Your patch will be merged into master including necessary documentation updates.
 
+4. After merge the feature branch will be deleted.
+
+**Release Strategy**
+
+Release from master branch will be tagged with release_<X.X>
+
+
 **Issue Contributions**
+When opening new issues or commenting on existing issues please make sure discussions are related to concrete technical issues with the RLCatalyst software
 
 RLCatalyst Issue Tracking is handled using Github Issues.
 
