@@ -49,11 +49,7 @@ Now Ensure pybot.bat is available in C:\Python27\Scripts folder.
  
 **NOTE:** For Chrome Browser you need to download the Chrome driver .exe and place it C:\Python27 folder.
  
- .. image:: /images/pyth.PNG
  
-
-
-
 
 
 * Download the code from Git::
