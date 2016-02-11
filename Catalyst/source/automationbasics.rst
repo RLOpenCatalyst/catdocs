@@ -35,7 +35,7 @@ Robot Framework which is a generic test automation framework and when combined w
    pip install robotframework
    pip install robotframework-selenium2library
 
-Now Ensure pybot.bat is available in C:\Python27\Scripts folder.
+Now Ensure **pybot.bat** is available in C:\Python27\Scripts folder.
 
 
 
