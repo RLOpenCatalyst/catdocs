@@ -15,6 +15,7 @@ The main documentation for the site is organized into a couple sections:
 * :ref:`user-docs`
 * :ref:`developer-docs`
 
+
 .. _about-docs:
 
 .. toctree::
@@ -45,6 +46,8 @@ The main documentation for the site is organized into a couple sections:
 
    install
    Contributions
+   automationbasics
 
 
-
+  
+   
