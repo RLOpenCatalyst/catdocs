@@ -24,7 +24,7 @@ Robot Framework which is a generic test automation framework and when combined w
  Select System variables > PATH > Edit and add e.g. ;C:\Python27;C:\Python27\Scripts at the end of the value.
  Exit the dialog with OK to save the changes. 
 
- Ensure pip is available in  C:\Python27\Scripts folder.
+ Ensure **pip** is available in  C:\Python27\Scripts folder.
 
 
 
@@ -35,7 +35,7 @@ Robot Framework which is a generic test automation framework and when combined w
    pip install robotframework
    pip install robotframework-selenium2library
 
-Now Ensure pybot.bat is available in C:\Python27\Scripts folder.
+Now Ensure **pybot.bat** is available in C:\Python27\Scripts folder.
 
 
 
