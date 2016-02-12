@@ -146,7 +146,7 @@ How to Import an Instance using IP?
 
  * Click **Import** to start importing the Instance.
 
- .. image:: /images/importbyIP.jpg
+ .. image:: /images/ImportbyIP.jpg
 
 
 
@@ -333,7 +333,7 @@ To add a Chef Server New Task
 
  * The task is added to the **Orchestration** list.
 
- .. image:: /images/orcList.JPG
+ .. image:: /images/orcList.jpg
 
 
 
