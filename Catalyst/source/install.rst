@@ -117,7 +117,7 @@ NOTE::
 
 Clone the repository to get the Catalyst code::
 
-    sudo git clone https://github.com/RLOpenCatalyst/D4D.git
+    sudo git clone https://github.com/RLOpenCatalyst/core
 
 
 
@@ -261,7 +261,7 @@ To Install git::
 To Install Catalyst and to create a db path folder::
 
     To pull the catalyst code
-    git clone https://github.com/RLOpenCatalyst/D4D.git
+    git clone https://github.com/RLOpenCatalyst/core
     Check the current directory for the presence of catalyst code i.e D4D folder.
     
     NOTE – Take the latest code from dev_catalyst.
