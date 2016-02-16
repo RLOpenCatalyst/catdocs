@@ -15,7 +15,8 @@ RL Catalyst Workzone is an option all the settings take action. Workzone has bel
 **Applications**: Here user can deploy new applications and deployed applications will be shown in card or table view will all details.
 
 
-How to Launch Instances?
+Launch New Instances
+^^^^^^^^^^^^^^^^^^^^
   Instances are launched from Blueprints. Follow below steps to launch Instances from blueprints.
 
   * Go to Workzone → Click on Infrastructure drop down → Choose Blueprints.
@@ -29,6 +30,24 @@ How to Launch Instances?
   * Go to Instances tab to view the launched instance.
 
   .. image:: /images/instances.JPG
+
+
+
+
+View Instances in Table View
+  RL Catalyst on the Instances page provides you two kinds of views.
+
+  * Grid View
+
+
+  * Table View
+
+
+You can click on the respective button to view the instances.
+
+ .. image:: /images/tableView.JPG
+
+
 
 
 Instance Actions:
@@ -51,7 +70,8 @@ Instance Actions:
 
 
 
-How to perform Chef Client Run action on launched instance?
+Update Configuration
+^^^^^^^^^^^^^^^^^^^^
   Any extra action on the running instance can be performed via the Chef client Run icon, which is displayed at the bottom left corner. Installing new software, upgrading a software etc can be performed using this icon. 
 
 Follow below steps to run chef client run.
@@ -79,7 +99,8 @@ Follow below steps to run chef client run.
 
 
 
-How to Perform SSH action on the Instance?
+Connect to the Instance
+^^^^^^^^^^^^^^^^^^^^^^^
   * Click on the SSH icon present on the instance.
   * Enter the Username of the Instance.
   * Select the authentication type by selecting password / pem file.
@@ -94,7 +115,18 @@ How to Perform SSH action on the Instance?
  
 
 
-How to Stop running instance from Catalyst?
+Start Instance
+^^^^^^^^^^^^^^
+ * Click on the **Start** icon of the stopped instance. 
+
+ * Instance will be started and turn to Green color. Chef Client , SSH button will be enabled.
+
+ .. image:: /images/startedInstance.JPG
+
+
+
+Stop Instance
+^^^^^^^^^^^^^
   * Click on the Stop icon present on the instance.
 
   * Click OK on confirmation popup.
@@ -113,17 +145,11 @@ How to Stop running instance from Catalyst?
 
 
 
-How to Start an Instance from Catalyst?
- * Click on the **Start** icon of the stopped instance. 
-
- * Instance will be started and turn to Green color. Chef Client , SSH button will be enabled.
-
- .. image:: /images/startedInstance.JPG
 
 
 
-
-How to Import an Instance using IP?
+Import By IP
+^^^^^^^^^^^^
  In the Instances page, you can import Instances using the Import By IP option, follow these steps to import.
 
  * Click on Import by IP icon.
@@ -161,7 +187,8 @@ How to Import an Instance using IP?
 
 
 
-How to launch Cloud Formation Blueprints?
+Cloud Formation Templates
+^^^^^^^^^^^^^^^^^^^^^^^^^
  Follow below steps to launch Cloud formation blueprints.
 
  * Go to Workzone → Click on Infrastructure dropdown → Select Blueprints option → Click on **'Cloud Formation'** template type.
@@ -197,7 +224,8 @@ How to launch Cloud Formation Blueprints?
 
 
 
-How to launch Docker blueprints?
+Docker Blueprints
+^^^^^^^^^^^^^^^^^
  Follow below steps to launch docker blueprints. 
 
  * Go to Workzone → Click on Infrastructure dropdown → Select Blueprints option → Click on **'Docker'** template type.
@@ -234,13 +262,15 @@ How to launch Docker blueprints?
 
 
 Control Panel
+^^^^^^^^^^^^^
  The **Control Panel** option displays the detailed information on the selected **Instance**	.  It displays information such as Blueprint Information , Hardware information, Software Information, Configuration Management, Additional Parameters, Services, Actions and Logs.
 
  .. image:: /images/controlPanel.JPG
 
 
 
-How to Inspect Software on the Instance?
+Inspect Software 
+^^^^^^^^^^^^^^^^
  Inspect functionality allows user to know the installed software on the Instance.
 
  * Go to Instance Control panel.
@@ -254,7 +284,8 @@ How to Inspect Software on the Instance?
 
 
 
-How to Convert to Workstation in Instance?
+Convert to Workstation
+^^^^^^^^^^^^^^^^^^^^^^
  * Go to Instance Control panel → Services tab.
 
  * Click on 'Convert To Workstation' button.
@@ -273,7 +304,8 @@ How to Convert to Workstation in Instance?
 
 
 
-How to View the Action History on Instance?
+View Action History
+^^^^^^^^^^^^^^^^^^^
  Action history feature allows user to view the history of the actions performed on the Instances with complete details.
 
  * Go to Instance Control panel.
@@ -287,29 +319,15 @@ How to View the Action History on Instance?
 
 
 
-How to View Instances in Table View?
- RL Catalyst on the Instances page provides you two kinds of views.
-
- * Grid View
-
-
- * Table View
-
-
-You can click on the respective button to view the instances.
-
- .. image:: /images/tableView.JPG
-
-
-
-
 
 
 Orchestration
+^^^^^^^^^^^^^
  Orchestration option allows you to execute one or more tasks/actions on multiple nodes. 
 
 
-To add a Chef Server New Task
+Chef Task
+^^^^^^^^^
  * To add a new task click on the **New** button.
 
  * Select the task type from the **Select Task Type** drop down list (Chef).
@@ -337,7 +355,8 @@ To add a Chef Server New Task
 
 
 
-To add a Jenkins New Task 
+Jenkins Task
+^^^^^^^^^^^^
  * To add a new task click on the **New** button.
 
  * Select the task type from the **Select Task Type** drop down list (Jenkins).
@@ -366,20 +385,21 @@ To add a Jenkins New Task
 
 
 
-How to Edit or Remove a Task?
- You can edit or remove a task. Follow the steps below.
+Edit or Remove a Task
+  You can edit or remove a task. Follow the steps below.
 
- * Click on Edit button to edit a task from the Orchestration list.
+  * Click on Edit button to edit a task from the Orchestration list.
 
 
  
- * Click on Delete button to remove a task from the Orchestration list.
+  * Click on Delete button to remove a task from the Orchestration list.
 
 
 
 
 
-How to Execute a Task (Chef and Jenkins)?
+Execute Task
+^^^^^^^^^^^^
  You can execute a task (Chef and Jenkins) by clicking Execute button in the list of tasks page.
 
  Once you execute the task, Execute logs window will pop-up shows the status of the execution.
@@ -387,7 +407,8 @@ How to Execute a Task (Chef and Jenkins)?
 
 
 
-How to view Task History?
+Task History
+^^^^^^^^^^^^
  You can view the task history by clicking the History button in the list of tasks page. Once you click on the history button, Task History window will pop-up and shows the history of the task.
 
  The following information is shown in the history of task:
@@ -407,6 +428,185 @@ How to view Task History?
 
 
  .. image:: /images/history.JPG
+
+
+
+
+
+
+
+
+
+
+Application Deployment
+^^^^^^^^^^^^^^^^^^^^^^
+
+* From the main menu click on Settings.
+
+* Once click on Settings, from the side menu click on Devops Setup.
+
+* Click Nexus Server.
+
+* Click on +New button provided.
+
+* On Create Nexus Configuration management page enter Nexus Server Name, Username, Password, Nexus Server URL and Select Organization.
+
+* Click on + icon present next to Nexus Group ID Details and enter valid Nexus GroupID.
+
+ .. image:: /images/nexusDetails.png
+
+
+* Click on Save button present in Add Nexus Group Details window.
+
+* Click on Save button  present in Nexus Configuration Management Page.
+
+* Now your Nexus Configuration is setup and listed in the Nexus Server Management Page.
+
+ .. image:: /images/nexusCreated.png
+
+
+
+
+Once Nexus Server is configured you have to associate Repository details to your Project. For this
+
+ * Go to Projects Page.
+
+ * Edit your Project. 
+
+ * Click + icon present next to Repository Details.
+
+ * Select your Repository Server and Repository Name.
+
+  .. image:: /images/repoDetails.png
+
+
+ * Click on Save button on Add Repository Details page.
+ 
+ * Click on Save button on Edit Project Page. 
+
+
+
+Once you associate repository details to your project now start creating blueprint. Follow the below steps
+
+* Go to Design.
+
+* Select Software Stack Template Type and click Next.
+
+* Select any Template and click Next.
+
+* Configure Provider Parameters by selecting all provider parameters.
+
+* Configure Organization Parameters by selecting.
+
+* Configure Runlist Parameters by adding **deploy_upgrade_catalyst** cookbook.
+ 
+ .. image:: /images/editRunlist.png
+
+
+* Click on Update Runlist.
+
+* Expand Configure Application.
+
+* Select **Deploy app during Bootstrap** checkbox.
+
+* On selecting checkbox all Repository details will autopopulate and the latest version will be always selected. [**Note:** If u select previous version also by default it will take latest version]
+
+ .. image:: /images/deployApp.png
+
+* Click on Next button.
+
+* Click OK button in Confirm popup window.
+
+* Blueprint Saved Successfully message is displayed.
+
+ .. image:: /images/saveBlueprint.png
+
+
+
+**Launching Blueprint**
+
+* Go to Workzone.
+
+* Click Infrastructure dropdown and Select Blueprints tab.
+
+* Expand Software Stack.
+
+* Select the Instance and Click on Launch button. 
+
+* Go to Instances tab and you can see node will be launched and wait until bootstrap is successfull.
+
+ .. image:: /images/launchedNode.png
+
+
+* Go to Applications tab.
+
+* You will see the Application details with Name, Version, IP Address of the node and Time.
+
+ .. image:: /images/appDeployment.png
+
+
+* Now copy the IP address where application is deployed and open new tab and paste IP address with port number. [Eg: 52.35.121.37:3001 ]
+
+ .. image:: /images/runCatalyst.png
+
+* Now Catalyst application is installed with the version 3.02.63 on the launched node. [See the version at bottom right corner of the window]
+
+
+Deploy New App
+  Now I will show you how to upgrade latest version of catalyst application on the same node.
+
+* Go to Applications tab.
+
+* Click on Deploy New App button.
+
+* Enter the Repository details by selecting latest version [ Here latest is 3.02.64].
+
+ .. image:: /images/newAppDeploy.png
+
+
+* Click on Create New Job button.
+
+* Enter the Job name
+
+* Select the Node on which you are going to upgrade latest version.
+
+* Add the cookbook **deploy_upgrade_catalyst** to the runlist.
+
+ .. image:: /images/newJenkinsJob.png
+
+
+* Click on Save button.
+
+* Click OK button on Task Success popup window.
+
+* Click on Jobs dropdown.
+
+* Select the Job which is created in previous step. 
+
+ .. image:: /images/selectJenkinsJob.png
+
+
+* Click on Deploy button.
+
+* Click OK button on Confirmation popup window.
+
+* Execute Logs window will open and wait until Task execution is successful.
+
+ .. image:: /images/executeLogs.png
+
+* Close Execute Logs window.
+
+* Now you can see Applcation card is displayed with Application details with Name, Version [3.02.64], IP address of the node and Time.
+
+ .. image:: /images/applicationsTab.png
+
+
+* Now copy the Ip Address where application is deployed and open new tab and paste Ip Address with port number. [Eg: 52.35.121.37:3001 ] and verify the latest version [3.02.64] of the application is deployed on the node in right bottom corner of the window.
+
+ .. image:: /images/onNode.png
+
+
+
 
 
 
