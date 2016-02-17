@@ -1,7 +1,7 @@
 Settings
 =========
 
-Settings option is one of the most basic option in RL Catalyst. You can use the system only if you provide all the relevant options provided in the Settings.
+Settings option is one of the most basic option and allows you to setup all the requirements before using RL Catalyst. You can use the system only if you provide all the relevant options provided in the Settings.
 
 
 Settings provides you six different options:
@@ -41,3 +41,11 @@ Settings provides you six different options:
    :maxdepth: 2
 
    trackSetup
+
+
+.. _userinfo-setup:
+
+.. toctree::
+   :maxdepth: 2
+
+   userinformation
