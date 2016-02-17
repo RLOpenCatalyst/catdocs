@@ -6,7 +6,7 @@
 Organization Setup
 ^^^^^^^^^^^^^^^^^^
 
-To start using RL Catalyst, the first step is to setup an organization. While you setup an organization in RL Catalyst, you should also set up the Business Groups and Projects.
+To start using RL Catalyst, the first step is to setup an organization. While you setup an organization in RLCatalyst, you should also set up the Business Groups and Projects under the organization . An organization can have multiple Business Groups and each Business Group can have multiple Projects	
 
 
 .. _organization-setup:

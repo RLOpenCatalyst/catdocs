@@ -36,7 +36,7 @@ To Remove the Organization
 
 **Activate or Inactivate an Organization**
 
-You can activate or inactivate an Organization by using the cursor button provided.  Remember, once you inactivate the organization all the entries relating to that organization will be disabled.
+You can activate or inactivate an Organization by using the cursor button provided.  Remember, once you inactivate the organization all the entities relating to that organization will be disabled. You can enable the organization at any time. which will activate all the entities associated with that organization
 
  .. image:: /images/editOrg.png
 
@@ -46,7 +46,7 @@ Business Groups
 ^^^^^^^^^^^^^^^
 **Setup Business Groups for an Organization**
 
-In an Organization you can create multiple Business Groups.
+In an Organization you can create multiple Business Groups. A Business Groups can be a business division in your organization
 
 **Follow the steps below to create a new Business Group in an Organization**
 
@@ -84,9 +84,9 @@ Projects
 
 **Setup Projects for a Business Group**
 
-In a Business Group you can create multiple Projects.
+In a Business Group you can create multiple Projects. A Project in RLCatalyst can be a running project in your business group
 
-**Follow the steps below to create a new Project assoicating with Business Group and Organization**
+**Follow the steps below to create a new Project associating with Business Group and Organization**
 
  * From the main menu click on Settings
  * Once you click on Settings, from the side menu click on Organization Setup
@@ -115,7 +115,7 @@ To Remove the Project
 
 
 
-Hereby attaching a video which will demonstrate as in how to Setup an Organization:
+The following video will help you to setup an Organization:
 
 
 .. raw:: html
@@ -124,6 +124,7 @@ Hereby attaching a video which will demonstrate as in how to Setup an Organizati
 	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
         <iframe src="https://www.youtube.com/embed/-xt_FLAky74" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
+
 
 
 
@@ -141,7 +142,20 @@ A policy file allows you to specify in a single document the cookbook revisions 
 A data bag is a global variable that is stored as JSON data and is accessible from a Chef server.
 
 
-RL Catalyst allows you to configure your chef server. You can configure only one chef server for one organization. The same chef server cannot be associated to multiple organizations. 
+RLCatalyst allows you to configure your own chef server. You can add either a hosted chef server or an on-premise installation of chefserver. If you dont have either of these, please create an account at https://getchef.opscode.com/signup . For more details on chef, please go to :doc:`Chef Setup <chefsetup>` . 
+
+In RLCatalyst only one chef server can be configured for one organization. The same chef server cannot be associated to multiple organizations. Each chef server account will have a URL(Hosted/On-Premise), a User pem file, a Validator pem file and a knife file . You will get all these files when you create accounts in Chef.
+
+Data/File needed for adding a Chef Server account in RLCatalyst
+Name : Alias or name of the chef server , to be identified in RLCatalyst
+User Name : User name of your chef server account
+URL : URL of the hosted or on-premise chef server
+User Pem File : User file to access your Chef Server account
+Knife.rb : Configuration file that you get while setting up the Chef server
+Validator Pem File :
+Key File :
+Template File :
+
 To configure a new chef server follow the steps below:
 
  * From the main menu click on Settings
@@ -179,7 +193,7 @@ To Edit the Chefserver
 To Remove the Chefserver
  * Click on delete button to remove chef server configuration from the list
 
-**Hereby attaching a video which will demonstrate as in how to Setup a Chef Server**:
+**Following video demonstrates how to configure a chef server in RLCatalyst**:
 
 
 .. raw:: html
@@ -193,10 +207,10 @@ To Remove the Chefserver
 
 **Import nodes from Chef Server**
 
-You can import existing nodes from the configured chef server into catalyst by selecting the required Business Group and Project. These imported nodes can be operated from the Workzone.
+You can import existing nodes from the configured chef server into RLCatalyst by selecting the required Business Group and Project. These imported nodes can be operated from the Workzone.
 
  * To import the existing nodes click on import button  
- * Select the environment from Environment drop down list for the node to be imported
+ * Select the environment from Environment drop down list for the node to be imported . These are the environments available in your Chef account
  * Select the respective checkbox in the Action column
 
  .. image:: /images/chefImport.JPG
@@ -205,7 +219,7 @@ You can import existing nodes from the configured chef server into catalyst by s
  * Select the business group from Business Group drop down list
  * Select the project from the Project drop down list
  * Enter the user name to access the chef server for import in the User Name field 
- * Choose authentication type from the Choose Authentication Type drop down list. RL Catalyst provides two types of authentication, you can either choose Password or by uploading the PEM file
+ * Choose authentication type from the Choose Authentication Type drop down list. RLCatalyst provides two types of authentication, you can either choose Password or by uploading the PEM file
  * Type Password or upload PEM file
  * Click on Import button
  * Close the popup containing the success message 'Node imported'
@@ -262,7 +276,7 @@ You can import existing nodes from the configured chef server into catalyst by s
 Setup Environments
 ^^^^^^^^^^^^^^^^^^
 
-In an Organization you can create multiple Environments. For example: Production, Development, Testing and so on. 
+In an Organization you can create multiple Environments. These environments need to be linked to Projects back. For example: Production, Development, Testing and so on. 
 
 Follow the steps to setup a new Environment in an Organization:
 
