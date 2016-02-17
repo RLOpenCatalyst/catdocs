@@ -4,7 +4,7 @@ Track Setup
 The Track Setup option in RL Catalyst provides you to add new dashboard items of type Provider, Monitoring, Logs and Notification options. 
 
 
-**Adding New Dashboard Items in Track setup.**
+**Adding New Dashboard Items in Track setup**
 
 * From the main menu click on Settings
 
@@ -22,13 +22,13 @@ The Track Setup option in RL Catalyst provides you to add new dashboard items of
 
 
 
-* Click on Save button. Now you can see the added item in the table.
+* Click on Save button. Now you can see the added item in the table
  
  .. image:: /images/DashboardItemTable.JPG
 
 
 
-* Now Click on Track link available at the top and you will be able to see the Type **Monitoring** and the Name of the Dashboard **SystemMonitoring** in left side of the tree.
+* Now Click on Track link available at the top and you will be able to see the Type **Monitoring** and the Name of the Dashboard **SystemMonitoring** in left side of the tree
 
  .. image:: /images/DashboardinTree.jpg
 

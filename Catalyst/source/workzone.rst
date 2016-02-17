@@ -129,9 +129,9 @@ Follow below steps to connect to Instance:
 
 Start Instance
 ^^^^^^^^^^^^^^
-Follow below steps to start the Instance:
+Catalyst allows you to start the instance which is already stopped. 
 
-Catalyst allows you to start the instatnce which is already stopped. 
+Follow below steps to start the Instance:
 
  * Click on the **Start** icon of the stopped instance
 
@@ -143,9 +143,9 @@ Catalyst allows you to start the instatnce which is already stopped.
 
 Stop Instance
 ^^^^^^^^^^^^^
-Follow below steps to stop the Instance:
+Catalyst allows you to stop the instance which is already Running.
 
-Catalyst allows you to stop the instatnce which is already Running.
+Follow below steps to stop the Instance:
 
   * Click on the Stop icon present on the instance
 
@@ -290,8 +290,8 @@ Control Panel
 
 
 
-Inspect Software 
-^^^^^^^^^^^^^^^^
+**Inspect Software**
+
  Inspect functionality allows user to know the installed software on the Instance.
 
  * Go to Instance Control panel
@@ -305,8 +305,8 @@ Inspect Software
 
 
 
-Convert to Workstation
-^^^^^^^^^^^^^^^^^^^^^^
+**Convert to Workstation**
+
  * Go to Instance Control panel → Services tab
 
  * Click on 'Convert To Workstation' button
@@ -325,8 +325,8 @@ Convert to Workstation
 
 
 
-View Action History
-^^^^^^^^^^^^^^^^^^^
+**View Action History**
+
  Action history feature allows user to view the history of the actions performed on the Instances with complete details.
 
  * Go to Instance Control panel
