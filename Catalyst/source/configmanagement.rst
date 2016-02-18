@@ -186,23 +186,72 @@ You can configure multiple cloud provider accounts  of type AWS, AZURE, OPEN STA
  * Click on New button provided 
  * Select the provider from the Provider Type drop down list (e.g. AWS)
  * Enter the name of the provider in the name field
+
  * To add AWS Provider Account
 
  	* Provide the access key  in the Access Key field 	
  	* Provide the secret key in the Secret Key field
+ 	* Select the organization from the Organization drop down list
+ 	* Select the region from the Region drop down list where your provider is located
+ 	* Select the key pair for the provider from the Key Pair drop down list
+ 	* Upload the .pem file for Provider
+    
+ 
+     .. image:: /images/createProvider.JPG
+
+    
+    * Click on Save button
+
+    * Now Provider is successfully configured to RLCatalyst
+
+
  * To add Azure Provider Account
+
+    * Provide the Subscription ID
+    * Provide the Client ID
+    * Provide the Client Secret Key
+    * Provide the Tenant ID
+    * Upload the Pem file
+    * Upload the private Key file
+    * Select the organization from the Organization drop down list
+    * Click on Save button
+    * Now Provider is successfully configured to RLCatalyst
+
+  
+
+
  * To add OpenStack Provider Account
+ 
+    * Provide the Username
+    * Provide the password
+    * Provide the Host
+    * Provide the Project name
+    * Provide the Tenant ID
+    * Provide the Tenant Name
+    * Provide the Compute Service Endpoint
+    * Provide the Identity Service Endpoint
+    * Provide the Network Service Endpoint
+    * Provide the Image Service Endpoint
+    * Provide the Instance key Name
+    * Upload the pem file for Instance
+    * Select the organization from the Organization drop down list
+    * Click on Save button
+    * Now Provider is successfully configured to RLCatalyst
+
+
+
  * To add VMWare Provider Account
- * Select the organization from the Organization drop down list 
- * Select the region from the Region drop down list where your provider is located
- * Select the key pair for the provider from the Key Pair drop down list
- * Upload the .pem file for Provider
+ 
+    * Provide the Username
+    * Provide the password
+    * Provide the Host
+    * Enter the DC
+    * Select the organization from the Organization drop down list
+    * Click on Save button
+    * Now Provider is successfully configured to RLCatalyst
+ 
 
- .. image:: /images/createProvider.JPG
-
- * Click on Save button
- * Now Provider is successfully configured to RLCatalyst
-
+ 
 
 **Hereby attaching a video which will demonstrate as in how to Create Providers**:
 
