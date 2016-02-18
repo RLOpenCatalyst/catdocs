@@ -462,6 +462,17 @@ Edit or Remove a Task
 Application Deployment
 ^^^^^^^^^^^^^^^^^^^^^^
 
+RLCatalyst makes your application deployments easy through its Orchestration feature. The artifacts or the build files can be sourced from Nexus or Docker repositories and you can deploy into single or multiple instances. The deployments happens through Jenkins or Chef based tasks , that can be configured from RLCatalyst. 
+
+Prerequisites: 
+
+1. A repository (Nexus/Docker) should be added from Settings 
+2. Repository should be attached to one or more projects. 
+3. There should be connectivity between the repository, the target instances and the RLCatalyst instance
+4. There should be to & fro connectivity between RLCatalyst and the target instance
+
+If you have not added a repository in Settings, follow the instructions at :ref:`configure-nexus`.
+
 * From the main menu click on Settings
 
 * Once click on Settings, from the side menu click on Devops Setup

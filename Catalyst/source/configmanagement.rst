@@ -63,6 +63,7 @@ You can import existing nodes from the configured puppet server into RLCatalyst 
 
 *****
 
+.. _configure-nexus:
 
 Nexus Server
 ^^^^^^^^^^^^
