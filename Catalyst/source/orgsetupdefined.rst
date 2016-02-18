@@ -292,17 +292,18 @@ Follow the steps to setup a new Environment in an Organization:
  * From the main menu click on Settings
  * Once you click on Settings, from the side menu click on Devops Setup
  * Click on Environments
- * Click on New button provided 
+ * Click on New button provided
  * Select the Organization from the Organization drop down list
  * Select the server from the Chef Server drop down list
- * Click Add link to add new environment to the chef server
+ * You can select the already available Environments from Select an Chef Environment drop down list or you can Add new Environments to chef server by clicking on **Add** link provided
+ * Now Enter the Environment name to be created
 
  .. image:: /images/addNewEnv.JPG
 
 *****
 
  * Click on Add button
- * Select the environment from the Environment drop down list
+ * Now select the environment you added to the chef server from the Chef Environment drop down list
 
  .. image:: /images/createEnv.JPG
 

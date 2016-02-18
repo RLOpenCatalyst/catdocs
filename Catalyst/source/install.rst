@@ -26,16 +26,16 @@ RLCatalyst is currently supported on
 
    installubuntu
 
-.. _for-chefdocs:
-
-.. toctree::
-   :maxdepth: 2
-
-   chef
-
 .. _for-quickinstaller:
 
 .. toctree::
    :maxdepth: 2
 
    quickinstaller
+
+.. _for-chefdocs:
+
+.. toctree::
+   :maxdepth: 2
+
+   chef
