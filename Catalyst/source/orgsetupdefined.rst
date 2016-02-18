@@ -175,6 +175,8 @@ To configure a new chef server follow the steps below:
 
  .. image:: /images/createChefServer.JPG
 
+*****
+
 
  * Click on Save button 
  * Now your chef server is configured successfully and listed in the Chef server management page.
@@ -215,6 +217,8 @@ You can import existing nodes from the configured chef server into RLCatalyst by
 
  .. image:: /images/chefImport.JPG
 
+*****
+
  * Click on the Import Nodes button 
  * Select the business group from Business Group drop down list
  * Select the project from the Project drop down list
@@ -253,17 +257,22 @@ You can import existing nodes from the configured chef server into RLCatalyst by
 
  .. image:: /images/databag.JPG
 
+*****
 
  * Enter the name of the Databag in the Name field
 
 
  .. image:: /images/createDatabag.JPG
 
+*****
+
  * Click on Save button
  * Select the Created Databag and create an item by clicking + icon above the 'Items for -Databagname' column header
  * Enter the ID and Item body
 
  .. image:: /images/createDatabagItem.JPG
+
+*****
 
  * Select the checkbox Do you want to Encrypt
  * Click on Save button
@@ -290,16 +299,22 @@ Follow the steps to setup a new Environment in an Organization:
 
  .. image:: /images/addNewEnv.JPG
 
+*****
+
  * Click on Add button
  * Select the environment from the Environment drop down list
 
  .. image:: /images/createEnv.JPG
+
+*****
 
  * Assign the project by toggling to 'Yes'
  * Click on Save button.
  * Now the environment is setup and listed in the Environments page
 
  .. image:: /images/envList.JPG
+ 
+*****
 
 
 **Hereby attaching a video which will demonstrate as in how to Create Environment**:

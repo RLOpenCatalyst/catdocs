@@ -5,7 +5,8 @@ Puppet Server
 ^^^^^^^^^^^^^
 
 
-Catalyst allows you to configure your Puppet server. You can configure only one puppet server for one organization. Same puppet server cannot be associated to multiple organizations. 
+If you are using Puppet for your configuration management requirements, configure it in RLCatalyst. You can configure only one puppet server for one organization. Same puppet server cannot be associated with multiple organizations. 
+
 To configure a new puppet server follow the steps below:
 
  * From the main menu click on Settings
@@ -31,7 +32,7 @@ To configure a new puppet server follow the steps below:
 
 **Import nodes from Puppet Server**
 
-You can import existing nodes from the configured puppet server into catalyst by selecting the required Business Group and Project. These imported nodes can be operated from the Workzone.
+You can import existing nodes from the configured puppet server into RLCatalyst by selecting the required Business Group and Project. These imported nodes can be operated from the Workzone.
 
  * To import the existing nodes click on Import button
  * Select the node and the respective Environment for the dropdown 
@@ -41,7 +42,7 @@ You can import existing nodes from the configured puppet server into catalyst by
  * Select the business group from Business Group drop down list
  * Select the project from the Project drop down list
  * Enter the user name to access server for import in the User Name box 
- * Choose authentication type from the Choose Authentication Type drop down list. RL Catalyst provide two types of authentication, you can either choose Password or by uploading the PEM file
+ * Choose authentication type from the Choose Authentication Type drop down list. RLCatalyst provide two types of authentication, you can either choose Password or by uploading the PEM file
  * Type Password or upload PEM file 
  * Click on Import button
  * Close the popup containing the success message 'Node imported'
@@ -65,6 +66,7 @@ You can import existing nodes from the configured puppet server into catalyst by
 
 Nexus Server
 ^^^^^^^^^^^^
+RLCatalyst works with different repositories where you have kept your artifacts . If you have a nexus repository, add it here
 
 To configure a new Nexus server follow the steps below:
 
@@ -105,7 +107,7 @@ To configure a new Nexus server follow the steps below:
 Configure Docker
 ^^^^^^^^^^^^^^^^
 
-You can configure the Docker setup with RL Catalyst. To configure the Docker setup follow the steps below:
+You can configure the Docker setup with RLCatalyst. To configure the Docker setup follow the steps below:
 
  * From the main menu click on Settings
  * Once you click on Settings, from the side menu click on Devops Setup
@@ -140,22 +142,22 @@ Configure Jenkins
 ^^^^^^^^^^^^^^^^^
 
 
-You can configure the Jenkins setup with RL Catalyst.To configure the Jenkins setup follow the steps below:
+Jenkins is CI/CD tool which can be used for build and deployment automation. You can configure the Jenkins setup with RLCatalyst.To configure the Jenkins setup follow the steps below:
 
  * From the main menu click on Settings
- * Once you click on Settings, from the side menu click on Devops Setup
+ * Once you click on Settings, from the side menu click on DevOps Setup
  * Click on Jenkins
  * Click on New button provided 
- * Select the Organization from the Organization drop down list
+ * Select the Organization to which the Jenkins server will be attached to
  * Enter the name in the Name field
- * Enter the URL in the Jenkins URL field provided 
+ * Enter the Jenkins Server URL
  * Enter the user ID in the User ID field
  * Enter the Jenkins password in the Password field
 
  .. image:: /images/createJenkins.JPG
 
  * Click Save button
- * Now Jenkins is successfully configured to RL Catalyst
+ * Now Jenkins is successfully configured to RLCatalyst
 
 
 **Hereby attaching a video which will demonstrate as in how to Create Jenkins**:
@@ -171,10 +173,10 @@ You can configure the Jenkins setup with RL Catalyst.To configure the Jenkins se
 
 *****
 
-Providers in RL Catalyst
+Providers in RLCatalyst
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can configure multiple Providers of type AWS, AZURE, OPEN STACK and VMWARE within RL Catalyst.To configure the Proivders setup follow the steps below:
+You can configure multiple cloud provider accounts  of type AWS, AZURE, OPEN STACK and VMWARE within RLCatalyst.To configure the Providers setup follow the steps below:
 
  * From the main menu click on Settings
  * Once you click on Settings, from the side menu click on Devops Setup
@@ -182,8 +184,13 @@ You can configure multiple Providers of type AWS, AZURE, OPEN STACK and VMWARE w
  * Click on New button provided 
  * Select the provider from the Provider Type drop down list (e.g. AWS)
  * Enter the name of the provider in the name field
- * Provide the access key  in the Access Key field 	
- * Provide the secret key in the Secret Key field
+ * To add AWS Provider Account
+
+ 	* Provide the access key  in the Access Key field 	
+ 	* Provide the secret key in the Secret Key field
+ * To add Azure Provider Account
+ * To add OpenStack Provider Account
+ * To add VMWare Provider Account
  * Select the organization from the Organization drop down list 
  * Select the region from the Region drop down list where your provider is located
  * Select the key pair for the provider from the Key Pair drop down list
@@ -192,7 +199,7 @@ You can configure multiple Providers of type AWS, AZURE, OPEN STACK and VMWARE w
  .. image:: /images/createProvider.JPG
 
  * Click on Save button
- * Now Provider is successfully configured to RL Catalyst
+ * Now Provider is successfully configured to RLCatalyst
 
 
 **Hereby attaching a video which will demonstrate as in how to Create Providers**:
