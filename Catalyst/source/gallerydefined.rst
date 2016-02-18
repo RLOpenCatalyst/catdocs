@@ -119,32 +119,79 @@ VM Images
 Service Command
 ^^^^^^^^^^^^^^^
 
-**How to add a new Service Command**
+**Adding a new Service Command**
 
  * From the main menu click on Settings
+
  * Once click on Settings, from the side menu click on Gallery Setup
- * Click Service Command
- * Click on +New button provided 
- * Enter a name for the service in the Name box
- * Choose the Service Command Type from the drop down list. You can service between a Chef Cookbook /Recepie or system Service Command
- * If you choose Chef Cookbook /Recepie command
-    a. Select the server from the Chef Server drop down list
-    b. Select the Cookbooks from the Service Cookbooks drop down list
-    c. Select the action that’s needs to be run on the service. You can use the default or packages option to run the service. (Start, Stop, Restart and Status are the options provided for running the service)
 
-    a. Select the operating system from the Choose Operating System drop down list
-    b. Enter the command in the Command box, for e.g. Apache
-    c. Select the action that’s needs to be run on the service. (Start, Stop, Restart and Status are the options provided for running the service).
+ * Click on Service Command
+
+ * Click on New button provided 
+
+ * On Create Services page Select Organization, Enter Name, Choose Service Command Type as Chef Cookbook/Recipe , Select Chef Server, Service cookbooks as 'service_apache'.
+
+ * Select the Actions.
+
+ .. image:: /images/createService.png
+
+
+ * Click on Save button
+
+ * Now your Service Command is setup and listed in the Services Page
  
- * Click Save button
- * Now the Service Command is added to the Services list.
+ .. image:: /images/services.png
 
-*****
 
-**How to Edit or Remove a Service**
 
-You can edit or remove a Service. Follow the steps below.
+**Go to Workzone and Launch or Import a Node**
+
+ .. image:: /images/nodeApache.png
+
+
+ * Click on Chef Client run icon , add Apache2 cookbook to the runlist and click Update button. Wait until chefclient is success.
+
+ .. image:: /images/updateRunlist.png 
+
+ * When apache2 cookbook run successfully by default service will be running.Click on SSH icon and execute **sudo service apache2 status** command and verify apache2 is running.
+
+ .. image:: /images/sshTerminal.png 
+
+
+ * Close the SSH window
+  
+ * Go to Instance control panel
+
+ * Go to Services tab and add the apache service and click on Save button
+
+ .. image:: /images/addService.png
+
+
+ * Service is added to the Instance and Start,Stop and Restart buttons will be shown
+
+ .. image:: /images/controPanel.png
+
+ * Click on Stop button (Red color) and wait until it succeeds
+
+ * Click on SSH icon
+
+ * Execute command **sudo service apache2** status and verify apache2 is not running
+
+ .. image:: /images/serviceStatus.png
+
+
+
+
+
+
  
- * Click on edit button to edit a service from the Services list
- * Click on delete button to remove a service from the Services list
+
+
+
+
+
+ 
+
+
+
 
