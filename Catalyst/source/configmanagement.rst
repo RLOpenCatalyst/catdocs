@@ -80,12 +80,13 @@ To configure a new Nexus server follow the steps below:
  * Enter nexus server password in the Password field
  * Enter nexus server URL in the Nexus Server URL field
  * Choose the organization from the Organization drop down list
- * Enter Nexus group ID Details by clicking on the + button and Save
+ * Click on + icon present next to Nexus Group ID Details and enter valid Nexus GroupID and save
+
+ .. image:: /images/nexusDetails.png
 
 
- .. image:: /images/createNexus.JPG
 
- * Click on Save button.
+ * Click on Save button
  * Now the Nexus server setup is ready and listed in the Nexus Server page
 
  .. image:: /images/nexusList.JPG

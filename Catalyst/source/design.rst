@@ -14,6 +14,8 @@ Each blueprint stores the metadata of the instance, variables, actions and activ
 
  * From the Template cards choose template and click Next
 
+ **NOTE -** If you have not created a template of Software Stack template type in Settings, follow the instructions at :ref:`configure-softwarestack`.
+
  .. image:: /images/templateList.JPG
 
  * Once you choose the Template, Enter the details for creating the BluePrint
@@ -55,6 +57,7 @@ Each blueprint stores the metadata of the instance, variables, actions and activ
 
 *****
 
+
 **Creating BluePrints for Docker Template Type**
 
  * From the Design page choose a Docker Template Type and click Next
@@ -62,6 +65,9 @@ Each blueprint stores the metadata of the instance, variables, actions and activ
  .. image:: /images/dockerTT.JPG
 
  * Choose the available Template and click Next
+
+
+ **NOTE -** If you have not created a template of Docker template type in Settings, follow the instructions at :ref:`configure-softwarestack`.
 
  .. image:: /images/dockerTempleteList.JPG
 
@@ -74,17 +80,18 @@ Each blueprint stores the metadata of the instance, variables, actions and activ
 
  * Click on Launch Parameters icon
 
-	a. Enter Container Name
-	b. Enter Port mappings
-	c. Enter Volumes
-	d. Enter Volumes-from
-	e. Enter Linked Container name
-	f. Enter Environment variables
-	g. Enter Start up Command
-	h. Enter Additional StartUp command
-	I. Click on Add button
+  a. Enter Container Name
+  b. Enter Port mappings
+  c. Enter Volumes
+  d. Enter Volumes-from
+  e. Enter Linked Container name
+  f. Enter Environment variables
+  g. Enter Start up Command
+  h. Enter Additional StartUp command
+  i. Click on Add button
+    
+   .. image:: /images/dockerPopup.JPG
 
- .. image:: /images/dockerPopup.JPG
 
  * Click Next button 
  * Click OK in confirmation popup
@@ -101,6 +108,8 @@ Each blueprint stores the metadata of the instance, variables, actions and activ
  .. image:: /images/cftTemplateType.JPG
 
  * Choose the available Template and click Next
+
+ **NOTE -** If you have not created a template of Cloud formation template type in Settings, follow the instructions at :ref:`configure-softwarestack`.
 
  .. image:: /images/cftTemplateList.JPG
 

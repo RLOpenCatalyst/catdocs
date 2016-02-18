@@ -100,7 +100,7 @@ In a Business Group you can create multiple Projects. A Project in RLCatalyst ca
 
  .. image:: /images/createProj.JPG
 
- * Click Save button
+ * Click on Save button
 
  .. image:: /images/projectList.JPG
 
@@ -166,9 +166,9 @@ To configure a new chef server follow the steps below:
  * Enter the Chef user name in User Name field
  * Provide or specify the Chef URL for the server to be configured
  * Choose the organization from the Organization drop down list
- * Upload the user PEM file provided by the Chef Server in the User PEM File box
- * Upload the validator PEM file provided by the Chef Server in the Validator PEM File box
- * Upload the Knife.rb file provided by the Chef Server in the Knife.rb File box
+ * Upload the user PEM file provided by the Chef Server in the User PEM File field
+ * Upload the validator PEM file provided by the Chef Server in the Validator PEM File field
+ * Upload the Knife.rb file provided by the Chef Server in the Knife.rb File field
  * Upload the key file which is used for Databag
  * Upload the Template file which is used to Bootstrap node
 

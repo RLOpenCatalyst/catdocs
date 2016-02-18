@@ -1,7 +1,7 @@
 
 
 
-
+.. _configure-softwarestack:
 
 Templates
 ^^^^^^^^^
@@ -24,6 +24,9 @@ Templates
  * Now new template is added and available in the Templates list
 
 *****
+
+
+.. _configure-docker:
 
 **Adding a New Template For Docker Template Type**
 

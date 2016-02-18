@@ -473,31 +473,6 @@ Prerequisites:
 
 If you have not added a repository in Settings, follow the instructions at :ref:`configure-nexus`.
 
-* From the main menu click on Settings
-
-* Once click on Settings, from the side menu click on Devops Setup
-
-* Click Nexus Server
-
-* Click on +New button provided
-
-* On Create Nexus Configuration management page enter Nexus Server Name, Username, Password, Nexus Server URL and Select Organization
-
-* Click on + icon present next to Nexus Group ID Details and enter valid Nexus GroupID
-
- .. image:: /images/nexusDetails.png
-
-
-* Click on Save button present in Add Nexus Group Details window
-
-* Click on Save button  present in Nexus Configuration Management Page.
-
-* Now your Nexus Configuration is setup and listed in the Nexus Server Management Page
-
- .. image:: /images/nexusCreated.png
-
-
-
 
 Once Nexus Server is configured you have to associate Repository details to your Project. Follow the below steps:
 
@@ -505,7 +480,7 @@ Once Nexus Server is configured you have to associate Repository details to your
 
  * Edit your Project
 
- * Click + icon present next to Repository Details
+ * Click on + icon present next to Repository Details
 
  * Select your Repository Server and Repository Name
 

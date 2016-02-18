@@ -51,10 +51,10 @@ To Install Nodejs version 4.x::
      sudo apt-get install -y nodejs
 
 
-Check the version of node after installation.It should be 4.2.x ::
+Check the version of node after installation.It should be 4.2.2 ::
 
     node -v
-    v4.2.x
+    v4.2.2
 
 
 Check the version of npm ::
@@ -82,8 +82,8 @@ Install Git(1.9.x) ::
 
 NOTE::
 
-    Node Version - 4.2.x
-    npm version - 3.4.x
+    Node Version - 4.2.2
+    npm version - 3.6.x
     monogo version - 3.2.x
 
 
@@ -287,16 +287,3 @@ Access Catalyst::
 
 
 
-
-Install Using QuickInstaller  
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-RLCatalyst can be installed quickly using a chef-based installer. This installer will be available for installing on Centos, Ubuntu and Windows. The catalyst installer will install RLCatalyst and Open Source Chef. Basic seed data to start the application will also be taken care by the installer
-
-Please download the installer from https://github.com/RLOpenCatalyst/RLCatInstallers
-
- **How to Run the script**
-
-1. Move installer.sh into the folder in which you are installing RLCatalyst
-2. Run ./installer.sh
-3. If you have a Chef server, please skip the part to install Chef server.Once Catalyst is installed, go ahead and add your chef server details in Settings
-4. If you dont have a Chef server, please follow the instructions from the installer script
