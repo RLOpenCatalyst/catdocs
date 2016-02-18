@@ -1,12 +1,12 @@
-Introduction - Catalyst
+Introduction - RLCatalyst
 =======================
 
-**RL Catalyst provides four main menu options** -
+**RL Catalyst has four main menu options** -
 
-* Settings : This options allows you to setup all the requirements before using RL Catalyst.
-* Design: This option allows you to design the configuration for your product development and testing environment.
-* Workzone: This option allows you to maintain, monitor and control your product development environment.
-* Help: This options provides you online help on RL Catalyst
+* :doc:`Settings <settings>` : Create the Organization Blueprints and manage DevOps assets across data center and cloud 
+* :doc:`Design <design>` : Design re-usable templates and blueprints which are used to automate your various DevOps requirements
+* :doc:`Workzone <workzone>` : Manage and Control all your assets from Workzone. This is the execution zone in RLCatalyst
+* :doc:`Track <track>` : Gives dashboards on Infrastructure Cost and Usage. CI/CD metrics and Monitoring dashboards will be part of Enterprise and PAAS versions
 
 
 

@@ -1,7 +1,7 @@
 Settings
 =========
 
-Settings option is one of the most basic option and allows you to setup all the requirements before using RL Catalyst. You can use the system only if you provide all the relevant options provided in the Settings.
+All your organization and asset details in Settings before using RLCatalyst. You can use the system only if you provide all the relevant options provided in the Settings. 
 
 
 Settings provides you six different options:
