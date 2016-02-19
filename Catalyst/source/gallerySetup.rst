@@ -1,7 +1,9 @@
 Gallery Setup
 ^^^^^^^^^^^^^
 
-**The Gallery Setup option in RL Catalyst provides you two options**:
+**The Gallery Setup option in RL Catalyst provides you four options**:
+
+ * Template Types: RL Catalyst supports the following template types **ARMTemplate, CloudFormation, Docker, OSImage, SoftwareStack**. You can create various templates using these template types.
 
  * Templates:  You can create different templates in RL Catalyst for all supported Cookbooks. You can also add new templates for newly added Cookbooks. To know more on what is a Cookbook please click: http://docs.chef.io/cookbooks.html
 
@@ -17,3 +19,4 @@ Gallery Setup
    :maxdepth: 2
 
    gallerydefined
+

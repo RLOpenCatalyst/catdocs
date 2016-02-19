@@ -41,10 +41,10 @@ Launch New Instances
 View Instances in Table View
   RL Catalyst on the Instances page provides you two kinds of views.
 
-  * Grid View
+  * Grid View[Above Image]
 
 
-  * Table View
+  * Table View[Below Image]
 
 
 You can click on the respective button to view the instances.

@@ -9,8 +9,8 @@ Few of the highlights of Catalyst are:
  * It gives realtime-dashboard and alerts-based monitoring and remediation of cost, usage , health and performance of all IT assets
  * Powered by Chef and integrated with Docker
 
- RLCatalyst DevOps Platform
- ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RLCatalyst DevOps Platform
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  .. image:: /images/Cat_Devops_Platform.png
 

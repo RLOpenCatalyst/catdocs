@@ -1,6 +1,9 @@
 Working With Chef
 =================
 
+Chef helps you express your infrastructure policy – how your software is delivered and maintained on your servers – as code. When infrastructure is code, it becomes more maintainable, versionable, testable, and collaborative.It allows you to install, configure and manage the packages required by your application without the complication of any client and server configuration. RL Catalyst allows you to use either chef or puppet configuration management to manage your Infrastructure.
+
+To begin with you need to create your organization and an account in chef server to automate your infrastructure.
 
 * Go to the below link and create an account in Chef
 

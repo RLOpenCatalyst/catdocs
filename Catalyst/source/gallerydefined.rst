@@ -1,10 +1,13 @@
 
 
 
+
 .. _configure-softwarestack:
 
 Templates
 ^^^^^^^^^
+
+Templates are user defined skeleton structure which helps the user to add Cookbooks,Roles which in turn leads to create Blueprints.
 
 **Adding a New Template For Software Stack Template Type**
 
@@ -85,6 +88,8 @@ Templates
 VM Images
 ^^^^^^^^^
 
+An image of a virtual machine is a copy of the VM, which may contain an OS, data files, data to be installed on multiple VMs and applications.It is usually tested for security, reliability and has the best tested conflagrations.
+
 **Adding a New VMImage**
 
  * From the main menu click on Settings
@@ -121,6 +126,8 @@ VM Images
 
 Service Command
 ^^^^^^^^^^^^^^^
+
+Service Commands helps user to create a service associated with cookbooks which can run on the instance with the following actions **Start**, **Stop** and **Restart**.
 
 **Adding a new Service Command**
 

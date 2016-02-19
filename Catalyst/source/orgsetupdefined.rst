@@ -40,7 +40,7 @@ You can activate or inactivate an Organization by using the cursor button provid
 
  .. image:: /images/editOrg.png
 
-
+ 
 
 Business Groups
 ^^^^^^^^^^^^^^^
@@ -139,22 +139,21 @@ A cookbook is the fundamental unit of configuration and policy distribution.
 
 A policy file allows you to specify in a single document the cookbook revisions and recipes that should be applied by the chef-client.
 
-A data bag is a global variable that is stored as JSON data and is accessible from a Chef server.
-
 
 RLCatalyst allows you to configure your own chef server. You can add either a hosted chef server or an on-premise installation of chefserver. If you dont have either of these, please create an account at https://getchef.opscode.com/signup . For more details on chef, please go to :doc:`Chef Setup <chefsetup>` . 
 
 In RLCatalyst only one chef server can be configured for one organization. The same chef server cannot be associated to multiple organizations. Each chef server account will have a URL(Hosted/On-Premise), a User pem file, a Validator pem file and a knife file . You will get all these files when you create accounts in Chef.
 
 Data/File needed for adding a Chef Server account in RLCatalyst
-Name : Alias or name of the chef server , to be identified in RLCatalyst
-User Name : User name of your chef server account
-URL : URL of the hosted or on-premise chef server
-User Pem File : User file to access your Chef Server account
-Knife.rb : Configuration file that you get while setting up the Chef server
-Validator Pem File :
-Key File :
-Template File :
+
+ * Name : Alias or name of the chef server , to be identified in RLCatalyst
+ * User Name : User name of your chef server account
+ * URL : URL of the hosted or on-premise chef server
+ * User Pem File : User file to access your Chef Server account
+ * Knife.rb : Configuration file that you get while setting up the Chef server
+ * Validator Pem File : 
+ * Key File : 
+ * Template File : 
 
 To configure a new chef server follow the steps below:
 
@@ -233,6 +232,7 @@ You can import existing nodes from the configured chef server into RLCatalyst by
 *****
 
 **Chef Factory**
+ It consists of common and re-usable recipes and cookbooks.
 
  * Click on Chef factory icon present in the Action column , Chef factory page will open.
 
@@ -250,7 +250,15 @@ You can import existing nodes from the configured chef server into RLCatalyst by
 
 *****
 
+
 **Databags and Items for Chef server**
+
+A data bag is a global variable that is stored as JSON data and is accessible from a Chef server.A data bag is indexed for searching and can be loaded by a recipe or accessed during a search.
+
+A data bag item may be encrypted using shared secret encryption. This allows each data bag item to store confidential information (such as a database password) or to be managed in a source control system (without plain-text data appearing in revision history). Each data bag item may be encrypted individually; if a data bag contains multiple encrypted data bag items, these data bag items are not required to share the same encryption keys.
+
+
+How to create Databag and Items for Chef Server?
 
  * In the Chef Server Page, Click on Databag icon in the Action column of your chef server
  * Click on + icon above the List of Data Bags column header
@@ -295,7 +303,7 @@ Follow the steps to setup a new Environment in an Organization:
  * Click on New button provided
  * Select the Organization from the Organization drop down list
  * Select the server from the Chef Server drop down list
- * You can select the already available Environments from Select an Chef Environment drop down list or you can Add new Environments to chef server by clicking on **Add** link provided
+ * You can select the already available chef Environments from **Select an Chef Environment** drop down list **OR** you can Add new Environments to chef server by clicking on **Add** link provided right above the select an Chef Environment drop down
  * Now Enter the Environment name to be created
 
  .. image:: /images/addNewEnv.JPG
