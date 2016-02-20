@@ -4,6 +4,7 @@ Getting Started
 Got RLCatalyst installed? if not, please refer to  :doc:`Installation <install>`
 
 **Workflow of Cataylst**
+
  When Catalyst is installed successfully and on logging into the application by default Organization, Business Group, Project are already Present. If you want to create New **Organization**, **Business group** and **Project** Follow these steps.
 
 Flow1 : **Add seed Data into Catalyst**
@@ -121,22 +122,23 @@ Flow3 : **Create Template, VM Image, Blueprints**
 
 
 **Launch Blueprints**
- **Software Stack Blueprint** - 1. Go to **Workzone** -> **Infrastructure** -> **Blueprints** -> **Software Stack** -> select the Blueprint and Launch -> Verify the newly launched Instance under **Instances**.
+ * **Software Stack Blueprint** - Go to **Workzone** -> **Infrastructure** -> **Blueprints** -> **Software Stack** -> select the Blueprint and Launch -> Verify the newly launched Instance under **Instances**.
 
- **Cloud Formation Blueprint** - 1. Go to **Workzone** -> **Infrastructure** -> **Blueprints** -> **CloudFormation** -> select the Blueprint and Launch -> Enter **Unique Stack Name** -> Verify the **CFT-Stack** under **Infrastructure** -> **CloudFormation** and wait until stack shows **CREATE_COMPLETE**. Verify the newly launched Instance under **Instances** with your stack name.
+ * **Cloud Formation Blueprint** - Go to **Workzone** -> **Infrastructure** -> **Blueprints** -> **CloudFormation** -> select the Blueprint and Launch -> Enter **Unique Stack Name** -> Verify the **CFT-Stack** under **Infrastructure** -> **CloudFormation** and wait until stack shows **CREATE_COMPLETE**. Verify the newly launched Instance under **Instances** with your stack name.
 
- **Azure ARM Blueprint** - 1. Go to **Workzone** -> **Infrastructure** -> **Blueprints** -> **ARMTemplate** -> select the Blueprint and Launch -> Enter **Deployment Name** -> Verify the **ARM-Deployment** under **Infrastructure** -> **AzureARM** and newly launched Instance under **Instances** with your deployment name.
+ * **Azure ARM Blueprint** - Go to **Workzone** -> **Infrastructure** -> **Blueprints** -> **ARMTemplate** -> select the Blueprint and Launch -> Enter **Deployment Name** -> Verify the **ARM-Deployment** under **Infrastructure** -> **AzureARM** and newly launched Instance under **Instances** with your deployment name.
 
- **Docker Blueprint**
+ * **Docker Blueprint**
+   
    Step1: Identify Ubuntu Instance which is already launched and Run Docker Cookbook on that node
-   1. Cliik on **Workzone** -> **Infrastructure** -> **Instances** tab
-   2. Click on **Chef Client run** icon -> Serach for **docker** cookbook -> Clcik on ** > ** icon to move to runlist.
-   3. Click on **Update Runlist** button -> Click **OK** button in the confirmation popup -> Wait untill "instance runlist updated" logs is displayed.
-   4. Close the Instance logs window
-   5. Verify Docker image is displayed on the instances after few seconds.
+    1. Cliik on **Workzone** -> **Infrastructure** -> **Instances** tab
+    2. Click on **Chef Client run** icon -> Serach for **docker** cookbook -> Clcik on ** > ** icon to move to runlist.
+    3. Click on **Update Runlist** button -> Click **OK** button in the confirmation popup -> Wait untill "instance runlist updated" logs is displayed.
+    4. Close the Instance logs window
+    5. Verify Docker image is displayed on the instances after few seconds.
 
    Step2: Launching docker blueprints
-    1. Cliik on **Workzone** -> **Infrastructure** -> **Blueprints** tab
+    1. Click on **Workzone** -> **Infrastructure** -> **Blueprints** tab
     2. Click **+** icon for Docker
     3. Select the blueprint and click on **Launch** button  
     4. Click **Ok** button in confirmation popup 
