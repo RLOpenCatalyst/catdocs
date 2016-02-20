@@ -78,6 +78,15 @@ Update Configuration
 ^^^^^^^^^^^^^^^^^^^^
   Any extra action on the running instance can be performed via the Chef client Run icon, which is displayed at the bottom left corner. Installing new software, upgrading a software etc can be performed using this icon. 
 
+A **Cookbook** is the fundamental unit of configuration and policy details that Chef uses to bring a node into a specific state. This just means that Chef uses cookbooks to perform work and make sure things are as they should be on the node.
+
+A **Role** is a way to define certain patterns and processes that exist across nodes in an organization as belonging to a single job function. Each role consists of zero (or more) attributes and a run-list. Each node can have zero (or more) roles assigned to it.
+
+A **Run-list** defines all of the information necessary for Chef to configure a node into the desired state.
+
+A **Template** is user defined skeleton structure which helps the user to add Cookbooks,Roles that can be runned on the Instance, which you created in Settings.
+
+
 Follow below steps to run chef client run:
 
  * Click on Chef client run icon
