@@ -15,9 +15,8 @@ RLCatalyst can be installed using one of our Quick Installers
 
 **Quick install using Installer Script** 
 
-RLCatalyst can be installed using our installer script which bundles the core and the dependencies . Refer to :ref:'install-installer' . The installer comes with basic seed data to start the application , that includes an admin user and a sample Organization setup
+RLCatalyst can be installed using our installer script which bundles the core and the dependencies . Refer to :ref:`install-installer` . The installer comes with basic seed data to start the application , that includes an admin user and a sample Organization setup
 
- 
 
 **Quick install using AWS AMI** 
 
@@ -35,7 +34,9 @@ RLCatalyst will come with basic setup data which is required to start working wi
 Add basic data into RLCatalyst
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
    
+
 Follow the instructions to configure your Organization structure in RLCatalyst
+
 
 1. **Create an Organization** structure . Refer to :ref:`org-settings` for more help
 2. **Add Business Groups** to the Organization . Refer to :ref:`bu-settings` for more help
@@ -76,10 +77,12 @@ You can now deploy your application in one-click in RLCatalyst . RLCatalyst gets
   
 **Pre-requisites** 
 
+
 1. A repository (Nexus/Docker) should be added from Settings 
 2. Repository should be attached to one or more projects. 
 3. There should be connectivity between the repository, the target instances and the RLCatalyst instance
 4. There should be to & fro connectivity between RLCatalyst and the target instance
+
 
 Follow the instructions to deploy an application from Nexus repository
 
