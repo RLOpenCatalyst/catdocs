@@ -8,9 +8,9 @@ Track Setup
 The Track Setup option in RL Catalyst provides you to add new dashboard items of type Provider, Monitoring, Logs and Notification options. 
 
 
-**Adding New Dashboard Items in Track setup**
+**Adding New Provider Dashboard in Track setup**
 
-1. **Provider Dashboard:**  In Provider dashboard you will be able to see Total number of Instances , Total number of Managed Instances and Total number of Unmanaged Instances for each provider.
+In Provider dashboard you will be able to see Total number of Instances , Total number of Managed Instances and Total number of Unmanaged Instances for each provider.
 
 * From the main menu click on Settings
 * Once you click on Settings, from the side menu click on Track Setup
@@ -28,7 +28,9 @@ The Track Setup option in RL Catalyst provides you to add new dashboard items of
 
 .. _configure-aws-summary:
 
-2. **AWS Summary Dashboard:** In Summary Dashboard you will be able to see the Total Cost, Today's Cost, Active Instances details
+**Adding New AWS Summary Dashboard in Track setup**
+
+In Summary Dashboard you will be able to see the Total Cost, Today's Cost, Active Instances details
 
 * From the main menu click on Settings
 * Once you click on Settings, from the side menu click on Track Setup

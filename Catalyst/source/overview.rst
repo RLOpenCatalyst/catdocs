@@ -12,7 +12,7 @@ Few of the highlights of Catalyst are:
 RLCatalyst DevOps Platform
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- .. image:: /images/Cat_Devops_Platform.png
+ .. image:: /images/catframework.png
 
  **How you can make use of Catalyst:**  
 

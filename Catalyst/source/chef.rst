@@ -77,7 +77,7 @@ So Now you have the user key, organization key and knife configuration
  **https://downloads.chef.io/chef-client/**
 
 
-* Create a folder in any location and then under that create chef-repo and chef(windows) and .chef(linux)
+* Create a folder in any location and then under that create chef-repo . Create a folder chef(windows) or .chef(linux)
 
 The directory structure will be:
 
@@ -95,6 +95,12 @@ Put all the files in the chef folder
 
  .. image:: /images/knifeCmd.png
 
+.. _upload-cookbooks:
+
+Upload cookbooks into Chef
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Once you setup Chef, the automation libraries need to be uploaded into Chef account. RL automation libraries are available at https://github.com/RLOpenCatalyst/automationlibrary.git
 
 * clone the git repository to above directory
 

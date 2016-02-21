@@ -28,7 +28,6 @@ RLCatalyst can be installed using our installer script which bundles the core an
 **Quick install using VMWare VM** 
 
 
-
 **RLCatalyst Workflow** 
 
 RLCatalyst will come with basic setup data which is required to start working with the application. Organization, Business Group, Project and a User will be added for you. If you want to create New **Organization**, **Business group** and **Project** Follow these steps.
@@ -42,16 +41,11 @@ Follow the instructions to configure your Organization structure in RLCatalyst
 2. **Add Business Groups** to the Organization . Refer to :ref:`bu-settings` for more help
 3. **Add Projects** to the Business Groups . Refer to :ref:`projects-settings` for more help
 
-4. **Add your Chef Server** details . Refer to :ref:`chef-settings` for more help::
+4. **Add your Chef Server** details . Refer to :ref:`chef-settings` for more help
 
-    RLCatalyst is powered by Chef . It works with both hosted and enterprise Chef.
-    RLCatalyst installed using AWS AMI will have a chef server bundled and the data 
-    will be already available in Settings
+    
+.. include:: __chef_info.rst
 
-    If you have installed RLCatalyst from source or using vagrant or Docker Image ,
-    you need to have a hosted chef server account . If you dont have one, please 
-    create one account using the help at :ref:`configure-chef` 
- 
 5. **Add environments** . You can either choose the environments created in chef server, or create new ones. Refer to :ref:`env-settings` for more help
 6. **Add Users** . RLCatalyst will come with one admin user 'superadmin' . Follow the below steps to add more users . You can add users for 3 different pre-defined roles- Admin, Consumer and Designer. Refer to :ref:`user-settings` for more help
 7. **Add a team** . Refer to :ref:`team-settings` for more help
@@ -96,7 +90,7 @@ Follow the instructions to deploy an application from Nexus repository
 5. Update the application to the latest version and see the application running at the URL configured. Refer to :ref:`upgrade-app` for more details
   
         
-Track Setup
+View Cost and Usage Dashboards
 ^^^^^^^^^^^^^^^^^^^
 
 RLCatalyst provides you a consolidated dashboard for tracking your AWS infrastructure cost and usage . This helps you to identify un-used capacity and do better utilization. RLCatalyst summarizes this data for all the AWS provider accounts configured
@@ -105,7 +99,7 @@ Follow the instructions to configure your dashboards:
 
 1. **Configure the provider dashboard** in Settings . This will give you the snapshot of instances- Total Number vs Number of Managed vs Number of Un-Managed. Refer to :ref:`configure-track` for more details
      
-2. A more detailed dashboard on AWS usage and cost can also be configured. This will give you the snapshot of Total cost, Daily cost etc . Refer to :ref:`configure-aws-summary` for more details
+2. A more detailed dashboard on AWS usage and cost can also be configured. This will give you the snapshot of Total cost, Daily cost etc . Refer to :ref:`configure-track` for more details
 
 3. View the Dashboards from **RLCatalyst->Track**
 
