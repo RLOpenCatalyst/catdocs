@@ -1,6 +1,7 @@
 
 
 
+.. _org-settings:
 
 
 Organization
@@ -41,6 +42,7 @@ You can activate or inactivate an Organization by using the cursor button provid
  .. image:: /images/editOrg.png
 
  
+.. _bu-settings:
 
 Business Groups
 ^^^^^^^^^^^^^^^
@@ -77,14 +79,14 @@ To Remove the Business Group
  
 
 
-
+.. _projects-settings:
 
 Projects
 ^^^^^^^^
 
 **Setup Projects for a Business Group**
 
-In a Business Group you can create multiple Projects. A Project in RLCatalyst can be a running project in your business group
+In a Business Group you can create multiple Projects. A Project in RLCatalyst can be a running project in your business group. Each project can run one or multiple applications
 
 **Follow the steps below to create a new Project associating with Business Group and Organization**
 
@@ -127,7 +129,7 @@ The following video will help you to setup an Organization:
 
 
 
-
+.. _chef-settings:
 
 Chef Server
 ^^^^^^^^^^^
@@ -289,6 +291,7 @@ How to create Databag and Items for Chef Server?
 
 *****
 
+.. _env-settings:
 
 Setup Environments
 ^^^^^^^^^^^^^^^^^^
@@ -303,7 +306,7 @@ Follow the steps to setup a new Environment in an Organization:
  * Click on New button provided
  * Select the Organization from the Organization drop down list
  * Select the server from the Chef Server drop down list
- * You can select the already available chef Environments from **Select an Chef Environment** drop down list **OR** you can Add new Environments to chef server by clicking on **Add** link provided right above the select an Chef Environment drop down
+ * You can see a list of environments in teh drop down. These are the environments defined in your chef server account. You can select one from this  drop down list **OR** you can Add new Environments to chef server by clicking on **Add** link provided right above the select an Chef Environment drop down
  * Now Enter the Environment name to be created
 
  .. image:: /images/addNewEnv.JPG
