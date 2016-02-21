@@ -17,7 +17,6 @@ RLCatalyst can be installed using one of our Quick Installers
 
 RLCatalyst can be installed using our installer script which bundles the core and the dependencies . Refer to :ref:`install-installer` . The installer comes with basic seed data to start the application , that includes an admin user and a sample Organization setup
 
- 
 
 **Quick install using AWS AMI** 
 
@@ -56,6 +55,7 @@ Flow1 : Add basic data into RLCatalyst
    2. Enter the **Project Name**, **select the Org**, **select the Business Group** and **Save** 
 
    Refer to :ref:`projects-settings` for more help
+
 
   **Step4: Create Chef Server**
 
