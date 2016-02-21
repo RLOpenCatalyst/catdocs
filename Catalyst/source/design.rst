@@ -1,3 +1,6 @@
+
+.. _design-blueprint:
+
 Design
 ======
 

@@ -84,6 +84,7 @@ Templates are user defined skeleton structure which helps the user to add Cookbo
  * Now new template is added and available in the Templates list
 *****
 
+.. _configure-vm:
 
 VM Images
 ^^^^^^^^^

@@ -26,6 +26,7 @@ The Track Setup option in RL Catalyst provides you to add new dashboard items of
 * Click on Save button
 
 
+.. _configure-aws-summary:
 
 2. **AWS Summary Dashboard:** In Summary Dashboard you will be able to see the Total Cost, Today's Cost, Active Instances details
 

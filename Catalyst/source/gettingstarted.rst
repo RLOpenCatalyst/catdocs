@@ -31,245 +31,84 @@ RLCatalyst can be installed using our installer script which bundles the core an
 
 **RLCatalyst Workflow** 
 
- RLCatalyst will come with basic setup data which is required to start working with the application. Organization, Business Group, Project and a User will be added for you. If you want to create New **Organization**, **Business group** and **Project** Follow these steps.
+RLCatalyst will come with basic setup data which is required to start working with the application. Organization, Business Group, Project and a User will be added for you. If you want to create New **Organization**, **Business group** and **Project** Follow these steps.
 
-Flow1 : Add basic data into RLCatalyst
+Add basic data into RLCatalyst
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
    
-  * Add Organization,Business Groups,Projects
+Follow the instructions to configure your Organization structure in RLCatalyst
 
-  Step1: Create Organization
-   1. Go to **Settings** -> **Organization Setup** -> **Organizations** -> **Add New Organization** 
-   2. Enter the **Organization Name**, **Domain Name** and **Save** 
+1. **Create an Organization** structure . Refer to :ref:`org-settings` for more help
+2. **Add Business Groups** to the Organization . Refer to :ref:`bu-settings` for more help
+3. **Add Projects** to the Business Groups . Refer to :ref:`projects-settings` for more help
 
-   Refer to :ref:`org-settings` for more help
+4. **Add your Chef Server** details . Refer to :ref:`chef-settings` for more help::
 
+    RLCatalyst is powered by Chef . It works with both hosted and enterprise Chef.
+    RLCatalyst installed using AWS AMI will have a chef server bundled and the data 
+    will be already available in Settings
 
-  Step2: Create Business Groups
-   1. Click on **Settings** -> **Organization Setup** -> **Business Groups** -> **Add New Business Group** 
-   2. Enter the **Business Group Name**, **select the Org** and **Save** 
-
-   Refer to :ref:`bu-settings` for more help
-
-  Step3: Create Projects
-   1. Click on **Settings** -> **Organization Setup** -> **Projects** -> **Add New Project** 
-   2. Enter the **Project Name**, **select the Org**, **select the Business Group** and **Save** 
-
-   Refer to :ref:`projects-settings` for more help
-
-  Step4: Create Chef Server
-
-  RLCatalyst is powered by Chef . You need to have a hosted chef server account if you have installed RLCatalyst from source or using vagrant or Docker Image.  RLCatalyst installed using AWS AMI will have a chef server bundled and the data will be already available in Settings . Ignore the below 2 steps if you have installed RLCatalyst using AWS AMI (You will get this pre-configured then)
-
-  If you dont have a hosted or an enterprise chef server , then follow the below steps
-
-   1. Add a new chef server and configure your resources. Please see the help at :ref:`configure-chef` 
-   2. Go to **Settings** -> **Organization Setup** -> **Chef Server** -> **Add New Chef Server** 
-   3. Follow the instructions given at :ref:`chef-settings` and Save the chef server details 
-
-   Refer to :ref:`chef-settings` for more help
+    If you have installed RLCatalyst from source or using vagrant or Docker Image ,
+    you need to have a hosted chef server account . If you dont have one, please 
+    create one account using the help at :ref:`configure-chef` 
+ 
+5. **Add environments** . You can either choose the environments created in chef server, or create new ones. Refer to :ref:`env-settings` for more help
+6. **Add Users** . RLCatalyst will come with one admin user 'superadmin' . Follow the below steps to add more users . You can add users for 3 different pre-defined roles- Admin, Consumer and Designer. Refer to :ref:`user-settings` for more help
+7. **Add a team** . Refer to :ref:`team-settings` for more help
 
 
-  Step5: Create Environments
-   1. Click on **Settings** -> **Environments** -> **Add New Environments/Select Environments**
-   2. Select the **Organization,Chef Server** -> select the **Environment OR Add New Environment by clicking on Add link** and **Save** 
-
-    Refer to :ref:`env-settings` for more help
-
-  Step6: Create Users
-   RLCatalyst will come with one admin user 'superadmin' . Follow the below steps to add more users . You can add users for 3 different pre-defined roles- Admin, Consumer and Designer
-
-   1. Click on **Settings** -> **Users Setup** -> **Users** -> **Add New Users**
-   2. Enter the **Login Name** -> **Email Address** -> Enter **Password** -> Enter **Confirm Password** -> Select the **Organization** -> Select the **Role** -> **Assign Team** and **Save** 
-
-   Refer to :ref:`user-settings` for more help
-
-  Step7: Create Teams
-   1. Click on **Settings** -> **Users Setup** -> **Teams** -> **Add New Teams**
-   2. Enter the **Name** -> Select the **Organization** -> Select the **User** ->  Assign the **Project** and **Save** 
-
-   Refer to :ref:`team-settings` for more help
-
-
-Flow2 : Add Provider and do Provider Sync
+Add Provider and do Provider Sync
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-  * Create Provider & Provider-Sync
-  Once the basic data is loaded, you can start exploring RLCatalyst from the Provider-Sync Feature. You can sync nodes from your AWS provider account and convert the nodes to 'Managed' . This will give a control on your AWS infra by letting you track the capacity, cost and usage . Once sync-ed, you can see the summary dashboard from 'Track'
-
-  Step1: Add Provider
-   Add your AWS provider account details in RLCatalyst
-
-   1. Click on **Settings** -> **Devops Setup** -> **Providers**
-   2. Select ** Provider Type** as **AWS** -> Enter **Name** -> Enter valid **Access key , Secret Key ** -> Select **Organization Name** -> Select **Region, Key Pair and upload the pem file for provider** and **Save** 
-
-   Refer to :ref:`provider-settings` from more help
-
-  Step2: Sync Provider
-   Once the provider account is added, you can start importing the nodes into RLCatalyst . Importing will bootstrap the nodes with the configured chef server . The imported instances can be managed from the workzone, under the project and environment to which the nodes are imported. 
-
-   1. Click on **Settings** -> **Devops Setup** -> **Providers** - > **Sync Instances**  
-   2. Click on **UnManaged Instances** -> Select the **checkbox** of the node to be imported and click **Import Instances** button.
-   3. Choose the **Organization**, **Business group**, **Project** , **Environment** , **Config Management** , **Username** , Chooose **Authentication Type** , Enter **Password** or Upload **Pemfile** -> Click **Sync** button. -> Close the Node Imported window.
-   4. Click on **Workzone** -> Click on the **Environment** where you imported Node -> Synced Instances should be present in the environment.
-   5. Click on **Settings** -> **Devops Setup** -> **Providers** - > **Sync Instances** -> Synced Instances should be present in Managed Instances tab.
-
-    Refer to :ref:`provider-sync` from more help
+Once the basic data is loaded, you can start exploring RLCatalyst from the Provider-Sync Feature. You can sync nodes from your AWS provider account and convert the nodes to 'Managed' . This will give a control on your AWS infra by letting you track the capacity, cost and usage . Once sync-ed, you can see the summary dashboard from 'Track'
 
 
-Flow3 : Create Template, VM Image, Blueprints
+1. **Add your AWS provider** account details in RLCatalyst . Refer to :ref:`provider-settings` for more help
+2. **Sync your provider with RLCatalyst**. Once the provider account is added, you can start importing the nodes into RLCatalyst . Importing will bootstrap the nodes with the configured chef server . The imported instances can be managed from the workzone, under the project and environment to which the nodes are imported. Refer to :ref:`provider-sync` for more help
+
+
+Create Template, VM Image, Blueprints
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  * Templates,VM Image,Blueprints
+1. **Create new Templates** . RLCatalyst provides you with the flexibility to create re-usable Templates for Infra and app automation. By default, it supports 4 types of templates . You can add templates for any of these template types . Refer to :ref:`configure-softwarestack` for more help
+2. **Add VM Images** for the providers. Add VM Images for your each of the provider accounts added. This could be any of the images(public/private) accessible from your provider account. The templates will use these as the base to launch new instances . Refer to :ref:`configure-vm` for more help
+3. **Create a blueprint** for a software stack . Once the templates and VM Images are added, next step is to design blueprints, which are tied to a provider. Refer to :ref:`design-blueprint` for more help
+4. **Launch the blueprints** to create new instance and boootstrap with the runlist added in the blueprint . The new instances will be listed under 'Instances' for the specified project and environment . Refer to  :ref:`launch-instances` for more details
+
+
+Application  Deployment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can now deploy your application in one-click in RLCatalyst . RLCatalyst gets the build or the source from the repository which is associated with the application. The repository need to be configured in RLCatalyst and should be associated with a Project . Currently Docker and Nexus repositories are supported.
   
+**Pre-requisites** 
 
-  Step1: Creation of New Templates  
+1. A repository (Nexus/Docker) should be added from Settings 
+2. Repository should be attached to one or more projects. 
+3. There should be connectivity between the repository, the target instances and the RLCatalyst instance
+4. There should be to & fro connectivity between RLCatalyst and the target instance
 
-  RLCatalyst provides you with the flexibility to create re-usable Templates for Infra and app automation. By default, it supports 4 types of templates . You can add templates for any of these template types
+Follow the instructions to deploy an application from Nexus repository
 
-   1. Click on **Settings** -> **Gallery Setup** -> **Templates** -> **Add New Templates**
-   2. **SoftwareStack Template** : Add this for any basic software stack 
-    * Enter the **Template Name** -> Choose **Template Type[SoftwareStack] ,Org** and **Save**
-   3. **CloudFormation Template** : 
-    * Enter the **Template Name** -> Choose **Template Type[CloudFormation] ,Org** -> Upload **Template File** and **Save**
-   4. **Azure ARM Template** : 
-    * Enter the **Template Name** -> Choose **Template Type[ARMTemplate] ,Org** -> Upload **Template File** and **Save**
-   5. **Docker Template** :
-    * To create Docker Template for Private Repo, Select Docker Repo in the dropdown and add valid private docker repo path.
-    * To create Docker Template for Public Repo donot select any docker repo in the dropdown and and valid public docker repo path.
-    * Enter the **Template Name** -> Choose **Template Type[Docker] ,Org**, **public/private** repo and **Save**   
-    
-     **NOTE-** a. You can create docker template for Private Repo and also for Public Repo.
-
-  Step2: Create VM Images
-   Add VM Images for your each of the provider accounts added. This could be any of the images(public/private) accessible from your provider account. The templates will use these as the base to launch new instances
-
-   1. Click on **Settings** -> **Gallery Setup** -> **VM Image** -> **Add New VM Images**
-
-   2. Enter the **Image Name** -> **Choose Org** -> Choose the respective **Provider, Operating System** -> Enter **Image ID, Admin User Name, Admin Password**
-
-
-  Step3: **Create Software Stack Blueprint**
-   Once the templates and VM Images are added, next step is to design blueprints, which are tied to a provider.
-
-    1. Go to **Design** -> select **AWS** provider -> select **SoftwareStack** Template type -> select your **Template** ->Select the **OS, Provider, Image, Region, VPC, Subnet, KeyPair, Instance Type, Security Group, Organization**, Enter **Blueprint Name**, Choose **Business group, Project**, Configure Runlist by adding **Cookbooks and Roles** and Save.
-
-    2. You can View your Blueprint in **Workzone** -> **Infrastructure** -> **Blueprints** -> Under **SoftwareStack**.
-
-        **Create Docker Blueprint**
-         1. Go to **Design** -> select **AWS** provider -> select **Docker** Template type -> select your **Template** -> Enter **Blueprint Name** -> Choose **Business Group, Project** -> **Launch Parameters icon[Add the other details based on docker images for public/private reposs]** and Save.
-
-         2. You can View your Blueprint in **Workzone** -> **Infrastructure** -> **Blueprints** -> Under **Docker**.
-       
-        **Create Cloud Formation Blueprint**
-         1. Go to **Design** -> select **AWS** provider -> select **Cloud Formation** Template type -> select your **Template** -> Enter **Blueprint Name** -> Choose **Org , Business Group , Project** -> Select **Region, Provider** and add other details based on your template file. 
-         
-         2. You can View your Blueprint in **Workzone** -> **Infrastructure** -> **Blueprints** -> Under **CloudFormation**.
-
-        **Create Azure ARM Template**
-         **NOTE** - Make sure You have created Resource group in your Azure portal
-          1. Go to **Design** -> select **AZURE** provider -> select **ARM Template** Template type -> select your **Template** -> Enter **Blueprint Name**, Choose **Org , Business Group , Project** -> Select **Provider, Resource Group** and add other details based on your template file. 
-
-          2. You can View your Blueprint in **Workzone** -> **Infrastructure** -> **Blueprints** -> Under **ARMTemplate**.
-
-
-**Launch Blueprints**
- * **Software Stack Blueprint** - Go to **Workzone** -> **Infrastructure** -> **Blueprints** -> **Software Stack** -> select the Blueprint and Launch -> Verify the newly launched Instance under **Instances**.
-
- * **Cloud Formation Blueprint** - Go to **Workzone** -> **Infrastructure** -> **Blueprints** -> **CloudFormation** -> select the Blueprint and Launch -> Enter **Unique Stack Name** -> Verify the **CFT-Stack** under **Infrastructure** -> **CloudFormation** and wait until stack shows **CREATE_COMPLETE**. Verify the newly launched Instance under **Instances** with your stack name.
-
- * **Azure ARM Blueprint** - Go to **Workzone** -> **Infrastructure** -> **Blueprints** -> **ARMTemplate** -> select the Blueprint and Launch -> Enter **Deployment Name** -> Verify the **ARM-Deployment** under **Infrastructure** -> **AzureARM** and newly launched Instance under **Instances** with your deployment name.
-
- * **Docker Blueprint**
-   
-   Step1: Identify Ubuntu Instance which is already launched and Run Docker Cookbook on that node
-    1. Cliik on **Workzone** -> **Infrastructure** -> **Instances** tab
-    2. Click on **Chef Client run** icon -> Serach for **docker** cookbook -> Clcik on ** > ** icon to move to runlist.
-    3. Click on **Update Runlist** button -> Click **OK** button in the confirmation popup -> Wait untill "instance runlist updated" logs is displayed.
-    4. Close the Instance logs window
-    5. Verify Docker image is displayed on the instances after few seconds.
-
-   Step2: Launching docker blueprints
-    1. Click on **Workzone** -> **Infrastructure** -> **Blueprints** tab
-    2. Click **+** icon for Docker
-    3. Select the blueprint and click on **Launch** button  
-    4. Click **Ok** button in confirmation popup 
-    5. Click **Next** button in **Launch Docker Blueprint** window.
-    6. Select the ubuntu Instance in which docker cookbook is installed in Step1
-    7. Click on **Start** button.
-    8. Wait untill image pull completes.
-    9. Close the Instance logs window.
-    10. Click on **Infrastructure** -> **Containers** -> verify container is launched with the columns details **Actions**  **State** , **Created**, **Name** , **Instance IP**, **Container ID** , **Image** , **Info**
-
-
-
-Flow4 : **App Deploy**
-
-  * Application Deployment
-
-  Step1: Configure Nexus Server
-   1. Click on **Settings** -> **Devops Setup** -> **Nexus Server**
-   2. Enter **Nexus Server Name** , **User Name** , **Password** , **Nexus Server URL** -> Select **Organization Name** -> Click on ** + ** icon to add Nexus Group ID        -> Enter **Nexus Group ID** and click **Save** Button
-
-  Step2: Associate Repository Details to your Project
-   1. Click on **Settings** -> **Organization Setup** -> **Projects** -> Click on **Edit** icon
-   2. Click on ** + ** icon to add Repository Details.
-   3. Select **Nexus Server** and choose the **Repository** and click **Save** Button
-
-  Step3: Create New Blueprint and Deploy application during Bootstrap
-   1. Click on **Design** link at the top -> Choose **Software Stack** Template type and click **Next** button
-   2. Choose the **Template** and and click **Next** button
-   3. Choose Operating System as **Ubuntu** -> Choose the **Provider** -> Choose the **VMImage** -> Choose **Region** ->Select **VPC** -> Select **SUbnet** -> Select **KeyPair** -> Select **Instance Type** -> Select **Security Group** -> Select **Instances to Launch** as **1**.
-   4. Click on **Configure Organization Parameters** -> Choose **Organization** -> Enter **Blueprint Name** -> Choose **Business Group** -> Choose **Project** 
-   5. Click on **Configure Runlist Parameters** -> Click on ** + ** icon to edit the runlist
-   6. Search for Cookbook **deploy_upgrade_catalyst** and select that cookbook -> Click on ** > ** to add to **Runlist** -> Click on **Update Runlist** 
-   7. Click on **Configure Application** and Select checkbox **Deploy app during Bootstrap**.
-   8. Select **Repository Server** , **Repository Name** , **GroupID** , **Artifacts**, **Versions**
-   9. Click on **New** button to add Application Name and URL
-   10. Enter **Application Name** and add the URL in the format **http://$host:3001** -> Click on **Add** button.
-   11. Click on **Next** button -> Click on **OK** button in Confirm popup window.
-
-  Step4: Launch Instance from Blueprint and check application is installed after bootstrap
-   1. Click on **Workzone** -> **Infrastructure** -> **Blueprints** 
-   2. Select the Blueprint created in Step3 -> Click **Launch** button -> Click **OK** on Confirmation window.
-   3. Wait untill **Instance Bootstraped successfully* log is displayed in Launching Blueprint window.
-   4. Close the Launchinf Blueprint window.
-   5. Click on **Infrastructure** -> **Instances**
-   6. Click on More link present at bottom right corner on the Instance.
-   7. Clcik on the **App name** link
-   8. Verify New window opened and Catalyst appliaction home page is displayed with Version number, Now close the newly opened window.
-   9. Go to Applications tab and check Application details like **Application Name** , **Version Number** , **Ipaddress** of the Instance with **Date** and **Time** is displayed in pipeline view.
-
-  Step5: Application version upgrade and check latest version is upgraded
-   1. Click on **Workzone** -> **Applications**
-   2. Click on **Deploy New APP** button -> Select **Repository Server** -> Choose **Repository** -> Choose **Group ID** -> Choose **Artifacts** -> Choose **Versions** 
-   3. Click on **Create New Job** button -> Select Job type as **Chef** -> Enter **Job Name** -> Select **Node** on which you are going to upgrade application -> Click on ** + ** icon to edit the runlist -> Search for Cookbook **deploy_upgrade_catalyst** and select that cookbook -> Click on ** > ** to add to **Runlist** -> Click on **Update Runlist**
-   4. Click on **Jobs** dropdown and select the **Job** you created in previous step
-   5. Click on **Deploy** button -> Click **OK** button in confirmation popup and wait untill **Task Executed successfully** message is displayed -> Close  **Execute Logs** window
-   6. Click on **Infrastructure** -> **Instances** 
-   7. Click on More link present at bottom right corner of the Instance
-   8. Click on the **App name** link
-   9. Verify New window opened and Catalyst appliaction home page is displayed with upgraded Version number, Now close the newly opened window
-   10. Go to Applications tab and check new card with application details like **Application Name** , upgraded **Version Number** , **Ipaddress** of the Instance with **Date** and **Time** is displayed in pipeline view in another row.
-
-
+1. Add the Nexus server details in RLCatalyst . Refer to  :ref:`configure-nexus` for more details
+2. Associate the repository to a Project . Refer to :ref:`associate-nexus' for more details
+3. Create new blueprint to  deploy the application . Refer to :ref:`create-app-blueprint` for more details
+4. Launch a new instance using the blueprint  . Refer to :ref:`launch-app-blueprint` for more details
+5. Update the application to the latest version and see the application running at the URL configured. Refer to :ref:`upgrade-app` for more details
+  
         
-Flow5 : **Tracks Setup** 
+Track Setup
+^^^^^^^^^^^^^^^^^^^
+
+RLCatalyst provides you a consolidated dashboard for tracking your AWS infrastructure cost and usage . This helps you to identify un-used capacity and do better utilization. RLCatalyst summarizes this data for all the AWS provider accounts configured
             
-  * View Cost & Usage Dashboards
+Follow the instructions to configure your dashboards:
+
+1. **Configure the provider dashboard** in Settings . This will give you the snapshot of instances- Total Number vs Number of Managed vs Number of Un-Managed. Refer to :ref:`configure-track` for more details
      
-  Step1 Track Setup for Provider Dashboard
-   1. Click on **Settings** -> **Track Setup** -> Click **New** button
-   2. Select Type as **Provider** -> Enter the **Description** , **Item Name** and Enter **Item URL** in the format **http://Nodeipaddress:port/Dashboard.html** -> Click on **Save** button.
+2. A more detailed dashboard on AWS usage and cost can also be configured. This will give you the snapshot of Total cost, Daily cost etc . Refer to :ref:`configure-aws-summary` for more details
 
+3. View the Dashboards from **RLCatalyst->Track**
 
-  Step 2: Track setup for AWS Summary Dashboard
-   1. Click on **Settings** -> **Track Setup** -> Click **New** button
-   2. Select Type as **Provider** -> Enter the **Description** , **Item Name** and Enter **Item URL** in the format **http://Nodeipaddress:port/dashing.html** ->Click on **Save** button.
-
-  Step 3: View Provider Dashboard and AWS Summary Dashboard
-   1. Click on **Track** link present at the top. You are able to see dashboard for providers with **provider name** , **Total number of Instances** , **Total number of Managed instances** and **Total number of unmanged Instances** present in your provider.
-   2. Click on AWS Summary dashboard. Here you are bale to see **Billing Period Cost** , **Monthly Cost**, **Todays cost**, **Yesterday Cost**, **Active Instances**, **EBS Volume**, **S3 Buckets**, **Elastic IPS**, **R53 Zones**
 
 
 

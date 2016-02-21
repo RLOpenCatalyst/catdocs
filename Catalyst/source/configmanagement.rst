@@ -108,6 +108,24 @@ To configure a new Nexus server follow the steps below:
 
 *****
 
+.. _associate-nexus:
+
+Once Nexus Server is configured you have to associate Repository details to your Project. Follow the below steps:
+
+ * Go to Projects Page
+
+ * Edit your Project
+
+ * Click on + icon present next to Repository Details
+
+ * Select your Repository Server and Repository Name
+
+  .. image:: /images/repoDetails.png
+
+
+ * Click on Save button on Add Repository Details page
+ 
+ * Click on Save button on Edit Project Page
 
 
 Configure Docker

@@ -19,6 +19,8 @@ RL Catalyst Workzone is an option all the settings take action. Workzone has bel
 Here user can deploy new applications and deployed applications will be shown in pipeline view and table view with all details.
 
 
+.. _launch-instances:
+
 Launch New Instances
 ^^^^^^^^^^^^^^^^^^^^
   Instances are launched from Blueprints. Follow below steps to launch Instances from blueprints.
@@ -501,6 +503,7 @@ Once Nexus Server is configured you have to associate Repository details to your
  * Click on Save button on Edit Project Page
 
 
+.. _create-app-blueprint:
 
 Once you associate repository details to your project now start creating blueprint. Follow the below steps:
 
@@ -525,9 +528,11 @@ Once you associate repository details to your project now start creating bluepri
 
 * Select **Deploy app during Bootstrap** checkbox
 
-* On selecting checkbox all Repository details will autopopulate and the latest version will be always selected. [**Note:** If u select previous version also by default it will take latest version]
+* On selecting checkbox all Repository details will autopopulate and the latest version will be always selected. [**Note:** If you select previous version also by default it will take latest version]
 
  .. image:: /images/deployApp.png
+
+* If you want to specify the URL at which the application is running, specify the URL in the format **http://$host:3001** 
 
 * Click on Next button
 
@@ -537,7 +542,7 @@ Once you associate repository details to your project now start creating bluepri
 
  .. image:: /images/saveBlueprint.png
 
-
+.. _launch-app-blueprint:
 
 **Launching Blueprint**
 
@@ -567,6 +572,7 @@ Once you associate repository details to your project now start creating bluepri
 
 * Now Catalyst application is installed with the version 3.02.63 on the launched node. [See the version at bottom right corner of the window]
 
+.. _upgrade-app:
 
 Deploy New App
   Now I will show you how to upgrade latest version of catalyst application on the same node.
