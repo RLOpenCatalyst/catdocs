@@ -1,13 +1,14 @@
 
+.. _install-source:
 
 Install Directly From Source
 ============================
-You can install Catalyst locally by downloading the code from our Github Code Repository. The following section gives the instructions to do the Catalyst Installation from source
+You can install RLCatalyst locally by downloading the code from our Github Code Repository. The following section gives the instructions to do the RLCatalyst Installation from source
 
-Installation Steps for Ubuntu
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Installation Steps for Ubuntu 14.04
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Here is a step by step plan on how to install Catalyst on Ubuntu machine.
+Here is a step by step plan on how to install RLCatalyst on Ubuntu machine.
 
 Start by updating the System::
 
@@ -60,15 +61,15 @@ Check the version of node after installation.It should be 4.2.2 ::
 Check the version of npm ::
     
     npm -v
-    2.4.x
+  
 
-    NOTE - The npm version required is 3.6.x . If an older version got installed, upgrade the npm version
+    NOTE - The npm version required is 3.x . If an older version got installed, upgrade the npm version
            sudo apt-get update
            sudo npm install npm -g
 
-    Now check the npm version
+    Now check the npm version and make sure it is 3.5.x and above
     npm -v
-    3.6.x
+    
 
 
 
@@ -87,7 +88,7 @@ NOTE::
     monogo version - 3.2.x
 
 
-Clone the repository to get the Catalyst code::
+Clone the repository to get the RLCatalyst code::
 
     sudo git clone https://github.com/RLOpenCatalyst/core.git
 
@@ -104,10 +105,10 @@ Install ChefClient::
     sudo curl -L https://www.opscode.com/chef/install.sh | sudo bash
     To Check the chef client version
     knife -v
-    12.6.x
+    It should be 12.6 or above
 
 
-Install the make , g++ , Keerberos & library::
+Install the dependencies- make , g++ , Kerberos & library::
 
     sudo apt-get install make
     sudo apt-get install g++
@@ -116,10 +117,10 @@ Install the make , g++ , Keerberos & library::
 
 
 
-Run the Server::
+Install Node Packages::
 
     cd D4D/server
-    Install node packages - sudo npm install
+    sudo npm install
 
 
 To Install seed data::
@@ -127,10 +128,10 @@ To Install seed data::
     sudo node install --seed-data
 
 
-To Install forever & start the catalyst Application::
+To Install forever & start the RLCatalyst Application::
 
     sudo npm install forever --global
-    Run the app - sudo forever start app.js
+    sudo forever start app.js
 
 
 Now you can access RLCatalyst at http://localhost:3001 ::
@@ -139,13 +140,14 @@ Now you can access RLCatalyst at http://localhost:3001 ::
     superadmin/superadmin@123
 
 
-
+You are ready to start using RLCatalyst now. 
+Please see :doc:`Getting Started <gettingstarted> ` for next steps . 
 
 
 Installation Steps for Centos7
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Here is a step by step plan on how to install Catalyst on Centos7 machine.
+Here is a step by step plan on how to install RLCatalyst on Centos7 machine.
 
 Update your System with yum::
 
@@ -164,11 +166,11 @@ To Install node.js & npm::
 
     checking the node version
     node -v
-    4.2.5
+    4.2.2
 
     Check the npm version 
     npm -v
-    2.4.12
+    
 
 
     NOTE - The npm version required is 3.5.x . If an older version got installed, upgrade the npm version.
@@ -233,18 +235,12 @@ To Install git::
 
 
 
-To Install Catalyst and to create a db path folder::
+To Install RLCatalyst and to create a db path folder::
 
     To pull the catalyst code
     git clone https://github.com/RLOpenCatalyst/core.git
     Check the current directory for the presence of catalyst code i.e D4D folder.
     
-    NOTE – Take the latest code from dev_catalyst.
-
-    Run the command
-    git status
-    git checkout dev_catalyst
-    git pull
 
     Create a db path folder
     mongo db path -  mkdir -p /data/db/
@@ -279,11 +275,11 @@ To run the application forever::
 
 
 
-Access Catalyst::
+Access RLCatalyst::
 
-    localhost:3001
+    http://localhost:3001
     username- superadmin
     pass - superadmin@123
 
-
+Now you are ready to start using RLCatalyst . Please see :doc:`Getting Started <gettingstarted> ` for next steps
 

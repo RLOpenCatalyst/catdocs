@@ -1,3 +1,4 @@
+.. _user-role:
 User Setup
 ^^^^^^^^^^
 

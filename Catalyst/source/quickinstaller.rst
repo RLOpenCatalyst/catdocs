@@ -1,7 +1,7 @@
 
 
 
-
+.. _install-installer:
 
 
 Install Using QuickInstaller
@@ -17,3 +17,21 @@ Please download the installer from https://github.com/RLOpenCatalyst/RLCatInstal
 2. Run ./installer.sh
 3. If you have a Chef server, please skip the part to install Chef server.Once Catalyst is installed, go ahead and add your chef server details in Settings
 4. If you dont have a Chef server, please follow the instructions from the installer script
+
+.. _install-ami:
+
+Install from AWS AMI
+====================
+
+.. _install-vagrant:
+Install using Vagrant
+=====================
+
+.. _install-docker:
+
+Install using Docker Image
+==========================
+
+.. _install-vm:
+Install using VM
+================

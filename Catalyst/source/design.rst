@@ -3,11 +3,13 @@ Design
 
 User defined Blueprints can be created in the Design section associated with the respective **providers** and **Template Types**.
 
+To know about different Template Types refer :ref:`temp-settings`
+
 **Blueprints** are predefined templates which can be used by service consumers to Launch the instances. Blueprints are designed by Service Designers. Each blueprint stores the metadata of the instance, variables, actions and activity.
 
 RL Catalyst Design options allows you to create Blueprints by using predefine templates.
 
-**Creating BluePrints for Sofware Stack Template Type** using AWS provider
+**Creating BluePrints for Sofware Stack Template Type** using **AWS provider**
 
 Blueprints are predefined templates which can be used by service consumers to launch the instances. Blueprints are designed by service designers. 
 Each blueprint stores the metadata of the instance, variables, actions and activity. Follow the steps for creating BluePrints.
@@ -62,7 +64,7 @@ Each blueprint stores the metadata of the instance, variables, actions and activ
 *****
 
 
-**Creating BluePrints for Docker Template Type**
+**Creating BluePrints for Docker Template Type** using **AWS provider**
 
  * From the Design page choose a Docker Template Type and click Next
 
@@ -105,7 +107,7 @@ Each blueprint stores the metadata of the instance, variables, actions and activ
 
 *****
 
-**Creating BluePrints for Cloud Formation Template Type**
+**Creating BluePrints for Cloud Formation Template Type** using **AWS provider**
 
  * From the Design page choose a Cloud Formation Template Type and click Next
 

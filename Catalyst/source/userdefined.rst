@@ -2,6 +2,7 @@
 
 
 
+.. _user-settings:
 
 User Creation
 ^^^^^^^^^^^^^
@@ -36,6 +37,9 @@ How to add a new user?
     </div> 
 
 *****
+
+.. _team-settings:
+
 
 Teams
 ^^^^^
