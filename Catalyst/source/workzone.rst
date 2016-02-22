@@ -485,7 +485,11 @@ Prerequisites:
 If you have not added a repository in Settings, follow the instructions at :ref:`configure-nexus`.
 
 
-Once Nexus Server is configured you have to associate Repository details to your Project. Follow the below steps:
+Once Nexus Server is configured you have to associate Repository details to your Project. 
+
+**CASE I:** First time a new application has been deployed and it is deployed using Catalyst 
+
+Follow the below steps :
 
  * Go to Projects Page
 
@@ -636,7 +640,40 @@ Deploy New App
 
 
 
+**CASE II:** User has the application(s) running over several exisitng environments and all the application details must be imported to Catalyst
 
+Pre-requisite:
+1) The http/https request ports need to be open from the server for catalyst to get the information
+2) Target instance(Application instance) must be part of Catalyst env that means that particular machine has been imported to the particular environment
+3) Jenkins job must be associated for that particular ip/instance, the job parameters must be application name, nodeip, env, version, apptype, containerid, containeport etc.
+ 
+Please specify the following piece of code in the jenkin’s Job for deployment to see the Application cards in Catalyst.
+ 
+# Code for App Deployment history information via jenkins
+ 
+exitStatus=$?
+export APPSTATUS
+if [ $exitStatus -eq 0 ]
+then
+                echo "Successfull"
+                APPSTATUS="Successfull"
+else
+                echo "Failure"
+                APPSTATUS="Failure"
+fi
+echo $APPSTATUS
+export APPVERSION="###<specify the major version>"
+echo $APPVERSION
+export LASTDEPLOY="$(date +'%y-%m-%d %r')"
+echo $LASTDEPLOY
+export IP="$(hostname -I)"
+export THISHOST="$(hostname)"
+export APPINSNAME="Application name"
+export applicationNodeIP="XXX.XXX.XXX.XX" e.g. 192.168.105.22
+ 
+#Send the information for Catalayst Application tab
+ 
+curl -X POST -H "Content-Type: application/json" -d '{"appDeployData": {"applicationNodeIP" : "192.168.105.22","applicationName": " Application name ","applicationInstanceName": "'"$APPINSNAME"'","applicationVersion": "'"$APPVERSION"'","applicationNodeIP": "'"$IP"'","applicationLastDeploy": "'"$LASTDEPLOY"'","applicationStatus": "'"$APPSTATUS"'","applicationType": "Package","containerId": "","hostName": "'"$THISHOST"'","appLogs": "'"http://jenkinsip:port/job/$JOB_NAME/$BUILD_NUMBER/console"'","envId": "QA"}}' http://catalyst:ipaddress:port/app/deploy
 
 
 
