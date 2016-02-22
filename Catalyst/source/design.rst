@@ -6,16 +6,41 @@ Design
 
 User defined Blueprints can be created in the Design section associated with the respective **providers** and **Template Types**.
 
+If you want to know about **Template types** please refer to :ref:`template-setup` .
+
 **Blueprints** are predefined templates which can be used by service consumers to Launch the instances. Blueprints are designed by Service Designers. Each blueprint stores the metadata of the instance, variables, actions and activity.
 
-RL Catalyst Design options allows you to create Blueprints by using predefine templates.
+RL Catalyst Design options allows you to create Blueprints by using predefined templates.
 
-**Creating BluePrints for Sofware Stack Template Type** using AWS provider
 
-Blueprints are predefined templates which can be used by service consumers to launch the instances. Blueprints are designed by service designers. 
-Each blueprint stores the metadata of the instance, variables, actions and activity. Follow the steps for creating BluePrints.
+.. _software-stack:
 
- * From the Design page choose a Software Stack Template Type and click Next
+**Creating BluePrints for AWS provider**
+
+
+**1. Software Stack**
+   
+  **Provider:** It offers some form of IT infrastructure that is commercially distributed and sourced across several subscribers - typically businesses. Cloud providers deliver cloud solutions through on-demand, pay-as-you-go systems as a service to customers and end users. Cloud provider customers access cloud resources through Internet and programmatic access and are only billed for resources and services used according to a subscribed billing method.
+
+
+  **Images:** An image of a virtual machine is a copy of the VM, which may contain an OS, data files and applications.
+
+  **Region:** An AWS account provides multiple regions so that you can launch Amazon EC2 instances in locations that meet your requirements.
+
+  **VPC:** Amazon Virtual Private Cloud, lets you provision a logically isolated section of the Amazon Web Services (AWS) Cloud where you can launch AWS resources in a virtual network that you define.
+
+  **Subnet:** A subnet is a range of IP addresses in your VPC. You can launch AWS resources into a subnet that you select.
+
+  **KeyPair:** Amazon EC2 uses public–key cryptography to encrypt and decrypt login information. Public–key cryptography uses a public key to encrypt a piece of data, such as a password, then the recipient uses the private key to decrypt the data. The public and private keys are known as a key pair.
+
+  **Instance Type:** It specifies the hardware of the host computer used for your instance.
+
+  **Security group:** A security group acts as a virtual firewall that controls the traffic for one or more instances. When you launch an instance, you associate one or more security groups with the instance. You add rules to each security group that allow traffic to or from its associated instances.
+
+  **Instances to Launch:** Indicates how many instances you want on launch of that particular blueprint.
+
+
+ * In the Design page select **AWS** Provider and choose **Software Stack Template Type** and click Next
 
  .. image:: /images/templateTypeList.JPG
 
@@ -26,119 +51,275 @@ Each blueprint stores the metadata of the instance, variables, actions and activ
  .. image:: /images/templateList.JPG
 
  * Once you choose the Template, Enter the details for creating the BluePrint
+  **Configure Provider Parameters** - Choose **OS, Provider, Image, Region, VPC, Subnet, Keypair, Instance Type, Security Group,No of Instances.**
 
- a. In the Configure Providers Parameters option,  choose the operating system from Choose Operating System drop down list
- b. Choose the provider from the Choose Provider drop down list
- c. Choose the image that you want to use from the Choose Available Images drop down list
- d. Choose the region from the Choose Region drop down list
- e. Choose the VPC from the Select VPC drop down list
- f. Choose the subnet from the Select Subnet drop down list
- g. Choose the key pair from the Select Key Pair drop down list
- h. Choose the instance size from the Select Instant Size drop down list
- i. Choose the security group from the Choose Security Group drop down list
+  **Configure Organization Parameters** - Choose **Organization, Business Group,Project** and Enter **Blueprint name**.
 
- .. image:: /images/bpCreation.png
+  .. image:: /images/bpCreation.png
 
- j. In the Configure Organization Paramteres option, Choose the Organization, Enter blueprint name, Choose Business group and Project names
- k. In the Configure Runlist Parameter  option, Click on +  icon (Edit Runlist), select the Cookbooks from the left frame and Click the arrow button to add to the Runlist. You can deselect the selected Cookbooks from the Order Runlist by clicking the arrow button to the Select Runlist box again
- l. You can customize the order of Order Runlist. First select the item and then use the up arrow and down arrow provided to change the order of the Order Runlist
- m. Click on Update runlist button
 
- .. image:: /images/runlistUpdate.JPG
+  **Configure Runlist Parameters** - Click **+**  icon (Edit Runlist), select **Cookbooks / Roles** and add to Runlist and update runlist.
 
- n. In the Configure Application URL option, you can view the application URL available for the BluePrint
- o. If you want to add a new URL, click on the New button
- p. Add Application window will pop up
+ **NOTE** - You can customize the order of Runlist after adding to runlist and then clicking on up and down arrows.
 
- 
 
- q. Provide the application name in the Name box and the host URL  in the URL box
- r. Click Add button, to the add the Application URL
+  .. image:: /images/runlistUpdate.JPG
 
- .. image:: /images/appUrl.JPG
 
- s. Click on Next button 
- t. Now blueprint is created for Software Stack Template type
+  **Configure Application** - Application URL allows you to navigate to the application from the Instance Card.
+   **Application URL** - Add the Application Name and URL in below format [http://$host:port/appname] and save.
 
- .. image:: /images/creationSuccess.JPG	
 
 *****
 
+**2. Docker**
+  
+  * In the Design page select **AWS** provider and choose **Docker Template Type**  and click Next
 
-**Creating BluePrints for Docker Template Type**
-
- * From the Design page choose a Docker Template Type and click Next
-
- .. image:: /images/dockerTT.JPG
-
- * Choose the available Template and click Next
-
+  * Choose the Docker Template and click Next
 
  **NOTE -** If you have not created a template of Docker template type in Settings, follow the instructions at :ref:`configure-softwarestack`.
 
- .. image:: /images/dockerTempleteList.JPG
+  * **Configure Organization Parameters** - Choose **Organization, Business Group,Project** and Enter **Blueprint name** 
 
- * Choose your Organization name form Choose Organization dropdown
- * Provide name in Enter Blueprint Name textfield
- * Choose your business group from Choose Business Group dropdown
- * Choose your project from Choose Project dropdown
+  .. image:: /images/createBpDocker.JPG
 
- .. image:: /images/createBpDocker.JPG
-
- * Click on Launch Parameters icon
-
-  a. Enter Container Name
-  b. Enter Port mappings
-  c. Enter Volumes
-  d. Enter Volumes-from
-  e. Enter Linked Container name
-  f. Enter Environment variables
-  g. Enter Start up Command
-  h. Enter Additional StartUp command
-  i. Click on Add button
+  * Click **Launch Parameters** icon and Enter **Container Name,  Port mappings, Volumes, Volumes-from, Linked Container name, Environment variables, Start up Command, Additional StartUp command** and **Add**.
     
-   .. image:: /images/dockerPopup.JPG
-
-
- * Click Next button 
- * Click OK in confirmation popup
- * Now Docker blueprint saved successfully
-
- .. image:: /images/dockerConfirm.JPG
+  .. image:: /images/dockerPopup.JPG
 
 *****
 
-**Creating BluePrints for Cloud Formation Template Type**
+**3. Cloud Formation**
 
- * From the Design page choose a Cloud Formation Template Type and click Next
+  * In the Design page select **AWS** provider and choose **Cloud Formation Template Type** and click Next
 
- .. image:: /images/cftTemplateType.JPG
-
- * Choose the available Template and click Next
+  * Choose the Cloud Formation Template and click Next
 
  **NOTE -** If you have not created a template of Cloud formation template type in Settings, follow the instructions at :ref:`configure-softwarestack`.
 
- .. image:: /images/cftTemplateList.JPG
+  * **Configure Organization Parameters** - Choose **Organization, Business Group,Project** and Enter **Blueprint name** 
 
- * Click on Configure Organization Parameters
- * Choose your Organization name form Choose Organization dropdown
- * Provide name in Enter Blueprint Name textfield
- * Choose your business group from Choose Business Group dropdown
- * Choose your project from Choose Project dropdown
+  .. image:: /images/cftCreate.JPG
 
- .. image:: /images/cftCreate.JPG
+  * **Configure Stack Parameters** -  Choose **Region, Provider** 
+  **NOTE** - Remaining fields are the attributes present in the JSON file which you uploaded while creating Cloud Formation Template.
 
- * Click on Configure Stack Parameters
- * Choose the region from the Choose Region drop down list
- * Choose the provider from the Choose Provider drop down list
- * Choose the Keyname from the Choose Keyname drop down list
- * Choose the Subnet from the Choose Subnet down list.
- * Choose the Security Group from the Choose Security Group list
- * Choose the AMImageID from the Choose AMImageID  list
- * Choose the Instance Type from the Choose Instance Type  list
- * Click on Next button
- * Now blueprint is created for Cloud Formation Template
+  .. image:: /images/cftCreateLast.JPG
 
- .. image:: /images/cftCreateLast.JPG
+*****
+
+
+**4. OSImage**
+  
+  * In the Design page select **AWS** Provider and choose **OSImage Template Type** and click Next
+
+  * From the Template cards choose OSImage Template and click Next
+
+
+ **NOTE**- 
+           1. In OSImage template type the VMImages which you created in Settings -> :ref:`configure-vm`  page will be listed, based on the selection of the provider in the provider tree.
+
+           2. Suppose If you select ubuntu image, In Choose provider parameters section **Choose operating system, Choose Provider, choose available image** is selected by default. 
+
+           3. Similarly when you select Centos or Windows image, In Choose provider parameters section corresponding operating system, provider and available image will be selcted by default.
+
+   **Configure Provider Parameters** - Choose **Region, VPC, Subnet, Keypair, Instance Type, Security Group,No of Instances.**
+
+   **Configure Organization Parameters** - Choose **Organization, Business Group,Project** and Enter **Blueprint name**.
+
+   **Configure Runlist Parameters** - Click **+**  icon (Edit Runlist), select **Cookbooks / Roles** and add to Runlist and update runlist.
+
+   **Configure Application** - Application URL allows you to navigate to the application from the Instance Card.
+    **Application URL** - Add the Application Name and URL in below format [http://$host:port/appname] and Save.
+
+  
+
+
+*****
+
+**Creating BluePrints for AZURE provider**
+
+
+**1. SoftwareStack**
+
+  **Security Group Ports:** Security group ports contains a list of Access Control List rules that allow or deny network traffic to your VM instances in a Network. 
+
+  **Locations:** It enables Azure customers to achieve higher performance and it supports their requirements and preferences regarding data location.
+
+  
+  * In the Design page choose **AZURE** provider and **SoftwareStack Template Type** and click Next
+
+  * Choose the SoftwareStack Template and click Next
+
+  **NOTE -** If you have not created a template of SoftwareStack template type in Settings, follow the instructions at :ref:`configure-softwarestack`.
+
+  **Configure Provider Parameters** - Choose **OS, Provider, Image, Security Group Ports, Location, VPC, Subnet, Keypair, Instance Size, No of Instances.**
+
+  **Configure Organization Parameters** - Choose **Organization, Business Group,Project** and Enter **Blueprint name**.
+
+  **Configure Runlist Parameters** - Click **+**  icon (Edit Runlist), select **Cookbooks / Roles** and add to Runlist and update runlist.
+
+  **Configure Application** - Application URL allows you to navigate to the application from the Instance Card.
+   **Application URL** - Add the Application Name and URL in below format [http://$host:port/appname] and Save.
+   
+  
+*****
+
+**2. OSImage**
+
+  * In the Design page select **AZURE** Provider and choose **OSImage Template Type** and click Next
+
+  * From the Template cards choose OSImage Template and click Next.
+
+
+ **NOTE**- 
+          
+          1. In OSImage template type the VMImages which you created in Settings -> :ref:`configure-vm`  page will be listed, based on the selection of the provider in the provider tree
+
+          2. Suppose If you select ubuntu image, In Choose provider parameters section **Choose operating system, Choose Provider, choose available image** is selected by default.
+
+          3. Similarly when you select Centos or Windows image, In Choose provider parameters section corresponding operating system, provider and available image will be selcted by default. 
+    
+  **Configure Provider Parameters** - Choose **Security Group Ports, Location, VPC, Subnet, Keypair, Instance Size, No of Instances.**
+
+  **Configure Organization Parameters** - Choose **Organization, Business Group,Project** and Enter **Blueprint name**.
+
+  **Configure Runlist Parameters** - Click **+**  icon (Edit Runlist), select **Cookbooks / Roles** and add to Runlist and update runlist.
+
+  **Configure Application** - Application URL allows you to navigate to the application from the Instance Card.
+   **Application URL** - Add the Application Name and URL in below format [http://$host:port/appname] and Save.
+    
+*****
+
+**3. ARMTemplate**
+
+  **Resource group:** It is a container that holds related resources for an application. The resource group could include all of the resources for an application, or only those resources that are logically grouped together.
+    
+  * In the Design page select **AZURE** Provider and choose **ARMTemplate Type** and click Next
+
+  * Choose the ARMTemplate and click Next
+
+  **NOTE -** If you have not created a template of ARM template type in Settings, follow the instructions at :ref:`configure-softwarestack`.
+
+  **NOTE** - Make sure You have created Resource group in your Azure portal
+
+  * **Configure Organization Parameters** - Choose **Organization, Business Group,Project** and Enter **Blueprint name**
+
+  * **Configure Template Parameters** -  Choose **Provider, Resource Group** 
+
+  **NOTE** - Remaining fields are the attributes present in the JSON file which you uploaded while creating ARMTemplate.
+
+
+*****
+
+**Creating BluePrints for OpenStack provider**
+
+**1. SoftwareStack**
+
+  **Flavours:** Virtual hardware templates are called "flavors". It defines sizes for RAM, disk, number of cores, and so on.
+
+
+  * In the Design page select **OpenStack** Provider and choose **SoftwareStack Template Type** and click Next
+
+  * Choose the SoftwareStack Template and click Next
+
+  **NOTE -** If you have not created a template of SoftwareStack template type in Settings, follow the instructions at :ref:`configure-softwarestack`.
+
+  **Configure Provider Parameters** - Choose **OS, Provider, Image, Flavour, Network, Subnet, Security Group.**
+
+  **Configure Organization Parameters** - Choose **Organization, Business Group,Project** and Enter **Blueprint name**.
+
+  **Configure Runlist Parameters** - Click **+**  icon (Edit Runlist), select **Cookbooks / Roles** and add to Runlist and update runlist.
+
+  **Configure Application** - Application URL allows you to navigate to the application from the Instance Card.
+   **Application URL** - Add the Application Name and URL in below format [http://$host:port/appname] and Save.
+
+
+
+*****
+
+**2. OSImage**
+
+  * In the Design page select **OpenStack** Provider and choose **OSImage Template Type** and click Next
+
+  * Choose the OSImage Template and click Next
+
+ **NOTE**- 
+
+           1. In OSImage template type the VMImages which you created in Settings -> :ref:`configure-vm`  page will be listed, based on the selection of the provider in the provider tree.
+
+           2. Suppose If you select ubuntu image, In Choose provider parameters section **Choose operating system, Choose Provider, choose available image** is selected by default.
+
+           3. Similarly when you select Centos or Windows image, In Choose provider parameters section corresponding operating system, provider and available image will be selcted by default. 
+    
+  **Configure Provider Parameters** - Choose **Flavour, Network, Subnet, Security Group.**
+
+  **Configure Organization Parameters** - Choose **Organization, Business Group,Project** and Enter **Blueprint name**.
+
+  **Configure Runlist Parameters** - Click **+**  icon (Edit Runlist), select **Cookbooks / Roles** and add to Runlist and update runlist.
+
+  **Configure Application** - Application URL allows you to navigate to the application from the Instance Card.
+   **Application URL** - Add the Application Name and URL in below format [http://$host:port/appname] and Save.
+
+
+*****
+
+**Creating BluePrints for VMware provider**
+
+**Datastore:** A datastore is a manageable storage entity, usually used as a repository for virtual machine files including log files, scripts, configuration files, virtual disks, and so on.
+
+
+**1. SoftwareStack**
+  
+  * In the Design page select **VMware** Provider and choose **SoftwareStack Template Type** and click Next
+
+  * Choose the SoftwareStack Template and click Next
+
+  **NOTE -** If you have not created a template of SoftwareStack template type in Settings, follow the instructions at :ref:`configure-softwarestack`.
+
+  **Configure Provider Parameters** - Choose **OS, Provider, Image, Data Store, No of Instances.**
+
+  **Configure Organization Parameters** - Choose **Organization, Business Group,Project** and Enter **Blueprint name**.
+
+  **Configure Runlist Parameters** - Click **+**  icon (Edit Runlist), select **Cookbooks / Roles** and add to Runlist and update runlist.
+
+  **Configure Application** - Application URL allows you to navigate to the application from the Instance Card.
+   **Application URL** - Add the Application Name and URL in below format [http://$host:port/appname] and Save.
+
+
+  
+*****
+
+**2. OSImage**
+
+  * In the Design page select **VMware** Provider and choose **OSImage Template Type** and click Next
+
+  * Choose the OSImage Template and click Next
+  
+
+ **NOTE**- 
+           1. In OSImage template type the VMImages which you created in Settings -> :ref:`configure-vm`  page will be listed, based on the selection of the provider in the provider tree
+
+           2. Suppose If you select ubuntu image, In Choose provider parameters section **Choose operating system, Choose Provider, choose available image** is selected by default.
+
+           3. Similarly when you select Centos or Windows image, In Choose provider parameters section corresponding operating system, provider and available image will be selcted by default. 
+    
+  **Configure Provider Parameters** - Choose **Data Store, No of Instances.**
+
+  **Configure Organization Parameters** - Choose **Organization, Business Group,Project** and Enter **Blueprint name**.
+
+  **Configure Runlist Parameters** - Click **+**  icon (Edit Runlist), select **Cookbooks / Roles** and add to Runlist and update runlist.
+
+  **Configure Application** - Application URL allows you to navigate to the application from the Instance Card.
+   **Application URL** - Add the Application Name and URL in below format [http://$host:port/appname] and Save.
+
+
+*****
+
+
+
+
+
 
 

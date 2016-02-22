@@ -41,7 +41,6 @@ Follow the instructions to configure your Organization structure in RLCatalyst
 1. **Create an Organization** structure . Refer to :ref:`org-settings` for more help
 2. **Add Business Groups** to the Organization . Refer to :ref:`bu-settings` for more help
 3. **Add Projects** to the Business Groups . Refer to :ref:`projects-settings` for more help
-
 4. **Add your Chef Server** details . Refer to :ref:`chef-settings` for more help
 
     
@@ -71,7 +70,7 @@ Create Template, VM Image, Blueprints
 
 
 Application  Deployment
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 You can now deploy your application in one-click in RLCatalyst . RLCatalyst gets the build or the source from the repository which is associated with the application. The repository need to be configured in RLCatalyst and should be associated with a Project . Currently Docker and Nexus repositories are supported.
   
@@ -86,15 +85,14 @@ You can now deploy your application in one-click in RLCatalyst . RLCatalyst gets
 
 Follow the instructions to deploy an application from Nexus repository
 
-1. Add the Nexus server details in RLCatalyst . Refer to  :ref:`configure-nexus` for more details
-2. Associate the repository to a Project . Refer to :ref:`associate-nexus' for more details
-3. Create new blueprint to  deploy the application . Refer to :ref:`create-app-blueprint` for more details
-4. Launch a new instance using the blueprint  . Refer to :ref:`launch-app-blueprint` for more details
-5. Update the application to the latest version and see the application running at the URL configured. Refer to :ref:`upgrade-app` for more details
+1. Add the Nexus server details in RLCatalyst and associate the repository to a Project. Refer to  :ref:`configure-nexus` for more details.
+2. Create new blueprint to  deploy the application . Refer to :ref:`create-app-blueprint` for more details
+3. Launch a new instance using the blueprint  . Refer to :ref:`launch-app-blueprint` for more details
+4. Update the application to the latest version and see the application running at the URL configured. Refer to :ref:`upgrade-app` for more details
   
         
 View Cost and Usage Dashboards
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 RLCatalyst provides you a consolidated dashboard for tracking your AWS infrastructure cost and usage . This helps you to identify un-used capacity and do better utilization. RLCatalyst summarizes this data for all the AWS provider accounts configured
             

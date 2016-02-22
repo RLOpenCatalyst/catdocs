@@ -7,7 +7,8 @@
 Templates
 ^^^^^^^^^
 
-Templates are user defined skeleton structure which helps the user to add Cookbooks,Roles which in turn leads to create Blueprints.
+Templates will helps to deploy applications on existing infrasturcute without having need of launching new instances.
+Templates internally contains roles or cookbooks. With the help of templates also you can deploy different applications.
 
 **Adding a New Template For Software Stack Template Type**
 

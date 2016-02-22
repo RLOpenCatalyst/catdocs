@@ -95,6 +95,7 @@ Put all the files in the chef folder
 
  .. image:: /images/knifeCmd.png
 
+
 .. _upload-cookbooks:
 
 Upload cookbooks into Chef

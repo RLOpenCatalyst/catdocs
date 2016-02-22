@@ -505,6 +505,10 @@ Once Nexus Server is configured you have to associate Repository details to your
 
 .. _create-app-blueprint:
 
+
+**App Blueprint**
+^^^^^^^^^^^^^^^^^
+
 Once you associate repository details to your project now start creating blueprint. Follow the below steps:
 
 * Go to Design
@@ -545,6 +549,7 @@ Once you associate repository details to your project now start creating bluepri
 .. _launch-app-blueprint:
 
 **Launching Blueprint**
+^^^^^^^^^^^^^^^^^^^^^^^
 
 * Go to Workzone
 
@@ -575,6 +580,7 @@ Once you associate repository details to your project now start creating bluepri
 .. _upgrade-app:
 
 Deploy New App
+^^^^^^^^^^^^^^
   Now I will show you how to upgrade latest version of catalyst application on the same node.
 
 * Go to Applications tab
