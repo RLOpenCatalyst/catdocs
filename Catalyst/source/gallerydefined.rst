@@ -104,6 +104,7 @@ An image of a virtual machine is a copy of the VM, which may contain an OS, data
  * Select the operating system type from the Operating System drop down list
  * Provide the image identifier name in the Image ID field
  * Provide the admin user name in the Admin User Name field
+ * Provide the admin password in the Admin Password field
  * Click on Save button
 
  .. image:: /images/createVM.JPG
