@@ -44,7 +44,7 @@ Done Now you have a Hosted Chef account.
 
 * Reset the Validation Key
 
- .. image:: /images/resetKey.png
+ .. image:: /images/resetkey.png
 
 
  .. image:: /images/resettingKey.png

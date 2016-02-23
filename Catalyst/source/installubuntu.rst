@@ -141,7 +141,7 @@ Now you can access RLCatalyst at http://localhost:3001 ::
 
 
 You are ready to start using RLCatalyst now. 
-Please see :doc:`Getting Started <gettingstarted> ` for next steps . 
+Please see :doc:`Getting Started <gettingstarted>` for next steps . 
 
 
 Installation Steps for Centos7
@@ -281,5 +281,5 @@ Access RLCatalyst::
     username- superadmin
     pass - superadmin@123
 
-Now you are ready to start using RLCatalyst . Please see :doc:`Getting Started <gettingstarted> ` for next steps
+Now you are ready to start using RLCatalyst . Please see :doc:`Getting Started <gettingstarted>` for next steps
 
