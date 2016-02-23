@@ -26,6 +26,21 @@ If you have an AWS account, you can bring up RLCatalyst using the public AMI ava
 7. Review and launch . Once the instance is in "Running" state , you can access RLCatalyst at http://<ip>:3001 . Login using superadmin/superadmin@123
 
 
+**Following video demonstrates how to Quick install using RLCatalyst public AWS Image:**
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/TQLFZJrPJDU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+*****
+
+
+
+
 Add basic data into RLCatalyst
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 RLCatalyst will come with basic setup data which is required to start working with the application. Organization, Business Group, Project , Chef Server and a User will be added for you. If you want to create your own **Organization**, **Business group** and **Project** Follow these steps.
@@ -47,6 +62,19 @@ Follow the instructions to configure your own Organization structure in RLCataly
 7. **Add a team** . Refer to :ref:`team-settings` for more help
 
 
+**Following video demonstrates how to add basic data in RLCatalyst:**
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/T16dYfjZHEI" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+*****
+
+
 Add Provider and do Provider Sync
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Once the basic data is loaded, you can start exploring RLCatalyst from the Provider-Sync Feature. You can sync nodes from your AWS provider account and convert the nodes to 'Managed' . This will give a control on your AWS infra by letting you track the capacity, cost and usage . Once sync-ed, you can see the summary dashboard from 'Track'
@@ -54,6 +82,20 @@ Once the basic data is loaded, you can start exploring RLCatalyst from the Provi
 
 1. **Add your AWS provider** account details in RLCatalyst . Refer to :ref:`provider-settings` for more help
 2. **Sync your provider with RLCatalyst**. Once the provider account is added, you can start importing the nodes into RLCatalyst . Importing will bootstrap the nodes with the configured chef server . The imported instances can be managed from the workzone, under the project and environment to which the nodes are imported. Refer to :ref:`provider-sync` for more help
+
+
+**Following video demonstrates how to add provider and do sync in RLCatalyst:**
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/HIMlbwtc8Zc" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+*****
+
 
 
 Create Template, VM Image, Blueprints

@@ -564,8 +564,8 @@ Follow the below steps :
 .. _create-app-blueprint:
 
 
-**App Blueprint**
-^^^^^^^^^^^^^^^^^
+App Blueprint
+^^^^^^^^^^^^^
 
 Once you associate repository details to your project now start creating blueprint. Follow the below steps:
 
@@ -606,8 +606,8 @@ Once you associate repository details to your project now start creating bluepri
 
 .. _launch-app-blueprint:
 
-**Launching Blueprint**
-^^^^^^^^^^^^^^^^^^^^^^^
+Launching Blueprint
+^^^^^^^^^^^^^^^^^^^
 
 * Go to Workzone
 
