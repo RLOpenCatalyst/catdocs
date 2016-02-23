@@ -138,6 +138,23 @@ Follow below steps to connect to Instance:
  
 
 
+
+**Following video demonstrates how to Launch Blueprint, Update Configuration and Connect to the Instance in RLCatalyst:**
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/mOXOUvR-cT0" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+*****
+
+
+
+
+
 Start Instance
 ^^^^^^^^^^^^^^
 Catalyst allows you to start the instance which is already stopped. 
@@ -215,6 +232,17 @@ In the Instances page, you can import any running instances to the catalyst appl
 
 
 
+**Following video demonstrates how to Import a Node by IP Address to RLCatalyst**:
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/vD5bqzAlYdQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+*****
 
 
 
@@ -387,6 +415,22 @@ Orchestration
 
 
 
+**Following video demonstrates how to create and run Chef Task  in RLCatalyst**:
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/kxu0Z1L8yAw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+*****
+
+
+
+
+
 **Jenkins Task**
 
  * To add a new task click on the **New** button
@@ -463,7 +507,17 @@ Edit or Remove a Task
 
 
 
+**Following video demonstrates how to create and execute Jenkins Task in RLCatalyst**:
 
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/fM5nrBBJmko" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+*****
 
 
 
@@ -678,7 +732,17 @@ curl -X POST -H "Content-Type: application/json" -d '{"appDeployData": {"applica
 
 
 
+**Following video demonstrates how to do AppDeploy in RLCatalyst**:
 
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/7XOo4xpU4qA" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+*****
 
 
 

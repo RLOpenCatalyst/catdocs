@@ -54,17 +54,6 @@ Templates internally contains roles or cookbooks. With the help of templates als
  * Now new template is added and available in the Templates list
 
 
-**Hereby attaching a video which will demonstrate as in how to Create Templates**:
-
-
-.. raw:: html
-
-	
-	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/rMBCRLRkeHs" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-
-
 *****
 
 **Adding a New Template For Cloud Formation Template Type**
@@ -75,7 +64,7 @@ Templates internally contains roles or cookbooks. With the help of templates als
  * Click on New button provided 
  * Enter the template name in the Template Name field
  * Upload an Icon by clicking on the Browse button
- * Choose the template type 'CloudFormation from the Template Type drop down list
+ * Choose the template type 'CloudFormation' from the Template Type drop down list
  * Choose the Organization from the Organizationdrop down list
  * Browse the Template File
  * Click on Save button
@@ -83,7 +72,42 @@ Templates internally contains roles or cookbooks. With the help of templates als
  .. image:: /images/cftTemplate.JPG
 
  * Now new template is added and available in the Templates list
+
 *****
+
+**Adding a New Template For ARMTemplate Type**
+
+ * From the main menu click on Settings
+ * Once you click on Settings, from the side menu click on Gallery Setup
+ * Click on Templates
+ * Click on New button provided 
+ * Enter the template name in the Template Name field
+ * Upload an Icon by clicking on the Browse button
+ * Choose the template type 'ARMTemplate' from the Template Type drop down list
+ * Choose the Organization from the Organizationdrop down list
+ * Browse the Template File
+ * Click on Save button
+
+
+
+**Hereby attaching a video which will demonstrate as in how to Create Templates in RLCatalyst:**
+
+
+.. raw:: html
+
+	
+	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/VcTIsA9wvGA" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
+*****
+
+
+
+
+
+
 
 .. _configure-vm:
 
@@ -112,15 +136,74 @@ An image of a virtual machine is a copy of the VM, which may contain an OS, data
 
  * Now new VM Image is added and available in the VM Image list
 
-**Hereby attaching a video which will demonstrate as in how to Create VM Images**:
+**Hereby attaching a video which will demonstrate as in how to Create VM Images in RLCatalyst:**
 
 
 .. raw:: html
 
 	
 	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/dC3Ve-Ihz2I" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/0ciDKco_WF8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
+
+*****
+
+
+**How to add Windows VMImage?**
+ Before onboading Windows nodes into RLCatalyst, we need to ensure that WinRM is configured on the windows guest node, the two ports 5985 & 5986 are opened for communication between RLCatalyst and node.
+
+ The settings below must be added to your base server image or passed in using some sort of user-data mechanism provided by your cloud provider. 
+
+**Steps (To be performed from a windows host):**
+
+1. Use remote desktop to connect to the node (Start->Run->MSTC).
+
+2. Provide the IP Address / Host name of the node along with the username and password.
+
+3. Once connected to the node,
+
+ a. Open / Run powershell as an administrator
+
+ b. Execute the below commands (you could copy and paste all the commands together)
+
+    winrm quickconfig -q
+
+    winrm set winrm/config/winrs '@{MaxMemoryPerShellMB="300"}'
+
+    winrm set winrm/config '@{MaxTimeoutms="1800000"}'
+
+    winrm set winrm/config/service '@{AllowUnencrypted="true"}'
+
+    winrm set winrm/config/service/auth '@{Basic="true"}'
+
+    winrm set winrm/config/client/auth '@{Basic="true"}'
+
+    netsh advfirewall firewall add rule name="WinRM 5985" protocol=TCP dir=in 
+
+    localport=5985 action=allow
+
+    netsh advfirewall firewall add rule name="WinRM 5986" protocol=TCP dir=in 
+
+    localport=5986 action=allow
+
+    net stop winrm
+
+    Set-Service WinRm -StartupType Automatic
+
+    net start winrm
+
+ **Note:** Press enter to execute the last command, if you have copy - pasted the above commands.
+
+4. To create an image from this node, follow the instructions given by the cloud service provider for image creation.
+
+ a. Remember to create a local admin user before generating an image, as image generation wipes out existing administrator account, which will be manageable only from the server's console and not remotely.
+
+ b. Install all necessary updates before creating the image.
+
+ c. Use the Windows sysprep utility to create the image. 
+
+ d. Details about using the sysprep utility can be found here (https://technet.microsoft.com/en-in/library/hh824938.aspx)
+
 
 
 

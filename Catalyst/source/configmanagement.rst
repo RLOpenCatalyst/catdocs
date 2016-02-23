@@ -52,14 +52,14 @@ You can import existing nodes from the configured puppet server into RLCatalyst 
 
  **Note**: For the imported node using puppet server , Puppet client run icon will be shown.
 
-**Hereby attaching a video which will demonstrate as in how to Create Puppet**:
+**Hereby attaching a video which will demonstrate as in how to Create Puppet in RLCatalyst:**
 
 
 .. raw:: html
 
 	
 	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/sqQ8dRWnWKI" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/5YtNPCHEgg4" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 *****
@@ -95,14 +95,14 @@ To configure a new Nexus server follow the steps below:
 
  .. image:: /images/nexusList.JPG
 
-**Hereby attaching a video which will demonstrate as in how to Create Nexus**:
+**Hereby attaching a video which will demonstrate as in how to Create Nexus in RLCatalyst:**
 
 
 .. raw:: html
 
 	
 	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/OWjg9h4vdKA" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/RDiPzUPOCR8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
@@ -151,14 +151,14 @@ You can configure the Docker setup with RLCatalyst. To configure the Docker setu
  * Click Save button
  * Now Docker is successfully configured to RL Catalyst
 
-**Hereby attaching a video which will demonstrate as in how to Create Docker**:
+**Hereby attaching a video which will demonstrate as in how to Create Docker in RLCatalyst:**
 
 
 .. raw:: html
 
 	
 	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/PTKKXE4dAxk" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/MYjKmgLpO7c" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
@@ -185,14 +185,14 @@ Jenkins is CI/CD tool which can be used for build and deployment automation. You
  * Now Jenkins is successfully configured to RLCatalyst
 
 
-**Hereby attaching a video which will demonstrate as in how to Create Jenkins**:
+**Hereby attaching a video which will demonstrate as in how to Create Jenkins in RLCatalyst:**
 
 
 .. raw:: html
 
 	
 	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/uoMmBnUhYjE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/99m0sGvnIiw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
@@ -283,14 +283,14 @@ To configure the Providers setup follow the steps below:
 
  
 
-**Hereby attaching a video which will demonstrate as in how to Create Providers**:
+**Hereby attaching a video which will demonstrate as in how to Create Providers in RLCatalyst:**
 
 
 .. raw:: html
 
 	
 	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/Z1I3PEn9QVs" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/FnpU1fFCe-Y" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 .. _provider-sync:
@@ -352,7 +352,17 @@ The Bootstrapped node will be displayed under Managed Instances tab
 
 
 
+**Following video demonstrates how to do provider sync in RLCatalyst**:
 
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/rhYHxpH0vPM" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+*****
 
 
 

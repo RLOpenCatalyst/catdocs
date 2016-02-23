@@ -119,14 +119,14 @@ To Remove the Project
 
 
 
-The following video will help you to setup an Organization:
+**The following video will help you to setup an Organization, BusinessGroup, Project in RLCatalyst:**
 
 
 .. raw:: html
 
 	
 	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/-xt_FLAky74" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/khifxeCjPAw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
@@ -198,14 +198,14 @@ To Edit the Chefserver
 To Remove the Chefserver
  * Click on delete button to remove chef server configuration from the list
 
-**Following video demonstrates how to configure a chef server in RLCatalyst**:
+**Following video demonstrates how to configure a chef server in RLCatalyst:**
 
 
 .. raw:: html
 
 	
 	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/OOniqyJnakc" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/qwCu-xx-wcA" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 *****
@@ -331,14 +331,14 @@ Follow the steps to setup a new Environment in an Organization:
 *****
 
 
-**Hereby attaching a video which will demonstrate as in how to Create Environment**:
+**Hereby attaching a video which will demonstrate as in how to Create Environment in RLCatalyst:**
 
 
 .. raw:: html
 
 	
 	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/hzGWuRSJCRw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/LBPj6psKfsw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 

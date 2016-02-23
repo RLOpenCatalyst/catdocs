@@ -70,7 +70,22 @@ RL Catalyst Design options allows you to create Blueprints by using predefined t
    **Application URL** - Add the Application Name and URL in below format [http://$host:port/appname] and save.
 
 
+
+**Following video demonstrates how to create Blueprint for AWS provider in RLCatalyst:**
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/f5rVD77DZoU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
 *****
+
+
+
+
 
 **2. Docker**
   
@@ -107,7 +122,21 @@ RL Catalyst Design options allows you to create Blueprints by using predefined t
 
   .. image:: /images/cftCreateLast.JPG
 
+
+
+**Following video demonstrates how to create and launch cloud formation template in RLCatalyst**:
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/a1DU8ns81gE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
 *****
+
 
 
 **4. OSImage**
@@ -211,7 +240,19 @@ RL Catalyst Design options allows you to create Blueprints by using predefined t
   **NOTE** - Remaining fields are the attributes present in the JSON file which you uploaded while creating ARMTemplate.
 
 
+
+**Following video demonstrates how to create ARM Template, Blueprint, Launch, Update Configuration, Connect to the Instance in RLCatalyst:**
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/RXRmIxyTefs" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
 *****
+
 
 **Creating BluePrints for OpenStack provider**
 
@@ -261,6 +302,17 @@ RL Catalyst Design options allows you to create Blueprints by using predefined t
 
   **Configure Application** - Application URL allows you to navigate to the application from the Instance Card.
    **Application URL** - Add the Application Name and URL in below format [http://$host:port/appname] and Save.
+
+
+**Following video demonstrates how to create Openstack Blueprint, Launch, Update Configuration, Connect to Instance, Add Application URL in RLCatalyst**:
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/iC_ZWC5llBM" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
 
 
 *****
