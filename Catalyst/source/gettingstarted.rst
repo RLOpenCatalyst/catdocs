@@ -13,29 +13,26 @@ Refer to :ref:`install-source` to install RLCatalyst directly from source
 
 RLCatalyst can be installed using one of our Quick Installers
 
-**Quick install using Installer Script** 
+**Quick install using RLCatalyst Public AWS Image** 
 
-RLCatalyst can be installed using our installer script which bundles the core and the dependencies . Refer to :ref:`install-installer` . The installer comes with basic seed data to start the application , that includes an admin user and a sample Organization setup
+If you have an AWS account, you can bring up RLCatalyst using the public AMI available. The public image is currently available for US east(N.Virginia) region. This comes with some basic configurations required by RLCatalyst
+
+1. From your EC2 dashboard, select N.Virginia region . In the Images/AMI link, choose "Public Images" in the dropdown . Search for image with AMI ID ``ami-b1e0d3db`` and AMI Name ``rlcatalyst``
+2. Select the rlcatalyst image and hit Launch
+3. On the "Instance Type" page ,choose the instance size as t2.medium or bigger . We recommend atleast 4 GB RAM
+4. On the "Configure Instance Details" page, choose your preferred Network and Subnets. If you want to assign a public IP to RLCatalyst, then enable "Auto-assign Public IP"
+5. On "Tag Instance" , name your instance
+6. On "Security Group" , add rule to open ports 443 and 3001.
+7. Review and launch . Once the instance is in "Running" state , you can access RLCatalyst at http://<ip>:3001 . Login using superadmin/superadmin@123
 
 
-**Quick install using AWS AMI** 
-
-**Quick install using Vagrant File** 
-
-**Quick install using Docker Image** 
-
-**Quick install using VMWare VM** 
-
-
-**RLCatalyst Workflow** 
-
-RLCatalyst will come with basic setup data which is required to start working with the application. Organization, Business Group, Project and a User will be added for you. If you want to create New **Organization**, **Business group** and **Project** Follow these steps.
 
 Add basic data into RLCatalyst
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   
+RLCatalyst will come with basic setup data which is required to start working with the application. Organization, Business Group, Project , Chef Server and a User will be added for you. If you want to create your own **Organization**, **Business group** and **Project** Follow these steps.
 
-Follow the instructions to configure your Organization structure in RLCatalyst
+
+Follow the instructions to configure your own Organization structure in RLCatalyst . Ignore if you want to continue with the existing data
 
 
 1. **Create an Organization** structure . Refer to :ref:`org-settings` for more help
