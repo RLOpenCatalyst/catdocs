@@ -29,7 +29,7 @@ RLCatalyst can be installed using our installer script which bundles the core an
 
 **RLCatalyst Workflow** 
 
-RLCatalyst will come with basic setup data which is required to start working with the application. Organization, Business Group, Project and a User will be added for you. If you want to create New **Organization**, **Business group** and **Project** Follow these steps.
+RLCatalyst will come with basic setup data which is required to start working with the application. Organization, Business Group, Project and a User will be added for you. If you want to create New **Organization**, **Business group** and **Project** follow these steps.
 
 Add basic data into RLCatalyst
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

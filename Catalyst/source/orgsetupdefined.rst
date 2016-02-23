@@ -7,6 +7,8 @@
 Organization
 ^^^^^^^^^^^^
 
+An Organization can be an enterprise or a business that can have multiple sub groups and projects.
+
 **Follow the steps below to create an organization**
 
  * From the main menu click on Settings
@@ -153,9 +155,9 @@ Data/File needed for adding a Chef Server account in RLCatalyst
  * URL : URL of the hosted or on-premise chef server
  * User Pem File : User file to access your Chef Server account
  * Knife.rb : Configuration file that you get while setting up the Chef server
- * Validator Pem File : 
- * Key File : 
- * Template File : 
+ * Validator Pem File : During the first chef-client run, this private key does not exist. Instead, the chef-client will attempt to use the private key assigned to the chef-validator, located in /etc/chef/validation.pem.
+ * Key File : It is used to encrypt the contents of the data bag item.
+ * Template File :  The default bootstrap operation relies on an Internet connection to get the distribution to the target node. If a target node cannot access the Internet, then a custom template i.e, template file can be used to define a specific location for the distribution so that the target node may access it during the bootstrap operation.
 
 To configure a new chef server follow the steps below:
 
