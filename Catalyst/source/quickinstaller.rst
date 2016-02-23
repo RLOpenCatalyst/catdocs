@@ -23,6 +23,16 @@ Please download the installer from https://github.com/RLOpenCatalyst/RLCatInstal
 Install from AWS AMI
 ====================
 
+If you have an AWS account, you can bring up RLCatalyst using the public AMI available. The public image is currently available for US east(N.Virginia) region. This comes with some basic configurations required by RLCatalyst
+
+1. From your EC2 dashboard, select N.Virginia region . In the Images/AMI link, choose "Public Images" in the dropdown . Search for image with AMI ID ``ami-b1e0d3db`` and AMI Name ``rlcatalyst``
+2. Select the rlcatalyst image and hit Launch
+3. On the "Instance Type" page ,choose the instance size as t2.medium or bigger . We recommend atleast 4 GB RAM
+4. On the "Configure Instance Details" page, choose your preferred Network and Subnets. If you want to assign a public IP to RLCatalyst, then enable "Auto-assign Public IP"
+5. On "Tag Instance" , name your instance
+6. On "Security Group" , add rule to open ports 443 and 3001.
+7. Review and launch . Once the instance is in "Running" state , you can access RLCatalyst at http://<ip>:3001 . Login using superadmin/superadmin@123
+
 .. _install-vagrant:
 Install using Vagrant
 =====================
