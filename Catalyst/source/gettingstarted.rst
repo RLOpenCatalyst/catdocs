@@ -26,6 +26,17 @@ If you have an AWS account, you can bring up RLCatalyst using the public AMI ava
 7. Review and launch . Once the instance is in "Running" state , you can access RLCatalyst at http://<ip>:3001 . Login using superadmin/superadmin@123
 
 
+**Following video demonstrates how to Quick install using RLCatalyst public AWS Image:**
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/TQLFZJrPJDU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
 *****
 
 
@@ -50,6 +61,19 @@ Follow the instructions to configure your own Organization structure in RLCataly
 7. **Add a team** . Refer to :ref:`team-settings` for more help
 
 
+
+**Following video demonstrates how to add basic data in RLCatalyst:**
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/T16dYfjZHEI" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
+
 *****
 
 
@@ -62,7 +86,24 @@ Once the basic data is loaded, you can start exploring RLCatalyst from the Provi
 2. **Sync your provider with RLCatalyst**. Once the provider account is added, you can start importing the nodes into RLCatalyst . Importing will bootstrap the nodes with the configured chef server . The imported instances can be managed from the workzone, under the project and environment to which the nodes are imported. Refer to :ref:`provider-sync` for more help
 
 
+
+**Following video demonstrates how to add provider and do sync in RLCatalyst:**
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/HIMlbwtc8Zc" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
+
 *****
+
+
+
+
 
 
 Create Template, VM Image, Blueprints
