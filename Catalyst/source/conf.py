@@ -46,9 +46,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Catalyst'
-copyright = u'2016, Srikanth V'
-author = u'Srikanth V'
+project = u'RLCatalyst'
+copyright = u'2016, Relevance Lab'
+author = u'Relevance Lab'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
