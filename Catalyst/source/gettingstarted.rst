@@ -10,7 +10,7 @@ RLCatalyst can be installed either directly from source or using one of our quic
 Refer to :ref:`install-source` to install RLCatalyst directly from source
 
 **Quick Installer** 
-
+	
 RLCatalyst can be installed using one of our Quick Installers
 
 **Quick install using RLCatalyst Public AWS Image** 
@@ -26,56 +26,44 @@ If you have an AWS account, you can bring up RLCatalyst using the public AMI ava
 7. Review and launch . Once the instance is in "Running" state , you can access RLCatalyst at http://<ip>:3001 . Login using superadmin/superadmin@123
 
 
+
 **Following video demonstrates how to Quick install using RLCatalyst public AWS Image:**
-
-
-.. raw:: html
-
-    
-    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/TQLFZJrPJDU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-
-
-*****
-
-
-Add basic data into RLCatalyst
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-RLCatalyst will come with basic setup data which is required to start working with the application. Organization, Business Group, Project , Chef Server and a User will be added for you. If you want to create your own **Organization**, **Business group** and **Project** Follow these steps.
-
-
-Follow the instructions to configure your own Organization structure in RLCatalyst . Ignore if you want to continue with the existing data
-
-
-1. **Create an Organization** structure . Refer to :ref:`org-settings` for more help
-2. **Add Business Groups** to the Organization . Refer to :ref:`bu-settings` for more help
-3. **Add Projects** to the Business Groups . Refer to :ref:`projects-settings` for more help
-4. **Add your Chef Server** details . Refer to :ref:`chef-settings` for more help
-
-    
-.. include:: __chef_info.rst
-
-5. **Add environments** . You can either choose the environments created in chef server, or create new ones. Refer to :ref:`env-settings` for more help
-6. **Add Users** . RLCatalyst will come with one admin user 'superadmin' . Follow the below steps to add more users . You can add users for 3 different pre-defined roles- Admin, Consumer and Designer. Refer to :ref:`user-settings` for more help
-7. **Add a team** . Refer to :ref:`team-settings` for more help
-
-
-
-**Following video demonstrates how to add basic data in RLCatalyst:**
-
+ 
 
 .. raw:: html
 
     
     <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/T16dYfjZHEI" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/tj-Ce5o6-So" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
+
+*****
+
+
+Import your existing Instance
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+You can import already existing node in to RL Catalyst using IP Address. The Node should have public IP Address and should be reachable from catalyst. Please refer to :ref:`import-byip`  for more help
+
+
+Deploy a Test Application
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Deploy Tomcat Application on the Imported Node**
+
+* Go to Orchestration, Create New **Chef Task** by adding **deploy_tomcat_war** cookbook to the **Runlist**, click on Edit **Cookbook Attribute** Icon and add **Source code URL** and Save
+
+* Execute the Chef Task and wait until task executes successfully
+
+
+
+**Following video demonstrates how to do Import By IP and Deploy Tomcat Application in RLCatalyst:**
+
+
+
 
 
 
 *****
-
 
 Add Provider and do Provider Sync
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -102,10 +90,6 @@ Once the basic data is loaded, you can start exploring RLCatalyst from the Provi
 *****
 
 
-
-
-
-
 Create Template, VM Image, Blueprints
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -113,6 +97,22 @@ Create Template, VM Image, Blueprints
 2. **Add VM Images** for the providers. Add VM Images for your each of the provider accounts added. This could be any of the images(public/private) accessible from your provider account. The templates will use these as the base to launch new instances . Refer to :ref:`configure-vm` for more help
 3. **Create a blueprint** for a software stack . Once the templates and VM Images are added, next step is to design blueprints, which are tied to a provider. Refer to :ref:`design-blueprint` for more help
 4. **Launch the blueprints** to create new instance and boootstrap with the runlist added in the blueprint . The new instances will be listed under 'Instances' for the specified project and environment . Refer to  :ref:`launch-instances` for more details
+
+
+
+**Following video demonstrates how to create Templates, VM Images and Blueprints in RLCatalyst:**
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/Hg6kFMLruaY" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
+
+*****
 
 
 Application  Deployment
@@ -135,7 +135,9 @@ Follow the instructions to deploy an application from Nexus repository
 2. Create new blueprint to  deploy the application . Refer to :ref:`create-app-blueprint` for more details
 3. Launch a new instance using the blueprint  . Refer to :ref:`launch-app-blueprint` for more details
 4. Update the application to the latest version and see the application running at the URL configured. Refer to :ref:`upgrade-app` for more details
-  
+
+
+*****
         
 View Cost and Usage Dashboards
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

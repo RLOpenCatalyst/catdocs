@@ -119,7 +119,7 @@ Install the dependencies- make , g++ , Kerberos & library::
 
 Install Node Packages::
 
-    cd D4D/server
+    cd core/server
     sudo npm install
 
 
@@ -245,7 +245,7 @@ To Install RLCatalyst and to create a db path folder::
     Create a db path folder
     mongo db path -  mkdir -p /data/db/
 
-    Go to cd D4D/server
+    Go to cd core/server
     npm install
 
 Start the mongodb::
@@ -266,7 +266,7 @@ To Start the Application::
 
     Run (node app) to start your application.
     npm install forever –g
-    node start app.js
+    node app.js
 
 
 To run the application forever::

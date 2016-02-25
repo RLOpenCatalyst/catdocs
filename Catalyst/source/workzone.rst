@@ -195,7 +195,7 @@ Follow below steps to stop the Instance:
 
 
 
-
+.. _import-byip:
 
 Import By IP
 ^^^^^^^^^^^^
@@ -232,7 +232,7 @@ In the Instances page, you can import any running instances to the catalyst appl
 
 
 
-**Following video demonstrates how to Import a Node by IP Address to RLCatalyst**:
+**Following video demonstrates how to Import a Node by IP Address and connect to Instance from RLCatalyst**:
 
 
 .. raw:: html
@@ -317,6 +317,19 @@ Docker Blueprints
  
  .. image:: /images/docker.JPG
 
+
+
+**Following video demonstrates how to Configure Docker and Launch Containers in RLCatalyst:**
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/VgNA7ne2fwQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+*****
 
 
 
