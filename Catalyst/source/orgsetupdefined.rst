@@ -1,10 +1,13 @@
 
 
 
+.. _org-settings:
 
 
 Organization
 ^^^^^^^^^^^^
+
+An Organization can be an enterprise or a business that can have multiple sub groups and projects.
 
 **Follow the steps below to create an organization**
 
@@ -40,7 +43,8 @@ You can activate or inactivate an Organization by using the cursor button provid
 
  .. image:: /images/editOrg.png
 
-
+ 
+.. _bu-settings:
 
 Business Groups
 ^^^^^^^^^^^^^^^
@@ -77,14 +81,14 @@ To Remove the Business Group
  
 
 
-
+.. _projects-settings:
 
 Projects
 ^^^^^^^^
 
 **Setup Projects for a Business Group**
 
-In a Business Group you can create multiple Projects. A Project in RLCatalyst can be a running project in your business group
+In a Business Group you can create multiple Projects. A Project in RLCatalyst can be a running project in your business group. Each project can run one or multiple applications
 
 **Follow the steps below to create a new Project associating with Business Group and Organization**
 
@@ -100,7 +104,7 @@ In a Business Group you can create multiple Projects. A Project in RLCatalyst ca
 
  .. image:: /images/createProj.JPG
 
- * Click Save button
+ * Click on Save button
 
  .. image:: /images/projectList.JPG
 
@@ -115,19 +119,19 @@ To Remove the Project
 
 
 
-The following video will help you to setup an Organization:
+**The following video will help you to setup an Organization, BusinessGroup, Project in RLCatalyst:**
 
 
 .. raw:: html
 
 	
 	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/-xt_FLAky74" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/khifxeCjPAw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
 
-
+.. _chef-settings:
 
 Chef Server
 ^^^^^^^^^^^
@@ -139,22 +143,21 @@ A cookbook is the fundamental unit of configuration and policy distribution.
 
 A policy file allows you to specify in a single document the cookbook revisions and recipes that should be applied by the chef-client.
 
-A data bag is a global variable that is stored as JSON data and is accessible from a Chef server.
-
 
 RLCatalyst allows you to configure your own chef server. You can add either a hosted chef server or an on-premise installation of chefserver. If you dont have either of these, please create an account at https://getchef.opscode.com/signup . For more details on chef, please go to :doc:`Chef Setup <chefsetup>` . 
 
 In RLCatalyst only one chef server can be configured for one organization. The same chef server cannot be associated to multiple organizations. Each chef server account will have a URL(Hosted/On-Premise), a User pem file, a Validator pem file and a knife file . You will get all these files when you create accounts in Chef.
 
 Data/File needed for adding a Chef Server account in RLCatalyst
-Name : Alias or name of the chef server , to be identified in RLCatalyst
-User Name : User name of your chef server account
-URL : URL of the hosted or on-premise chef server
-User Pem File : User file to access your Chef Server account
-Knife.rb : Configuration file that you get while setting up the Chef server
-Validator Pem File :
-Key File :
-Template File :
+
+ * Name : Alias or name of the chef server , to be identified in RLCatalyst
+ * User Name : User name of your chef server account
+ * URL : URL of the hosted or on-premise chef server
+ * User Pem File : User file to access your Chef Server account
+ * Knife.rb : Configuration file that you get while setting up the Chef server
+ * Validator Pem File : During the first chef-client run, this private key does not exist. Instead, the chef-client will attempt to use the private key assigned to the chef-validator, located in /etc/chef/validation.pem.
+ * Key File : It is used to encrypt the contents of the data bag item.
+ * Template File :  The default bootstrap operation relies on an Internet connection to get the distribution to the target node. If a target node cannot access the Internet, then a custom template i.e, template file can be used to define a specific location for the distribution so that the target node may access it during the bootstrap operation.
 
 To configure a new chef server follow the steps below:
 
@@ -166,9 +169,9 @@ To configure a new chef server follow the steps below:
  * Enter the Chef user name in User Name field
  * Provide or specify the Chef URL for the server to be configured
  * Choose the organization from the Organization drop down list
- * Upload the user PEM file provided by the Chef Server in the User PEM File box
- * Upload the validator PEM file provided by the Chef Server in the Validator PEM File box
- * Upload the Knife.rb file provided by the Chef Server in the Knife.rb File box
+ * Upload the user PEM file provided by the Chef Server in the User PEM File field
+ * Upload the validator PEM file provided by the Chef Server in the Validator PEM File field
+ * Upload the Knife.rb file provided by the Chef Server in the Knife.rb File field
  * Upload the key file which is used for Databag
  * Upload the Template file which is used to Bootstrap node
 
@@ -195,14 +198,14 @@ To Edit the Chefserver
 To Remove the Chefserver
  * Click on delete button to remove chef server configuration from the list
 
-**Following video demonstrates how to configure a chef server in RLCatalyst**:
+**Following video demonstrates how to configure a chef server in RLCatalyst:**
 
 
 .. raw:: html
 
 	
 	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/OOniqyJnakc" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/qwCu-xx-wcA" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 *****
@@ -233,6 +236,7 @@ You can import existing nodes from the configured chef server into RLCatalyst by
 *****
 
 **Chef Factory**
+ It consists of common and re-usable recipes and cookbooks.
 
  * Click on Chef factory icon present in the Action column , Chef factory page will open.
 
@@ -250,7 +254,15 @@ You can import existing nodes from the configured chef server into RLCatalyst by
 
 *****
 
+
 **Databags and Items for Chef server**
+
+A data bag is a global variable that is stored as JSON data and is accessible from a Chef server.A data bag is indexed for searching and can be loaded by a recipe or accessed during a search.
+
+A data bag item may be encrypted using shared secret encryption. This allows each data bag item to store confidential information (such as a database password) or to be managed in a source control system (without plain-text data appearing in revision history). Each data bag item may be encrypted individually; if a data bag contains multiple encrypted data bag items, these data bag items are not required to share the same encryption keys.
+
+
+How to create Databag and Items for Chef Server?
 
  * In the Chef Server Page, Click on Databag icon in the Action column of your chef server
  * Click on + icon above the List of Data Bags column header
@@ -281,6 +293,7 @@ You can import existing nodes from the configured chef server into RLCatalyst by
 
 *****
 
+.. _env-settings:
 
 Setup Environments
 ^^^^^^^^^^^^^^^^^^
@@ -292,17 +305,18 @@ Follow the steps to setup a new Environment in an Organization:
  * From the main menu click on Settings
  * Once you click on Settings, from the side menu click on Devops Setup
  * Click on Environments
- * Click on New button provided 
+ * Click on New button provided
  * Select the Organization from the Organization drop down list
  * Select the server from the Chef Server drop down list
- * Click Add link to add new environment to the chef server
+ * You can see a list of environments in teh drop down. These are the environments defined in your chef server account. You can select one from this  drop down list **OR** you can Add new Environments to chef server by clicking on **Add** link provided right above the select an Chef Environment drop down
+ * Now Enter the Environment name to be created
 
  .. image:: /images/addNewEnv.JPG
 
 *****
 
  * Click on Add button
- * Select the environment from the Environment drop down list
+ * Now select the environment you added to the chef server from the Chef Environment drop down list
 
  .. image:: /images/createEnv.JPG
 
@@ -317,14 +331,14 @@ Follow the steps to setup a new Environment in an Organization:
 *****
 
 
-**Hereby attaching a video which will demonstrate as in how to Create Environment**:
+**Hereby attaching a video which will demonstrate as in how to Create Environment in RLCatalyst:**
 
 
 .. raw:: html
 
 	
 	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/hzGWuRSJCRw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/LBPj6psKfsw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 

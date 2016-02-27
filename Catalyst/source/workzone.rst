@@ -19,6 +19,8 @@ RL Catalyst Workzone is an option all the settings take action. Workzone has bel
 Here user can deploy new applications and deployed applications will be shown in pipeline view and table view with all details.
 
 
+.. _launch-instances:
+
 Launch New Instances
 ^^^^^^^^^^^^^^^^^^^^
   Instances are launched from Blueprints. Follow below steps to launch Instances from blueprints.
@@ -41,10 +43,10 @@ Launch New Instances
 View Instances in Table View
   RL Catalyst on the Instances page provides you two kinds of views.
 
-  * Grid View
+  * Grid View[Above Image]
 
 
-  * Table View
+  * Table View[Below Image]
 
 
 You can click on the respective button to view the instances.
@@ -77,6 +79,15 @@ Instance Actions:
 Update Configuration
 ^^^^^^^^^^^^^^^^^^^^
   Any extra action on the running instance can be performed via the Chef client Run icon, which is displayed at the bottom left corner. Installing new software, upgrading a software etc can be performed using this icon. 
+
+A **Cookbook** is the fundamental unit of configuration and policy details that Chef uses to bring a node into a specific state. This just means that Chef uses cookbooks to perform work and make sure things are as they should be on the node.
+
+A **Role** is a way to define certain patterns and processes that exist across nodes in an organization as belonging to a single job function. Each role consists of zero (or more) attributes and a run-list. Each node can have zero (or more) roles assigned to it.
+
+A **Run-list** defines all of the information necessary for Chef to configure a node into the desired state.
+
+A **Template** is user defined skeleton structure which helps the user to add Cookbooks,Roles that can be runned on the Instance, which you created in Settings.
+
 
 Follow below steps to run chef client run:
 
@@ -127,6 +138,23 @@ Follow below steps to connect to Instance:
  
 
 
+
+**Following video demonstrates how to Launch Blueprint, Update Configuration and Connect to the Instance in RLCatalyst:**
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/mOXOUvR-cT0" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+*****
+
+
+
+
+
 Start Instance
 ^^^^^^^^^^^^^^
 Catalyst allows you to start the instance which is already stopped. 
@@ -167,7 +195,7 @@ Follow below steps to stop the Instance:
 
 
 
-
+.. _import-byip:
 
 Import By IP
 ^^^^^^^^^^^^
@@ -204,6 +232,17 @@ In the Instances page, you can import any running instances to the catalyst appl
 
 
 
+**Following video demonstrates how to Import a Node by IP Address and connect to Instance from RLCatalyst**:
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/vD5bqzAlYdQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+*****
 
 
 
@@ -278,6 +317,19 @@ Docker Blueprints
  
  .. image:: /images/docker.JPG
 
+
+
+**Following video demonstrates how to Configure Docker and Launch Containers in RLCatalyst:**
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/VgNA7ne2fwQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+*****
 
 
 
@@ -376,6 +428,22 @@ Orchestration
 
 
 
+**Following video demonstrates how to create and run Chef Task  in RLCatalyst**:
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/kxu0Z1L8yAw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+*****
+
+
+
+
+
 **Jenkins Task**
 
  * To add a new task click on the **New** button
@@ -452,7 +520,17 @@ Edit or Remove a Task
 
 
 
+**Following video demonstrates how to create and execute Jenkins Task in RLCatalyst**:
 
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/fM5nrBBJmko" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+*****
 
 
 
@@ -462,39 +540,29 @@ Edit or Remove a Task
 Application Deployment
 ^^^^^^^^^^^^^^^^^^^^^^
 
-* From the main menu click on Settings
+RLCatalyst makes your application deployments easy through its Orchestration feature. The artifacts or the build files can be sourced from Nexus or Docker repositories and you can deploy into single or multiple instances. The deployments happens through Jenkins or Chef based tasks , that can be configured from RLCatalyst. 
 
-* Once click on Settings, from the side menu click on Devops Setup
+Prerequisites: 
 
-* Click Nexus Server
+1. A repository (Nexus/Docker) should be added from Settings 
+2. Repository should be attached to one or more projects. 
+3. There should be connectivity between the repository, the target instances and the RLCatalyst instance
+4. There should be to & fro connectivity between RLCatalyst and the target instance
 
-* Click on +New button provided
-
-* On Create Nexus Configuration management page enter Nexus Server Name, Username, Password, Nexus Server URL and Select Organization
-
-* Click on + icon present next to Nexus Group ID Details and enter valid Nexus GroupID
-
- .. image:: /images/nexusDetails.png
+If you have not added a repository in Settings, follow the instructions at :ref:`configure-nexus`.
 
 
-* Click on Save button present in Add Nexus Group Details window
+Once Nexus Server is configured you have to associate Repository details to your Project. 
 
-* Click on Save button  present in Nexus Configuration Management Page.
+**CASE I:** First time a new application has been deployed and it is deployed using Catalyst 
 
-* Now your Nexus Configuration is setup and listed in the Nexus Server Management Page
-
- .. image:: /images/nexusCreated.png
-
-
-
-
-Once Nexus Server is configured you have to associate Repository details to your Project. Follow the below steps:
+Follow the below steps :
 
  * Go to Projects Page
 
  * Edit your Project
 
- * Click + icon present next to Repository Details
+ * Click on + icon present next to Repository Details
 
  * Select your Repository Server and Repository Name
 
@@ -506,6 +574,11 @@ Once Nexus Server is configured you have to associate Repository details to your
  * Click on Save button on Edit Project Page
 
 
+.. _create-app-blueprint:
+
+
+App Blueprint
+^^^^^^^^^^^^^
 
 Once you associate repository details to your project now start creating blueprint. Follow the below steps:
 
@@ -530,9 +603,11 @@ Once you associate repository details to your project now start creating bluepri
 
 * Select **Deploy app during Bootstrap** checkbox
 
-* On selecting checkbox all Repository details will autopopulate and the latest version will be always selected. [**Note:** If u select previous version also by default it will take latest version]
+* On selecting checkbox all Repository details will autopopulate and the latest version will be always selected. [**Note:** If you select previous version also by default it will take latest version]
 
  .. image:: /images/deployApp.png
+
+* If you want to specify the URL at which the application is running, specify the URL in the format **http://$host:3001** 
 
 * Click on Next button
 
@@ -542,9 +617,10 @@ Once you associate repository details to your project now start creating bluepri
 
  .. image:: /images/saveBlueprint.png
 
+.. _launch-app-blueprint:
 
-
-**Launching Blueprint**
+Launching Blueprint
+^^^^^^^^^^^^^^^^^^^
 
 * Go to Workzone
 
@@ -572,8 +648,10 @@ Once you associate repository details to your project now start creating bluepri
 
 * Now Catalyst application is installed with the version 3.02.63 on the launched node. [See the version at bottom right corner of the window]
 
+.. _upgrade-app:
 
 Deploy New App
+^^^^^^^^^^^^^^
   Now I will show you how to upgrade latest version of catalyst application on the same node.
 
 * Go to Applications tab
@@ -629,12 +707,55 @@ Deploy New App
 
 
 
+**CASE II:** User has the application(s) running over several exisitng environments and all the application details must be imported to Catalyst
+
+Pre-requisite:
+1) The http/https request ports need to be open from the server for catalyst to get the information
+2) Target instance(Application instance) must be part of Catalyst env that means that particular machine has been imported to the particular environment
+3) Jenkins job must be associated for that particular ip/instance, the job parameters must be application name, nodeip, env, version, apptype, containerid, containeport etc.
+ 
+Please specify the following piece of code in the jenkin’s Job for deployment to see the Application cards in Catalyst.
+ 
+# Code for App Deployment history information via jenkins
+ 
+exitStatus=$?
+export APPSTATUS
+if [ $exitStatus -eq 0 ]
+then
+                echo "Successfull"
+                APPSTATUS="Successfull"
+else
+                echo "Failure"
+                APPSTATUS="Failure"
+fi
+echo $APPSTATUS
+export APPVERSION="###<specify the major version>"
+echo $APPVERSION
+export LASTDEPLOY="$(date +'%y-%m-%d %r')"
+echo $LASTDEPLOY
+export IP="$(hostname -I)"
+export THISHOST="$(hostname)"
+export APPINSNAME="Application name"
+export applicationNodeIP="XXX.XXX.XXX.XX" e.g. 192.168.105.22
+ 
+#Send the information for Catalayst Application tab
+ 
+curl -X POST -H "Content-Type: application/json" -d '{"appDeployData": {"applicationNodeIP" : "192.168.105.22","applicationName": " Application name ","applicationInstanceName": "'"$APPINSNAME"'","applicationVersion": "'"$APPVERSION"'","applicationNodeIP": "'"$IP"'","applicationLastDeploy": "'"$LASTDEPLOY"'","applicationStatus": "'"$APPSTATUS"'","applicationType": "Package","containerId": "","hostName": "'"$THISHOST"'","appLogs": "'"http://jenkinsip:port/job/$JOB_NAME/$BUILD_NUMBER/console"'","envId": "QA"}}' http://catalyst:ipaddress:port/app/deploy
 
 
 
 
+**Following video demonstrates how to do AppDeploy in RLCatalyst**:
 
 
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/7XOo4xpU4qA" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+*****
 
 
 

@@ -2,7 +2,7 @@
 
 Installation
 ============
-This is a documentation that gives the developer and the user an overview of how to install Catalyst on a local instance 
+This is a documentation that gives the developer and the user an overview of how to install RLCatalyst on a local instance 
 
 **Supported Platforms**
 
@@ -12,12 +12,22 @@ RLCatalyst is currently supported on
 
  * CentOS 7
 
-.. _software_requirements-setup:
+ Software Requirements
+^^^^^^^^^^^^^^^^^^^^^
 
-.. toctree::
-   :maxdepth: 2
+     ===========     ==========================================================
+     Softwares       Versions
+     ===========     ==========================================================
+     MongoDB         3.2
+     Node.JS         4.2.2 and above
+     Npm             3.4 and above
+     Chef Server     12.3 Open Source or Latest Enterprise Chef Server version.
+     Chef Client     12.6
+     LDAP Server     OpenLDAP 2.4.39 or an existing corporate LDAP server.
+     ===========     ==========================================================
+    
+    SCM – Any version of GIT or SVN
 
-   softwarequirements
 
 .. _for-ubuntu:
 
@@ -26,3 +36,16 @@ RLCatalyst is currently supported on
 
    installubuntu
 
+.. _for-quickinstaller:
+
+.. toctree::
+   :maxdepth: 2
+
+   quickinstaller
+
+.. _for-chefdocs:
+
+.. toctree::
+   :maxdepth: 2
+
+   chef

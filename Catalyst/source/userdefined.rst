@@ -2,6 +2,7 @@
 
 
 
+.. _user-settings:
 
 User Creation
 ^^^^^^^^^^^^^
@@ -26,16 +27,19 @@ How to add a new user?
  * Click on Save button
  * New user is created and is availabe in Users page
 
-**Hereby attaching a video which describes how to Create Users in Catalyst**:
+**Hereby attaching a video which describes how to Create Users in RLCatalyst:**
 
 .. raw:: html
 
 	
 	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/U8h_sloq8V8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/yBVFLZkDP-w" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div> 
 
 *****
+
+.. _team-settings:
+
 
 Teams
 ^^^^^
@@ -71,11 +75,11 @@ To Remove the Team
 
 *****
 
-**Hereby attaching a video which describes how to Create Teams in Catalyst**:
+**Hereby attaching a video which describes how to Create Teams in RLCatalyst:**
 
 .. raw:: html
 
 	
 	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/avwGi2o9-jQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/hgF6_36lW7M" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
