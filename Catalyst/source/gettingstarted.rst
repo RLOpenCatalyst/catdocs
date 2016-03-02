@@ -62,25 +62,25 @@ Working with RL Catalyst
 
 * :ref:`Import Linux Node and Install latest version of-Tomcat`     
 
-* :ref:`Create New Ubuntu instance and install-Jboss`
+* :ref:`Launch New Ubuntu instance and Install-Jboss`
 
-* :ref:`Create new CentOS Instance and Install-Liferay`          
+* :ref:`Launch New CentOS Instance and Install-Liferay`          
 
-* :ref:`Create Windows instance and install-IIS`
+* :ref:`Launch Windows Instance and Install-IIS`
 
-* :ref:`Create Windows and install-myshopper`                   
+* :ref:`Launch Windows Instance and Install-myshopper`                   
 
-* :ref:`Provider Sync and-Import`                                           
+* :ref:`Provider Sync and-Import Instances`                                           
 
-* :ref:`Launch instance and run docker container for-wordpress`  
+* :ref:`Launch Ubuntu Instance and run Docker container for-Wordpress`
 
 * :ref:`Install apache2 on imported node and use service to stop-apache2`        
 
-* :ref:`Import Node and Deploy-petclinic`                        
+* :ref:`Import Ubuntu Node and Deploy-petclinic`                        
 
-* :ref:`Create new ubuntu,Install Tomcat,upgrade to-v8.0(attribute)` 
+* :ref:`Launch New ubuntu Instance,Install Tomcat,upgrade to-v8.0[attribute]` 
 
-* :ref:`Update application-version(petclinic)`                  
+* :ref:`Update application-version[petclinic]`                  
 
 * :ref:`View History of App deployments &-upgrades`  
            
@@ -88,7 +88,7 @@ Working with RL Catalyst
 
 * :ref:`Launch Java stack using-CFT`
 
-* :ref:`ARM with 2-templates`                                    
+* :ref:`ARM with 2-VirtualMachines[VM]`                                    
 
 * :ref:`Composite-Docker`
 

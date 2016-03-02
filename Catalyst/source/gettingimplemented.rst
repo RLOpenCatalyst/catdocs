@@ -25,16 +25,16 @@ Import Linux Node and Install latest version of Tomcat
 
 *****
 
-.. _Create New Ubuntu instance and install-Jboss:
+.. _Launch New Ubuntu instance and Install-Jboss:
 
-Create New Ubuntu instance and install Jboss
+Launch New Ubuntu instance and Install Jboss
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Add Provider
- * In Settings, under DevopsSetup -> Providers add a New provider by entering the valid details
+ * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
 
 2. Add VMImage for Ubuntu
- * In Settings, under Gallery setup -> VMImage add a New VMImage for Ubuntu
+ * In Settings, under Gallery setup -> VMImage, add a New VMImage for Ubuntu
 
 3. Create Blueprint using Ubuntu as base Image by adding Jboss Cookbook to runlist
  * In Design, under OSImage template type select ubuntu template and create blueprint by entering the other details and by adding **jboss7_rl** cookbook in configure runlist parameters and save
@@ -46,16 +46,16 @@ Create New Ubuntu instance and install Jboss
 *****
 
 
-.. _Create new CentOS Instance and Install-Liferay:
+.. _Launch New CentOS Instance and Install-Liferay:
 
-Create new CentOS Instance and Install-Liferay
+Launch New CentOS Instance and Install Liferay
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Add Provider
- * In Settings, under DevopsSetup -> Providers add a New provider by entering the valid details
+ * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
 
 2. Add VMImage for CentOS
- * In Settings, under Gallery setup -> VMImage add a New VMImage for CentOS
+ * In Settings, under Gallery setup -> VMImage, add a New VMImage for CentOS
 
 3. Create Blueprint using CentOS as base Image by adding Liferay Cookbook to runlist
  * In Design, under OSImage template type select centos template and create blueprint by entering the other details and by adding **Deploy_liferay_app** cookbook in configure runlist parameters and save
@@ -67,16 +67,16 @@ Create new CentOS Instance and Install-Liferay
 *****
 
 
-.. _Create Windows instance and install-IIS:
+.. _Launch Windows Instance and Install-IIS:
 
-Create Windows instance and install-IIS
+Launch Windows Instance and Install-IIS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Add Provider
- * In Settings, under DevopsSetup -> Providers add a New provider by entering the valid details
+ * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
 
 2. Add VMImage for Windows(Public AMI to be added for Windows2012)
- * In Settings, under Gallery setup -> VMImage add a New VMImage for Windows
+ * In Settings, under Gallery setup -> VMImage, add a New VMImage for Windows
 
 3. Create Blueprint using Windows base image by adding IIS cookbook to runlist
  * In Design, under OSImage template type select windows template and create blueprint by entering the other details and by adding **iis** cookbook in configure runlist parameters and save
@@ -88,16 +88,16 @@ Create Windows instance and install-IIS
 
 *****
 
-.. _Create Windows and install-myshopper:
+.. _Launch Windows Instance and Install-myshopper:
 
-Create Windows and install myshopper
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Launch Windows Instance and Install myshopper
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Add Provider
- * In Settings, under DevopsSetup -> Providers add a New provider by entering the valid details
+ * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
 
 2. Add VMImage for Windows(Public AMI to be added for Windows2012)
- * In Settings, under Gallery setup -> VMImage add a New VMImage for Windows
+ * In Settings, under Gallery setup -> VMImage, add a New VMImage for Windows
 
 3. Create Blueprint using Windows base image by adding myshopper cookbook to runlist
  * In Design, under OSImage template type select windows template and create blueprint by entering the other details and by adding **deploy_dotnet_myshopper** cookbook in configure runlist parameters and save
@@ -107,13 +107,13 @@ Create Windows and install myshopper
 
 *****
 
-.. _Provider Sync and-Import:
+.. _Provider Sync and-Import Instances:
 
-Provider Sync and Import
-^^^^^^^^^^^^^^^^^^^^^^^^
+Provider Sync and Import Instances
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Add Provider
- * In Settings, under DevopsSetup -> Providers add a New provider by entering the valid details
+ * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
 
 2. Provider Sync
  * Click on Sync instances button of your provider -> **UnManaged Instances** of the created provider
@@ -125,18 +125,47 @@ Provider Sync and Import
 
 *****
 
-.. _Launch instance and run docker container for-wordpress:
+.. _Launch Ubuntu Instance and run Docker container for-Wordpress:
 
-Launch instance and run docker container for-wordpress
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Launch Ubuntu Instance and run Docker container for Wordpress
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Add Provider
+ * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
+
 2. Add VMImage for Ubuntu
-3. Create  a blueprint with Ubuntu image and run docker cookbook
-4. Create a Blueprint for Docker using the template cadvisor
-    Add Volume to cadvisor **/:/rootfs:ro,/var/run:/var/run:rw,/sys:/sys:ro,/var/lib/docker/:/var/lib/docker:ro and port 8080:8080**
-5. Choose the Ubuntu node and run docker container
-6. On the same node run wordpress image and see the health
+ * In Settings, under Gallery setup -> VMImage, add a New VMImage for Ubuntu
+
+3. Create a docker template for cadvisor
+ * In Gallery setup, under Templates add a New Template by selecting Docker Template type and add docker repo path for cadvisor
+
+4. Create a Docker template for Wordpress
+ * In Gallery setup, under Templates add a New Template by selecting Docker Template type and add docker repo path for wordpress
+
+5. Create a blueprint with Ubuntu image and add docker cookbook to runlist
+ * In Design, under OSImage template type select ubuntu template and create blueprint by entering the other details and by adding **docker** cookbook in configure runlist parameters and save
+
+
+6. Create a Blueprint for Docker template using the template cadvisor
+  * Add Volume to cadvisor **/:/rootfs:ro,/var/run:/var/run:rw,/sys:/sys:ro,/var/lib/docker/:/var/lib/docker:ro and port 8080:8080**
+
+7. Create a Blueprint for Docker template using the template wordpress
+  
+
+8. Launch the blueprint 
+ * Launch the Blueprint from Workzone -> Infrastructure -> Blueprints. Wait until the node Bootstrap successfully
+
+9. Launch Cadvisor docker blueprint
+ * Go to Workzone -> Infrastructure -> Blueprints -> Docker. Select cadvisor blueprint and select instance in Launch docker bluperint and start.Wait until image pull completes.
+
+10. Launch Wordpress docker blueprint
+ * Go to Workzone -> Infrastructure -> Blueprints -> Docker. Select wordpress blueprint and select instance in Launch docker bluperint and start.Wait until image pull completes.
+
+11. Verify the Containers
+ * Go to Workzone -> Infrastructure -> Containers and verify 2 containers with name **Cadvisor** and **Wordpress**
+
+12. Check the Health of the Containers
+ * Click Graph icon on the respective containers to verify the Health status
 
 
 *****
@@ -147,7 +176,7 @@ Install apache2 on imported node and use service to stop apache2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Creating a Service command
- * In Settings, Under Gallery setup -> Service command create a new service by selecting service command type as **chef cookbook/recipe**. Search for the **service_apache** in service cookbooks dropdown. Select actions **Start,Stop,Restart** and save.
+ * In Settings, Under Gallery setup -> Service command, create a new service by selecting service command type as **chef cookbook/recipe**. Search for the **service_apache** in service cookbooks dropdown. Select actions **Start,Stop,Restart** and save.
 
 2. Import a Linux Node
  * Click on Import by IP icon in the respective **Environment** of **Workzone**
@@ -175,10 +204,10 @@ Install apache2 on imported node and use service to stop apache2
 *****
 
 
-.. _Import Node and Deploy-petclinic:
+.. _Import Ubuntu Node and Deploy-petclinic:
 
-Import Node and Deploy petclinic
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Import Ubuntu Node and Deploy petclinic
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Import a Linux Node
  * Click on Import by IP icon in the respective **Environment** of **Workzone**
@@ -202,16 +231,16 @@ Import Node and Deploy petclinic
 
 *****
 
-.. _Create new ubuntu,Install Tomcat,upgrade to-v8.0(attribute):
+.. _Launch New ubuntu Instance,Install Tomcat,upgrade to-v8.0[attribute]:
 
-Create new ubuntu,Install Tomcat,upgrade to v8.0(attribute)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Launch New ubuntu Instance,Install Tomcat,upgrade to v8.0[attribute]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Add Provider
- * In Settings, under DevopsSetup -> Providers add a New provider by entering the valid details
+ * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
 
 2. Add VMImage for Ubuntu
- * In Settings, under Gallery setup -> VMImage add a New VMImage for Ubuntu
+ * In Settings, under Gallery setup -> VMImage, add a New VMImage for Ubuntu
 
 3. Create Blueprint using Ubuntu as base Image and Tomcat Cookbook
  * In Design, under OSImage template type select ubuntu template and create blueprint by entering the other details and by adding **tomcat-all-rl** cookbook in configure runlist parameters and save
@@ -226,9 +255,9 @@ Create new ubuntu,Install Tomcat,upgrade to v8.0(attribute)
 
 *****
 
-.. _Update application-version(petclinic):
+.. _Update application-version[petclinic]:
 
-Update application version(petclinic)
+Update application version[petclinic]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Import a Linux Node
@@ -265,7 +294,7 @@ AWS Cost,Usage dashboards
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Add Provider
- * In Settings, under DevopsSetup -> Providers add a New provider by entering the valid details
+ * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
 
 2. Track->usage and cost dashboards
  * Click on **Tracks** under provider you will be able to see **Provider Dashboard** and **AWS Summary Dashboard**
@@ -279,33 +308,39 @@ Launch Java stack using CFT
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. CFT Template
- * In Settings, Under Gallery Setup -> Templates -> create a New CloudFormation template by selecting the **CloudFormation** template type and uploading the **Template File** and save
+ * In Settings, Under Gallery Setup -> Templates -> create a New CloudFormation template by selecting the **CloudFormation** template type and uploading the valid **Template File** and save
 
 2. Add Provider
- * In Settings, under DevopsSetup -> Providers add a New provider by entering the valid details
+ * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
 
 3. Add VMImage for Ubuntu
- * In Settings, under Gallery setup -> VMImage add a New VMImage for ubuntu
+ * In Settings, under Gallery setup -> VMImage, add a New VMImage for ubuntu
 
 4. Create CFT Blueprint using Ubuntu as base Image and by adding Java Cookbook to runlist
  * In Design, under CloudFormation template type select ubuntu template and create CFTblueprint by entering the other details and by adding **Java** cookbook to runlist in configure stack parameters and save
 
-5. Instances should be launched with Java stack
+5. Launch CFT Blueprint
  * Launch the Blueprint from Workzone -> Infrastructure -> Blueprints and verify the **Stack** in Infrastructure -> CloudFormation, verify the instance in Infrastructure -> Instances tab
 
 
 
 *****
 
-.. _ARM with 2-templates:
+.. _ARM with 2-VirtualMachines[VM]:
 
-ARM with 2 templates
-^^^^^^^^^^^^^^^^^^^^
+ARM with 2 VirtualMachines[VM]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1. Add an Azure provider
+ * In Settings, under DevopsSetup -> Providers, add a New **Azure** provider by entering the valid details
 
-1. Add an Azure provider 
-2. Add a base ubuntu image
-3. Create ARM Blueprint using the ARM template
-4. Launch the ARM Blueprint
+2. Create ARM Template
+ * In Settings, under Gallery setup -> Templates, create a New ARM template by selecting the **ARMTemplate** template type and uploading the valid **Template File** and save
+
+3. Create Blueprint for ARM Template
+ * In Design -> Click on **Azure** provider from tree. Under ARM template type select your ARM template and create ARMBlueprint by entering the other details and save
+
+4. Launch ARMBlueprint
+ * Launch the Blueprint from Workzone -> Infrastructure -> Blueprints -> AzureARM and verify the **Deployment** in Infrastructure -> AzureARM, verify the instances in Infrastructure -> Instances tab
 
 
 
@@ -318,10 +353,10 @@ Composite Docker
 ^^^^^^^^^^^^^^^^
 
 1. Add Provider
- * In Settings, under DevopsSetup -> Providers add a New provider by entering the valid details
+ * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
 
 2. Add VMImage for Ubuntu
- * In Settings, under Gallery setup -> VMImage add a New VMImage for Ubuntu
+ * In Settings, under Gallery setup -> VMImage, add a New VMImage for Ubuntu
 
 3. Create a docker template for cadvisor
  * In Gallery setup, under Templates add a New Template by selecting **Docker** Template type and add **docker repo path for cadvisor**
