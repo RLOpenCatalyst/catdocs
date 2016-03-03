@@ -217,7 +217,7 @@ To configure the Providers setup follow the steps below:
  * Select the provider from the Provider Type drop down list (e.g. AWS)
  * Enter the name of the provider in the name field
 
- * To add AWS Provider Account
+ * To add **AWS** Provider Account
 
  	* Provide the access key  in the Access Key field 	
  	* Provide the secret key in the Secret Key field
@@ -235,7 +235,7 @@ To configure the Providers setup follow the steps below:
     * Now Provider is successfully configured to RLCatalyst
 
 
- * To add Azure Provider Account
+ * To add **Azure** Provider Account
 
     * Provide the Subscription ID
     * Provide the Client ID
@@ -250,7 +250,7 @@ To configure the Providers setup follow the steps below:
   
 
 
- * To add OpenStack Provider Account
+ * To add **OpenStack** Provider Account
  
     * Provide the Username
     * Provide the password
@@ -270,7 +270,7 @@ To configure the Providers setup follow the steps below:
 
 
 
- * To add VMWare Provider Account
+ * To add **VMWare** Provider Account
  
     * Provide the Username
     * Provide the password
@@ -292,6 +292,9 @@ To configure the Providers setup follow the steps below:
 	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
         <iframe src="https://www.youtube.com/embed/FnpU1fFCe-Y" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
+
+
+*****
 
 .. _provider-sync:
 

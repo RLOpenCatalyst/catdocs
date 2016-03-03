@@ -20,7 +20,7 @@ In Provider dashboard you will be able to see Total number of Instances , Total 
 * Enter the Description and Item Name 
 * Enter the Item URL in this format  (http://ipaddress:port/public/Dashboard.html)
 
- .. image:: /images/providerDash.png
+ 
 
 
 * Click on Save button
@@ -45,6 +45,6 @@ Click on Save button.
 Once You save the **list of dashboards** will be displayed in table
 
 
- .. image:: /images/listOfDashboards.png
+ 
 
 

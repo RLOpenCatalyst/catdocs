@@ -60,38 +60,33 @@ Working with RL Catalyst
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-* :ref:`Import Linux Node and Install latest version of-Tomcat`     
-
-* :ref:`Launch New Ubuntu instance and Install-Jboss`
-
-* :ref:`Launch New CentOS Instance and Install-Liferay`          
-
-* :ref:`Launch Windows Instance and Install-IIS`
-
-* :ref:`Launch Windows Instance and Install-myshopper`                   
-
-* :ref:`Provider Sync and-Import Instances`                                           
-
-* :ref:`Launch Ubuntu Instance and run Docker container for-Wordpress`
+* :ref:`Import Linux Node and Install latest version of-Tomcat`  
 
 * :ref:`Install apache2 on imported node and use service to stop-apache2`        
 
 * :ref:`Import Ubuntu Node and Deploy-petclinic`                        
 
+* :ref:`Launch New Ubuntu Instance and Install-Jboss`         
+
+* :ref:`Launch Windows Instance and Install-IIS`                
+
+* :ref:`Launch Ubuntu Instance and run Docker container for-Wordpress`
+
 * :ref:`Launch New ubuntu Instance,Install Tomcat,upgrade to-v8.0[attribute]` 
+
+* :ref:`Launch Java stack using-CFT`
+
+* :ref:`ARM with 2-VirtualMachines[VM]`   
+
+* :ref:`Composite-Docker`
+
+* :ref:`Provider Sync and-Import Instances`  
 
 * :ref:`Update application-version[petclinic]`                  
 
 * :ref:`View History of App deployments &-upgrades`  
            
-* :ref:`AWS Cost,Usage-dashboards`                               
-
-* :ref:`Launch Java stack using-CFT`
-
-* :ref:`ARM with 2-VirtualMachines[VM]`                                    
-
-* :ref:`Composite-Docker`
-
+* :ref:`AWS Cost,Usage-Dashboards`                                                                
 
 
 

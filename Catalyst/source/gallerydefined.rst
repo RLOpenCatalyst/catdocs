@@ -211,6 +211,7 @@ An image of a virtual machine is a copy of the VM, which may contain an OS, data
 
 *****
 
+.. _Service-Command:
 
 Service Command
 ^^^^^^^^^^^^^^^
