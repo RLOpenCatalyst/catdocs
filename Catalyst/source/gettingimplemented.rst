@@ -324,35 +324,35 @@ Launch New ubuntu Instance,Install Tomcat and upgrade to latest version
 Launch Java stack using CFT
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. CFT Template
- * In Settings, Under Gallery Setup -> Templates -> create a New CloudFormation template by selecting the **CloudFormation** template type and uploading the valid **Template File** and save
+1. Create CFT Template
+ * You can find online sample Cloud formation templates at **http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-sample-templates.html**
+
+ * Download the sample template for your region and using these templates you can create cloud formation blueprints and launch those from catalyst
+
+ * In Settings, Under Gallery Setup -> Templates -> create a New CloudFormation template by selecting the **CloudFormation** template type and uploading the valid **Template File**  which you downloaded and save
 
 2. Add Provider
  * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
 
    Please refer to :ref:`provider-settings` for more details.
 
-3. Add VMImage for Ubuntu
- * In Settings, under Gallery setup -> VMImage, add a New VMImage for ubuntu
 
-   Please refer to :ref:`configure-vm` for more details.
+3. Create CFT Blueprint by adding Java Cookbook to runlist
+ * In Design, under CloudFormation template type select your Cloud Formation template and create Cloud formation blueprint by entering the organization parameter details, select your region, provider, AMImage ID and other details and by adding **Java** cookbook to runlist in configure stack parameters and save
 
-4. Create CFT Blueprint using Ubuntu as base Image and by adding Java Cookbook to runlist
- * In Design, under CloudFormation template type select ubuntu template and create CFTblueprint by entering the other details and by adding **Java** cookbook to runlist in configure stack parameters and save
-
-5. Launch CFT Blueprint
- * Launch the Blueprint from Workzone -> Infrastructure -> Blueprints and verify the **Stack** in Infrastructure -> CloudFormation, verify the instance in Infrastructure -> Instances tab
+4. Launch CFT Blueprint
+ * Launch the Blueprint from Workzone -> Infrastructure -> Blueprints and verify the **Stack** in Infrastructure -> CloudFormation, verify the **2 Instances** in Infrastructure -> Instances tab
 
 
 
-**Following video demonstrates how to Launch Java stack using CFT in RLCatalyst:**
+**Following video demonstrates how to Create CloudFormation Template,Blueprint & Launch 2 VM in RLCatalyst:**
 
 
 .. raw:: html
 
     
     <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/A7ruGAzWszw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
@@ -370,7 +370,8 @@ ARM with 2 VirtualMachines[VM]
    Please refer to :ref:`provider-settings` for more details.
 
 2. Create ARM Template
- * In Settings, under Gallery setup -> Templates, create a New ARM template by selecting the **ARMTemplate** template type and uploading the valid **Template File** and save
+ * Download the ARM Template File from **http:**
+ * In Settings, under Gallery setup -> Templates, create a New ARM template by selecting the **ARMTemplate** template type and uploading the valid **Template File** which you downloaded and save
 
 3. Create Blueprint for ARM Template
  * In Design -> Click on **Azure** provider from tree. Under ARM template type select your ARM template and create ARMBlueprint by entering the other details and save
@@ -380,7 +381,7 @@ ARM with 2 VirtualMachines[VM]
 
 
 
-**Following video demonstrates how to Create, Launch ARM Blueprint with 2 VirtualMachines[VM] in RLCatalyst:**
+**Following video demonstrates how to Create ARM Template, Blueprint & Launch 2 VirtualMachines[VM] from ARM Blueprint in RLCatalyst:**
 
 
 .. raw:: html
@@ -389,6 +390,10 @@ ARM with 2 VirtualMachines[VM]
     <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
         <iframe src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
+
+
+**NOTE** - You can find 100+ new ARM templates and use them easily from **https://github.com/Azure/azure-quickstart-templates** .Use these templates, create ARM blueprint and launch.
+
 
 
 *****

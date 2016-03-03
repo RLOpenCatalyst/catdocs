@@ -60,7 +60,7 @@ Working with RL Catalyst
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Basic Features - With existing instance
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Once you install RLCatalyst , basic data to quick-start your experience will be available within the application - Organization setup, chef server , environments, templates, services etc . You can start exploring  by importing one of your existing instances with public IP and managing it from RLCatalyst. If you dont have an instance , RLCatalyst instance itself can be imported 
 
@@ -78,7 +78,7 @@ Listed below are few features which RLCatalyst offers out of the box:
 
 
 Advanced Features with Cloud Providers
-^^^^^^^^^^^^^^^^                 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                 
 
 Add your cloud provider details and start provisioning infrastructure dynamically from within RLCatalyst . 
 
