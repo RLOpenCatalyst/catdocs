@@ -12,15 +12,16 @@ Import Linux Node and Install latest version of Tomcat
 
 1. Import Node by IP
  * Click on Import by IP icon in the respective **Environment** of **Workzone**
- * Enter all the details and click on import button
+ * Enter all the details and click on import button and wait until **Instance Bootstrap Successfully**
 
    Please refer to :ref:`import-byip`  for more details
 
 2. Install latest version of Tomcat
  * Click on Chef-Client Run icon on the imported node in Infrastructure -> Instances tab
- * Search for **tomcat-all-rl** cookbook and add to runlist and click on update runlist button
+ * Search for **tomcat-all-rl** cookbook and add to runlist and click on update runlist button and Wait until instance runlist updates
 
-3. To Verify Tomcat is installed access IP address with portnumber 8080
+3. Access Tomcat
+ * Once the runlist updates go to Controlpanel -> Additional Parameters -> New Application URL and add **Name** and **URL - http://$host:8080** and save. Now click on your Applink in Infrastructure -> Instances and verify Tomcat installtion.
 
 
 
@@ -31,7 +32,7 @@ Import Linux Node and Install latest version of Tomcat
 
     
     <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/f5rVD77DZoU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/rc_QHKGBWeo" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
@@ -50,28 +51,33 @@ Install apache2 on imported node and use service to stop apache2
 
 2. Import a Linux Node
  * Click on Import by IP icon in the respective **Environment** of **Workzone**
- * Enter all the details and click on import button
+ * Enter all the details and click on import button and wait until **Instance Bootstrap Successfully**
 
    Please refer to :ref:`import-byip`  for more details.
 
 
 3. Install Apache using chef client run
- * Click on Chef-Client run button in the Workzone -> Infrastructure -> Instances tab, of the imported node and add **apache2** cookbook and click on Update runlist button
+ * Click on Chef-Client run button in the Workzone -> Infrastructure -> Instances tab, of the imported node and add **apache2** cookbook and click on Update runlist button and Wait until instance runlist updates
 
-4. Add the service apache to the node
+
+4. SSH in to the Node from RLCatalyst and check the apache status
+ * SH in to the box from catalyst and run **sudo service apache2 status**
+   apache2 is running
+
+5. Add the service apache to the node
  * Go to Controlpanel -> Service Tab -> Click on Add New Service. Select the service and save.
  
 
-5. Stop the service and check the status
+6. Stop the service and check the status
  * Go to Controlpanel -> Services and Click on Stop icon
  * SSH in to the box from catalyst and run **sudo service apache2 status**
-   apache2 is running now 
+   apache2 is not running
 
 
-6. Start the service and check the status
+7. Start the service and check the status
  * Go to Controlpanel -> Services and Click on Start icon
  * SSH in to the box from catalyst and run **sudo service apache2 status**
-   apache2 is not running
+   apache2 is running
 
 
 **Following video demonstrates how to Install apache2 on imported node and use service to stop apache2 in RLCatalyst:**
@@ -81,7 +87,7 @@ Install apache2 on imported node and use service to stop apache2
 
     
     <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/f5rVD77DZoU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/pt2Pg3rzFuc" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
@@ -95,24 +101,24 @@ Import Ubuntu Node and Deploy petclinic
 
 1. Import a Linux Node
  * Click on Import by IP icon in the respective **Environment** of **Workzone**
- * Enter all the details and click on import button
+ * Enter all the details and click on import button and wait until **Instance Bootstrap Successfully**
 
    Please refer to :ref:`import-byip`  for more details.
 
 
 2. Install Tomcat Cookbook(tomcat-all-rl)
  * Click on Chef-Client Run icon on the imported node in Workzone -> Infrastructure -> Instances tab
- * Search for **tomcat-all-rl** cookbook and add to runlist and click on update runlist button
+ * Search for **tomcat-all-rl** cookbook and add to runlist and click on update runlist button and Wait until instance runlist updates
 
 
-3. Create a Chef orchestration task, Choose the node and add the cookbook deploy_war) & Edit attributes
+3. Create a Chef orchestration task, Choose the node and add the cookbook deploy_war & Edit cookbook attributes and save
   * In Workzone, Under Orchestration Create a New Chef Task and add **deploy_war** cookbook and edit the following attributes
   * Source code url - **https://s3-us-west-2.amazonaws.com/catalystcode/petclinic-2.02.71.war**
   * Application version – 2.02.71
   * Node publice IP – enter the public IP where tomcat is running and present as node in catalyst.
 
 4. Execute the task 
- * After execution of task, access petclinic at <ip>:8080/petclinic
+ * After execution of task, go to Controlpanel -> Additional Parameters -> New and add **Name** and **URL - http://$host:8080/petclinic** and save. Now click on your Applink in Infrastructure -> Instances and verify petclinic installtion.
 
 
 
@@ -123,7 +129,7 @@ Import Ubuntu Node and Deploy petclinic
 
     
     <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/f5rVD77DZoU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/iabnWpgMOhE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
@@ -150,8 +156,7 @@ Launch New Ubuntu Instance and Install Jboss
  * In Design, under OSImage template type select ubuntu template and create blueprint by entering the other details and by adding **jboss7_rl** cookbook in configure runlist parameters and save
 
 4. To verify Jboss installtion
- * Launch the Blueprint from Workzone -> Infrastructure -> Blueprints. After launch of Blueprint go to Infrastructure -> Instances, once the node bootstraps verify the Jboss installation at <ip>:8080
-
+ * Launch the Blueprint from Workzone -> Infrastructure -> Blueprints. After launch of Blueprint go to Infrastructure -> Instances, once the node bootstraps go to Controlpanel -> Additional Parameters -> New Application URL and add **Name** and **URL - http://$host:8080** and save. Now click on your Applink in Infrastructure -> Instances and verify Jboss installtion.
 
 
 **Following video demonstrates how to Launch New Ubuntu Instance and Install Jboss in RLCatalyst:**
@@ -161,7 +166,7 @@ Launch New Ubuntu Instance and Install Jboss
 
     
     <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/f5rVD77DZoU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/Ifsh6gjeeeo" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
@@ -198,7 +203,7 @@ Launch Windows Instance and Install IIS
 
     
     <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/f5rVD77DZoU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
@@ -260,7 +265,7 @@ Launch Ubuntu Instance and run Docker container for Wordpress
 
     
     <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/f5rVD77DZoU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
@@ -286,11 +291,11 @@ Launch New ubuntu Instance,Install Tomcat,upgrade to v8.0[attribute]
  * In Design, under OSImage template type select ubuntu template and create blueprint by entering the other details and by adding **tomcat-all-rl** cookbook in configure runlist parameters and save
 
 4. Launch Blueprint and Access Tomcat
- * Launch the Blueprint from Workzone -> Infrastructure -> Blueprints. After launch of Blueprint go to Infrastructure -> Instances, once the node bootstraps access Tomcat at <ip>:8080 and check the version
+ * Launch the Blueprint from Workzone -> Infrastructure -> Blueprints. After launch of Blueprint go to Infrastructure -> Instances, once the node bootstraps go to Controlpanel -> Additional Parameters -> New Application URL and add **Name** and **URL - http://$host:8080** and save. Now click on your Applink in Infrastructure -> Instances and verify Tomcat installtion.
 
 5. Chef Client Run to upgrade Tomcat version to 8.0
- * Click on Chef-Client run button and Edit the cookbook attributes and select the latest version, save and update runlist
-   Access Tomcat at <ip>:8080 and check for the version
+ * Click on Chef-Client run button and Edit the cookbook attributes and select the latest **Tomcat Version**, save and update runlist
+   Wait until the Instance runlist updates and Now click on your Applink in Infrastructure -> Instances and verify Latest Tomcat installtion.
 
 
 
@@ -301,7 +306,7 @@ Launch New ubuntu Instance,Install Tomcat,upgrade to v8.0[attribute]
 
     
     <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/f5rVD77DZoU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/4sd-PK3_sLI" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
@@ -343,7 +348,7 @@ Launch Java stack using CFT
 
     
     <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/f5rVD77DZoU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
@@ -378,7 +383,7 @@ ARM with 2 VirtualMachines[VM]
 
     
     <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/f5rVD77DZoU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
@@ -420,7 +425,7 @@ Composite Docker
 
     
     <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/f5rVD77DZoU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
@@ -473,7 +478,7 @@ Update application version[petclinic]
 
     
     <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/f5rVD77DZoU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
@@ -501,7 +506,7 @@ View History of App deployments & upgrades
 
     
     <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/f5rVD77DZoU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
