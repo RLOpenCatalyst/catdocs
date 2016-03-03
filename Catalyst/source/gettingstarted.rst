@@ -59,12 +59,28 @@ You can install RLCatalyst using the installer script ::
 Working with RL Catalyst
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
+Basic Features - With existing instance
+^^^^^^^^^^^^^^^^
+
+Once you install RLCatalyst , basic data to quick-start your experience will be available within the application - Organization setup, chef server , environments, templates, services etc . You can start exploring  by importing one of your existing instances with public IP and managing it from RLCatalyst. If you dont have an instance , RLCatalyst instance itself can be imported 
+
+Listed below are few features which RLCatalyst offers out of the box:
 
 * :ref:`Import Linux Node and Install latest version of-Tomcat`  
 
 * :ref:`Install apache2 on imported node and use service to stop-apache2`        
 
-* :ref:`Import Ubuntu Node and Deploy-petclinic`                        
+* :ref:`Import Ubuntu Node and Deploy-petclinic`    
+
+* :ref:`Update application-version[petclinic]`    
+
+* :ref:`View History of App deployments &-upgrades` 
+
+
+Advanced Features with Cloud Providers
+^^^^^^^^^^^^^^^^                 
+
+Add your cloud provider details and start provisioning infrastructure dynamically from within RLCatalyst . 
 
 * :ref:`Launch New Ubuntu Instance and Install-Jboss`         
 
@@ -81,10 +97,6 @@ Working with RL Catalyst
 * :ref:`Composite-Docker`
 
 * :ref:`Provider Sync and-Import Instances`  
-
-* :ref:`Update application-version[petclinic]`                  
-
-* :ref:`View History of App deployments &-upgrades`  
            
 * :ref:`AWS Cost,Usage-Dashboards`                                                                
 

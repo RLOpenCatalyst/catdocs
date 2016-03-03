@@ -11,10 +11,14 @@ Import Linux Node and Install latest version of Tomcat
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Import Node by IP
- * Click on Import by IP icon in the respective **Environment** of **Workzone**
+
+Import one of your existing Linux instances into RLCatalyst .The instance should have a public IP and should be reachable from the catalyst network . 
+
+ * Click on Import by IP icon in the respective **Environment** of **Workzone** 
  * Enter all the details and click on import button and wait until **Instance Bootstrap Successfully**
 
-   Please refer to :ref:`import-byip`  for more details
+If you are importing RLCatalyst VM, which is running using vagrant, IP is 127.0.0.1 and user/password - vagrant/vagrant. 
+Please refer to :ref:`import-byip`  for more details
 
 2. Install latest version of Tomcat
  * Click on Chef-Client Run icon on the imported node in Infrastructure -> Instances tab
@@ -274,7 +278,7 @@ Launch Ubuntu Instance and run Docker container for Wordpress
 
 .. _Launch New ubuntu Instance,Install Tomcat,upgrade to-v8.0[attribute]:
 
-Launch New ubuntu Instance,Install Tomcat,upgrade to v8.0[attribute]
+Launch New ubuntu Instance,Install Tomcat and upgrade to latest version
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Add Provider
