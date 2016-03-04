@@ -106,7 +106,7 @@ Add your cloud provider details and start provisioning infrastructure dynamicall
 
 
 
-Advnaced Continuous Integration & Continuous Deployment [CI/CD] Features
+Advanced Continuous Integration & Continuous Deployment [CI/CD] Features
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Jenkins is CI/CD tool which can be used for build and deployment automation. It also allows you to continuously deliver your software by providing powerful ways to define your build pipelines and integrating with a large number of testing and deployment technologies.
