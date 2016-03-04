@@ -392,7 +392,7 @@ Control Panel
 
 
 
-
+.. _Orchestration-JenkinsTask:
 
 Orchestration
 ^^^^^^^^^^^^^
@@ -400,6 +400,8 @@ Orchestration
 
 
 **Chef Task**
+
+ * Go to your respective **Environment**, click on **Orchestration**
 
  * To add a new task click on the **New** button
 
@@ -443,8 +445,9 @@ Orchestration
 
 
 
-
 **Jenkins Task**
+
+ * Go to your respective **Environment**, click on **Orchestration**
 
  * To add a new task click on the **New** button
 
@@ -456,9 +459,11 @@ Orchestration
 
  * Select the job from the **Select Job** drop down list
 
- * Select the Auto synch button to **'Yes'** [ This will shows the task execution history]
+ * Select the Auto synch button to **'Yes'** [ This will show previously existing task execution history]. If you set to **'NO'** previously existing task history will not be shown
 
- * Add Job links for the Jenkins task
+ * **Job URL** - The selected job url will be shown here
+
+ * Add **Job Links** for the Jenkins task - You can add external links to view the results
 
 
  .. image:: /images/jenkinsTask.JPG

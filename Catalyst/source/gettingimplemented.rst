@@ -200,6 +200,17 @@ Launch Windows Instance and Install IIS
  * Launch the Blueprint from Workzone -> Infrastructure -> Blueprints. After launch of Blueprint go to Infrastructure -> Instances, once the node bootstraps RDP to the machine and in search options search for IIS.Internet Information Services Manager should be available.
 
 
+**Following video demonstrates how to Launch Windows Instance and Install IIS in RLCatalyst:**
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/m0yFKmCM4ak" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
 
 *****
 
@@ -525,6 +536,44 @@ Once the basic data is loaded, you can start exploring RLCatalyst from the Provi
     <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
         <iframe src="https://www.youtube.com/embed/HIMlbwtc8Zc" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
+
+
+
+*****
+
+
+
+
+.. _Create & Execute Jenkins Jobs from-RLCatalyst:
+
+Create & Execute Jenkins Jobs from RLCatalyst
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Please refer to ``Jenkins Task`` under :ref:`Orchestration-JenkinsTask` to **Create & Execute** Jenkins Task
+
+
+**Following video demonstrates how to Create and Execute Jenkins Task in RLCatalyst**:
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/fM5nrBBJmko" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+*****
+
+
+*****
+
+
+.. _View Jenkins Job-History:
+
+View Jenkins Job History
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Please refer to ``Jenkins Task`` -> ``Task History`` under :ref:`Orchestration-JenkinsTask` to view **Jenkins Job History**
 
 
 
