@@ -215,54 +215,6 @@ Launch Windows Instance and Install IIS
 *****
 
 
-.. _Launch Ubuntu Instance and run Docker container for-Wordpress:
-
-Launch Ubuntu Instance and run Docker container for Wordpress
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-1. Add Provider
- * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
-
-   Please refer to :ref:`provider-settings` for more details.
-
-2. Add VMImage for Ubuntu
- * In Settings, under Gallery setup -> VMImage, add a New VMImage for Ubuntu
-
-   Please refer to :ref:`configure-vm` for more details.
-
-3. Create a docker template for cadvisor
- * In Gallery setup, under Templates add a New Template by selecting Docker Template type and add docker repo path for cadvisor
-
-4. Create a Docker template for Wordpress
- * In Gallery setup, under Templates add a New Template by selecting Docker Template type and add docker repo path for wordpress
-
-5. Create a blueprint with Ubuntu image and add docker cookbook to runlist
- * In Design, under OSImage template type select ubuntu template and create blueprint by entering the other details and by adding **docker** cookbook in configure runlist parameters and save
-
-
-6. Create a Blueprint for Docker template using the template cadvisor
-  * Add Volume to cadvisor **/:/rootfs:ro,/var/run:/var/run:rw,/sys:/sys:ro,/var/lib/docker/:/var/lib/docker:ro and port 8080:8080**
-
-7. Create a Blueprint for Docker template using the template wordpress
-  
-
-8. Launch the blueprint 
- * Launch the Blueprint from Workzone -> Infrastructure -> Blueprints. After Launch of Blueprint go to Infrastructure -> Instances, Wait until the node Bootstrap successfully
-
-9. Launch Cadvisor docker blueprint
- * Go to Workzone -> Infrastructure -> Blueprints -> Docker. Select cadvisor blueprint and select instance in Launch docker bluperint and start.Wait until image pull completes.
-
-10. Launch Wordpress docker blueprint
- * Go to Workzone -> Infrastructure -> Blueprints -> Docker. Select wordpress blueprint and select instance in Launch docker bluperint and start.Wait until image pull completes.
-
-11. Verify the Containers
- * Go to Workzone -> Infrastructure -> Containers and verify 2 containers with name **Cadvisor** and **Wordpress**
-
-12. Check the Health of the Containers
- * Click Graph icon on the respective containers to verify the Health status
-
-
-*****
 
 .. _Launch New ubuntu Instance,Install Tomcat,upgrade to-v8.0[attribute]:
 
@@ -307,124 +259,6 @@ Launch New ubuntu Instance,Install Tomcat and upgrade to latest version
 
 
 
-.. _Launch Java stack using-CFT:
-
-Launch Java stack using CFT
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-1. Create CFT Template
- * You can find online sample Cloud formation templates at **http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-sample-templates.html**
-
- * Download the sample template for your region and using these templates you can create cloud formation blueprints and launch those from catalyst
-
- * In Settings, Under Gallery Setup -> Templates -> create a New CloudFormation template by selecting the **CloudFormation** template type and uploading the valid **Template File**  which you downloaded and save
-
-2. Add Provider
- * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
-
-   Please refer to :ref:`provider-settings` for more details.
-
-
-3. Create CFT Blueprint by adding Java Cookbook to runlist
- * In Design, under CloudFormation template type select your Cloud Formation template and create Cloud formation blueprint by entering the organization parameter details, select your region, provider, AMImage ID and other details and by adding **Java** cookbook to runlist in configure stack parameters and save
-
-4. Launch CFT Blueprint
- * Launch the Blueprint from Workzone -> Infrastructure -> Blueprints and verify the **Stack** in Infrastructure -> CloudFormation, verify the **2 Instances** in Infrastructure -> Instances tab
-
-
-
-**Following video demonstrates how to Create CloudFormation Template,Blueprint & Launch 2 VM in RLCatalyst:**
-
-
-.. raw:: html
-
-    
-    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/A7ruGAzWszw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-
-
-
-*****
-
-
-.. _ARM with 2-VirtualMachines[VM]:
-
-ARM with 2 VirtualMachines[VM]
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**Resource group:** It is a container that holds related resources for an application. The resource group could include all of the resources for an application, or only those resources that are logically grouped together. 
-
-1. Create New Resouce Group in your Microsoft Azure portal
- * Click on Resouce Group link -> Add(+) -> Enter Resouce group name -> select subscription and Resouce group location and create
-
-2. Add an Azure provider
- * In Settings, under DevopsSetup -> Providers, add a New **Azure** provider by entering the valid details
-
-   Please refer to :ref:`provider-settings` for more details.
-
-3. Create ARM Template
- * In Settings, under Gallery setup -> Templates, create a New ARM template by selecting the **ARMTemplate** template type and uploading the valid **Template File** which you downloaded and save
-
-4. Create Blueprint for ARM Template
- * In Design -> Click on **Azure** provider from tree. Under ARM template type select your ARM template and create ARMBlueprint by entering the other details and selcting your **Resource Group** which you created and save
-
-5. Launch ARMBlueprint
- * Launch the Blueprint from Workzone -> Infrastructure -> Blueprints -> AzureARM and verify the **Deployment** in Infrastructure -> AzureARM, verify the instances in Infrastructure -> Instances tab
-
-
-6. Verify your Instances in Microsoft Azure portal under your Resource Group 
- * Now Go to your Microsoft Azure portal, where you can find your launched instances which will be present in your resource group.
-
-**Following video demonstrates how to Create ARM Template, Blueprint & Launch 2 VirtualMachines[VM] from ARM Blueprint in RLCatalyst:**
-
-
-.. raw:: html
-
-    
-    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/YBNWnny8Zb8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-
-
-
-**NOTE** - You can find 100+ new ARM templates and use them easily from **https://github.com/Azure/azure-quickstart-templates** .Use these templates, create ARM blueprint and launch.
-
-
-
-*****
-
-
-.. _Composite-Docker:
-
-Composite Docker
-^^^^^^^^^^^^^^^^
-
-1. Add Provider
- * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
-
-   Please refer to :ref:`provider-settings` for more details.
-
-2. Add VMImage for Ubuntu
- * In Settings, under Gallery setup -> VMImage, add a New VMImage for Ubuntu
-
-   Please refer to :ref:`configure-vm` for more details.
-
-3. Create a docker template for cadvisor
- * In Gallery setup, under Templates add a New Template by selecting **Docker** Template type and add **docker repo path for cadvisor**
-
-4. Create a docker template for centos
- * In Gallery setup, under Templates add a New Template by selecting **Docker** Template type and add **docker repo path for centos**
-
-
-5. Create a Blueprint for Docker and add centos and cadvisor docker templates to a single blueprint (multiple templates to single blueprint)
- * In Design ,select **Docker** template type and select **cadvisor** template and fill the details and click on **Launch parameters** buuton and Add **Volume** to cadvisor **/:/rootfs:ro,/var/run:/var/run:rw,/sys:/sys:ro,/var/lib/docker/:/var/lib/docker:ro** and **port mappings** **8080:8080**. Now click on **Add** and select the **centos** template with **latest** tag and add and save the blueprint
-
-6. Choose the Ubuntu node and run this blueprint. Go to **Containers** tab and verify 2 containers are launched and verify the health by clicking on the Graph icon.
-
-
-
-
-*****
 
 
 
@@ -457,11 +291,36 @@ Update application version[petclinic]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Import a Linux Node
+ * Click on Import by IP icon in the respective Environment of Workzone
+
+ * Enter all the details and click on import button and wait until Instance Bootstrap Successfully
+
+   Please refer to :ref:`import-byip` for more details.
+
 2. Install Tomcat Cookbook(tomcat-all-rl)
-3. Create a Chef orchestration task . Choose the node and add the cookbook deploy_war)
-4. Execute the task and access petclinic at <ip>:8080/petclinic
-5. Edit the task and edit the attribute 'version'
-6. Check the petclinic application and verify the version
+ * Click on Chef-Client Run icon on the imported node in Workzone -> Infrastructure -> Instances tab
+ * Search for tomcat-all-rl cookbook and add to runlist and click on update runlist button and Wait until instance runlist updates
+
+3. Create a Chef orchestration task, Choose the node and add the cookbook deploy_war & Edit cookbook attributes and save
+ * In Workzone, Under Orchestration Create a New Chef Task and add deploy_war cookbook and edit the following attributes
+ * Source code url - https://s3-us-west-2.amazonaws.com/catalystcode/petclinic-2.02.71.war
+ * Application version – 2.02.71
+ * Node publice IP – enter the public IP where tomcat is running and present as node in catalyst 
+
+
+4. Execute the task
+ * After execution of task, go to Controlpanel -> Additional Parameters -> New and add Name and URL - http://$host:8080/petclinic and save. Now click on your Applink in Infrastructure -> Instances and verify petclinic installtion.
+
+
+5. Upgrade Petclinic Version
+ * Edit Chef Orchestration task
+ * Click on Edit attribute link
+ * Enter the Source code URL with the latest version **https://s3-us-west-2.amazonaws.com/catalystcode/petclinic-2.02.72.war**
+ * Application version – 2.02.72
+ * Node publice IP – enter the public IP where tomcat is running and present as node in catalyst and save
+
+6. Now Execute the task and verify the latest version
+ * After execution of task, go to Controlpanel -> Additional Parameters -> New and add Name and URL - http://$host:8080/petclinic and save. Now click on your Applink in Infrastructure -> Instances and verify petclinic installtion with the latest version.
 
 
 
@@ -479,7 +338,7 @@ View History of App deployments & upgrades
   a. Source code url - **https://s3-us-west-2.amazonaws.com/catalystcode/petclinic-2.02.71.war**
   b. Application version – 2.02.71
   c. Node publice ip – enter the public ip where tomcat is running and present as node in catalyst.
-4. Once application is installedon on the node .the above cookbook will use app_data_handler cookbook to send the Data to catalyst
+4. Once application is installed on on the node navigate to applications tab and click on **H** icon[History], you will find history of the application deployed
 
 
 

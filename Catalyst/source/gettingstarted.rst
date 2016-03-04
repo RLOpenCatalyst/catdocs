@@ -74,7 +74,7 @@ Listed below are few features which RLCatalyst offers out of the box:
 
 * :ref:`Update application-version[petclinic]`    
 
-* :ref:`View History of App deployments &-upgrades` 
+* :ref:`View History of App deployments &-upgrades`
 
 
 Advanced Features with Cloud Providers
@@ -86,15 +86,7 @@ Add your cloud provider details and start provisioning infrastructure dynamicall
 
 * :ref:`Launch Windows Instance and Install-IIS`                
 
-* :ref:`Launch Ubuntu Instance and run Docker container for-Wordpress`
-
 * :ref:`Launch New ubuntu Instance,Install Tomcat,upgrade to-v8.0[attribute]` 
-
-* :ref:`Launch Java stack using-CFT`
-
-* :ref:`ARM with 2-VirtualMachines[VM]`   
-
-* :ref:`Composite-Docker`
 
 * :ref:`Provider Sync and-Import Instances`  
            
