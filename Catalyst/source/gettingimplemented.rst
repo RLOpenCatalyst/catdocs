@@ -354,7 +354,7 @@ ARM with 2 VirtualMachines[VM]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Resource group:** It is a container that holds related resources for an application. The resource group could include all of the resources for an application, or only those resources that are logically grouped together. 
 
-1. Create New Resouce Group in Microsoft Azure portal
+1. Create New Resouce Group in your Microsoft Azure portal
  * Click on Resouce Group link -> Add(+) -> Enter Resouce group name -> select subscription and Resouce group location and create
 
 2. Add an Azure provider
@@ -368,8 +368,23 @@ ARM with 2 VirtualMachines[VM]
 4. Create Blueprint for ARM Template
  * In Design -> Click on **Azure** provider from tree. Under ARM template type select your ARM template and create ARMBlueprint by entering the other details and selcting your **Resource Group** which you created and save
 
-4. Launch ARMBlueprint
+5. Launch ARMBlueprint
  * Launch the Blueprint from Workzone -> Infrastructure -> Blueprints -> AzureARM and verify the **Deployment** in Infrastructure -> AzureARM, verify the instances in Infrastructure -> Instances tab
+
+
+6. Verify your Instances in Microsoft Azure portal under your Resource Group 
+ * Now Go to your Microsoft Azure portal, where you can find your launched instances which will be present in your resource group.
+
+**Following video demonstrates how to Create ARM Template, Blueprint & Launch 2 VirtualMachines[VM] from ARM Blueprint in RLCatalyst:**
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/YBNWnny8Zb8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
 
 
 **NOTE** - You can find 100+ new ARM templates and use them easily from **https://github.com/Azure/azure-quickstart-templates** .Use these templates, create ARM blueprint and launch.
