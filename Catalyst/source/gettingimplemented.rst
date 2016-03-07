@@ -389,6 +389,74 @@ Follow the instructions to configure your dashboards:
 *****
 
 
+.. _Composite-Docker for Wordpress:
+
+Composite Docker for Wordpress 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1. Create a docker template for MYSQL
+ * Go to Settings -> Gallery Setup -> Templates, Enter the Template name -> Choose Template type as **Docker** -> Choose the **Organization**
+ * Donot select the **Docker Repo** -> **Add Docker Repo Path** as **relevancelab/wpmysql** and save
+
+
+2. Create a docker template for Wordpress
+ * Go to Settings -> Gallery Setup -> Templates, Enter the Template name -> Choose Template type as **Docker** -> Choose the **Organization**
+ * Donot select the ``Docker Repo`` , **Add Docker Repo Path** as **relevancelab/wordpress** and save
+
+
+3. Create Docker bluperint for MYSQL
+ * In Design -> select **AWS** provider -> select **Docker** Template Type -> select your template, add the details and save
+
+
+4. Create Docker blueprint for wordpress
+ * In Design -> select **AWS** provider -> select **Docker** Template Type -> select your template, add the below details and save
+ * **Portmapping: 8080:80**
+ * **Linked Container: mysql:mysql**
+ 
+5. Launch Ubuntu Node or Import a Ubuntu node
+ * Click on **Chef Client run** -> Run **docker** cookbook on that node
+
+6. Launch Mysql Docker Blueprints.
+ * Go to Infrastructure -> Blueprints -> Expand Docker -> Select Mysql blueprint and Click on Launch button -> Select the node -> Click on Start button
+
+7. Launch Wordpress Docker Blueprints.
+ * Go to Infrastructure -> Blueprints -> Expand Docker -> Select Wordpress blueprint and Click Launch button -> Select the node -> Click on Start button
+
+8. Go to Containers tab to view the container and thier details.
+ * Go to Infrastructure -> Containers . You can find 2 containers wordpress and mysql with the details being displayed
+
+
+9. Add Application URL in instance control panel
+ * Go to Instance controll panel and add application in this format (http://$host:8080)
+
+
+10. Access wordpress Application by clicking the Appname.
+ * Click on More icon on instance control panel -> Click on the Wordpress application name. User should be able to see wordpress installation page
+
+11. Connect to the instance and verify container details are listed
+ * Click on SSH icon -> Execute ``sudo docker ps`` command, Container details should be displayed
+
+
+**Following video demonstrates the Composite Docker for Wordpress:**
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/_17iCshUxUE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
+
+*****
+
+
+
+
+
+*****
+
+
 .. _providersync and-import:
 
 Add Provider and do Provider Sync

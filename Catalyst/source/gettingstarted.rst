@@ -90,7 +90,9 @@ Add your cloud provider details and start provisioning infrastructure dynamicall
 
 * :ref:`Provider Sync and-Import Instances`  
            
-* :ref:`AWS Cost,Usage-Dashboards`                                                                
+* :ref:`AWS Cost,Usage-Dashboards`     
+
+* :ref:`Composite-Docker for Wordpress`
 
 
 
@@ -110,6 +112,8 @@ Jenkins is CI/CD tool which can be used for build and deployment automation. It 
 * :ref:`Create & Execute Jenkins Jobs from-RLCatalyst`
 
 * :ref:`View Jenkins Job-History`
+
+
 
 
 
