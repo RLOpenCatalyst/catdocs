@@ -426,14 +426,14 @@ Composite Docker for Wordpress
 
 
 9. Add Application URL in instance control panel
- * Go to Instance controll panel and add application in this format (http://$host:8080)
+ * Go to Instance -> Control Panel and add application in this format (http://$host:8080)
 
 
 10. Access wordpress Application by clicking the Appname.
  * Click on More icon on instance control panel -> Click on the Wordpress application name. User should be able to see wordpress installation page
 
 11. Connect to the instance and verify container details are listed
- * Click on SSH icon -> Execute ``sudo docker ps`` command, Container details should be displayed
+ * Click on SSH icon -> Enter the Details and submit , Execute ``sudo docker ps`` command, Container details should be displayed
 
 
 **Following video demonstrates the Composite Docker for Wordpress:**
