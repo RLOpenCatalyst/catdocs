@@ -69,10 +69,10 @@ You can install RLCatalyst using the installer script ::
 Working with RL Catalyst
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Basic Features - With existing instance
+Basic Scenarios - Using RLCatalyst Instance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Once you install RLCatalyst , basic data to quick-start your experience will be available within the application - Organization setup, chef server , environments, templates, services etc . You can start exploring  by importing one of your existing instances with public IP and managing it from RLCatalyst. If you dont have an instance , RLCatalyst instance itself can be imported 
+Once you install RLCatalyst , basic data to quick-start your experience will be available within the application - Organization setup, chef server , environments, templates, services etc . You can start exploring  by importing RLCatalyst instance into Catalyst
 
 Listed below are few features which RLCatalyst offers out of the box:
 
@@ -80,7 +80,7 @@ Listed below are few features which RLCatalyst offers out of the box:
 
 * :ref:`Install apache2 on imported node and use service to stop-apache2`        
 
-* :ref:`Import Ubuntu Node and Deploy-petclinic`    
+* :ref:`Deploy Pet-clinic application in the imported node`    
 
 * :ref:`Update application-version[petclinic]`    
 
@@ -116,8 +116,6 @@ Advanced Continuous Integration & Continuous Deployment [CI/CD] Features
 Jenkins is CI/CD tool which can be used for build and deployment automation. It also allows you to continuously deliver your software by providing powerful ways to define your build pipelines and integrating with a large number of testing and deployment technologies.
 
 **How to Configure, Create, Execute Jenkins Jobs and View History in RLCatalyst ?**
-
-* :ref:`Configure-Jenkins`
 
 * :ref:`Create & Execute Jenkins Jobs from-RLCatalyst`
 
