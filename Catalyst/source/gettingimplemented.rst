@@ -194,13 +194,15 @@ Scenario 5 :View History of App deployments & upgrades
 Scenario 6 : Create a new Ubuntu Instance  and Install Jboss
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Create a blueprint to launch a new Ubuntu instance and install JBoss server on it  . 
+
 1. Add Provider
- * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
+ * In Settings, under DevopsSetup -> Providers, add a New AWS provider by entering the valid details
    
    Please refer to :ref:`provider-settings` for more details.
 
 2. Add VMImage for Ubuntu
- * In Settings, under Gallery setup -> VMImage, add a New VMImage for Ubuntu
+ * In Settings, under Gallery setup -> VMImage, add a New VMImage for Ubuntu .  The image should be accessible from your AWS account
    
    Please refer to :ref:`configure-vm` for more details.
 
@@ -231,12 +233,12 @@ Scenario 6 : Create a new Ubuntu Instance  and Install Jboss
 Scenario 7 : Create a new Windows Instance and Install IIS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Add Provider
+1. Add Provider . Skip this step if Scenario6 is already executed
  * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
 
    Please refer to :ref:`provider-settings` for more details.
 
-2. Add VMImage for Windows(Public AMI to be added for Windows2012)
+2. Add VMImage for Windows(Public AMI to be added for Windows2012).
  * In Settings, under Gallery setup -> VMImage, add a New VMImage for Windows
 
    Please refer to :ref:`configure-vm` for more details.
@@ -269,12 +271,12 @@ Scenario 7 : Create a new Windows Instance and Install IIS
 Scenario 8 : Create a new Ubuntu Instance,Install Tomcat and upgrade to latest version
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Add Provider
+1. Add Provider . Skip this step if Scenario6 is already executed
  * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
 
    Please refer to :ref:`provider-settings` for more details.
 
-2. Add VMImage for Ubuntu
+2. Add VMImage for Ubuntu . Skip this step if Scenario6 is already executed
  * In Settings, under Gallery setup -> VMImage, add a New VMImage for Ubuntu
 
    Please refer to :ref:`configure-vm` for more details.
@@ -314,7 +316,7 @@ Scenario 9 : Provider Sync and Import Instances
 
 Once the basic data is loaded, you can start exploring RLCatalyst from the Provider-Sync Feature. You can sync nodes from your AWS provider account and convert the nodes to 'Managed' . This will give a control on your AWS infra by letting you track the capacity, cost and usage . Once sync-ed, you can see the summary dashboard from 'Track'
 
-1. Add your AWS Provider
+1. Add your AWS Provider. Skip this step if Scenario6 is already executed
  * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
    Please refer to :ref:`provider-settings` for more details.
 
@@ -340,7 +342,7 @@ RLCatalyst provides you a consolidated dashboard for tracking your AWS infrastru
 
 Follow the instructions to configure your dashboards:
 
-1. Add Provider
+1. Add Provider . Skip this step if Scenario6 is already executed
  * In Settings, under DevopsSetup -> Providers, add a New **AWS** provider by entering the valid details
 
    Please refer to :ref:`provider-settings` for more details.
