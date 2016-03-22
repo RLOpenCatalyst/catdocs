@@ -96,8 +96,9 @@ Listed below are few features which RLCatalyst offers out of the box:
 
 Advanced Features with Cloud Providers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                 
+Prerequisite : An AWS account should be available
 
-Add your cloud provider details and start provisioning infrastructure dynamically from within RLCatalyst . 
+RLCatalyst comes with the flexibility to create blueprints to automate dynamic provisioning on the cloud provider of your choice . Currently AWS, Azure, VMware and Openstack are supported. To start experiencing, add your provider account details in RLCatalyst
 
 * :ref:`Launch New Ubuntu Instance and Install-Jboss`         
 

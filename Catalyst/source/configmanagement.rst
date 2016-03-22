@@ -207,7 +207,7 @@ Jenkins is CI/CD tool which can be used for build and deployment automation. You
 Providers in RLCatalyst
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Provider is used to interact with the many resources supported by AWS,AZURE,OPEN STACK,VMWARE. The provider needs to be configured with the proper credentials amd other required details before it can be used.
+RLCatalyst supports infra automation across providers like AWS, Azure, VMware, Openstack. Each provider needs to be configured with the proper credentials amd other required details before it can be used. 
 
 You can configure multiple cloud provider accounts  of type **AWS**, **AZURE**, **OPEN STACK** and **VMWARE** within RLCatalyst.
 
@@ -221,6 +221,21 @@ To configure the Providers setup follow the steps below:
  * Enter the name of the provider in the name field
 
  * To add **AWS** Provider Account
+
+RLCatalyst supports 2 types of authentication into the AWS account. 
+
+**IAM Role** - RLCatalyst supports authentication using IAM roles, in cases when user doesnt want to enter secret keys and access keys. This requires the RLCatalyst instances to be on AWS and is launched with an IAM role. The credentials will be acquired by rlcatalyst from its instance metadata . Only such provider account can be added per orgnaization in the current version of RLcatalyst . All AWS API requests made from catalyst by the default provider will be signed with security credentials fetched from instance metadata.
+
+**Prerequisites** - 
+RLCatalyst should be deployed on an AWS instance. This AWS instance should be launched with an IAM role with permissions to launch EC2 instances and CFTs. Also, new instances from rlcatalyst can only be launched in the same AWS account in which catalyst is running. 
+
+Refer to http://docs.aws.amazon.com/AWSSdkDocsJava/latest/DeveloperGuide/java-dg-roles.html for more details
+
+To choose this mode, unselect the checkbox **Requires Access Credentials**
+
+**Secret key and Access key** - This method requires the access key and secret key to authenticate access to the AWS provider account. 
+
+To choose this mode select the  checkbox **Requires Access Credentials**
 
  	* Provide the access key  in the Access Key field 	
  	* Provide the secret key in the Secret Key field
@@ -238,7 +253,7 @@ To configure the Providers setup follow the steps below:
     * Now Provider is successfully configured to RLCatalyst
 
 
- * To add **Azure** Provider Account
+* To add **Azure** Provider Account
 
     * Provide the Subscription ID
     * Provide the Client ID
@@ -253,7 +268,7 @@ To configure the Providers setup follow the steps below:
   
 
 
- * To add **OpenStack** Provider Account
+* To add **OpenStack** Provider Account
  
     * Provide the Username
     * Provide the password
@@ -273,7 +288,7 @@ To configure the Providers setup follow the steps below:
 
 
 
- * To add **VMWare** Provider Account
+* To add **VMWare** Provider Account
  
     * Provide the Username
     * Provide the password
