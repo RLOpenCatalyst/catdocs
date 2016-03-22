@@ -27,13 +27,15 @@ Install from AWS AMI
 
 If you have an AWS account, you can bring up RLCatalyst using the public AMI available. The public image is currently available for US east(N.Virginia) region. This comes with some basic configurations required by RLCatalyst
 
-1. From your EC2 dashboard, select N.Virginia region . In the Images/AMI link, choose "Public Images" in the dropdown . Search for image with AMI ID ``ami-9a3903f0`` and AMI Name ``RLCatalyst3.0.3``
+1. From your EC2 dashboard, select N.California region . In the Images/AMI link, choose "Public Images" in the dropdown . Search for image with AMI ID ``ami-7e8efc1e`` and AMI Name ``RLCatalyst3.0.4``
 2. Select the image and hit Launch
 3. On the "Instance Type" page ,choose the instance size as t2.medium or bigger . We recommend atleast 4 GB RAM
 4. On the "Configure Instance Details" page, choose your preferred Network and Subnets. If you want to assign a public IP to RLCatalyst, then enable "Auto-assign Public IP"
 5. On "Tag Instance" , name your instance
-6. On "Security Group" , add rule to open ports 443 and 3001.
+6. On "Security Group" , add rule to open ports 443, 8080,8081 and 3001.
 7. Review and launch . Once the instance is in "Running" state , you can access RLCatalyst at http://<ip>:3001 . Login using superadmin/superadmin@123
+8. This image includes the devops role like jenkins at http://<ip>:8080 (default credentials)
+9. This image includes the devops role Nexus at http://<ip>:8081 (default credentials)
 
 .. _install-vagrant:
 Install using Vagrant
@@ -44,6 +46,17 @@ Setup RLCatalyst on your dektop/laptop using vagrant. You need to have vagrant i
     git clone https://github.com/RLOpenCatalyst/installer.git
     cd vagrantwithchef
     vagrant up
+
+To install the entire devops roles along with catalysy please follow the below mentioned instructions::
+
+    git clone https://github.com/RLOpenCatalyst/installer.git
+    cd RLCatalyst3.0.4
+    vagrant up
+
+The devops roles contain the following third party softwares::
+    
+    Jenkins
+    Nexus
 
 
 .. _install-docker:
