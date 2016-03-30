@@ -88,6 +88,7 @@ Listed below are few features which RLCatalyst offers out of the box:
 
 * :ref:`View History of App deployments &-upgrades`
 
+* :ref:`Deploy a composite docker-container(petclinic app with 2 container)`
 
 
 
@@ -112,6 +113,12 @@ RLCatalyst comes with the flexibility to create blueprints to automate dynamic p
 
 * :ref:`Composite-Docker for Wordpress`
 
+* :ref:`Create and launch-Blueprint ( CentOS + Liferay )`
+
+* :ref:`Create and Launch an AWS CFT Blueprint for 2-node Petclinic`
+
+* :ref:`Install LAMP Stack on a single-node`
+
 
 
 *****
@@ -128,6 +135,7 @@ Jenkins is CI/CD tool which can be used for build and deployment automation. It 
 * :ref:`Create & Execute Jenkins Jobs from-RLCatalyst`
 
 * :ref:`View Jenkins Job-History`
+
 
 
 *****

@@ -131,6 +131,7 @@ To Install seed data::
 To Install forever & start the RLCatalyst Application::
 
     sudo npm install forever --global
+    cd core/server/app
     sudo forever start app.js
 
 
@@ -266,6 +267,7 @@ To Start the Application::
 
     Run (node app) to start your application.
     npm install forever –g
+    cd core/server/app
     node app.js
 
 
