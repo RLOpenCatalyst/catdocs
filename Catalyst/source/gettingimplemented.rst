@@ -773,11 +773,11 @@ Scenario 18 : Deploy and Promote a Java Application
 
 3. Go to Applications and Deploy New App by clicking **+Deploy New App** :
 
-* Enter Repository Details: **Repository Server**, **Repository**, **Group ID**, **Artifacts** and **Version** which you want to deploy
-* Add the job which you created
-* Wait until task execution is success
-* Verfiy the card with the version you selected in applications.
-* Click on Approve and then promote will be enabled
+  * Enter Repository Details: **Repository Server**, **Repository**, **Group ID**, **Artifacts** and **Version** which you want to deploy
+  * Add the job which you created
+  * Wait until task execution is success
+  * Verfiy the card with the version you selected in applications.
+  * Click on Approve and then promote will be enabled
 
 4.Now, Access petclinic application in the format http://<ipaddress>:8080/petclinic. Petclinic application home page will open.
 
