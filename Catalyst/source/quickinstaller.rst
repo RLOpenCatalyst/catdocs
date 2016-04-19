@@ -16,7 +16,6 @@ You can install RLCatalyst using the installer script ::
     sudo su
     cd /opt
     git clone https://github.com/RLOpenCatalyst/installer.git
-    cd /opt/installer/vagrantwithchef/
     chmod +x installer.sh
     installer.sh 
 
@@ -27,7 +26,7 @@ Install from AWS AMI
 
 If you have an AWS account, you can bring up RLCatalyst using the public AMI available. The public image is currently available for US east(N.Virginia) region. This comes with some basic configurations required by RLCatalyst
 
-1. From your EC2 dashboard, select N.California region . In the Images/AMI link, choose "Public Images" in the dropdown . Search for image with AMI ID ``ami-7e8efc1e`` and AMI Name ``RLCatalyst3.0.4``
+1. From your EC2 dashboard, select N.California region . In the Images/AMI link, choose "Public Images" in the dropdown . Search for image with AMI ID ``ami-8f3c43ef`` and AMI Name ``RLCatalyst3.0.5``
 2. Select the image and hit Launch
 3. On the "Instance Type" page ,choose the instance size as t2.medium or bigger . We recommend atleast 4 GB RAM
 4. On the "Configure Instance Details" page, choose your preferred Network and Subnets. If you want to assign a public IP to RLCatalyst, then enable "Auto-assign Public IP"
@@ -47,7 +46,7 @@ Setup RLCatalyst on your dektop/laptop using vagrant. You need to have vagrant i
     cd vagrantwithchef
     vagrant up
 
-To install the entire devops roles along with catalysy please follow the below mentioned instructions::
+To install the entire devops roles along with catalyst please follow the below mentioned instructions::
 
     git clone https://github.com/RLOpenCatalyst/installer.git
     cd RLCatalyst3.0.4

@@ -17,7 +17,7 @@ RLCatalyst can be installed using one of our Quick Installers
 
 If you have an AWS account, you can bring up RLCatalyst using the public AMI available. The public image is currently available for US east(N.Virginia) region. This comes with some basic configurations required by RLCatalyst
 
-1. From your EC2 dashboard, select N.California region . In the Images/AMI link, choose "Public Images" in the dropdown . Search for image with AMI ID ``ami-7e8efc1e`` and AMI Name ``RLCatalyst3.0.4``
+1. From your EC2 dashboard, select N.California region . In the Images/AMI link, choose "Public Images" in the dropdown . Search for image with AMI ID ``ami-8f3c43ef`` and AMI Name ``RLCatalyst3.0.5``
 2. Select the image and hit Launch
 3. On the "Instance Type" page ,choose the instance size as t2.medium or bigger . We recommend atleast 4 GB RAM
 4. On the "Configure Instance Details" page, choose your preferred Network and Subnets. If you want to assign a public IP to RLCatalyst, then enable "Auto-assign Public IP"
@@ -90,6 +90,7 @@ Listed below are few features which RLCatalyst offers out of the box:
 
 * :ref:`View History of App deployments &-upgrades`
 
+* :ref:`Deploy a composite docker-container(petclinic app with 2 container)`
 
 
 
@@ -114,6 +115,12 @@ RLCatalyst comes with the flexibility to create blueprints to automate dynamic p
 
 * :ref:`Composite-Docker for Wordpress`
 
+* :ref:`Create and launch-Blueprint ( CentOS + Liferay )`
+
+* :ref:`Create and Launch an AWS CFT Blueprint for 2-node Petclinic`
+
+* :ref:`Install LAMP Stack on a single-node`
+
 
 
 *****
@@ -132,6 +139,7 @@ Jenkins is CI/CD tool which can be used for build and deployment automation. It 
 * :ref:`View Jenkins Job-History`
 
 * :ref:`Deploy and Promote-a Java Application`
+
 
 
 *****

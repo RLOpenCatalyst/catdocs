@@ -179,6 +179,7 @@ Scenario 3: Deploy Petclinic application in the imported node
 
 *****
 
+
 .. _Update application-version[petclinic]:
 
 Scenario 4 : Update application version[petclinic]
@@ -231,9 +232,83 @@ Scenario 5 :View History of App deployments & upgrades
 
 *****
 
+
+
+.. _Deploy a composite docker-container(petclinic app with 2 container):
+
+
+Scenario 6 : Deploy a composite docker container(petclinic app with 2 container)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. Create docker template for Mysql and petclinic
+
+ * Go to GallerySetup -> Templates
+ * Create template for mysql by adding docker repo path ``relevancelab/mysqlpet`` and save
+ * Create template for petclinic by adding docker repo path ``relevancelab/tomcatpet`` and save
+
+2. Create a docker blueprint using Mysql and petclinic template
+ 
+ * Go to Design -> Select mysql template -> Click Launch parametrs icon -> Enter container name and add Additional startup as ``init.sh`` -> Click on Add button
+
+ * Click on Add button to add tomcat template -> select tomcat template and the tag -> Click on Add button
+ * Click Launch parametrs icon -> Enter container name and Port mapping as ``8080:8080`` and Nlnked container as mysqlpet:mysql -> Click on Add button 
+ * Click Next button to create blueprint
+
+3. Import Ubuntu Node
+ 
+ * Go to Workzone and expand the Organization tree on the left side to get the environments . Click on Import by IP icon, Enter all the details and click on import button and wait until **Instance Bootstrap Successfully**
+
+   Please refer to :ref:`import-byip`  for more details
+
+4. Run Docker cookbook on the instance
+ 
+ * Click Chef client run and Run docker by adding ``docker_rl`` cookbook and wait until **Instance Runlist Updates** & docker icon is displayed on card
+
+
+5. Launch Docker blueprint on Ubuntu node
+
+ * Go to **Infrastructure** -> **Blueprints** -> **Docker** -> **Next** and select the instance and **Start**. Wait until **Done image pull and run** message is displayed
+
+
+6. Verify the 2 Contianers
+
+ * Once image pull is successfull go to **Infrastructure** -> **Containers** tab to see the container details
+
+
+7. Access the Petclinic application
+
+ * Access the Petclinic application by accessing **$host:8080/petclinic**
+
+
+8. SSH in to the ubuntu node form RLCatalyst and verify the containers
+
+ * Click on SSH icon, enter the valid details and submit 
+
+ * Enter the following command ``docker ps`` and check the container details
+
+
+
+
+Following video demonstrates how to Deploy a composite docker container(petclinic app with 2 container) in RLCatalyst:
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/ClkYW13vLvU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
+
+
+*****
+
+
+
 .. _Launch New Ubuntu Instance and Install-Jboss:
 
-Scenario 6 : Create a new Ubuntu Instance  and Install Jboss
+Scenario 7 : Create a new Ubuntu Instance  and Install Jboss
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Create a blueprint to launch a new Ubuntu instance and install JBoss server on it  . 
@@ -270,9 +345,11 @@ Create a blueprint to launch a new Ubuntu instance and install JBoss server on i
 *****
 
 
+
+
 .. _Launch Windows Instance and Install-IIS:
 
-Scenario 7 : Create a new Windows Instance and Install IIS
+Scenario 8 : Create a new Windows Instance and Install IIS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Add Provider . Skip this step if Scenario6 is already executed
@@ -310,7 +387,7 @@ Scenario 7 : Create a new Windows Instance and Install IIS
 
 .. _Launch New ubuntu Instance,Install Tomcat,upgrade to-v8.0[attribute]:
 
-Scenario 8 : Create a new Ubuntu Instance,Install Tomcat and upgrade to latest version
+Scenario 9 : Create a new Ubuntu Instance,Install Tomcat and upgrade to latest version
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Add Provider . Skip this step if Scenario6 is already executed
@@ -353,7 +430,7 @@ Scenario 8 : Create a new Ubuntu Instance,Install Tomcat and upgrade to latest v
 
 .. _Provider Sync and-Import Instances:
 
-Scenario 9 : Provider Sync and Import Instances
+Scenario 10 : Provider Sync and Import Instances
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Once the basic data is loaded, you can start exploring RLCatalyst from the Provider-Sync Feature. You can sync nodes from your AWS provider account and convert the nodes to 'Managed' . This will give a control on your AWS infra by letting you track the capacity, cost and usage . Once sync-ed, you can see the summary dashboard from 'Track'
@@ -378,7 +455,7 @@ Please refer to :ref:`providersync and-import` for more details.
 
 .. _AWS Cost,Usage-Dashboards:
 
-Scenario 10 : AWS Cost,Usage Dashboards
+Scenario 11 : AWS Cost,Usage Dashboards
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 RLCatalyst provides you a consolidated dashboard for tracking your AWS infrastructure cost and usage . This helps you to identify un-used capacity and do better utilization. RLCatalyst summarizes this data for all the AWS provider accounts configured.
 
@@ -422,7 +499,7 @@ Follow the instructions to configure your dashboards:
 
 .. _Composite-Docker for Wordpress:
 
-Scenario 11: Composite Docker for Wordpress 
+Scenario 12: Composite Docker for Wordpress 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 1. Create a docker template for MYSQL
  * Go to Settings -> Gallery Setup -> Templates, Enter the Template name -> Choose Template type as **Docker** -> Choose the **Organization**
@@ -482,6 +559,165 @@ Scenario 11: Composite Docker for Wordpress
 *****
 
 
+.. _Create and launch-Blueprint ( CentOS + Liferay ):
+
+Scenario 13 : Create and launch Blueprint ( CentOS + Liferay )
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. Create template for liferay app
+
+ * Go to GallerySetup -> Templates
+
+ * Create template by adding deploy_liferay_app cookbbok and save
+
+
+2. Under Desgin create blueprint using the liferayapp template
+
+ * Go to Design -> Select liferay template and create blueprint. (Make sure the instance size is atleast 2GB)
+  
+ * Add application URL **http://$host:8001**
+
+
+3. Launching blueprint
+
+ * Go to Workzone -> Infrastructure -> Blueprints -> Launch the blueprint
+
+
+4. Access Liferay application
+
+ * Access Liferay application by clicking on **APP link URL** present on the Instance card and verify the LifeRay     
+
+
+
+
+Following video demonstrates how to Launch New Centos Instance and deploy LifeRay in RLCatalyst:
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/TNylGUUhuM8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
+
+*****
+
+
+
+.. _Create and Launch an AWS CFT Blueprint for 2-node Petclinic:
+
+Scenario 14 : Create and Launch an AWS CFT Blueprint for 2-node Petclinic
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. Create CloudFormation Template
+
+ * Go to GallerySetup -> Templates
+
+ * Create Cloud Formation template by uploading your template file and other details
+
+
+2. Under Desgin create blueprint using cloud formation template
+
+ * Go to Design -> select **Cloud formation** template type -> Next -> select your template -> Next -> Enter Blueprintname, Choose Business Group & project
+
+ * In **Configure Stack Parameters** section provide the valid details for **Region, Provider, KeyName, SecurityGroup, AMImage ID, Instance Username** and other details
+
+3. Launch the Cloud Formation Blueprint
+
+ * Go to Workzone -> your respective Environment -> Infrastruture -> Blueprints -> CloudFormation and launch the Blueprint by entering the ``Unique stack Name``
+
+4. Verify the Stack 
+
+ * Now Verify the Stack at Infrastructure -> CloudFormation, Wait until the Stack shows from **CREATE_IN_PROGRESS** to **CREATE_COMPLETE**
+
+5. Verify the 2 VM/Instances Launched 
+
+ * Go to Infrstructure -> Instances, you will be able to see the 2 nodes/VM's launched and click on **MoreInfo icon** & wait until both the instances **Bootstrap successfully**
+
+6. Run cookbook multitierdb for VM1
+
+* Click on ChefClient run icon and select **multitier_db** cookbook and move to runlist and update. Wait Until the **Instance Runlist updates**
+
+
+7. Run cookbook tomcat & multitierwar for VM2
+
+ * Click on ChefClient run icon and select **tomcat_all_rl, multitier_war** cookbook and move to runlist and update. Wait Until the **Instance Runlist updates**
+
+
+8. Verify the petclinic application using the VM2 IPAddress
+ 
+ * Now verify the petclinic application using **http://VM2 Ipaddress:8080/petclinic**. You will be able to access the application
+
+
+
+
+
+
+Following video demonstrates how to Create and Launch an AWS CFT Blueprint for 2-node Petclinic in RLCatalyst:
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/4RV0TEvqdZk" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
+
+*****
+
+.. _Install LAMP Stack on a single-node:
+
+Scenario 15 : Install LAMP Stack on a single node
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. Import a Ubuntu Node to RLcatalyst
+
+ * Go to Workzone and expand the Organization tree on the left side to get the environments . Click on Import by IP icon 
+ * Enter the **IP Address, Username** & select the **OS, Config Management, pem file**
+
+
+Please refer to :ref:`import-byip`  for more details
+
+
+2. Chef Client Run on the Instance with LAMP Role and editing the cookbook attributes
+ 
+ * Click on Chef-Client Run icon, select the **lamp_role** cookbook and move to runlist
+
+ * Edit the **Cookbook attributes** by clicking on the edit button and provide the value for **Root Password** and update the runlist
+
+
+3. Access Apache
+
+ * Access apache at  **http://$host** of that machine
+
+
+4. Access PHP
+ 
+ * Access apache at  **http://$host/index.php** of that machine
+
+
+5. Access MySql
+
+ * From RLCatalyst click on SSH icon of the instance and provide the valid details and submit
+
+ * Now Enter the following command **mysql -u root -p** and enter the same **Root Password** which you provided while editing the cookbook attributes and verify MySql
+
+
+
+
+Following video demonstrates how to Launch New Ubuntu Instance and deploy LAMP[Linux, Apache, MySql, PHP] in RLCatalyst:
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/nZ2K8LZCt04" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
 
 
 
@@ -492,7 +728,7 @@ Scenario 11: Composite Docker for Wordpress
 
 .. _Create & Execute Jenkins Jobs from-RLCatalyst:
 
-Scenario 12 : Configure and Execute a Jenkins Jobs from RLCatalyst
+Scenario 16 : Configure and Execute a Jenkins Jobs from RLCatalyst
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Execute your Jenkins job from rlcatalyst and see the history of each jobs. Jenkins server should be configured in rlcatalyst to initiate the job execution. Please refer to * :ref:`Configure-Jenkins`
@@ -513,12 +749,11 @@ Please refer to ``Jenkins Task`` under :ref:`Orchestration-JenkinsTask` to **Cre
 *****
 
 
-*****
 
 
 .. _View Jenkins Job-History:
 
-Scenario 13 : View Jenkins Job History
+Scenario 17 : View Jenkins Job History
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Please refer to ``Jenkins Task`` -> ``Task History`` under :ref:`Orchestration-JenkinsTask` to view **Jenkins Job History**
@@ -568,5 +803,9 @@ Now, Promote Petclinic in other envionment:
 
 
 *****
+
+
+
+
 
 
