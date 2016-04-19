@@ -764,7 +764,7 @@ Please refer to ``Jenkins Task`` -> ``Task History`` under :ref:`Orchestration-J
 
 .. _Deploy and Promote-a Java Application:
 
-Scenario 14 : Deploy and Promote a Java Application
+Scenario 18 : Deploy and Promote a Java Application
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Import a ubuntu node or Launch a Blueprint. Wait until the Node Bootstrap successfully.
