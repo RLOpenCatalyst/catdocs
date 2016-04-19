@@ -39,9 +39,51 @@ Please refer to :ref:`import-byip`  for more details
 
 *****
 
+
+.. _Import Linux Node and Install latest version of-JBoss:
+
+Scenario 2 : Import Linux Node and Install latest version of JBoss
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Prerequisite:** You must have linux node on which you want to install JBoss.
+
+1. Import RLCatalyst instance 
+
+ * Go to Workzone and expand the Organization tree on the left side to get the respective environment . Click on Import by IP icon 
+ * Follow the following steps:
+
+    1. Enter <Ip Address> in the IP Address field . 
+    2. Choose Operating System from drop down list .
+    3. Provide Username .
+    4. Choose chef Server from drop down list .
+    5. Choose Authentication Type by selecting password/pem file .
+    6. Enter the Password or Browse the Pem file .
+    7. Now click on Import button to import your instance.
+
+2. Install latest version of Jboss
+ * Click on Chef-Client Run icon on the imported node in Infrastructure -> Instances tab
+ * Search for **Jboss7_rl** cookbook and add to runlist and click on update runlist button and wait until instance runlist updates . This cookbook will install the latest version of JBoss
+
+3. Access Jboss
+ * Once the runlist updates go to new Tab enter **Ip address:8080** and then you will get **Welcome page of JBoss**.
+
+
+
+**Following video demonstrates how to import Linux node and install latest version of JBoss in RLCatalyst:**
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/ODTQadggt8Q" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
+*****
+
 .. _Install apache2 on imported node and use service to stop-apache2:
 
-Scenario 2 : Install apache2 on imported node and use service to stop apache2
+Scenario 3 : Install apache2 on imported node and use service to stop apache2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Create a Service command
@@ -485,5 +527,46 @@ Please refer to ``Jenkins Task`` -> ``Task History`` under :ref:`Orchestration-J
 
 *****
 
+.. _Deploy and Promote-a Java Application:
+
+Scenario 14 : Deploy and Promote a Java Application
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. Import a ubuntu node or Launch a Blueprint. Wait until the Node Bootstrap successfully.
+
+2. Create a Chef Task in **Orchestratino Tab** and Save by adding **tomcatall_rl** and **deploy_war** cookbooks.
+
+3. Go to Applications and Deploy New App by clicking **+Deploy New App** :
+
+* Enter Repository Details: **Repository Server**, **Repository**, **Group ID**, **Artifacts** and **Version** which you want to deploy
+* Add the job which you created
+* Wait until task execution is success
+* Verfiy the card with the version you selected in applications.
+* Click on Approve and then promote will be enabled
+
+4.Now, Access petclinic application in the format http://<ipaddress>:8080/petclinic. Petclinic application home page will open.
+
+Now, Promote Petclinic in other envionment:
+
+1. Import a ubuntu node or Launch a Blueprint. Wait until the Node Bootstrap successfully.
+
+2. Create a Chef Task in **Orchestratino Tab** and Save by adding **tomcatall_rl** and **deploy_war** cookbooks.
+
+3. Go to **applications tab** and click on **promote** and select the target enviornment and Select the job, which you created in step 2 and node, which you launched or imported and click on Promote
+
+4.Now, Access petclinic application in the format http://<ipaddress>:8080/petclinic. Petclinic application home page will open.
+
+**Following video demonstrates how to Deploy and Promote Petclinic:**
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/pxa5NYhRKDw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
+*****
 
 

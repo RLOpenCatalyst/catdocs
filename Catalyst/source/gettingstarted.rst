@@ -80,6 +80,8 @@ Listed below are few features which RLCatalyst offers out of the box:
 
 * :ref:`Import Linux Node and Install latest version of-Tomcat`  
 
+* :ref:`Import Linux Node and Install latest version of-Jboss`  
+
 * :ref:`Install apache2 on imported node and use service to stop-apache2`        
 
 * :ref:`Deploy Pet-clinic application in the imported node`    
@@ -128,6 +130,8 @@ Jenkins is CI/CD tool which can be used for build and deployment automation. It 
 * :ref:`Create & Execute Jenkins Jobs from-RLCatalyst`
 
 * :ref:`View Jenkins Job-History`
+
+* :ref:`Deploy and Promote-a Java Application`
 
 
 *****
