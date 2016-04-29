@@ -140,6 +140,8 @@ Jenkins is CI/CD tool which can be used for build and deployment automation. It 
 
 * :ref:`Deploy and Promote-a Java Application`
 
+* :ref:`Deploy-a 3-tier application`
+
 
 
 *****

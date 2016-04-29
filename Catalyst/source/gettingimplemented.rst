@@ -804,6 +804,47 @@ Now, Promote Petclinic in other envionment:
 
 *****
 
+.. _Deploy-a 3-tier application:
+
+Scenario 19 : Deploy a 3-tier application
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. Create  three templates:
+
+  * Configure Provider Parameters:
+
+    1. Operating System: ubuntu
+    2. provider: AWSPovider
+    3. Available Image: ubuntu
+    4. Region: US West(N California) | us-west-1
+    5. PVC: your PVC
+    6. Subnet: your subnet
+    7. key pair: bootstrapncal
+    8. instance type: t2.micro
+    9. security group: default
+    10. instances to b launch: 1
+
+  * configure Organization parameters: provide details for Organization, Blueprint name, business group and project.
+
+  * Configure runlist parameters: add role **petclinic_db** for first teplate and **petclinic_app** for second teplate and cookbook **loadblncr** for third template. And click on "Next" to create respective templates.
+
+2. Now, go to **WORKZONE -> Infrastructre -> Blueprints** and launch your created blueprints one by one. Wait until the Node Bootstrap successfully for each blueprint.
+
+3. Now, take the <ipaddress> of **load_balancer node** and Access petclinic application in the format http://<ipaddress>/petclinic. Petclinic application home page will open.
+
+**Following video demonstrates how to Deploy a 3-tier application:**
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/tA3ps-tRmBQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
+*****
+
 
 
 
