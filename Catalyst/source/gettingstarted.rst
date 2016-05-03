@@ -142,6 +142,8 @@ Jenkins is CI/CD tool which can be used for build and deployment automation. It 
 
 * :ref:`Deploy-a 3-tier application`
 
+* :ref:`Update tags in-AWS`
+
 
 
 *****
