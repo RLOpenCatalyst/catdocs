@@ -45,7 +45,7 @@ Templates internally contains roles or cookbooks. With the help of templates als
  * Choose the Docker repo
  * Add Docker Repo Path
  
- .. image:: /images/dockerTemplate.png
+ .. image:: /images/dockerTemplate.PNG
 
  * Click on Save button
 
