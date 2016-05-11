@@ -1,0 +1,460 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Install Directly From Source &mdash; RLCatalyst latest documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="RLCatalyst latest documentation" href="index.html"/>
+        <link rel="up" title="Installation" href="install.html"/>
+        <link rel="next" title="Install Using QuickInstaller" href="quickinstaller.html"/>
+        <link rel="prev" title="Installation" href="install.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RLCatalyst
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">RLCatalyst Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">About RLCatalyst</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="menu-options.html">Introduction - RLCatalyst</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workzone.html">Workzone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trackinwrk.html">Track</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="install.html">Installation</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">Install Directly From Source</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installation-steps-for-ubuntu-14-04">Installation Steps for Ubuntu 14.04</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installation-steps-for-centos7">Installation Steps for Centos7</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="quickinstaller.html">Install Using QuickInstaller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickinstaller.html#install-from-aws-ami">Install from AWS AMI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickinstaller.html#install-using-vagrant">Install using Vagrant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickinstaller.html#install-using-docker-image">Install using Docker Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickinstaller.html#install-using-vm">Install using VM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chef.html">Working With Chef</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Contributions.html">Code Contributions</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">RLCatalyst</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="install.html">Installation</a> &raquo;</li>
+      
+    <li>Install Directly From Source</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/installubuntu.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="install-directly-from-source">
+<span id="install-source"></span><h1>Install Directly From Source<a class="headerlink" href="#install-directly-from-source" title="Permalink to this headline">¶</a></h1>
+<p>You can install RLCatalyst locally by downloading the code from our Github Code Repository. The following section gives the instructions to do the RLCatalyst Installation from source</p>
+<div class="section" id="installation-steps-for-ubuntu-14-04">
+<h2>Installation Steps for Ubuntu 14.04<a class="headerlink" href="#installation-steps-for-ubuntu-14-04" title="Permalink to this headline">¶</a></h2>
+<p>Here is a step by step plan on how to install RLCatalyst on Ubuntu machine.</p>
+<p>Start by updating the System:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo apt-get update
+</pre></div>
+</div>
+<p>Install MongoDB</p>
+<p>Import the public key used by the package management system.The Ubuntu package management tools (i.e.&nbsp;dpkg&nbsp;and&nbsp;apt) ensure package consistency and authenticity by requiring that distributors sign packages with GPG keys.</p>
+<p>Issue the following command to import the&nbsp;MongoDB public GPG Key:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+</pre></div>
+</div>
+<p>Create a list file for MongoDB:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>echo &quot;deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.2 multiverse&quot; | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+</pre></div>
+</div>
+<p>Reload local package database &amp; install MongoDB:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo apt-get update
+sudo apt-get install -y mongodb-org
+</pre></div>
+</div>
+<p>Check the Mongo version:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">mongo</span> <span class="o">-</span><span class="n">version</span>
+<span class="mf">3.2</span><span class="o">.</span><span class="n">x</span>
+</pre></div>
+</div>
+<p>Install NodeJs 4.x &amp; Curl:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo apt-get install curl
+</pre></div>
+</div>
+<p>To Install Nodejs version 4.x:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+sudo apt-get install -y nodejs
+</pre></div>
+</div>
+<p>Check the version of node after installation.It should be 4.2.2</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>node -v
+v4.2.2
+</pre></div>
+</div>
+<p>Check the version of npm</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>npm -v
+
+
+NOTE - The npm version required is 3.x . If an older version got installed, upgrade the npm version
+       sudo apt-get update
+       sudo npm install npm -g
+
+Now check the npm version and make sure it is 3.5.x and above
+npm -v
+</pre></div>
+</div>
+<p>Install Git(1.9.x)</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo apt-get install git
+</pre></div>
+</div>
+<p>NOTE:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>Node Version - 4.2.2
+npm version - 3.6.x
+monogo version - 3.2.x
+</pre></div>
+</div>
+<p>Clone the repository to get the RLCatalyst code:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo git clone https://github.com/RLOpenCatalyst/core.git
+</pre></div>
+</div>
+<p>Create a Mongodb path:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo mkdir -p /data/db/
+</pre></div>
+</div>
+<p>Install ChefClient:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo curl -L https://www.opscode.com/chef/install.sh | sudo bash
+To Check the chef client version
+knife -v
+It should be 12.6 or above
+</pre></div>
+</div>
+<p>Install the dependencies- make , g++ , Kerberos &amp; library:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo apt-get install make
+sudo apt-get install g++
+sudo apt-get install libkrb5-dev
+sudo npm install -g kerberos
+</pre></div>
+</div>
+<p>Install Node Packages:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>cd core/server
+sudo npm install
+</pre></div>
+</div>
+<p>To Install seed data:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo node install --seed-data
+</pre></div>
+</div>
+<p>To Install forever &amp; start the RLCatalyst Application:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo npm install forever --global
+cd core/server/app
+sudo forever start app.js
+</pre></div>
+</div>
+<p>Now you can access RLCatalyst at <a class="reference external" href="http://localhost:3001">http://localhost:3001</a></p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>Login Credentials
+superadmin/superadmin@123
+</pre></div>
+</div>
+<p>You are ready to start using RLCatalyst now.
+Please see <a class="reference internal" href="gettingstarted.html"><em>Getting Started</em></a> for next steps .</p>
+</div>
+<div class="section" id="installation-steps-for-centos7">
+<h2>Installation Steps for Centos7<a class="headerlink" href="#installation-steps-for-centos7" title="Permalink to this headline">¶</a></h2>
+<p>Here is a step by step plan on how to install RLCatalyst on Centos7 machine.</p>
+<p>Update your System with yum:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>yum update
+</pre></div>
+</div>
+<p>To Install node.js &amp; npm:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span># Install the repository
+rpm -Uvh https://rpm.nodesource.com/pub_4.x/el/7/x86_64/nodesource-release-el7-1.noarch.rpm
+
+# Install NodeJS
+yum install nodejs
+
+checking the node version
+node -v
+4.2.2
+
+Check the npm version
+npm -v
+
+
+
+NOTE - The npm version required is 3.5.x . If an older version got installed, upgrade the npm version.
+       npm install npm -g
+
+Now check the npm version
+npm -v
+3.5.3
+</pre></div>
+</div>
+<p>To Install MongoDb (version 3.x):</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>Go to directory /etc/yum.repos.d/
+
+Create a file mongodb-enterprise.repo
+cat &gt; mongodb-enterprise.repo
+Edit the above file and add the contents
+
+[MongoDB]
+name=MongoDB Repository
+baseurl=http://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.2/x86_64/
+gpgcheck=0
+enabled=1
+
+Save the file
+
+Run the Command
+yum install mongodb-org
+
+check the mongo version
+mongod --version
+3.2.1
+</pre></div>
+</div>
+<p>NOTE:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>npm version 3.5.3
+node version 4.2.5
+monogd verison 3.2.1
+</pre></div>
+</div>
+<p>To Install Chef-Client (version 12.6.0):</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>curl -L https://www.opscode.com/chef/install.sh | sudo bash
+To check the chef client version
+knife -v
+Chef:12.6.0
+</pre></div>
+</div>
+<p>To Install git:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>yum install git
+To check the git version
+git –version
+1.7.x
+</pre></div>
+</div>
+<p>To Install RLCatalyst and to create a db path folder:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>To pull the catalyst code
+git clone https://github.com/RLOpenCatalyst/core.git
+Check the current directory for the presence of catalyst code i.e D4D folder.
+
+
+Create a db path folder
+mongo db path -  mkdir -p /data/db/
+
+Go to cd core/server
+npm install
+</pre></div>
+</div>
+<p>Start the mongodb:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo service mongod start
+</pre></div>
+</div>
+<p>To Install gcc library:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>yum install gcc-c++
+</pre></div>
+</div>
+<p>To Install the seed data:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>node install --seed-data
+</pre></div>
+</div>
+<p>To Start the Application:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>Run (node app) to start your application.
+npm install forever –g
+cd core/server/app
+node app.js
+</pre></div>
+</div>
+<p>To run the application forever:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>forever start app.js
+</pre></div>
+</div>
+<p>Access RLCatalyst:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>http://localhost:3001
+username- superadmin
+pass - superadmin@123
+</pre></div>
+</div>
+<p>Now you are ready to start using RLCatalyst . Please see <a class="reference internal" href="gettingstarted.html"><em>Getting Started</em></a> for next steps</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="quickinstaller.html" class="btn btn-neutral float-right" title="Install Using QuickInstaller" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="install.html" class="btn btn-neutral" title="Installation" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Relevance Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'latest',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

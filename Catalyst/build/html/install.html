@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installation &mdash; RLCatalyst latest documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="RLCatalyst latest documentation" href="index.html"/>
+        <link rel="next" title="Install Directly From Source" href="installubuntu.html"/>
+        <link rel="prev" title="Track" href="trackinwrk.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RLCatalyst
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">RLCatalyst Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">About RLCatalyst</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="menu-options.html">Introduction - RLCatalyst</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workzone.html">Workzone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trackinwrk.html">Track</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installubuntu.html">Install Directly From Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickinstaller.html">Install Using QuickInstaller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickinstaller.html#install-from-aws-ami">Install from AWS AMI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickinstaller.html#install-using-vagrant">Install using Vagrant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickinstaller.html#install-using-docker-image">Install using Docker Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickinstaller.html#install-using-vm">Install using VM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chef.html">Working With Chef</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Contributions.html">Code Contributions</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">RLCatalyst</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Installation</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/install.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installation">
+<span id="install-catalyst"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>This is a documentation that gives the developer and the user an overview of how to install RLCatalyst on a local instance</p>
+<p><strong>Supported Platforms</strong></p>
+<p>RLCatalyst is currently supported on</p>
+<blockquote>
+<div><ul class="simple">
+<li>Ubuntu 14.04</li>
+<li>CentOS 7</li>
+</ul>
+<p>Software Requirements</p>
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="84%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Softwares</th>
+<th class="head">Versions</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>MongoDB</td>
+<td>3.2</td>
+</tr>
+<tr class="row-odd"><td>Node.JS</td>
+<td>4.2.2 and above</td>
+</tr>
+<tr class="row-even"><td>Npm</td>
+<td>3.4 and above</td>
+</tr>
+<tr class="row-odd"><td>Chef Server</td>
+<td>12.3 Open Source or Latest Enterprise Chef Server version.</td>
+</tr>
+<tr class="row-even"><td>Chef Client</td>
+<td>12.6</td>
+</tr>
+<tr class="row-odd"><td>LDAP Server</td>
+<td>OpenLDAP 2.4.39 or an existing corporate LDAP server.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>SCM – Any version of GIT or SVN</p>
+</div></blockquote>
+<div class="toctree-wrapper compound" id="for-ubuntu">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installubuntu.html">Install Directly From Source</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installubuntu.html#installation-steps-for-ubuntu-14-04">Installation Steps for Ubuntu 14.04</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installubuntu.html#installation-steps-for-centos7">Installation Steps for Centos7</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound" id="for-quickinstaller">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quickinstaller.html">Install Using QuickInstaller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickinstaller.html#install-from-aws-ami">Install from AWS AMI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickinstaller.html#install-using-vagrant">Install using Vagrant</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickinstaller.html#install-using-docker-image">Install using Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickinstaller.html#install-using-vm">Install using VM</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound" id="for-chefdocs">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="chef.html">Working With Chef</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="chef.html#upload-cookbooks-into-chef">Upload cookbooks into Chef</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="installubuntu.html" class="btn btn-neutral float-right" title="Install Directly From Source" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="trackinwrk.html" class="btn btn-neutral" title="Track" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Relevance Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'latest',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

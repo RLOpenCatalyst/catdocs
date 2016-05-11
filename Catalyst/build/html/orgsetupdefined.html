@@ -1,0 +1,541 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Organization &mdash; RLCatalyst latest documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="RLCatalyst latest documentation" href="index.html"/>
+        <link rel="up" title="Organization Setup" href="orgSettings.html"/>
+        <link rel="next" title="DevOps Setup" href="devopsSetup.html"/>
+        <link rel="prev" title="Organization Setup" href="orgSettings.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RLCatalyst
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">RLCatalyst Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">About RLCatalyst</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="menu-options.html">Introduction - RLCatalyst</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="settings.html">Settings</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="orgSettings.html">Organization Setup</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Organization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#business-groups">Business Groups</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#projects">Projects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chef-server">Chef Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setup-environments">Setup Environments</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="devopsSetup.html">DevOps Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usersSetup.html">User Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gallerySetup.html">Gallery Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="trackSetup.html">Track Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userinformation.html">User Information</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workzone.html">Workzone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trackinwrk.html">Track</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contributions.html">Code Contributions</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">RLCatalyst</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="settings.html">Settings</a> &raquo;</li>
+      
+          <li><a href="orgSettings.html">Organization Setup</a> &raquo;</li>
+      
+    <li>Organization</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/orgsetupdefined.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="organization">
+<span id="org-settings"></span><h1>Organization<a class="headerlink" href="#organization" title="Permalink to this headline">¶</a></h1>
+<p>An Organization can be an enterprise or a business that can have multiple sub groups and projects.</p>
+<p><strong>Follow the steps below to create an organization</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>From the main menu click on Settings</li>
+<li>Once you click on Settings, from the side menu click on Organization Setup</li>
+<li>Click Organizations</li>
+<li>Click on New button provided</li>
+<li>In Create Organization page enter Name (Organization Name) and Domain Name (Website Address)</li>
+</ul>
+<img alt="_images/createOrg.JPG" src="_images/createOrg.JPG" />
+<ul class="simple">
+<li>Click on Save button</li>
+<li>Now your Organization is setup and listed in the Organizations page</li>
+</ul>
+<img alt="_images/orgList.JPG" src="_images/orgList.JPG" />
+</div></blockquote>
+<dl class="docutils">
+<dt><strong>Edit and Remove an Organization</strong></dt>
+<dd>You can edit and remove an Organization.</dd>
+<dt>To Edit the Organization</dt>
+<dd><ul class="first last simple">
+<li>Click on edit button to edit the organization details</li>
+</ul>
+</dd>
+<dt>To Remove the Organization</dt>
+<dd><ul class="first last simple">
+<li>Click on delete button to remove the organization from the list</li>
+</ul>
+</dd>
+</dl>
+<p><strong>Activate or Inactivate an Organization</strong></p>
+<p>You can activate or inactivate an Organization by using the cursor button provided.  Remember, once you inactivate the organization all the entities relating to that organization will be disabled. You can enable the organization at any time. which will activate all the entities associated with that organization</p>
+<blockquote>
+<div><img alt="_images/editOrg.png" src="_images/editOrg.png" />
+</div></blockquote>
+</div>
+<div class="section" id="business-groups">
+<span id="bu-settings"></span><h1>Business Groups<a class="headerlink" href="#business-groups" title="Permalink to this headline">¶</a></h1>
+<p><strong>Setup Business Groups for an Organization</strong></p>
+<p>In an Organization you can create multiple Business Groups. A Business Groups can be a business division in your organization</p>
+<p><strong>Follow the steps below to create a new Business Group in an Organization</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>From the main menu click on Settings</li>
+<li>Once you click on Settings, from the side menu click on Organization Setup</li>
+<li>Click on Business Groups</li>
+<li>Click on New button provided</li>
+<li>Enter the Business Group name in the Business Group name field</li>
+<li>Select the Organization from the Organization drop down list</li>
+<li>Click on Save button</li>
+</ul>
+<img alt="_images/createBG.JPG" src="_images/createBG.JPG" />
+<ul class="simple">
+<li>Now the Business Group  is setup and listed in the Business Groups page</li>
+</ul>
+<img alt="_images/businessList.JPG" src="_images/businessList.JPG" />
+</div></blockquote>
+<dl class="docutils">
+<dt><strong>Edit and Remove a Business Group</strong></dt>
+<dd>You can edit and remove a Business Group.</dd>
+<dt>To Edit the Business Group</dt>
+<dd><ul class="first last simple">
+<li>Click on edit button to edit Business Group details</li>
+</ul>
+</dd>
+<dt>To Remove the Business Group</dt>
+<dd><ul class="first last simple">
+<li>Click on delete button to remove Business Group from the list</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="projects">
+<span id="projects-settings"></span><h1>Projects<a class="headerlink" href="#projects" title="Permalink to this headline">¶</a></h1>
+<p><strong>Setup Projects for a Business Group</strong></p>
+<p>In a Business Group you can create multiple Projects. A Project in RLCatalyst can be a running project in your business group. Each project can run one or multiple applications</p>
+<p><strong>Follow the steps below to create a new Project associating with Business Group and Organization</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>From the main menu click on Settings</li>
+<li>Once you click on Settings, from the side menu click on Organization Setup</li>
+<li>Click on Projects</li>
+<li>Click on New button provided</li>
+<li>Enter the Project name in the Name field</li>
+<li>Provide a brief description about the project in the Description field</li>
+<li>Select the Organization from the Organization drop down list</li>
+<li>Select the Business Group from the Business Group drop down list</li>
+<li>Environments and repository details are not mandatory while creating project and will be explained in later section</li>
+</ul>
+<img alt="_images/createProj.JPG" src="_images/createProj.JPG" />
+<ul class="simple">
+<li>Click on Save button</li>
+</ul>
+<img alt="_images/projectList.JPG" src="_images/projectList.JPG" />
+</div></blockquote>
+<dl class="docutils">
+<dt><strong>Edit and Remove a Project</strong></dt>
+<dd>You can edit and remove a Project.</dd>
+<dt>To Edit the Project</dt>
+<dd><ul class="first last simple">
+<li>Click on edit button to edit Project details</li>
+</ul>
+</dd>
+<dt>To Remove the Project</dt>
+<dd><ul class="first last simple">
+<li>Click on delete button to remove Project from the list</li>
+</ul>
+</dd>
+</dl>
+<p><strong>The following video will help you to setup an Organization, BusinessGroup, Project in RLCatalyst:</strong></p>
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/khifxeCjPAw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div></div>
+<div class="section" id="chef-server">
+<span id="chef-settings"></span><h1>Chef Server<a class="headerlink" href="#chef-server" title="Permalink to this headline">¶</a></h1>
+<p>The Chef server acts as a hub for configuration data. The Chef server stores cookbooks, the policies that are applied to nodes, and metadata that describes each registered node that is being managed by the chef-client.</p>
+<p>A node is any machine—physical, virtual, cloud, network device, etc.—that is under management by Chef.</p>
+<p>A cookbook is the fundamental unit of configuration and policy distribution.</p>
+<p>A policy file allows you to specify in a single document the cookbook revisions and recipes that should be applied by the chef-client.</p>
+<p>RLCatalyst allows you to configure your own chef server. You can add either a hosted chef server or an on-premise installation of chefserver. If you dont have either of these, please create an account at <a class="reference external" href="https://getchef.opscode.com/signup">https://getchef.opscode.com/signup</a> . For more details on chef, please go to <code class="xref doc docutils literal"><span class="pre">Chef</span> <span class="pre">Setup</span></code> .</p>
+<p>In RLCatalyst only one chef server can be configured for one organization. The same chef server cannot be associated to multiple organizations. Each chef server account will have a URL(Hosted/On-Premise), a User pem file, a Validator pem file and a knife file . You will get all these files when you create accounts in Chef.</p>
+<p>Data/File needed for adding a Chef Server account in RLCatalyst</p>
+<blockquote>
+<div><ul class="simple">
+<li>Name : Alias or name of the chef server , to be identified in RLCatalyst</li>
+<li>User Name : User name of your chef server account</li>
+<li>URL : URL of the hosted or on-premise chef server</li>
+<li>User Pem File : User file to access your Chef Server account</li>
+<li>Knife.rb : Configuration file that you get while setting up the Chef server</li>
+<li>Validator Pem File : During the first chef-client run, this private key does not exist. Instead, the chef-client will attempt to use the private key assigned to the chef-validator, located in /etc/chef/validation.pem.</li>
+<li>Key File : It is used to encrypt the contents of the data bag item.</li>
+<li>Template File :  The default bootstrap operation relies on an Internet connection to get the distribution to the target node. If a target node cannot access the Internet, then a custom template i.e, template file can be used to define a specific location for the distribution so that the target node may access it during the bootstrap operation.</li>
+</ul>
+</div></blockquote>
+<p>To configure a new chef server follow the steps below:</p>
+<blockquote>
+<div><ul class="simple">
+<li>From the main menu click on Settings</li>
+<li>Once you click on Settings, from the side menu click on Devops Setup</li>
+<li>Click on Chef Server</li>
+<li>Click on New button provided</li>
+<li>Enter the configuration name in the Name field</li>
+<li>Enter the Chef user name in User Name field</li>
+<li>Provide or specify the Chef URL for the server to be configured</li>
+<li>Choose the organization from the Organization drop down list</li>
+<li>Upload the user PEM file provided by the Chef Server in the User PEM File field</li>
+<li>Upload the validator PEM file provided by the Chef Server in the Validator PEM File field</li>
+<li>Upload the Knife.rb file provided by the Chef Server in the Knife.rb File field</li>
+<li>Upload the key file which is used for Databag</li>
+<li>Upload the Template file which is used to Bootstrap node</li>
+</ul>
+<img alt="_images/createChefServer.JPG" src="_images/createChefServer.JPG" />
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><ul class="simple">
+<li>Click on Save button</li>
+<li>Now your chef server is configured successfully and listed in the Chef server management page.</li>
+</ul>
+<img alt="_images/Chefserverlist.JPG" src="_images/Chefserverlist.JPG" />
+</div></blockquote>
+<hr class="docutils" />
+<dl class="docutils">
+<dt><strong>Edit and Remove Chef Server configuration</strong></dt>
+<dd>You can edit and remove a chef server configuration.</dd>
+<dt>To Edit the Chefserver</dt>
+<dd><ul class="first last simple">
+<li>Click on edit button to edit chef server configuration details</li>
+</ul>
+</dd>
+<dt>To Remove the Chefserver</dt>
+<dd><ul class="first last simple">
+<li>Click on delete button to remove chef server configuration from the list</li>
+</ul>
+</dd>
+</dl>
+<p><strong>Following video demonstrates how to configure a chef server in RLCatalyst:</strong></p>
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/qwCu-xx-wcA" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+<p><strong>Import nodes from Chef Server</strong></p>
+<p>You can import existing nodes from the configured chef server into RLCatalyst by selecting the required Business Group and Project. These imported nodes can be operated from the Workzone.</p>
+<blockquote>
+<div><ul class="simple">
+<li>To import the existing nodes click on import button</li>
+<li>Select the environment from Environment drop down list for the node to be imported . These are the environments available in your Chef account</li>
+<li>Select the respective checkbox in the Action column</li>
+</ul>
+<img alt="_images/chefImport.JPG" src="_images/chefImport.JPG" />
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><ul class="simple">
+<li>Click on the Import Nodes button</li>
+<li>Select the business group from Business Group drop down list</li>
+<li>Select the project from the Project drop down list</li>
+<li>Enter the user name to access the chef server for import in the User Name field</li>
+<li>Choose authentication type from the Choose Authentication Type drop down list. RLCatalyst provides two types of authentication, you can either choose Password or by uploading the PEM file</li>
+<li>Type Password or upload PEM file</li>
+<li>Click on Import button</li>
+<li>Close the popup containing the success message &#8216;Node imported&#8217;</li>
+<li>Click on Workzone</li>
+<li>The imported node will be available in the respective Environment of the Workzone</li>
+</ul>
+</div></blockquote>
+<hr class="docutils" />
+<dl class="docutils">
+<dt><strong>Chef Factory</strong></dt>
+<dd><p class="first">It consists of common and re-usable recipes and cookbooks.</p>
+<ul class="simple">
+<li>Click on Chef factory icon present in the Action column , Chef factory page will open.</li>
+</ul>
+<img alt="_images/chefFactory.JPG" src="_images/chefFactory.JPG" />
+<ul class="simple">
+<li>Go to Sync tab, here all the cookbooks and roles which are present in the chef server will be listed.</li>
+</ul>
+<img alt="_images/chefCookbooks.JPG" src="_images/chefCookbooks.JPG" />
+<ul class="simple">
+<li>Select the Cookbook and click on Sync</li>
+<li>Close the popup window</li>
+<li>Go to Cookbooks tab, here you can find the downloaded (Synched) cookbook</li>
+</ul>
+<img alt="_images/chefFactoryActions.JPG" class="last" src="_images/chefFactoryActions.JPG" />
+</dd>
+</dl>
+<hr class="docutils" />
+<p><strong>Databags and Items for Chef server</strong></p>
+<p>A data bag is a global variable that is stored as JSON data and is accessible from a Chef server.A data bag is indexed for searching and can be loaded by a recipe or accessed during a search.</p>
+<p>A data bag item may be encrypted using shared secret encryption. This allows each data bag item to store confidential information (such as a database password) or to be managed in a source control system (without plain-text data appearing in revision history). Each data bag item may be encrypted individually; if a data bag contains multiple encrypted data bag items, these data bag items are not required to share the same encryption keys.</p>
+<p>How to create Databag and Items for Chef Server?</p>
+<blockquote>
+<div><ul class="simple">
+<li>In the Chef Server Page, Click on Databag icon in the Action column of your chef server</li>
+<li>Click on + icon above the List of Data Bags column header</li>
+</ul>
+<img alt="_images/databag.JPG" src="_images/databag.JPG" />
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><ul class="simple">
+<li>Enter the name of the Databag in the Name field</li>
+</ul>
+<img alt="_images/createDatabag.JPG" src="_images/createDatabag.JPG" />
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><ul class="simple">
+<li>Click on Save button</li>
+<li>Select the Created Databag and create an item by clicking + icon above the &#8216;Items for -Databagname&#8217; column header</li>
+<li>Enter the ID and Item body</li>
+</ul>
+<img alt="_images/createDatabagItem.JPG" src="_images/createDatabagItem.JPG" />
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><ul class="simple">
+<li>Select the checkbox Do you want to Encrypt</li>
+<li>Click on Save button</li>
+<li>Now Databag and its item is created. Item body is shown in last column</li>
+<li>Click on Close button to navigate back to Chef server management page</li>
+</ul>
+</div></blockquote>
+<hr class="docutils" />
+</div>
+<div class="section" id="setup-environments">
+<span id="env-settings"></span><h1>Setup Environments<a class="headerlink" href="#setup-environments" title="Permalink to this headline">¶</a></h1>
+<p>In an Organization you can create multiple Environments. These environments need to be linked to Projects back. For example: Production, Development, Testing and so on.</p>
+<p>Follow the steps to setup a new Environment in an Organization:</p>
+<blockquote>
+<div><ul class="simple">
+<li>From the main menu click on Settings</li>
+<li>Once you click on Settings, from the side menu click on Devops Setup</li>
+<li>Click on Environments</li>
+<li>Click on New button provided</li>
+<li>Select the Organization from the Organization drop down list</li>
+<li>Select the server from the Chef Server drop down list</li>
+<li>You can see a list of environments in teh drop down. These are the environments defined in your chef server account. You can select one from this  drop down list <strong>OR</strong> you can Add new Environments to chef server by clicking on <strong>Add</strong> link provided right above the select an Chef Environment drop down</li>
+<li>Now Enter the Environment name to be created</li>
+</ul>
+<img alt="_images/addNewEnv.JPG" src="_images/addNewEnv.JPG" />
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><ul class="simple">
+<li>Click on Add button</li>
+<li>Now select the environment you added to the chef server from the Chef Environment drop down list</li>
+</ul>
+<img alt="_images/createEnv.JPG" src="_images/createEnv.JPG" />
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><ul class="simple">
+<li>Assign the project by toggling to &#8216;Yes&#8217;</li>
+<li>Click on Save button.</li>
+<li>Now the environment is setup and listed in the Environments page</li>
+</ul>
+<img alt="_images/envList.JPG" src="_images/envList.JPG" />
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>Hereby attaching a video which will demonstrate as in how to Create Environment in RLCatalyst:</strong></p>
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/LBPj6psKfsw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="devopsSetup.html" class="btn btn-neutral float-right" title="DevOps Setup" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="orgSettings.html" class="btn btn-neutral" title="Organization Setup" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Relevance Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'latest',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
