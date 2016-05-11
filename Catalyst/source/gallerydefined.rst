@@ -43,11 +43,9 @@ Templates internally contains roles or cookbooks. With the help of templates als
  * Choose the template type 'Docker' from the Template Type drop down list
  * Choose the Organization from the Organizationdrop down list
  * Choose the Docker repo
- * Enter the Title
  * Add Docker Repo Path
- * Click on Add button
-
- .. image:: /images/dockerTemplate.JPG
+ 
+ .. image:: /images/dockerTemplate.png
 
  * Click on Save button
 
