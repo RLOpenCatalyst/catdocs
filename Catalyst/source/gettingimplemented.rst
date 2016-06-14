@@ -870,6 +870,36 @@ By clicking on **Syn Instances** button, you will get 3 tabs, Tags, Mappings and
 
 *****
 
+.. _Application Deployment During Instance Launch using-Nexus Server:
+
+Scenario 21 : Application Deployment During Instance Launch using-Nexus Server
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. Create a Nexus Server with valid details and add Nexus Group ID - org.catalyst and save.
+
+2. Now, go To project and edit your project Select the Repository server -Nexus and Repository Name - Catalyst then ADD and save the project.
+
+3. Create a Software Stack Template for catalyst or petclinic and save. Add cookbook **deploy_upgrade_catalyst** for **catalyst** and **tomcat-all-rl** & **deploy_war** for **petclinic** accordingly.
+
+4. Go To Design & Create a Softwarestack bluperint using the template, which you created and add call back URL http://catalyst3.rlcatalyst.com/app-deploy or app/deploy and save the blueprint.
+
+5. Go to **Workzone** and launch the Blueprint.
+
+6. Now, go to **Instances** copy the IP of your launced blueprint and open new tab, paste that **IP:3001** to verify- the App is deployed or not. 
+
+**Following video demonstrates how to deploy Application during Instance launch using Nexus Server:**
+
+
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/2gTJ9ppTnVo" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
+*****
+
 
 
 
