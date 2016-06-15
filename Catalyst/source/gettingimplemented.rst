@@ -769,7 +769,7 @@ Scenario 18 : Deploy and Promote a Java Application
 
 1. Import a ubuntu node or Launch a Blueprint. Wait until the Node Bootstrap successfully.
 
-2. Create a Chef Task in **Orchestratino Tab** and Save by adding **tomcatall_rl** and **deploy_war** cookbooks.
+2. Create a Chef Task in **Orchestration Tab** and Save by adding **tomcat-all-rl** and **deploy_war** cookbooks.
 
 3. Go to Applications and Deploy New App by clicking **+Deploy New App** :
 
@@ -779,17 +779,17 @@ Scenario 18 : Deploy and Promote a Java Application
   * Verfiy the card with the version you selected in applications.
   * Click on Approve and then promote will be enabled
 
-4.Now, Access petclinic application in the format http://<ipaddress>:8080/petclinic. Petclinic application home page will open.
+4. Now, Access petclinic application in the format http://<ipaddress>:8080/petclinic. Petclinic application home page will open.
 
-Now, Promote Petclinic in other envionment:
+Now, Promote Petclinic in other enviornment:
 
 1. Import a ubuntu node or Launch a Blueprint. Wait until the Node Bootstrap successfully.
 
-2. Create a Chef Task in **Orchestratino Tab** and Save by adding **tomcatall_rl** and **deploy_war** cookbooks.
+2. Create a Chef Task in **Orchestration Tab** and Save by adding **tomcat-all-rl** and **deploy_war** cookbooks.
 
 3. Go to **applications tab** and click on **promote** and select the target enviornment and Select the job, which you created in step 2 and node, which you launched or imported and click on Promote
 
-4.Now, Access petclinic application in the format http://<ipaddress>:8080/petclinic. Petclinic application home page will open.
+4. Now, Access petclinic application in the format http://<ipaddress>:8080/petclinic. Petclinic application home page will open.
 
 **Following video demonstrates how to Deploy and Promote Petclinic:**
 
