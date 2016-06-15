@@ -873,7 +873,7 @@ By clicking on **Syn Instances** button, you will get 3 tabs, Tags, Mappings and
 .. _Application Deployment During Instance Launch using-Nexus Server:
 
 Scenario 21 : Application Deployment During Instance Launch using-Nexus Server
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Create a Nexus Server with valid details and add Nexus Group ID - org.catalyst and save.
 
