@@ -136,8 +136,6 @@ Jenkins is CI/CD tool which can be used for build and deployment automation. It 
 
 * :ref:`Create & Execute Jenkins Jobs from-RLCatalyst`
 
-* :ref:`View Jenkins Job-History`
-
 * :ref:`Deploy and Promote-a Java Application`
 
 * :ref:`Deploy-a 3-tier application`

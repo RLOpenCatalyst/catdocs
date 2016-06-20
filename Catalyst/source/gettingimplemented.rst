@@ -748,23 +748,9 @@ Please refer to ``Jenkins Task`` under :ref:`Orchestration-JenkinsTask` to **Cre
 
 *****
 
-
-
-
-.. _View Jenkins Job-History:
-
-Scenario 17 : View Jenkins Job History
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-Please refer to ``Jenkins Task`` -> ``Task History`` under :ref:`Orchestration-JenkinsTask` to view **Jenkins Job History**
-
-
-
-*****
-
 .. _Deploy and Promote-a Java Application:
 
-Scenario 18 : Deploy and Promote a Java Application
+Scenario 17 : Deploy and Promote a Java Application
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Import a ubuntu node or Launch a Blueprint. Wait until the Node Bootstrap successfully.
@@ -806,7 +792,7 @@ Now, Promote Petclinic in other enviornment:
 
 .. _Deploy-a 3-tier application:
 
-Scenario 19 : Deploy a 3-tier application
+Scenario 18 : Deploy a 3-tier application
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Create  three Blueprints:
@@ -836,7 +822,7 @@ Scenario 19 : Deploy a 3-tier application
 
 .. _Update tags in-AWS:
 
-Scenario 20 : Update tags in-AWS
+Scenario 19 : Update tags in-AWS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Prerequisite:** You must have an AWS account.
@@ -872,8 +858,10 @@ By clicking on **Syn Instances** button, you will get 3 tabs, Tags, Mappings and
 
 .. _Application Deployment During Instance Launch using-Nexus Server:
 
-Scenario 21 : Application Deployment During Instance Launch using-Nexus Server
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scenario 20 : Design and Launch Application Stack
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Design an entire app and launch instance with the app running.
 
 1. Create a Nexus Server with valid details and add Nexus Group ID - org.catalyst and save.
 
