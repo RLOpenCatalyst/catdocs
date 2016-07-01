@@ -1,0 +1,329 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Working With Chef &mdash; RLCatalyst latest documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="RLCatalyst latest documentation" href="index.html"/>
+        <link rel="up" title="Installation" href="install.html"/>
+        <link rel="next" title="Code Contributions" href="Contributions.html"/>
+        <link rel="prev" title="Install Using QuickInstaller" href="quickinstaller.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RLCatalyst
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">RLCatalyst Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">About RLCatalyst</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="menu-options.html">Introduction - RLCatalyst</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workzone.html">Workzone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trackinwrk.html">Track</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="install.html">Installation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="installubuntu.html">Install Directly From Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickinstaller.html">Install Using QuickInstaller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickinstaller.html#install-from-aws-ami">Install from AWS AMI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickinstaller.html#install-using-vagrant">Install using Vagrant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickinstaller.html#install-using-docker-image">Install using Docker Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickinstaller.html#install-using-vm">Install using VM</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Working With Chef</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#upload-cookbooks-into-chef">Upload cookbooks into Chef</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Contributions.html">Code Contributions</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">RLCatalyst</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="install.html">Installation</a> &raquo;</li>
+      
+    <li>Working With Chef</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/chef.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="working-with-chef">
+<span id="configure-chef"></span><h1>Working With Chef<a class="headerlink" href="#working-with-chef" title="Permalink to this headline">¶</a></h1>
+<p>Chef helps you express your infrastructure policy – how your software is delivered and maintained on your servers – as code. When infrastructure is code, it becomes more maintainable, versionable, testable, and collaborative.It allows you to install, configure and manage the packages required by your application without the complication of any client and server configuration. RL Catalyst allows you to use either chef or puppet configuration management to manage your Infrastructure.</p>
+<p>To begin with you need to create your organization and an account in chef server to automate your infrastructure.</p>
+<ul class="simple">
+<li>Go to the below link and create an account in Chef</li>
+</ul>
+<blockquote>
+<div><strong>https://getchef.opscode.com/signup</strong></div></blockquote>
+<img alt="_images/opscode.png" src="_images/opscode.png" />
+<ul class="simple">
+<li>Once you provide the details you will get the below message and email in your mailbox</li>
+</ul>
+<blockquote>
+<div><img alt="_images/signup.png" src="_images/signup.png" />
+</div></blockquote>
+<ul class="simple">
+<li>Check the email and go to the link provided in the email and provide the password</li>
+</ul>
+<blockquote>
+<div><img alt="_images/emailChef.png" src="_images/emailChef.png" />
+</div></blockquote>
+<ul class="simple">
+<li>Once you provided the password, you will get the below message</li>
+</ul>
+<blockquote>
+<div><img alt="_images/welcomeChef.png" src="_images/welcomeChef.png" />
+</div></blockquote>
+<ul class="simple">
+<li>Create an Organization</li>
+</ul>
+<blockquote>
+<div><img alt="_images/createOrgchef.png" src="_images/createOrgchef.png" />
+</div></blockquote>
+<p>Done Now you have a Hosted Chef account.</p>
+<ul class="simple">
+<li>Goto The Administrator Tab</li>
+</ul>
+<blockquote>
+<div><img alt="_images/saveOrg.png" src="_images/saveOrg.png" />
+</div></blockquote>
+<ul class="simple">
+<li>Reset the Validation Key</li>
+</ul>
+<blockquote>
+<div><img alt="_images/resetkey.png" src="_images/resetkey.png" />
+<img alt="_images/resettingKey.png" src="_images/resettingKey.png" />
+</div></blockquote>
+<p>Download the key in your desktop</p>
+<ul class="simple">
+<li>Reset the User key</li>
+</ul>
+<blockquote>
+<div><img alt="_images/resetUserkey.png" src="_images/resetUserkey.png" />
+<img alt="_images/resettingUserKey.png" src="_images/resettingUserKey.png" />
+</div></blockquote>
+<p>Download the key</p>
+<ul class="simple">
+<li>Generate the Knife Configuration</li>
+</ul>
+<blockquote>
+<div><img alt="_images/genKnife.png" src="_images/genKnife.png" />
+</div></blockquote>
+<p>So Now you have the user key, organization key and knife configuration</p>
+<ul class="simple">
+<li>Install Chef-Client on your desktop (Windows or Linux)</li>
+</ul>
+<blockquote>
+<div><strong>https://downloads.chef.io/chef-client/</strong></div></blockquote>
+<ul class="simple">
+<li>Create a folder in any location and then under that create chef-repo . Create a folder chef(windows) or .chef(linux)</li>
+</ul>
+<p>The directory structure will be:</p>
+<blockquote>
+<div><img alt="_images/dirStructure.png" src="_images/dirStructure.png" />
+</div></blockquote>
+<p>Put all the files in the chef folder</p>
+<ul class="simple">
+<li>To check the connectivity from your workstation to the hosted chef server</li>
+</ul>
+<blockquote>
+<div><p>Just run any command</p>
+<img alt="_images/knifeCmd.png" src="_images/knifeCmd.png" />
+</div></blockquote>
+<div class="section" id="upload-cookbooks-into-chef">
+<span id="upload-cookbooks"></span><h2>Upload cookbooks into Chef<a class="headerlink" href="#upload-cookbooks-into-chef" title="Permalink to this headline">¶</a></h2>
+<p>Once you setup Chef, the automation libraries need to be uploaded into Chef account. RL automation libraries are available at <a class="reference external" href="https://github.com/RLOpenCatalyst/automationlibrary.git">https://github.com/RLOpenCatalyst/automationlibrary.git</a></p>
+<ul class="simple">
+<li>clone the git repository to above directory</li>
+</ul>
+<blockquote>
+<div><strong>git clone https://github.com/RLOpenCatalyst/automationlibrary.git</strong></div></blockquote>
+<ul class="simple">
+<li>Run the ruby program (cookbooks_upload_chef_server.rb) available in the git repo.</li>
+</ul>
+<blockquote>
+<div><strong>ruby cookbooks_upload_chef_server.rb</strong></div></blockquote>
+<p>It will upload all the cookbooks to the hosted chef server along with the dependencies.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Contributions.html" class="btn btn-neutral float-right" title="Code Contributions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="quickinstaller.html" class="btn btn-neutral" title="Install Using QuickInstaller" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Relevance Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'latest',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

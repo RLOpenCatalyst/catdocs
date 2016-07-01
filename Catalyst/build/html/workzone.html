@@ -1,0 +1,763 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Workzone &mdash; RLCatalyst latest documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="RLCatalyst latest documentation" href="index.html"/>
+        <link rel="next" title="Track" href="trackinwrk.html"/>
+        <link rel="prev" title="Design" href="design.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RLCatalyst
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">RLCatalyst Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">About RLCatalyst</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="menu-options.html">Introduction - RLCatalyst</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Design</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Workzone</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#launch-new-instances">Launch New Instances</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#update-configuration">Update Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connect-to-the-instance">Connect to the Instance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#start-instance">Start Instance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stop-instance">Stop Instance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#import-by-ip">Import By IP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cloud-formation-templates">Cloud Formation Templates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#docker-blueprints">Docker Blueprints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#control-panel">Control Panel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#orchestration">Orchestration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#application-deployment">Application Deployment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#app-blueprint">App Blueprint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#launching-blueprint">Launching Blueprint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deploy-new-app">Deploy New App</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="trackinwrk.html">Track</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contributions.html">Code Contributions</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">RLCatalyst</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Workzone</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/workzone.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="workzone">
+<h1>Workzone<a class="headerlink" href="#workzone" title="Permalink to this headline">¶</a></h1>
+<p>RL Catalyst Workzone is an option all the settings take action. Workzone has below options:</p>
+<dl class="docutils">
+<dt><strong>Infrastructure</strong>:</dt>
+<dd><ol class="first last loweralpha simple">
+<li>Instances : It displays the numbers of instances that currently launched and running.</li>
+<li>Blueprints : This options allows you to launch instances.</li>
+<li>Cloud Formation : It displays the list of stacks launched from cloud formation blueprints.</li>
+<li>AzureARM: It displays the list of Deployments launched from Azure ARM Blueprints.</li>
+<li>Containers : Container details launched from docker blueprints.</li>
+</ol>
+</dd>
+</dl>
+<p><strong>Orchestration</strong>: This options allows you to execute one or more tasks/actions on multiple nodes.</p>
+<p><strong>Applications</strong>: Here user can deploy new applications and deployed applications will be shown in card or table view will all details.</p>
+<p>Here user can deploy new applications and deployed applications will be shown in pipeline view and table view with all details.</p>
+<div class="section" id="launch-new-instances">
+<span id="launch-instances"></span><h2>Launch New Instances<a class="headerlink" href="#launch-new-instances" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>Instances are launched from Blueprints. Follow below steps to launch Instances from blueprints.</p>
+<ul class="simple">
+<li>Go to Workzone → Click on Infrastructure drop down → Choose Blueprints</li>
+</ul>
+<img alt="_images/softBlueprint.JPG" src="_images/softBlueprint.JPG" />
+<ul class="simple">
+<li>Select the Blueprint and click on Launch button. Once the ‘Launch’ button is clicked, the instance will be launched in 5-8 minutes</li>
+<li>Go to Instances tab to view the launched instance</li>
+</ul>
+<img alt="_images/instances.JPG" src="_images/instances.JPG" />
+</div></blockquote>
+<dl class="docutils">
+<dt>View Instances in Table View</dt>
+<dd><p class="first">RL Catalyst on the Instances page provides you two kinds of views.</p>
+<ul class="last simple">
+<li>Grid View[Above Image]</li>
+<li>Table View[Below Image]</li>
+</ul>
+</dd>
+</dl>
+<p>You can click on the respective button to view the instances.</p>
+<blockquote>
+<div><img alt="_images/tableView.JPG" src="_images/tableView.JPG" />
+</div></blockquote>
+<dl class="docutils">
+<dt>Instance Actions:</dt>
+<dd><blockquote class="first">
+<div><p>On the launched instance user can perform below actions.</p>
+<ul class="simple">
+<li>Chef Client Run</li>
+<li>SSH</li>
+<li>Stop / Start</li>
+<li>MoreInfo</li>
+</ul>
+</div></blockquote>
+<ul class="last simple">
+<li><strong>Chef Client Run</strong> option allows you to update the Chef Client Runlist. You can add new software to the Runlist and click on <strong>Update</strong></li>
+<li><strong>SSH</strong>, this option allows you to open the command prompt Terminal. You can execute your commands directly using this option</li>
+<li><strong>Stop</strong>, This option allows you to start and stop an Instance</li>
+<li><strong>More Info</strong>, This option displays the information about the Instance. You can view the logs of the Instance</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="update-configuration">
+<h2>Update Configuration<a class="headerlink" href="#update-configuration" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>Any extra action on the running instance can be performed via the Chef client Run icon, which is displayed at the bottom left corner. Installing new software, upgrading a software etc can be performed using this icon.</div></blockquote>
+<p>A <strong>Cookbook</strong> is the fundamental unit of configuration and policy details that Chef uses to bring a node into a specific state. This just means that Chef uses cookbooks to perform work and make sure things are as they should be on the node.</p>
+<p>A <strong>Role</strong> is a way to define certain patterns and processes that exist across nodes in an organization as belonging to a single job function. Each role consists of zero (or more) attributes and a run-list. Each node can have zero (or more) roles assigned to it.</p>
+<p>A <strong>Run-list</strong> defines all of the information necessary for Chef to configure a node into the desired state.</p>
+<p>A <strong>Template</strong> is user defined skeleton structure which helps the user to add Cookbooks,Roles that can be runned on the Instance, which you created in Settings.</p>
+<p>Follow below steps to run chef client run:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Click on Chef client run icon</li>
+</ul>
+<p>From here you can add Roles, Cookbooks [Present in your chef server] and Templates [Created in Settings] to the Runlist.</p>
+<img alt="_images/chefClientRun.JPG" src="_images/chefClientRun.JPG" />
+<ul class="simple">
+<li>Select any cookbook and move to Runlist by clicking &gt; icon</li>
+<li>Click on Update button.</li>
+<li>Click OK on confirmation popup to update runlist</li>
+</ul>
+<img alt="_images/confirmChefClient.JPG" src="_images/confirmChefClient.JPG" />
+<ul class="simple">
+<li>Instance Logs window will be displayed to see the logs</li>
+</ul>
+<img alt="_images/instanceLogs.JPG" src="_images/instanceLogs.JPG" />
+<ul class="simple">
+<li>Click on Close button to close the Instance logs window</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="connect-to-the-instance">
+<h2>Connect to the Instance<a class="headerlink" href="#connect-to-the-instance" title="Permalink to this headline">¶</a></h2>
+<p>Follow below steps to connect to Instance:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Click on the SSH icon present on the instance</li>
+<li>Enter the Username of the Instance</li>
+<li>Select the authentication type by selecting password / pem file</li>
+<li>Enter the Password or Browse the Pem file</li>
+</ul>
+<img alt="_images/sshTerminal.JPG" src="_images/sshTerminal.JPG" />
+<ul class="simple">
+<li>Click on Submit button</li>
+</ul>
+<img alt="_images/sshShell.JPG" src="_images/sshShell.JPG" />
+</div></blockquote>
+<p><strong>Following video demonstrates how to Launch Blueprint, Update Configuration and Connect to the Instance in RLCatalyst:</strong></p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/mOXOUvR-cT0" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div></div>
+<hr class="docutils" />
+<div class="section" id="start-instance">
+<h2>Start Instance<a class="headerlink" href="#start-instance" title="Permalink to this headline">¶</a></h2>
+<p>Catalyst allows you to start the instance which is already stopped.</p>
+<p>Follow below steps to start the Instance:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Click on the <strong>Start</strong> icon of the stopped instance</li>
+<li>Instance will be started and turn to Green color. Chef Client , SSH button will be enabled</li>
+</ul>
+<img alt="_images/startedInstance.JPG" src="_images/startedInstance.JPG" />
+</div></blockquote>
+</div>
+<div class="section" id="stop-instance">
+<h2>Stop Instance<a class="headerlink" href="#stop-instance" title="Permalink to this headline">¶</a></h2>
+<p>Catalyst allows you to stop the instance which is already Running.</p>
+<p>Follow below steps to stop the Instance:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Click on the Stop icon present on the instance</li>
+<li>Click OK on confirmation popup</li>
+</ul>
+<img alt="_images/stopConfirm.JPG" src="_images/stopConfirm.JPG" />
+<ul class="simple">
+<li>Instance status is showing as stopped and red icon will be shown</li>
+</ul>
+<blockquote>
+<div><p><strong>Note:</strong> User can perform stop / start action only for the launched node from catalyst.</p>
+<p><strong>Note:</strong> For the imported node from IP address Stop button will be grayed out will be shown later.</p>
+<p><strong>Note:</strong> For the Stopped Instance, Chef client SSH buttons will be disabled.</p>
+<blockquote>
+<div><img alt="_images/stoppedInstance.JPG" src="_images/stoppedInstance.JPG" />
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="import-by-ip">
+<span id="import-byip"></span><h2>Import By IP<a class="headerlink" href="#import-by-ip" title="Permalink to this headline">¶</a></h2>
+<p>In the Instances page, you can import any running instances to the catalyst application using Import By IP option, follow the below steps to import:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Click on Import by IP icon</li>
+<li>In the <strong>Import Instance By IP</strong> window</li>
+<li>Provide the IP address which needs to be Imported</li>
+<li>Choose the operating system from <strong>Choose Operating System</strong> drop down list</li>
+<li>Provide the user name in the <strong>Username</strong> box</li>
+<li>Choose authentication type from the <strong>Choose Authentication Type</strong> drop down list. RL Catalyst provide two types of authentication, you can choose Password or by uploading PEM file</li>
+<li>Type <strong>Password or upload PEM file</strong></li>
+<li>Provide the application name in the <strong>Name</strong> box and the host <strong>URL</strong> in the URL box</li>
+<li>You can also Add new application by clicking on the Add Application URL option</li>
+<li>Click <strong>Import</strong> to start importing the Instance</li>
+</ul>
+<img alt="_images/ImportbyIP.jpg" src="_images/ImportbyIP.jpg" />
+<ul class="simple">
+<li>Node will be imported and displayed in the instances tab. For the imported node Stop button will be disabled</li>
+</ul>
+<img alt="_images/importNode.JPG" src="_images/importNode.JPG" />
+</div></blockquote>
+<p><strong>Following video demonstrates how to Import a Node by IP Address and connect to Instance from RLCatalyst</strong>:</p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/vD5bqzAlYdQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div></div>
+<hr class="docutils" />
+<div class="section" id="cloud-formation-templates">
+<h2>Cloud Formation Templates<a class="headerlink" href="#cloud-formation-templates" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>Follow below steps to launch Cloud formation blueprints:</p>
+<ul class="simple">
+<li>Go to Workzone → Click on Infrastructure dropdown → Select Blueprints option → Click on <strong>&#8216;Cloud Formation&#8217;</strong> template type</li>
+</ul>
+<img alt="_images/cftBlueprint.JPG" src="_images/cftBlueprint.JPG" />
+<ul class="simple">
+<li>Select the cloud formation blueprint and click on Launch button</li>
+<li>Enter the Unique Stack Name in the popup window</li>
+</ul>
+<img alt="_images/cftPopup.JPG" src="_images/cftPopup.JPG" />
+<ul class="simple">
+<li>Click on Submit button</li>
+<li>Confirmation pop will be displayed with Stack ID</li>
+</ul>
+<img alt="_images/cftStackid.JPG" src="_images/cftStackid.JPG" />
+<ul class="simple">
+<li>Close the popup</li>
+<li>Go to Infrastructure - &gt; Cloud Formation , the CFT stack will be listed</li>
+</ul>
+<img alt="_images/cftStacks.JPG" src="_images/cftStacks.JPG" />
+<ul class="simple">
+<li>Go to Instances tab to see the launched Instance</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="docker-blueprints">
+<h2>Docker Blueprints<a class="headerlink" href="#docker-blueprints" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>Follow below steps to launch docker blueprints:</p>
+<ul class="simple">
+<li>Go to Workzone → Click on Infrastructure dropdown → Select Blueprints option → Click on <strong>&#8216;Docker&#8217;</strong> template type</li>
+</ul>
+<img alt="_images/dockerBlueprint.JPG" src="_images/dockerBlueprint.JPG" />
+<ul class="simple">
+<li>Select the docker template which is listed and click on Launch button</li>
+<li>Click OK on the Confirmation popup</li>
+<li>Click Next button in the Launch docker blueprint window</li>
+</ul>
+<img alt="_images/launchDocker.JPG" src="_images/launchDocker.JPG" />
+<ul class="simple">
+<li>Select the node on which you are going to launch docker blueprint and click on <strong>Start</strong> button</li>
+</ul>
+<img alt="_images/selectNode.JPG" src="_images/selectNode.JPG" />
+<ul class="simple">
+<li>Logs window will be displayed and wait until the installation successfull</li>
+<li>Go to Infrastructure - &gt; Containers tab, the container details will be listed</li>
+</ul>
+<img alt="_images/docker.JPG" src="_images/docker.JPG" />
+</div></blockquote>
+<p><strong>Following video demonstrates how to Configure Docker and Launch Containers in RLCatalyst:</strong></p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/VgNA7ne2fwQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div></div>
+<hr class="docutils" />
+<div class="section" id="control-panel">
+<h2>Control Panel<a class="headerlink" href="#control-panel" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>The <strong>Control Panel</strong> option displays the detailed information on the selected <strong>Instance</strong>    .  It displays information such as Blueprint Information , Hardware information, Software Information, Configuration Management, Additional Parameters, Services, Actions and Logs.</p>
+<img alt="_images/controlPanel.JPG" src="_images/controlPanel.JPG" />
+</div></blockquote>
+<p><strong>Inspect Software</strong></p>
+<blockquote>
+<div><p>Inspect functionality allows user to know the installed software on the Instance.</p>
+<ul class="simple">
+<li>Go to Instance Control panel</li>
+<li>Click on Inspect Software button</li>
+<li>Popup is displayed to know the installed software on the instance</li>
+</ul>
+<img alt="_images/inspect.JPG" src="_images/inspect.JPG" />
+</div></blockquote>
+<p><strong>Convert to Workstation</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>Go to Instance Control panel → Services tab</li>
+<li>Click on &#8216;Convert To Workstation&#8217; button</li>
+<li>Click on &#8216;OK&#8217; button</li>
+<li>Confirmation pop up is displayed saying <strong>&#8216;Your workstation has been setup successfully. The .chef folder is available in Home&#8217;.</strong></li>
+</ul>
+<img alt="_images/workStation.JPG" src="_images/workStation.JPG" />
+<ul class="simple">
+<li>Click on <strong>OK</strong>  button to close the popup</li>
+</ul>
+</div></blockquote>
+<p><strong>View Action History</strong></p>
+<blockquote>
+<div><p>Action history feature allows user to view the history of the actions performed on the Instances with complete details.</p>
+<ul class="simple">
+<li>Go to Instance Control panel</li>
+<li>Click on Action History tab</li>
+</ul>
+<img alt="_images/actionHistory.JPG" src="_images/actionHistory.JPG" />
+</div></blockquote>
+</div>
+<div class="section" id="orchestration">
+<span id="orchestration-jenkinstask"></span><h2>Orchestration<a class="headerlink" href="#orchestration" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>Orchestration option allows you to execute one or more tasks/actions on multiple nodes.</div></blockquote>
+<p><strong>Chef Task</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>Go to your respective <strong>Environment</strong>, click on <strong>Orchestration</strong></li>
+<li>To add a new task click on the <strong>New</strong> button</li>
+<li>Select the task type from the <strong>Select Task Type</strong> drop down list (Chef)</li>
+<li>Enter a task name in the <strong>Task Name</strong> box</li>
+<li>Select the nodes from the <strong>Select Nodes</strong> list for which you want to assign task</li>
+<li>Click on <strong>Edit Runlist</strong> icon and add cookbooks to the runlist</li>
+<li>Click on <strong>Update runlist</strong> button</li>
+<li>You can also select the <strong>Cookbook Attributes</strong></li>
+</ul>
+<img alt="_images/orchestration.JPG" src="_images/orchestration.JPG" />
+<ul class="simple">
+<li>Click Save button to save the task</li>
+<li>The task is added to the <strong>Orchestration</strong> list</li>
+</ul>
+<img alt="_images/orcList.jpg" src="_images/orcList.jpg" />
+</div></blockquote>
+<p><strong>Following video demonstrates how to create and run Chef Task  in RLCatalyst</strong>:</p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/kxu0Z1L8yAw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+<p><strong>Jenkins Task</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>Go to your respective <strong>Environment</strong>, click on <strong>Orchestration</strong></li>
+<li>To add a new task click on the <strong>New</strong> button</li>
+<li>Select the task type from the <strong>Select Task Type</strong> drop down list (Jenkins)</li>
+<li>Enter a task name in the <strong>Task Name</strong> box</li>
+<li>Select the server from the <strong>Select Jenkins Server</strong> drop down list</li>
+<li>Select the job from the <strong>Select Job</strong> drop down list</li>
+<li>Select the Auto synch button to <strong>&#8216;Yes&#8217;</strong> [ This will show previously existing task execution history]. If you set to <strong>&#8216;NO&#8217;</strong> previously existing task history will not be shown</li>
+<li><strong>Job URL</strong> - The selected job url will be shown here</li>
+<li>Add <strong>Job Links</strong> for the Jenkins task - You can add external links to view the results</li>
+</ul>
+<img alt="_images/jenkinsTask.JPG" src="_images/jenkinsTask.JPG" />
+<ul class="simple">
+<li>Click Save button to save the task</li>
+<li>The task is added to the Orchestration list</li>
+</ul>
+<img alt="_images/tasklis.JPG" src="_images/tasklis.JPG" />
+</div></blockquote>
+<dl class="docutils">
+<dt>Edit or Remove a Task</dt>
+<dd><p class="first">You can edit or remove a task. Follow the steps below.</p>
+<ul class="last simple">
+<li>Click on Edit button to edit a task from the Orchestration list</li>
+<li>Click on Delete button to remove a task from the Orchestration list</li>
+</ul>
+</dd>
+</dl>
+<p><strong>Execute Task</strong></p>
+<blockquote>
+<div><p>You can execute a task (Chef and Jenkins) by clicking Execute button in the list of tasks page.</p>
+<p>Once you execute the task, Execute logs window will pop-up shows the status of the execution.</p>
+</div></blockquote>
+<p><strong>Task History</strong></p>
+<blockquote>
+<div><p>You can view the task history by clicking the History button in the list of tasks page. Once you click on the history button, Task History window will pop-up and shows the history of the task.</p>
+<p>The following information is shown in the history of task:</p>
+<ul class="simple">
+<li>Job number</li>
+<li>Job output links including logs info</li>
+<li>Status</li>
+<li>Start time</li>
+<li>Endtime</li>
+<li>Logs</li>
+</ul>
+<img alt="_images/history.JPG" src="_images/history.JPG" />
+</div></blockquote>
+<p><strong>Following video demonstrates how to create and execute Jenkins Task in RLCatalyst</strong>:</p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/fM5nrBBJmko" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div></div>
+<hr class="docutils" />
+<div class="section" id="application-deployment">
+<h2>Application Deployment<a class="headerlink" href="#application-deployment" title="Permalink to this headline">¶</a></h2>
+<p>RLCatalyst makes your application deployments easy through its Orchestration feature. The artifacts or the build files can be sourced from Nexus or Docker repositories and you can deploy into single or multiple instances. The deployments happens through Jenkins or Chef based tasks , that can be configured from RLCatalyst.</p>
+<p>Prerequisites:</p>
+<ol class="arabic simple">
+<li>A repository (Nexus/Docker) should be added from Settings</li>
+<li>Repository should be attached to one or more projects.</li>
+<li>There should be connectivity between the repository, the target instances and the RLCatalyst instance</li>
+<li>There should be to &amp; fro connectivity between RLCatalyst and the target instance</li>
+</ol>
+<p>If you have not added a repository in Settings, follow the instructions at <a class="reference internal" href="configmanagement.html#configure-nexus"><span class="std std-ref">Nexus Server</span></a>.</p>
+<p>Once Nexus Server is configured you have to associate Repository details to your Project.</p>
+<p><strong>CASE I:</strong> First time a new application has been deployed and it is deployed using Catalyst</p>
+<p>Follow the below steps :</p>
+<blockquote>
+<div><ul class="simple">
+<li>Go to Projects Page</li>
+<li>Edit your Project</li>
+<li>Click on + icon present next to Repository Details</li>
+<li>Select your Repository Server and Repository Name</li>
+</ul>
+<blockquote>
+<div><img alt="_images/repoDetails.png" src="_images/repoDetails.png" />
+</div></blockquote>
+<ul class="simple">
+<li>Click on Save button on Add Repository Details page</li>
+<li>Click on Save button on Edit Project Page</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="app-blueprint">
+<span id="create-app-blueprint"></span><h2>App Blueprint<a class="headerlink" href="#app-blueprint" title="Permalink to this headline">¶</a></h2>
+<p>Once you associate repository details to your project now start creating blueprint. Follow the below steps:</p>
+<ul class="simple">
+<li>Go to Design</li>
+<li>Select Software Stack Template Type and click Next</li>
+<li>Select any Template and click Next</li>
+<li>Configure Provider Parameters by selecting all provider parameters</li>
+<li>Configure Organization Parameters by selecting</li>
+<li>Configure Runlist Parameters by adding <strong>deploy_upgrade_catalyst</strong> cookbook</li>
+</ul>
+<blockquote>
+<div><img alt="_images/editRunlist.png" src="_images/editRunlist.png" />
+</div></blockquote>
+<ul class="simple">
+<li>Click on Update Runlist</li>
+<li>Expand Configure Application</li>
+<li>Select <strong>Deploy app during Bootstrap</strong> checkbox</li>
+<li>On selecting checkbox all Repository details will autopopulate and the latest version will be always selected. [<strong>Note:</strong> If you select previous version also by default it will take latest version]</li>
+</ul>
+<blockquote>
+<div><img alt="_images/deployApp.png" src="_images/deployApp.png" />
+</div></blockquote>
+<ul class="simple">
+<li>If you want to specify the URL at which the application is running, specify the URL in the format <strong>http://$host:3001</strong></li>
+<li>Click on Next button</li>
+<li>Click OK button in Confirm popup window</li>
+<li>Blueprint Saved Successfully message is displayed</li>
+</ul>
+<blockquote>
+<div><img alt="_images/saveBlueprint.png" src="_images/saveBlueprint.png" />
+</div></blockquote>
+</div>
+<div class="section" id="launching-blueprint">
+<span id="launch-app-blueprint"></span><h2>Launching Blueprint<a class="headerlink" href="#launching-blueprint" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Go to Workzone</li>
+<li>Click Infrastructure dropdown and Select Blueprints tab</li>
+<li>Expand Software Stack</li>
+<li>Select the Instance and Click on Launch button</li>
+<li>Go to Instances tab and you can see node will be launched and wait until bootstrap is successfull</li>
+</ul>
+<blockquote>
+<div><img alt="_images/launchedNode.png" src="_images/launchedNode.png" />
+</div></blockquote>
+<ul class="simple">
+<li>Go to Applications tab</li>
+<li>You will see the Application details with Name, Version, IP Address of the node and Time</li>
+</ul>
+<blockquote>
+<div><img alt="_images/appDeployment.png" src="_images/appDeployment.png" />
+</div></blockquote>
+<ul class="simple">
+<li>Now copy the IP address where application is deployed and open new tab and paste IP address with port number. [Eg: 52.35.121.37:3001 ]</li>
+</ul>
+<blockquote>
+<div><img alt="_images/runCatalyst.png" src="_images/runCatalyst.png" />
+</div></blockquote>
+<ul class="simple">
+<li>Now Catalyst application is installed with the version 3.02.63 on the launched node. [See the version at bottom right corner of the window]</li>
+</ul>
+</div>
+<div class="section" id="deploy-new-app">
+<span id="upgrade-app"></span><h2>Deploy New App<a class="headerlink" href="#deploy-new-app" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>Now I will show you how to upgrade latest version of catalyst application on the same node.</div></blockquote>
+<ul class="simple">
+<li>Go to Applications tab</li>
+<li>Click on Deploy New App button</li>
+<li>Enter the Repository details by selecting latest version [ Here latest is 3.02.64]</li>
+</ul>
+<blockquote>
+<div><img alt="_images/newAppDeploy.png" src="_images/newAppDeploy.png" />
+</div></blockquote>
+<ul class="simple">
+<li>Click on Create New Job button</li>
+<li>Enter the Job name</li>
+<li>Select the Node on which you are going to upgrade latest version</li>
+<li>Add the cookbook <strong>deploy_upgrade_catalyst</strong> to the runlist</li>
+</ul>
+<blockquote>
+<div><img alt="_images/newJenkinsJob.png" src="_images/newJenkinsJob.png" />
+</div></blockquote>
+<ul class="simple">
+<li>Click on Save button</li>
+<li>Click OK button on Task Success popup window</li>
+<li>Click on Jobs dropdown</li>
+<li>Select the Job which is created in previous step</li>
+</ul>
+<blockquote>
+<div><img alt="_images/selectJenkinsJob.png" src="_images/selectJenkinsJob.png" />
+</div></blockquote>
+<ul class="simple">
+<li>Click on Deploy button</li>
+<li>Click OK button on Confirmation popup window</li>
+<li>Execute Logs window will open and wait until Task execution is successful</li>
+</ul>
+<blockquote>
+<div><img alt="_images/executeLogs.png" src="_images/executeLogs.png" />
+</div></blockquote>
+<ul class="simple">
+<li>Close Execute Logs window</li>
+<li>Now you can see Applcation card is displayed with Application details with Name, Version [3.02.64], IP address of the node and Time</li>
+</ul>
+<blockquote>
+<div><img alt="_images/applicationsTab.png" src="_images/applicationsTab.png" />
+</div></blockquote>
+<ul class="simple">
+<li>Now copy the Ip Address where application is deployed and open new tab and paste Ip Address with port number. [Eg: 52.35.121.37:3001 ] and verify the latest version [3.02.64] of the application is deployed on the node in right bottom corner of the window</li>
+</ul>
+<blockquote>
+<div><img alt="_images/onNode.png" src="_images/onNode.png" />
+</div></blockquote>
+<p><strong>CASE II:</strong> User has the application(s) running over several exisitng environments and all the application details must be imported to Catalyst</p>
+<p>Pre-requisite:
+1) The http/https request ports need to be open from the server for catalyst to get the information
+2) Target instance(Application instance) must be part of Catalyst env that means that particular machine has been imported to the particular environment
+3) Jenkins job must be associated for that particular ip/instance, the job parameters must be application name, nodeip, env, version, apptype, containerid, containeport etc.</p>
+<p>Please specify the following piece of code in the jenkin’s Job for deployment to see the Application cards in Catalyst.</p>
+<p># Code for App Deployment history information via jenkins</p>
+<p>exitStatus=$?
+export APPSTATUS
+if [ $exitStatus -eq 0 ]
+then</p>
+<blockquote>
+<div>echo &#8220;Successfull&#8221;
+APPSTATUS=&#8221;Successfull&#8221;</div></blockquote>
+<dl class="docutils">
+<dt>else</dt>
+<dd>echo &#8220;Failure&#8221;
+APPSTATUS=&#8221;Failure&#8221;</dd>
+</dl>
+<p>fi
+echo $APPSTATUS
+export APPVERSION=&#8221;###&lt;specify the major version&gt;&#8221;
+echo $APPVERSION
+export LASTDEPLOY=&#8221;$(date +&#8217;%y-%m-%d %r&#8217;)&#8221;
+echo $LASTDEPLOY
+export IP=&#8221;$(hostname -I)&#8221;
+export THISHOST=&#8221;$(hostname)&#8221;
+export APPINSNAME=&#8221;Application name&#8221;
+export applicationNodeIP=&#8221;XXX.XXX.XXX.XX&#8221; e.g. 192.168.105.22</p>
+<p>#Send the information for Catalayst Application tab</p>
+<p>curl -X POST -H &#8220;Content-Type: application/json&#8221; -d &#8216;{&#8220;appDeployData&#8221;: {&#8220;applicationNodeIP&#8221; : &#8220;192.168.105.22&#8221;,&#8221;applicationName&#8221;: &#8221; Application name &#8221;,&#8221;applicationInstanceName&#8221;: &#8220;&#8217;&#8221;$APPINSNAME&#8221;&#8217;&#8221;,&#8221;applicationVersion&#8221;: &#8220;&#8217;&#8221;$APPVERSION&#8221;&#8217;&#8221;,&#8221;applicationNodeIP&#8221;: &#8220;&#8217;&#8221;$IP&#8221;&#8217;&#8221;,&#8221;applicationLastDeploy&#8221;: &#8220;&#8217;&#8221;$LASTDEPLOY&#8221;&#8217;&#8221;,&#8221;applicationStatus&#8221;: &#8220;&#8217;&#8221;$APPSTATUS&#8221;&#8217;&#8221;,&#8221;applicationType&#8221;: &#8220;Package&#8221;,&#8221;containerId&#8221;: &#8220;&#8221;,&#8221;hostName&#8221;: &#8220;&#8217;&#8221;$THISHOST&#8221;&#8217;&#8221;,&#8221;appLogs&#8221;: &#8220;&#8217;&#8221;<a class="reference external" href="http://jenkinsip:port/job/$JOB_NAME/$BUILD_NUMBER/console">http://jenkinsip:port/job/$JOB_NAME/$BUILD_NUMBER/console</a>&#8220;&#8217;&#8221;,&#8221;envId&#8221;: &#8220;QA&#8221;}}&#8217; <a class="reference external" href="http://catalyst:ipaddress:port/app/deploy">http://catalyst:ipaddress:port/app/deploy</a></p>
+<p><strong>Following video demonstrates how to do AppDeploy in RLCatalyst</strong>:</p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/7XOo4xpU4qA" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="trackinwrk.html" class="btn btn-neutral float-right" title="Track" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="design.html" class="btn btn-neutral" title="Design" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Relevance Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'latest',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

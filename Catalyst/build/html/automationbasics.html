@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Automation Framework &mdash; RLCatalyst latest documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="RLCatalyst latest documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RLCatalyst
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">RLCatalyst Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">About RLCatalyst</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="menu-options.html">Introduction - RLCatalyst</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workzone.html">Workzone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trackinwrk.html">Track</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contributions.html">Code Contributions</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">RLCatalyst</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Automation Framework</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/automationbasics.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="automation-framework">
+<span id="automation-catalyst"></span><h1>Automation Framework<a class="headerlink" href="#automation-framework" title="Permalink to this headline">¶</a></h1>
+<p>Robot Framework which is a generic test automation framework and when combined with Selenium 2 it makes both writing your tests and running them quite intuitive.</p>
+<p><strong>Introduction</strong></p>
+<blockquote>
+<div>Robot Framework which is a generic test automation framework for acceptance testing and its tabular test data syntax is almost plain English and easy to understand. Its testing capabilities can be extended by test libraries implemented either with Python or Java, and users can create new higher-level keywords from existing ones using the same syntax that is used for creating test cases. Robot Framework itself is open source and released under Apache License 2.0, and most of the libraries and tools in the ecosystem are also open source. The development of the core framework is supported by Nokia Siemens Networks.</div></blockquote>
+<p><strong>Installing test tools</strong></p>
+<ul class="simple">
+<li><ol class="first loweralpha">
+<li>PYTHON INSTALLATION:</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<div><p>Robot Framework is currently not compatible with Python 3.x. From the python download page. <a class="reference external" href="https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi">https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi</a></p>
+<p>Next we need to set up the PATH environment variable in Windows when you install Python.</p>
+<p>Open&nbsp;Start &gt; Settings &gt; Control Panel &gt; System &gt; Advanced &gt; Environment Variables
+Select&nbsp;System variables &gt; PATH &gt; Edit&nbsp;and add e.g.&nbsp;;C:Python27;C:Python27Scripts&nbsp;at the end of the value.
+Exit the dialog with OK to save the changes.</p>
+<p>Ensure <strong>pip</strong> is available in  C:Python27Scripts folder.</p>
+</div></blockquote>
+<ul class="simple">
+<li><ol class="first loweralpha" start="2">
+<li>ROBOT FRAMEWORK AND SELENIUM2LIBRARY INSTALLATION:</li>
+</ol>
+</li>
+</ul>
+<p>&nbsp;It is easiest to install Robot Framework and Selenium2Library along with its dependencies using pip packagemanager. Once you have pip installed, all you need to do is running these commands in your Command Prompt:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">robotframework</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">robotframework</span><span class="o">-</span><span class="n">selenium2library</span>
+</pre></div>
+</div>
+<p>Now Ensure <strong>pybot.bat</strong> is available in C:Python27Scripts folder.</p>
+<ul class="simple">
+<li><ol class="first loweralpha" start="3">
+<li>BROWSER:</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<div>Install Firefox , Chrome</div></blockquote>
+<p><strong>NOTE:</strong> For Chrome Browser you need to download the Chrome driver .exe and place it C:Python27 folder.</p>
+<ul class="simple">
+<li>Download the code from Git:</li>
+</ul>
+<blockquote>
+<div><a class="reference external" href="https://github.com/RLOpenCatalyst/tests.git">https://github.com/RLOpenCatalyst/tests.git</a>
+The <strong>Test</strong> Folder contains set of Smoke Test , Functional Test.</div></blockquote>
+<p><strong>To Run TEST CASES</strong></p>
+<ul class="simple">
+<li>The smoke test folder contains</li>
+</ul>
+<blockquote>
+<div><img alt="_images/python.png" src="_images/python.png" />
+</div></blockquote>
+<ul class="simple">
+<li>Create a Chef folder and place the pem and other files as specified in the Chef folder. As in my case my Chef folder contains these files. <strong>Pem file, Knife.rb file,cat_instances.pem</strong> files are required for testcases execution.</li>
+</ul>
+<blockquote>
+<div><img alt="_images/python.png" src="_images/python.png" />
+</div></blockquote>
+<ul class="simple">
+<li>Go to SmokeTestcatframeworkproject_rl_catalystTest_ResourcesTest_Data folder and Edit the QA.txt file.</li>
+</ul>
+<p>Give the proper pemfile names to proper variables &amp; make sure you have the pem files.</p>
+<p>Example as in my case looks like this -</p>
+<blockquote>
+<div><img alt="_images/QA.PNG" src="_images/QA.PNG" />
+</div></blockquote>
+<p><strong>NOTE</strong> -  // [Forward Slash] in Ubuntu</p>
+<blockquote>
+<div>\\ [Backward Slash] in Windows</div></blockquote>
+<p><strong>NOTE</strong> - ${ROOTPATH} is the absolute path from the place where the code exists till project_rl_catalyst folder.</p>
+<p>As in my case -
+${ROOTPATH}variable contains  D:CodeTestSmokeTestcatframeworkproject_rl_catalyst which I am passing at time of execution.</p>
+<ul class="simple">
+<li>Select&nbsp;System variables &gt; PATH &gt; Edit&nbsp;and add your ${ROOTPATH} variable value i.e D:CodeTestSmokeTestcatframeworkproject_rl_catalyst  and save it .</li>
+</ul>
+<blockquote>
+<div><p>As in my case it looks like this -</p>
+<blockquote>
+<div><img alt="_images/path.PNG" src="_images/path.PNG" />
+</div></blockquote>
+</div></blockquote>
+<ul class="simple">
+<li>To Run the Smoke Test Cases  using the Command -</li>
+</ul>
+<p><strong>NOTE</strong> – Edit the ROOTPATH variable as in your case and give the path till where the Test Suites exist &amp; run the below command -
+You can pass the Arguments i.e Overrriding for BROWSERTYPE and ENVIRONMENTSERVER from command line by looking at QA.txt file for the particular vairable.
+pybot &#8211;include Sanity &#8211;variable ENV:QA &#8211;variable BROWSERTYPE:firefox &#8211;variable ENVIRONMENTSERVER:http://d4d.rlcatalyst.com/public/login.html &#8211;variable ROOTPATH:D:CodeTestSmokeTestcatframeworkproject_rl_catalyst D:CodeTestSmokeTestcatframeworkproject_rl_catalystTest_SuitesCatalystSuites</p>
+<p><strong>NOTE</strong> – The path where my TestSuites Exists. D:CodeTestSmokeTestcatframeworkproject_rl_catalystTest_SuitesCatalystSuites described in the above step.</p>
+<p><strong>NOTE</strong> -  To Run the Functional Test follow the same steps from starting as mentioned above ie Create a chef folder under Functional Test...project_rl_catalyst.
+Edit the QA.txt file and give the proper paths to pemfiles with ROOTPATH variable.</p>
+<p><strong>Reading the results</strong></p>
+<ul class="simple">
+<li>Log.html report</li>
+</ul>
+<blockquote>
+<div><img alt="_images/log.PNG" src="_images/log.PNG" />
+</div></blockquote>
+<ul class="simple">
+<li>Report.html report</li>
+</ul>
+<blockquote>
+<div><img alt="_images/report.PNG" src="_images/report.PNG" />
+<p>After the tests have run there are couple of result files to read: report.html and log.html and output.xml.</p>
+<p>The report.html shows the results of your tests and its background is green when all tests have passed and red if any have failed. It also shows “Test Statistics” for how many tests have passed and failed. “Test Details” shows how long the test took to run and, if it failed, what the fail message was.</p>
+<p>The log.html gives you more detailed information about why some test fails if the fail message doesn’t make it obvious. It also gives a detailed view of the execution of each of the tests.</p>
+</div></blockquote>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Relevance Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'latest',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

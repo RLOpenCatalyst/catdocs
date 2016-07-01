@@ -1,0 +1,1132 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Working with RL Catalyst &mdash; RLCatalyst latest documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="RLCatalyst latest documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RLCatalyst
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">RLCatalyst Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">About RLCatalyst</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="menu-options.html">Introduction - RLCatalyst</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workzone.html">Workzone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trackinwrk.html">Track</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contributions.html">Code Contributions</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">RLCatalyst</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Working with RL Catalyst</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/gettingimplemented.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="working-with-rl-catalyst">
+<h1>Working with RL Catalyst<a class="headerlink" href="#working-with-rl-catalyst" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="scenario-1-import-linux-node-and-install-latest-version-of-tomcat">
+<span id="import-linux-node-and-install-latest-version-of-tomcat"></span><h2>Scenario 1 : Import Linux Node and Install latest version of Tomcat<a class="headerlink" href="#scenario-1-import-linux-node-and-install-latest-version-of-tomcat" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Import RLCatalyst instance/VM</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to Workzone and expand the Organization tree on the left side to get the environments . Click on Import by IP icon</li>
+<li>Enter 127.0.0.1 in the IP Address field . User/Password is vagrant/vagrant .Enter all the details and click on import button and wait until <strong>Instance Bootstrap Successfully</strong></li>
+</ul>
+</div></blockquote>
+<p>Please refer to <a class="reference internal" href="workzone.html#import-byip"><span class="std std-ref">Import By IP</span></a>  for more details</p>
+<ol class="arabic simple" start="2">
+<li>Install latest version of Tomcat</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Click on Chef-Client Run icon on the imported node in Infrastructure -&gt; Instances tab</li>
+<li>Search for <strong>tomcat-all-rl</strong> cookbook and add to runlist and click on update runlist button and wait until instance runlist updates . This cookbook will install the latest version of Tomcat</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Access Tomcat</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Once the runlist updates go to Controlpanel -&gt; Additional Parameters -&gt; New Application URL and add <strong>Name</strong> and <strong>URL - http://localhost:8080</strong> and save. Now click on your Applink in Infrastructure -&gt; Instances and verify Tomcat running.</li>
+</ul>
+</div></blockquote>
+<p><strong>Following video demonstrates how to import Linux node and install latest version of Tomcat in RLCatalyst:</strong></p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/rc_QHKGBWeo" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+</div>
+<div class="section" id="scenario-2-import-linux-node-and-install-latest-version-of-jboss">
+<span id="import-linux-node-and-install-latest-version-of-jboss"></span><h2>Scenario 2 : Import Linux Node and Install latest version of JBoss<a class="headerlink" href="#scenario-2-import-linux-node-and-install-latest-version-of-jboss" title="Permalink to this headline">¶</a></h2>
+<p><strong>Prerequisite:</strong> You must have linux node on which you want to install JBoss.</p>
+<ol class="arabic simple">
+<li>Import RLCatalyst instance</li>
+</ol>
+<blockquote>
+<div><ul>
+<li><p class="first">Go to Workzone and expand the Organization tree on the left side to get the respective environment . Click on Import by IP icon</p>
+</li>
+<li><p class="first">Follow the following steps:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Enter &lt;Ip Address&gt; in the IP Address field .</li>
+<li>Choose Operating System from drop down list .</li>
+<li>Provide Username .</li>
+<li>Choose chef Server from drop down list .</li>
+<li>Choose Authentication Type by selecting password/pem file .</li>
+<li>Enter the Password or Browse the Pem file .</li>
+<li>Now click on Import button to import your instance.</li>
+</ol>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Install latest version of Jboss</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Click on Chef-Client Run icon on the imported node in Infrastructure -&gt; Instances tab</li>
+<li>Search for <strong>Jboss7_rl</strong> cookbook and add to runlist and click on update runlist button and wait until instance runlist updates . This cookbook will install the latest version of JBoss</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Access Jboss</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Once the runlist updates go to new Tab enter <strong>Ip address:8080</strong> and then you will get <strong>Welcome page of JBoss</strong>.</li>
+</ul>
+</div></blockquote>
+<p><strong>Following video demonstrates how to import Linux node and install latest version of JBoss in RLCatalyst:</strong></p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/ODTQadggt8Q" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+</div>
+<div class="section" id="scenario-3-install-apache2-on-imported-node-and-use-service-to-stop-apache2">
+<span id="install-apache2-on-imported-node-and-use-service-to-stop-apache2"></span><h2>Scenario 3 : Install apache2 on imported node and use service to stop apache2<a class="headerlink" href="#scenario-3-install-apache2-on-imported-node-and-use-service-to-stop-apache2" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Create a Service command</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>In Settings, Under Gallery setup -&gt; Service command, create a new service by selecting service command type as <strong>chef cookbook/recipe</strong>. Search for the <strong>service_apache</strong> in service cookbooks dropdown. Select actions <strong>Start,Stop,Restart</strong> and save.</li>
+</ul>
+<p>Please refer <a class="reference internal" href="gallerydefined.html#service-command"><span class="std std-ref">Service Command</span></a> for more details.</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Import RLCatalyst instance/VM . Ignore this step if you have already executed <strong>Scenario 1</strong></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to Workzone and expand the Organization tree on the left side to get the environments . Click on Import by IP icon</li>
+<li>Enter 127.0.0.1 in the IP Address field . User/Password is vagrant/vagrant .Enter all the details and click on import button and wait until <strong>Instance Bootstrap Successfully</strong></li>
+</ul>
+<p>Please refer to <a class="reference internal" href="workzone.html#import-byip"><span class="std std-ref">Import By IP</span></a>  for more details.</p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Install Apache using chef client run</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Click on Chef-Client run button on the imported node and add <strong>apache2</strong> cookbook and click on Update runlist button and wait until instance runlist gets updated</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>SSH in to the Node from RLCatalyst and check the apache status</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>SSH in to the box from rlcatalyst and run <strong>sudo service apache2 status</strong> to check the apache2 status
+apache2 is running</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>Add the service apache to the node</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to Controlpanel -&gt; Service Tab -&gt; Click on Add New Service. Choose the apache service and save.</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li>Stop the service and check the status</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Click on Stop icon</li>
+<li>SSH in to the box from catalyst and run <strong>sudo service apache2 status</strong> and check the apache2 status.
+You can see that zpache2 is stopped</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li>Start the service and check the status</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to Controlpanel -&gt; Services and Click on Start icon</li>
+<li>SSH in to the box from catalyst and run <strong>sudo service apache2 status</strong>
+apache2 is up and running now</li>
+</ul>
+</div></blockquote>
+<p><strong>Following video demonstrates how to Install apache2 on imported node and use service to stop apache2 in RLCatalyst:</strong></p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/pt2Pg3rzFuc" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+</div>
+<div class="section" id="scenario-3-deploy-petclinic-application-in-the-imported-node">
+<span id="deploy-pet-clinic-application-in-the-imported-node"></span><h2>Scenario 3: Deploy Petclinic application in the imported node<a class="headerlink" href="#scenario-3-deploy-petclinic-application-in-the-imported-node" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Import RLCatalyst instance/VM . Ignore this step if you have already executed <strong>Scenario 1</strong></li>
+</ol>
+<blockquote>
+<div><ul>
+<li><p class="first">Go to Workzone and expand the Organization tree on the left side to get the environments . Click on Import by IP icon</p>
+</li>
+<li><p class="first">Enter 127.0.0.1 in the IP Address field . User/Password is vagrant/vagrant .Enter all the details and click on import button and wait until <strong>Instance Bootstrap Successfully</strong></p>
+<p>Please refer to <a class="reference internal" href="workzone.html#import-byip"><span class="std std-ref">Import By IP</span></a>  for more details.</p>
+</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Install Tomcat Cookbook(tomcat-all-rl) . Ignore this step if you have already executed <strong>Scenario 1</strong></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Click on Chef-Client Run icon on the imported node in Workzone -&gt; Infrastructure -&gt; Instances tab</li>
+<li>Search for <strong>tomcat-all-rl</strong> cookbook and add to runlist and click on update runlist button and Wait until instance runlist updates</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Create a Chef orchestration task, Choose the node and add the cookbook deploy_war &amp; Edit cookbook attributes and save</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>In Workzone, Under Orchestration ,create a new Chef task and add <strong>deploy_war</strong> cookbook and edit the following attributes</li>
+<li>Source code url - <strong>https://s3-us-west-2.amazonaws.com/catalystcode/petclinic-2.02.71.war</strong></li>
+<li>Application version – 2.02.71</li>
+<li>Node publice IP – enter the public IP where tomcat is running and present as node in catalyst.</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>Execute the task</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>After execution of task, go to Controlpanel -&gt; Additional Parameters -&gt; New and add <strong>Name</strong> and <strong>URL - http://$host:8080/petclinic</strong> and save. Now click on your Applink in Infrastructure -&gt; Instances and verify petclinic installtion.</li>
+</ul>
+</div></blockquote>
+<p><strong>Following video demonstrates how to Import Ubuntu Node and Deploy petclinic in RLCatalyst:</strong></p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/iabnWpgMOhE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+</div>
+<div class="section" id="scenario-4-update-application-version-petclinic">
+<span id="update-application-version-petclinic"></span><h2>Scenario 4 : Update application version[petclinic]<a class="headerlink" href="#scenario-4-update-application-version-petclinic" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Import RLCatalyst instance/VM . Ignore this step if you have already executed <strong>Scenario 1</strong></li>
+</ol>
+<blockquote>
+<div><ul>
+<li><p class="first">Go to Workzone and expand the Organization tree on the left side to get the environments . Click on Import by IP icon</p>
+</li>
+<li><p class="first">Enter 127.0.0.1 in the IP Address field . User/Password is vagrant/vagrant .Enter all the details and click on import button and wait until <strong>Instance Bootstrap Successfully</strong></p>
+<p>Please refer to <a class="reference internal" href="workzone.html#import-byip"><span class="std std-ref">Import By IP</span></a>  for more details.</p>
+</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Install Tomcat Cookbook(tomcat-all-rl) . Ignore this step if you have already executed <strong>Scenario 1</strong></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Click on Chef-Client Run icon on the imported node in Workzone -&gt; Infrastructure -&gt; Instances tab</li>
+<li>Search for <strong>tomcat-all-rl</strong> cookbook and add to runlist and click on update runlist button and Wait until instance runlist updates</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Create a Chef orchestration task. Ignore this step if you have already executed <strong>Scenario 3</strong>.</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>In Workzone, Under Orchestration Create a New Chef Task and add deploy_war cookbook and edit the following attributes</li>
+<li>Source code url - <a class="reference external" href="https://s3-us-west-2.amazonaws.com/catalystcode/petclinic-2.02.71.war">https://s3-us-west-2.amazonaws.com/catalystcode/petclinic-2.02.71.war</a></li>
+<li>Application version – 2.02.71</li>
+<li>Node publice IP – enter the public IP where tomcat is running and present as node in catalyst</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>Execute the task.  Ignore this step if you have already executed <strong>Scenario 3</strong>.</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>After execution of task, go to Controlpanel -&gt; Additional Parameters -&gt; New and add Name and URL - <a class="reference external" href="http://$host:8080/petclinic">http://$host:8080/petclinic</a> and save. Now click on your Applink in Infrastructure -&gt; Instances and verify petclinic installtion.</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>Upgrade Petclinic Version</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Edit Chef Orchestration task</li>
+<li>Click on Edit attribute link</li>
+<li>Enter the Source code URL with the latest version <strong>https://s3-us-west-2.amazonaws.com/catalystcode/petclinic-2.02.72.war</strong></li>
+<li>Application version – 2.02.72</li>
+<li>Node publice IP – enter the public IP where tomcat is running and present as node in catalyst and save</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li>Now Execute the task and verify the latest version</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>After execution of task, go to Controlpanel -&gt; Additional Parameters -&gt; New and add Name and URL - <a class="reference external" href="http://$host:8080/petclinic">http://$host:8080/petclinic</a> and save. Now click on your Applink in Infrastructure -&gt; Instances and verify petclinic installtion with the latest version.</li>
+</ul>
+</div></blockquote>
+<hr class="docutils" />
+</div>
+<div class="section" id="scenario-5-view-history-of-app-deployments-upgrades">
+<span id="view-history-of-app-deployments-upgrades"></span><h2>Scenario 5 :View History of App deployments &amp; upgrades<a class="headerlink" href="#scenario-5-view-history-of-app-deployments-upgrades" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Execute <strong>Scenario 3</strong> to deploy Petclinic application in the imported node</li>
+<li>Once application is installed on on the node navigate to applications tab and click on <strong>H</strong> icon[History], you will find history of the application deployed</li>
+</ol>
+<hr class="docutils" />
+</div>
+<div class="section" id="scenario-6-deploy-a-composite-docker-container-petclinic-app-with-2-container">
+<span id="deploy-a-composite-docker-container-petclinic-app-with-2-container"></span><h2>Scenario 6 : Deploy a composite docker container(petclinic app with 2 container)<a class="headerlink" href="#scenario-6-deploy-a-composite-docker-container-petclinic-app-with-2-container" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Create docker template for Mysql and petclinic</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to GallerySetup -&gt; Templates</li>
+<li>Create template for mysql by adding docker repo path <code class="docutils literal"><span class="pre">relevancelab/mysqlpet</span></code> and save</li>
+<li>Create template for petclinic by adding docker repo path <code class="docutils literal"><span class="pre">relevancelab/tomcatpet</span></code> and save</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Create a docker blueprint using Mysql and petclinic template</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to Design -&gt; Select mysql template -&gt; Click Launch parametrs icon -&gt; Enter container name and add Additional startup as <code class="docutils literal"><span class="pre">init.sh</span></code> -&gt; Click on Add button</li>
+<li>Click on Add button to add tomcat template -&gt; select tomcat template and the tag -&gt; Click on Add button</li>
+<li>Click Launch parametrs icon -&gt; Enter container name and Port mapping as <code class="docutils literal"><span class="pre">8080:8080</span></code> and Nlnked container as mysqlpet:mysql -&gt; Click on Add button</li>
+<li>Click Next button to create blueprint</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Import Ubuntu Node</li>
+</ol>
+<blockquote>
+<div><ul>
+<li><p class="first">Go to Workzone and expand the Organization tree on the left side to get the environments . Click on Import by IP icon, Enter all the details and click on import button and wait until <strong>Instance Bootstrap Successfully</strong></p>
+<p>Please refer to <a class="reference internal" href="workzone.html#import-byip"><span class="std std-ref">Import By IP</span></a>  for more details</p>
+</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>Run Docker cookbook on the instance</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Click Chef client run and Run docker by adding <code class="docutils literal"><span class="pre">docker_rl</span></code> cookbook and wait until <strong>Instance Runlist Updates</strong> &amp; docker icon is displayed on card</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>Launch Docker blueprint on Ubuntu node</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to <strong>Infrastructure</strong> -&gt; <strong>Blueprints</strong> -&gt; <strong>Docker</strong> -&gt; <strong>Next</strong> and select the instance and <strong>Start</strong>. Wait until <strong>Done image pull and run</strong> message is displayed</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li>Verify the 2 Contianers</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Once image pull is successfull go to <strong>Infrastructure</strong> -&gt; <strong>Containers</strong> tab to see the container details</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li>Access the Petclinic application</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Access the Petclinic application by accessing <strong>$host:8080/petclinic</strong></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="8">
+<li>SSH in to the ubuntu node form RLCatalyst and verify the containers</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Click on SSH icon, enter the valid details and submit</li>
+<li>Enter the following command <code class="docutils literal"><span class="pre">docker</span> <span class="pre">ps</span></code> and check the container details</li>
+</ul>
+</div></blockquote>
+<p>Following video demonstrates how to Deploy a composite docker container(petclinic app with 2 container) in RLCatalyst:</p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/ClkYW13vLvU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+</div>
+<div class="section" id="scenario-7-create-a-new-ubuntu-instance-and-install-jboss">
+<span id="launch-new-ubuntu-instance-and-install-jboss"></span><h2>Scenario 7 : Create a new Ubuntu Instance  and Install Jboss<a class="headerlink" href="#scenario-7-create-a-new-ubuntu-instance-and-install-jboss" title="Permalink to this headline">¶</a></h2>
+<p>Create a blueprint to launch a new Ubuntu instance and install JBoss server on it  .</p>
+<ol class="arabic simple">
+<li>Add Provider</li>
+</ol>
+<blockquote>
+<div><ul>
+<li><p class="first">In Settings, under DevopsSetup -&gt; Providers, add a New AWS provider by entering the valid details</p>
+<p>Please refer to <a class="reference internal" href="configmanagement.html#provider-settings"><span class="std std-ref">Providers in RLCatalyst</span></a> for more details.</p>
+</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Add VMImage for Ubuntu</li>
+</ol>
+<blockquote>
+<div><ul>
+<li><p class="first">In Settings, under Gallery setup -&gt; VMImage, add a New VMImage for Ubuntu .  The image should be accessible from your AWS account</p>
+<p>Please refer to <a class="reference internal" href="gallerydefined.html#configure-vm"><span class="std std-ref">VM Images</span></a> for more details.</p>
+</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Create Blueprint using Ubuntu as base Image by adding Jboss Cookbook to runlist</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>In Design, under OSImage template type select ubuntu template and create blueprint by entering the other details and by adding <strong>jboss7_rl</strong> cookbook in configure runlist parameters and save</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>To verify Jboss installation</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Launch the Blueprint from Workzone -&gt; Infrastructure -&gt; Blueprints. After launch of Blueprint go to Infrastructure -&gt; Instances, once the node bootstraps go to Controlpanel -&gt; Additional Parameters -&gt; New Application URL and add <strong>Name</strong> and <strong>URL - http://$host:8080</strong> and save. Now click on your Applink in Infrastructure -&gt; Instances and verify Jboss installtion.</li>
+</ul>
+</div></blockquote>
+<p><strong>Following video demonstrates how to Launch New Ubuntu Instance and Install Jboss in RLCatalyst:</strong></p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/Ifsh6gjeeeo" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+</div>
+<div class="section" id="scenario-8-create-a-new-windows-instance-and-install-iis">
+<span id="launch-windows-instance-and-install-iis"></span><h2>Scenario 8 : Create a new Windows Instance and Install IIS<a class="headerlink" href="#scenario-8-create-a-new-windows-instance-and-install-iis" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Add Provider . Skip this step if Scenario6 is already executed</li>
+</ol>
+<blockquote>
+<div><ul>
+<li><p class="first">In Settings, under DevopsSetup -&gt; Providers, add a New provider by entering the valid details</p>
+<p>Please refer to <a class="reference internal" href="configmanagement.html#provider-settings"><span class="std std-ref">Providers in RLCatalyst</span></a> for more details.</p>
+</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Add VMImage for Windows(Public AMI to be added for Windows2012).</li>
+</ol>
+<blockquote>
+<div><ul>
+<li><p class="first">In Settings, under Gallery setup -&gt; VMImage, add a New VMImage for Windows</p>
+<p>Please refer to <a class="reference internal" href="gallerydefined.html#configure-vm"><span class="std std-ref">VM Images</span></a> for more details.</p>
+</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Create Blueprint using Windows base image by adding IIS cookbook to runlist</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>In Design, under OSImage template type select windows template and create blueprint by entering the other details and by adding <strong>iis</strong> cookbook in configure runlist parameters and save</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>Launch Blueprint and Verify IIS Installation</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Launch the Blueprint from Workzone -&gt; Infrastructure -&gt; Blueprints. After launch of Blueprint go to Infrastructure -&gt; Instances, once the node bootstraps RDP to the machine and in search options search for IIS.Internet Information Services Manager should be available.</li>
+</ul>
+</div></blockquote>
+<p><strong>Following video demonstrates how to Launch Windows Instance and Install IIS in RLCatalyst:</strong></p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/m0yFKmCM4ak" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+</div>
+<div class="section" id="scenario-9-create-a-new-ubuntu-instance-install-tomcat-and-upgrade-to-latest-version">
+<span id="launch-new-ubuntu-instance-install-tomcat-upgrade-to-v8-0-attribute"></span><h2>Scenario 9 : Create a new Ubuntu Instance,Install Tomcat and upgrade to latest version<a class="headerlink" href="#scenario-9-create-a-new-ubuntu-instance-install-tomcat-and-upgrade-to-latest-version" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Add Provider . Skip this step if Scenario6 is already executed</li>
+</ol>
+<blockquote>
+<div><ul>
+<li><p class="first">In Settings, under DevopsSetup -&gt; Providers, add a New provider by entering the valid details</p>
+<p>Please refer to <a class="reference internal" href="configmanagement.html#provider-settings"><span class="std std-ref">Providers in RLCatalyst</span></a> for more details.</p>
+</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Add VMImage for Ubuntu . Skip this step if Scenario6 is already executed</li>
+</ol>
+<blockquote>
+<div><ul>
+<li><p class="first">In Settings, under Gallery setup -&gt; VMImage, add a New VMImage for Ubuntu</p>
+<p>Please refer to <a class="reference internal" href="gallerydefined.html#configure-vm"><span class="std std-ref">VM Images</span></a> for more details.</p>
+</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Create Blueprint using Ubuntu as base Image and Tomcat Cookbook</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>In Design, under OSImage template type select ubuntu template and create blueprint by entering the other details and by adding <strong>tomcat-all-rl</strong> cookbook in configure runlist parameters and save</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>Launch Blueprint and Access Tomcat</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Launch the Blueprint from Workzone -&gt; Infrastructure -&gt; Blueprints. After launch of Blueprint go to Infrastructure -&gt; Instances, once the node bootstraps go to Controlpanel -&gt; Additional Parameters -&gt; New Application URL and add <strong>Name</strong> and <strong>URL - http://$host:8080</strong> and save. Now click on your Applink in Infrastructure -&gt; Instances and verify Tomcat installtion.</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>Chef Client Run to upgrade Tomcat version to 8.0</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Click on Chef-Client run button and Edit the cookbook attributes and select the latest <strong>Tomcat Version</strong>, save and update runlist
+Wait until the Instance runlist updates and Now click on your Applink in Infrastructure -&gt; Instances and verify Latest Tomcat installtion.</li>
+</ul>
+</div></blockquote>
+<p><strong>Following video demonstrates how to Launch New ubuntu Instance,Install Tomcat,upgrade to v8.0[attribute] in RLCatalyst:</strong></p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/4sd-PK3_sLI" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+</div>
+<div class="section" id="scenario-10-provider-sync-and-import-instances">
+<span id="provider-sync-and-import-instances"></span><h2>Scenario 10 : Provider Sync and Import Instances<a class="headerlink" href="#scenario-10-provider-sync-and-import-instances" title="Permalink to this headline">¶</a></h2>
+<p>Once the basic data is loaded, you can start exploring RLCatalyst from the Provider-Sync Feature. You can sync nodes from your AWS provider account and convert the nodes to &#8216;Managed&#8217; . This will give a control on your AWS infra by letting you track the capacity, cost and usage . Once sync-ed, you can see the summary dashboard from &#8216;Track&#8217;</p>
+<ol class="arabic simple">
+<li>Add your AWS Provider. Skip this step if Scenario6 is already executed</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>In Settings, under DevopsSetup -&gt; Providers, add a New provider by entering the valid details
+Please refer to <a class="reference internal" href="configmanagement.html#provider-settings"><span class="std std-ref">Providers in RLCatalyst</span></a> for more details.</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Provider Sync. Once the provider account is added, you can start importing the nodes into RLCatalyst . Importing will bootstrap the nodes with the configured chef server . The imported instances can be managed from the workzone, under the project and environment to which the nodes are imported.</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Click on Sync instances button of your provider -&gt; <strong>UnManaged Instances</strong> of the created provider</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Import the instances into Catalyst <strong>[Unmanaged to managed]</strong></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Select the Instances and click on Import Instances and enter the valid details and Sync</li>
+<li>You can see the nodes imported in the respective environments and verify the imported instances is present under <strong>managed instances</strong> tab.</li>
+</ul>
+</div></blockquote>
+<p>Please refer to <span class="xref std std-ref">providersync and-import</span> for more details.</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="scenario-11-aws-cost-usage-dashboards">
+<span id="aws-cost-usage-dashboards"></span><h2>Scenario 11 : AWS Cost,Usage Dashboards<a class="headerlink" href="#scenario-11-aws-cost-usage-dashboards" title="Permalink to this headline">¶</a></h2>
+<p>RLCatalyst provides you a consolidated dashboard for tracking your AWS infrastructure cost and usage . This helps you to identify un-used capacity and do better utilization. RLCatalyst summarizes this data for all the AWS provider accounts configured.</p>
+<p>Follow the instructions to configure your dashboards:</p>
+<ol class="arabic simple">
+<li>Add Provider . Skip this step if Scenario6 is already executed</li>
+</ol>
+<blockquote>
+<div><ul>
+<li><p class="first">In Settings, under DevopsSetup -&gt; Providers, add a New <strong>AWS</strong> provider by entering the valid details</p>
+<p>Please refer to <a class="reference internal" href="configmanagement.html#provider-settings"><span class="std std-ref">Providers in RLCatalyst</span></a> for more details.</p>
+</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Track -&gt; usage and cost dashboards</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Click on <strong>Tracks</strong> under provider you will be able to see <strong>Provider Dashboard</strong> and <strong>AWS Summary Dashboard</strong></li>
+</ul>
+</div></blockquote>
+<dl class="docutils">
+<dt><strong>Provider Dashboard</strong></dt>
+<dd><p class="first">This will give you the snapshot of instances - Total Number vs Number of Managed vs Number of Un-Managed.</p>
+<img alt="_images/summary.png" class="last" src="_images/summary.png" />
+</dd>
+<dt><strong>AWS Summary Dashboard</strong></dt>
+<dd><p class="first">This will give you the snapshot of Total cost, Daily cost etc.</p>
+<img alt="_images/summaryDash.png" class="last" src="_images/summaryDash.png" />
+</dd>
+</dl>
+<p><strong>Following video demonstrates how to view AWS Cost,Usage dashboards in RLCatalyst:</strong></p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/N4TiDHC7vzE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+</div>
+<div class="section" id="scenario-12-composite-docker-for-wordpress">
+<span id="composite-docker-for-wordpress"></span><h2>Scenario 12: Composite Docker for Wordpress<a class="headerlink" href="#scenario-12-composite-docker-for-wordpress" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Create a docker template for MYSQL</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to Settings -&gt; Gallery Setup -&gt; Templates, Enter the Template name -&gt; Choose Template type as <strong>Docker</strong> -&gt; Choose the <strong>Organization</strong></li>
+<li>Donot select the <strong>Docker Repo</strong> -&gt; <strong>Add Docker Repo Path</strong> as <strong>relevancelab/wpmysql</strong> and save</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Create a docker template for Wordpress</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to Settings -&gt; Gallery Setup -&gt; Templates, Enter the Template name -&gt; Choose Template type as <strong>Docker</strong> -&gt; Choose the <strong>Organization</strong></li>
+<li>Donot select the <code class="docutils literal"><span class="pre">Docker</span> <span class="pre">Repo</span></code> , <strong>Add Docker Repo Path</strong> as <strong>relevancelab/wordpress</strong> and save</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Create Docker bluperint for MYSQL</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>In Design -&gt; select <strong>AWS</strong> provider -&gt; select <strong>Docker</strong> Template Type -&gt; select your template, add the details and save</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>Create Docker blueprint for wordpress</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>In Design -&gt; select <strong>AWS</strong> provider -&gt; select <strong>Docker</strong> Template Type -&gt; select your template, add the below details and save</li>
+<li><strong>Portmapping: 8080:80</strong></li>
+<li><strong>Linked Container: mysql:mysql</strong></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>Launch Ubuntu Node or Import a Ubuntu node</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Click on <strong>Chef Client run</strong> -&gt; Run <strong>docker</strong> cookbook on that node</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li>Launch Mysql Docker Blueprints.</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to Infrastructure -&gt; Blueprints -&gt; Expand Docker -&gt; Select Mysql blueprint and Click on Launch button -&gt; Select the node -&gt; Click on Start button</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li>Launch Wordpress Docker Blueprints.</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to Infrastructure -&gt; Blueprints -&gt; Expand Docker -&gt; Select Wordpress blueprint and Click Launch button -&gt; Select the node -&gt; Click on Start button</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="8">
+<li>Go to Containers tab to view the container and thier details.</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to Infrastructure -&gt; Containers . You can find 2 containers wordpress and mysql with the details being displayed</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="9">
+<li>Add Application URL in instance control panel</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to Instance -&gt; Control Panel and add application in this format (<a class="reference external" href="http://$host:8080">http://$host:8080</a>)</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="10">
+<li>Access wordpress Application by clicking the Appname.</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Click on More icon on instance control panel -&gt; Click on the Wordpress application name. User should be able to see wordpress installation page</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="11">
+<li>Connect to the instance and verify container details are listed</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Click on SSH icon -&gt; Enter the Details and submit , Execute <code class="docutils literal"><span class="pre">sudo</span> <span class="pre">docker</span> <span class="pre">ps</span></code> command, Container details should be displayed</li>
+</ul>
+</div></blockquote>
+<p><strong>Following video demonstrates the Composite Docker for Wordpress:</strong></p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/_17iCshUxUE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+</div>
+<div class="section" id="scenario-13-create-and-launch-blueprint-centos-liferay">
+<span id="create-and-launch-blueprint-centos-liferay"></span><h2>Scenario 13 : Create and launch Blueprint ( CentOS + Liferay )<a class="headerlink" href="#scenario-13-create-and-launch-blueprint-centos-liferay" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Create template for liferay app</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to GallerySetup -&gt; Templates</li>
+<li>Create template by adding deploy_liferay_app cookbbok and save</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Under Desgin create blueprint using the liferayapp template</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to Design -&gt; Select liferay template and create blueprint. (Make sure the instance size is atleast 2GB)</li>
+<li>Add application URL <strong>http://$host:8001</strong></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Launching blueprint</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to Workzone -&gt; Infrastructure -&gt; Blueprints -&gt; Launch the blueprint</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>Access Liferay application</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Access Liferay application by clicking on <strong>APP link URL</strong> present on the Instance card and verify the LifeRay</li>
+</ul>
+</div></blockquote>
+<p>Following video demonstrates how to Launch New Centos Instance and deploy LifeRay in RLCatalyst:</p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/TNylGUUhuM8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+</div>
+<div class="section" id="scenario-14-create-and-launch-an-aws-cft-blueprint-for-2-node-petclinic">
+<span id="create-and-launch-an-aws-cft-blueprint-for-2-node-petclinic"></span><h2>Scenario 14 : Create and Launch an AWS CFT Blueprint for 2-node Petclinic<a class="headerlink" href="#scenario-14-create-and-launch-an-aws-cft-blueprint-for-2-node-petclinic" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Create CloudFormation Template</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to GallerySetup -&gt; Templates</li>
+<li>Create Cloud Formation template by uploading your template file and other details</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Under Desgin create blueprint using cloud formation template</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to Design -&gt; select <strong>Cloud formation</strong> template type -&gt; Next -&gt; select your template -&gt; Next -&gt; Enter Blueprintname, Choose Business Group &amp; project</li>
+<li>In <strong>Configure Stack Parameters</strong> section provide the valid details for <strong>Region, Provider, KeyName, SecurityGroup, AMImage ID, Instance Username</strong> and other details</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Launch the Cloud Formation Blueprint</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to Workzone -&gt; your respective Environment -&gt; Infrastruture -&gt; Blueprints -&gt; CloudFormation and launch the Blueprint by entering the <code class="docutils literal"><span class="pre">Unique</span> <span class="pre">stack</span> <span class="pre">Name</span></code></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>Verify the Stack</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Now Verify the Stack at Infrastructure -&gt; CloudFormation, Wait until the Stack shows from <strong>CREATE_IN_PROGRESS</strong> to <strong>CREATE_COMPLETE</strong></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>Verify the 2 VM/Instances Launched</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to Infrstructure -&gt; Instances, you will be able to see the 2 nodes/VM&#8217;s launched and click on <strong>MoreInfo icon</strong> &amp; wait until both the instances <strong>Bootstrap successfully</strong></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li>Run cookbook multitierdb for VM1</li>
+</ol>
+<ul class="simple">
+<li>Click on ChefClient run icon and select <strong>multitier_db</strong> cookbook and move to runlist and update. Wait Until the <strong>Instance Runlist updates</strong></li>
+</ul>
+<ol class="arabic simple" start="7">
+<li>Run cookbook tomcat &amp; multitierwar for VM2</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Click on ChefClient run icon and select <strong>tomcat_all_rl, multitier_war</strong> cookbook and move to runlist and update. Wait Until the <strong>Instance Runlist updates</strong></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="8">
+<li>Verify the petclinic application using the VM2 IPAddress</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Now verify the petclinic application using <strong>http://VM2 Ipaddress:8080/petclinic</strong>. You will be able to access the application</li>
+</ul>
+</div></blockquote>
+<p>Following video demonstrates how to Create and Launch an AWS CFT Blueprint for 2-node Petclinic in RLCatalyst:</p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/4RV0TEvqdZk" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+</div>
+<div class="section" id="scenario-15-install-lamp-stack-on-a-single-node">
+<span id="install-lamp-stack-on-a-single-node"></span><h2>Scenario 15 : Install LAMP Stack on a single node<a class="headerlink" href="#scenario-15-install-lamp-stack-on-a-single-node" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Import a Ubuntu Node to RLcatalyst</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Go to Workzone and expand the Organization tree on the left side to get the environments . Click on Import by IP icon</li>
+<li>Enter the <strong>IP Address, Username</strong> &amp; select the <strong>OS, Config Management, pem file</strong></li>
+</ul>
+</div></blockquote>
+<p>Please refer to <a class="reference internal" href="workzone.html#import-byip"><span class="std std-ref">Import By IP</span></a>  for more details</p>
+<ol class="arabic simple" start="2">
+<li>Chef Client Run on the Instance with LAMP Role and editing the cookbook attributes</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Click on Chef-Client Run icon, select the <strong>lamp_role</strong> cookbook and move to runlist</li>
+<li>Edit the <strong>Cookbook attributes</strong> by clicking on the edit button and provide the value for <strong>Root Password</strong> and update the runlist</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Access Apache</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Access apache at  <strong>http://$host</strong> of that machine</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>Access PHP</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Access apache at  <strong>http://$host/index.php</strong> of that machine</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>Access MySql</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>From RLCatalyst click on SSH icon of the instance and provide the valid details and submit</li>
+<li>Now Enter the following command <strong>mysql -u root -p</strong> and enter the same <strong>Root Password</strong> which you provided while editing the cookbook attributes and verify MySql</li>
+</ul>
+</div></blockquote>
+<p>Following video demonstrates how to Launch New Ubuntu Instance and deploy LAMP[Linux, Apache, MySql, PHP] in RLCatalyst:</p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/nZ2K8LZCt04" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+</div>
+<div class="section" id="scenario-16-configure-and-execute-a-jenkins-jobs-from-rlcatalyst">
+<span id="create-execute-jenkins-jobs-from-rlcatalyst"></span><h2>Scenario 16 : Configure and Execute a Jenkins Jobs from RLCatalyst<a class="headerlink" href="#scenario-16-configure-and-execute-a-jenkins-jobs-from-rlcatalyst" title="Permalink to this headline">¶</a></h2>
+<p>Execute your Jenkins job from rlcatalyst and see the history of each jobs. Jenkins server should be configured in rlcatalyst to initiate the job execution. Please refer to * <a class="reference internal" href="configmanagement.html#configure-jenkins"><span class="std std-ref">Configure Jenkins</span></a></p>
+<p>Please refer to <code class="docutils literal"><span class="pre">Jenkins</span> <span class="pre">Task</span></code> under <a class="reference internal" href="workzone.html#orchestration-jenkinstask"><span class="std std-ref">Orchestration</span></a> to <strong>Create &amp; Execute</strong> Jenkins Task</p>
+<p><strong>Following video demonstrates how to Create and Execute Jenkins Task in RLCatalyst</strong>:</p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/fM5nrBBJmko" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+</div>
+<div class="section" id="scenario-17-view-jenkins-job-history">
+<span id="view-jenkins-job-history"></span><h2>Scenario 17 : View Jenkins Job History<a class="headerlink" href="#scenario-17-view-jenkins-job-history" title="Permalink to this headline">¶</a></h2>
+<p>Please refer to <code class="docutils literal"><span class="pre">Jenkins</span> <span class="pre">Task</span></code> -&gt; <code class="docutils literal"><span class="pre">Task</span> <span class="pre">History</span></code> under <a class="reference internal" href="workzone.html#orchestration-jenkinstask"><span class="std std-ref">Orchestration</span></a> to view <strong>Jenkins Job History</strong></p>
+<hr class="docutils" />
+</div>
+<div class="section" id="scenario-18-deploy-and-promote-a-java-application">
+<span id="deploy-and-promote-a-java-application"></span><h2>Scenario 18 : Deploy and Promote a Java Application<a class="headerlink" href="#scenario-18-deploy-and-promote-a-java-application" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Import a ubuntu node or Launch a Blueprint. Wait until the Node Bootstrap successfully.</li>
+<li>Create a Chef Task in <strong>Orchestration Tab</strong> and Save by adding <strong>tomcat-all-rl</strong> and <strong>deploy_war</strong> cookbooks.</li>
+<li>Go to Applications and Deploy New App by clicking <strong>+Deploy New App</strong> :</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Enter Repository Details: <strong>Repository Server</strong>, <strong>Repository</strong>, <strong>Group ID</strong>, <strong>Artifacts</strong> and <strong>Version</strong> which you want to deploy</li>
+<li>Add the job which you created</li>
+<li>Wait until task execution is success</li>
+<li>Verfiy the card with the version you selected in applications.</li>
+<li>Click on Approve and then promote will be enabled</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>Now, Access petclinic application in the format <a class="reference external" href="http:/">http:/</a>/&lt;ipaddress&gt;:8080/petclinic. Petclinic application home page will open.</li>
+</ol>
+<p>Now, Promote Petclinic in other enviornment:</p>
+<ol class="arabic simple">
+<li>Import a ubuntu node or Launch a Blueprint. Wait until the Node Bootstrap successfully.</li>
+<li>Create a Chef Task in <strong>Orchestration Tab</strong> and Save by adding <strong>tomcat-all-rl</strong> and <strong>deploy_war</strong> cookbooks.</li>
+<li>Go to <strong>applications tab</strong> and click on <strong>promote</strong> and select the target enviornment and Select the job, which you created in step 2 and node, which you launched or imported and click on Promote</li>
+<li>Now, Access petclinic application in the format <a class="reference external" href="http:/">http:/</a>/&lt;ipaddress&gt;:8080/petclinic. Petclinic application home page will open.</li>
+</ol>
+<p><strong>Following video demonstrates how to Deploy and Promote Petclinic:</strong></p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/pxa5NYhRKDw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+</div>
+<div class="section" id="scenario-19-deploy-a-3-tier-application">
+<span id="deploy-a-3-tier-application"></span><h2>Scenario 19 : Deploy a 3-tier application<a class="headerlink" href="#scenario-19-deploy-a-3-tier-application" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Create  three Blueprints:</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Create a ubuntu blueprint and add role <strong>petclinic_db</strong> for first blueprint.</li>
+<li>Create a ubuntu blueprint and add role <strong>petclinic_app</strong> for second blueprint.</li>
+<li>Create a ubuntu blueprint and add cookbook <strong>loadblncr</strong> for third blueprint.</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Now, go to <strong>WORKZONE -&gt; Infrastructre -&gt; Blueprints</strong> and launch your created blueprints one by one. Wait until the Node Bootstrap successfully for each blueprint.</li>
+<li>Now, take the &lt;ipaddress&gt; of <strong>load_balancer node</strong> and Access petclinic application in the format <a class="reference external" href="http:/">http:/</a>/&lt;ipaddress&gt;/petclinic. Petclinic application home page will open.</li>
+</ol>
+<p><strong>Following video demonstrates how to Deploy a 3-tier application:</strong></p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/tA3ps-tRmBQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+</div>
+<div class="section" id="scenario-20-update-tags-in-aws">
+<span id="update-tags-in-aws"></span><h2>Scenario 20 : Update tags in-AWS<a class="headerlink" href="#scenario-20-update-tags-in-aws" title="Permalink to this headline">¶</a></h2>
+<p><strong>Prerequisite:</strong> You must have an AWS account.</p>
+<p>1. In SETTING -&gt; DevOps Setup -&gt; Providers, youl will get list of providers. And in <strong>Action</strong> colunm you will find <strong>Syn Instances</strong> button.
+By clicking on <strong>Syn Instances</strong> button, you will get 3 tabs, Tags, Mappings and Instances:</p>
+<blockquote>
+<div><p>1. Tags: you have two sections, left side you will get the tags which are present in ur AWS acccount will shown here and you can add description for your refrence only. And right side you can map the tags with PROJECT ans ENVIRONMENT, Specify which tags represent project name and the environment name.
+Once you will save it, you can see the refelection in Mapping tab.</p>
+<ol class="arabic simple" start="2">
+<li>Mappings: In Mapping, all the mapped Tag Values would be visible with respect to Projects and Environment. Select one tag name for project from drop down as well as Environment tag name for Environment And save the changes. Now go to Instances tab.</li>
+<li>Instances: You have 3 catalyst status:</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Managed: If catalyst status is &#8216;Managed&#8217;, you will get all &#8220;Bootstraped successfull Instances&#8221;. You can delete the instances from here.</li>
+<li>Assigned: In assigned tab you will get mapped instances from mappings. From here you can &#8220;Import Instances&#8221;.</li>
+<li>Unassigned: Here you will get all other Instances available in your AWS account. Here you can update the tags value by selecting the node.</li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+<p><strong>Following video demonstrates how to Update tags in AWS:</strong></p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/c1kRGPCWNnQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+</div>
+<div class="section" id="scenario-21-application-deployment-during-instance-launch-using-nexus-server">
+<span id="application-deployment-during-instance-launch-using-nexus-server"></span><h2>Scenario 21 : Application Deployment During Instance Launch using-Nexus Server<a class="headerlink" href="#scenario-21-application-deployment-during-instance-launch-using-nexus-server" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Create a Nexus Server with valid details and add Nexus Group ID - org.catalyst and save.</li>
+<li>Now, go To project and edit your project Select the Repository server -Nexus and Repository Name - Catalyst then ADD and save the project.</li>
+<li>Create a Software Stack Template for catalyst or petclinic and save. Add cookbook <strong>deploy_upgrade_catalyst</strong> for <strong>catalyst</strong> and <strong>tomcat-all-rl</strong> &amp; <strong>deploy_war</strong> for <strong>petclinic</strong> accordingly.</li>
+<li>Go To Design &amp; Create a Softwarestack bluperint using the template, which you created and add call back URL <a class="reference external" href="http://catalyst3.rlcatalyst.com/app-deploy">http://catalyst3.rlcatalyst.com/app-deploy</a> or app/deploy and save the blueprint.</li>
+<li>Go to <strong>Workzone</strong> and launch the Blueprint.</li>
+<li>Now, go to <strong>Instances</strong> copy the IP of your launced blueprint and open new tab, paste that <strong>IP:3001</strong> to verify- the App is deployed or not.</li>
+</ol>
+<p><strong>Following video demonstrates how to deploy Application during Instance launch using Nexus Server:</strong></p>
+<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/2gTJ9ppTnVo" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><hr class="docutils" />
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Relevance Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'latest',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
