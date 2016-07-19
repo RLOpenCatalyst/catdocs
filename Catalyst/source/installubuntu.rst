@@ -131,20 +131,19 @@ To run the application we need to do a client side build as well::
         sudo apt-get install ruby(depends upon the avaiable version)
 
         gem install
-
         sudo apt-get install rubygems-integration
 
         sass install
-
         sudo gem install sass
 
     Client side build - 
 
     sudo grunt build-dev
-
     Once the application is up and we do any sass modifications(.scss file)
     sudo grunt compile-sass to check the css changes.
 
+
+****
 
 Install Node Packages::
 
