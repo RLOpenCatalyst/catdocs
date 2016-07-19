@@ -126,7 +126,7 @@ To run the application we need to do a client side build as well::
 
     Install ruby, gem and sass
 
-        check ruby version using ruby -v
+        #check ruby version using ruby -v
         sudo apt-get install ruby(depends upon the avaiable version)
 
         #gem install
