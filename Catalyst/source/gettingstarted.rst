@@ -5,19 +5,45 @@ Install RLCatalyst
 ^^^^^^^^^^^^^^^^^^
 RLCatalyst can be installed either directly from source or using one of our quickinstallers
 
-**Install from Source** 
-
-Refer to :ref:`install-source` to install RLCatalyst directly from source
-
 **Quick Installer** 
-	
+    
 RLCatalyst can be installed using one of our Quick Installers
+
+**Quick install using RLCatalyst Installer Script** 
+
+RLCatalyst can be installed quickly using a chef-based installer. This installer will be available for installing on Centos and Ubuntu . The catalyst installer will install RLCatalyst and Open Source Chef. Basic seed data to start the application will also be taken care by the installer
+
+**Ubuntu 14.04 and Centos**
+
+You can install RLCatalyst using the installer script ::
+
+    
+    wget https://github.com/RLOpenCatalyst/installer/blob/master/installer.sh
+    chmod +x installer.sh
+    ./installer.sh
+
+**Quick install using Vagrant** 
+
+Setup RLCatalyst on your dektop/laptop using vagrant. You need to have vagrant installed in your machine:
+    
+RL Catalyst Installation on Vagrant with chef::
+
+    git clone https://github.com/RLOpenCatalyst/installer.git
+    cd vagrantwithchef
+    vagrant up
+
+RL Catalyst Installation on Vagrant without chef::
+
+    git clone https://github.com/RLOpenCatalyst/installer.git
+    cd vagrant
+    vagrant up
+
 
 **Quick install using RLCatalyst Public AWS Image** 
 
 If you have an AWS account, you can bring up RLCatalyst using the public AMI available. The public image is currently available for US east(N.Virginia) region. This comes with some basic configurations required by RLCatalyst
 
-1. From your EC2 dashboard, select N.California region . In the Images/AMI link, choose "Public Images" in the dropdown . Search for image with AMI ID ``ami-8f3c43ef`` and AMI Name ``RLCatalyst3.0.5``
+1. From your EC2 dashboard, select N.California region . In the Images/AMI link, choose "Public Images" in the dropdown . Search for image with AMI ID ``ami-bb9d6dd6`` and AMI Name ``RLCatalyst3.0.6.1``
 2. Select the image and hit Launch
 3. On the "Instance Type" page ,choose the instance size as t2.medium or bigger . We recommend atleast 4 GB RAM
 4. On the "Configure Instance Details" page, choose your preferred Network and Subnets. If you want to assign a public IP to RLCatalyst, then enable "Auto-assign Public IP"
@@ -41,30 +67,9 @@ If you have an AWS account, you can bring up RLCatalyst using the public AMI ava
 
 *****
 
-**Quick install using Vagrant** 
+**Install from Source** 
 
-Setup RLCatalyst on your dektop/laptop using vagrant. You need to have vagrant installed in your machine::
-    
-
-    git clone https://github.com/RLOpenCatalyst/installer.git
-    cd vagrantwithchef
-    vagrant up
-
-
-**Quick install using RLCatalyst Installer Script** 
-
-RLCatalyst can be installed quickly using a chef-based installer. This installer will be available for installing on Centos and Ubuntu . The catalyst installer will install RLCatalyst and Open Source Chef. Basic seed data to start the application will also be taken care by the installer
-
-**Ubuntu 14.04**
-
-You can install RLCatalyst using the installer script ::
-
-    sudo su
-    cd /opt
-    git clone https://github.com/RLOpenCatalyst/installer.git
-    cd /opt/installer/vagrantwithchef/
-    chmod +x installer.sh
-    installer.sh 
+Refer to :ref:`install-source` to install RLCatalyst directly from source
 
 
 

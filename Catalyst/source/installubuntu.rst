@@ -116,29 +116,22 @@ Install the dependencies- make , g++ , Kerberos & library::
     sudo npm install -g kerberos
 
 
-To run the application we need to do a client side build as well::
+To run the application we need to do a client side build as well:
 
-    Navigate to cd/core/client/cat3 - 
-    sudo npm install
+Pre-requisites::
 
-    Install grunt locally on your machine
-    sudo npm install grunt --save-dev
+    1. Grunt-cli
+        sudo npm install -g grunt-cli
 
-    Install ruby, gem and sass
-    sudo apt-get install ruby(depends upon the avaiable version)
-    sudo apt-get install rubygems-integration
-    sudo gem install sass
+    2. sass gem
+        sudo gem install sass 
 
 
-Client side build:: 
+Process to bluid the client side::
 
-    sudo grunt build-dev
-
-
-Once the application is up and we do any sass modifications(.scss file)::
-
-    sudo grunt compile-sass to check the css changes.
-
+    cd/core/client/cat3
+    sudo npm install --production (any other environment)
+    sudo npm run-script build-prod (any other environment)
 
 
 Install Node Packages::

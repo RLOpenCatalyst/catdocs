@@ -18,9 +18,9 @@ RLCatalyst is currently supported on
      ===========     ==========================================================
      Softwares       Versions
      ===========     ==========================================================
-     MongoDB         3.2
-     Node.JS         4.2.2 and above
-     Npm             3.4 and above
+     MongoDB         3.2.7 and above
+     Node.JS         4.4.4 and above
+     Npm             3.5.2 and above
      Chef Server     12.3 Open Source or Latest Enterprise Chef Server version.
      Chef Client     12.6
      LDAP Server     OpenLDAP 2.4.39 or an existing corporate LDAP server.
@@ -29,12 +29,7 @@ RLCatalyst is currently supported on
     SCM – Any version of GIT or SVN
 
 
-.. _for-ubuntu:
 
-.. toctree::
-   :maxdepth: 2
-
-   installubuntu
 
 .. _for-quickinstaller:
 
@@ -43,6 +38,12 @@ RLCatalyst is currently supported on
 
    quickinstaller
 
+.. _for-ubuntu:
+
+.. toctree::
+   :maxdepth: 2
+
+   installubuntu
 .. _for-chefdocs:
 
 .. toctree::
