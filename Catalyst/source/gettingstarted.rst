@@ -18,7 +18,7 @@ RLCatalyst can be installed quickly using a chef-based installer. This installer
 You can install RLCatalyst using the installer script ::
 
     
-    wget https://github.com/RLOpenCatalyst/installer/blob/master/installer.sh
+    wget https://raw.githubusercontent.com/RLOpenCatalyst/installer/master/installer.sh
     chmod +x installer.sh
     ./installer.sh
 
