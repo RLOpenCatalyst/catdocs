@@ -47,9 +47,9 @@ Note: If you want to **Import Linux Node and Install latest version of JBoss**, 
 
 
 
-.. _Install Apache on imported node and use service to stop-Apache:
+.. _Install Apache on imported node and use service to stop, start and restart-Apache:
 
-Scenario 2 : Install Apache on imported node and use service to stop, start and re-start Apache
+Scenario 2 : Install Apache on imported node and use service to stop, start and restart Apache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Create a Service command
@@ -150,10 +150,10 @@ Scenario 3: Deploy Petclinic application in the imported node
 *****
 
 
-.. _Update application-version[petclinic]:
+.. _Update application Petclinic-version:
 
-Scenario 4 : Update application version petclinic
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scenario 4 : Update application Petclinic version
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Import RLCatalyst instance/VM . Ignore this step if you have already executed **Scenario 1**
  * Go to Workzone and expand the Organization tree on the left side to get the environments . Click on Import by IP icon 
@@ -204,7 +204,7 @@ Scenario 5 :View History of App deployments & upgrades
 
 
 
-.. _Deploy a composite docker-container(petclinic app with 2 container):
+.. _Deploy a multi-tier application using docker-container:
 
 
 Scenario 6 : Deploy a multi-tier application using docker container
