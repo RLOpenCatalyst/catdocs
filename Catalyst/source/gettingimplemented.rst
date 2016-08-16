@@ -24,9 +24,9 @@ Please refer to :ref:`import-byip`  for more details
 3. Access Tomcat
  * Once the runlist updates go to Controlpanel -> Additional Parameters -> New Application URL and add **Name** and **URL - http://localhost:8080** and save. Now click on your Applink in Infrastructure -> Instances and verify Tomcat running.
 
-Note: If you want to **Import Linux Node and Install latest version of JBoss**, you can follow the same steps 1 and 2, But to access JBoss you need to follow:
+Note: If you want to **Import Linux Node and Install latest version of JBoss**, you can follow the same steps 1 and 2, But to access JBoss you need to follow
 
-3 .Access Jboss
+3. Access Jboss
  * Once the runlist updates go to new Tab enter **Ip address:8080** and then you will get **Welcome page of JBoss**.
 
 
