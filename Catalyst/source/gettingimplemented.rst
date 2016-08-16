@@ -150,9 +150,9 @@ Scenario 3: Deploy Petclinic application in the imported node
 *****
 
 
-.. _Update application Petclinic-version:
+.. _Update Petclinic application-version:
 
-Scenario 4 : Update application Petclinic version
+Scenario 4 : Update Petclinic application version
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Import RLCatalyst instance/VM . Ignore this step if you have already executed **Scenario 1**
@@ -210,7 +210,7 @@ Scenario 5 :View History of App deployments & upgrades
 Scenario 6 : Deploy a multi-tier application using docker container
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Introduction:** here we are deploying a petclinic app with 2 docker container. 
+**Introduction:** Here, we are deploying a petclinic application with 2 docker container. 
 
 1. Create docker template for Mysql and petclinic
 

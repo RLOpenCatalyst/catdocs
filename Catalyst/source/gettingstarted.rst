@@ -85,11 +85,11 @@ Listed below are few features which RLCatalyst offers out of the box:
 
 * :ref:`Import Linux Node and Install latest version of-Tomcat`  
 
-* :ref:`Install Apache on imported node and use service to stop, start and restart-Apache`        
+* :ref:`Install Apache on imported node and use service to stop, start and restart-Apache`     
 
 * :ref:`Deploy Pet-clinic application in the imported node`    
 
-* :ref:`Update application Petclinic-version`    
+* :ref:`Update Petclinic application-version`    
 
 * :ref:`View History of App deployments &-upgrades`
 
