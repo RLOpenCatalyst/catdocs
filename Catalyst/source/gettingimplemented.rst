@@ -24,6 +24,11 @@ Please refer to :ref:`import-byip`  for more details
 3. Access Tomcat
  * Once the runlist updates go to Controlpanel -> Additional Parameters -> New Application URL and add **Name** and **URL - http://localhost:8080** and save. Now click on your Applink in Infrastructure -> Instances and verify Tomcat running.
 
+Note: If you want to **Import Linux Node and Install latest version of JBoss**, you can follow the same steps 1 and 2, But to access JBoss you need to follow:
+
+3 .Access Jboss
+ * Once the runlist updates go to new Tab enter **Ip address:8080** and then you will get **Welcome page of JBoss**.
+
 
 
 **Following video demonstrates how to import Linux node and install latest version of Tomcat in RLCatalyst:**
@@ -40,51 +45,12 @@ Please refer to :ref:`import-byip`  for more details
 *****
 
 
-.. _Import Linux Node and Install latest version of-JBoss:
-
-Scenario 2 : Import Linux Node and Install latest version of JBoss
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**Prerequisite:** You must have linux node on which you want to install JBoss.
-
-1. Import RLCatalyst instance 
-
- * Go to Workzone and expand the Organization tree on the left side to get the respective environment . Click on Import by IP icon 
- * Follow the following steps:
-
-    1. Enter <Ip Address> in the IP Address field . 
-    2. Choose Operating System from drop down list .
-    3. Provide Username .
-    4. Choose chef Server from drop down list .
-    5. Choose Authentication Type by selecting password/pem file .
-    6. Enter the Password or Browse the Pem file .
-    7. Now click on Import button to import your instance.
-
-2. Install latest version of Jboss
- * Click on Chef-Client Run icon on the imported node in Infrastructure -> Instances tab
- * Search for **Jboss7_rl** cookbook and add to runlist and click on update runlist button and wait until instance runlist updates . This cookbook will install the latest version of JBoss
-
-3. Access Jboss
- * Once the runlist updates go to new Tab enter **Ip address:8080** and then you will get **Welcome page of JBoss**.
 
 
+.. _Install Apache on imported node and use service to stop-Apache:
 
-**Following video demonstrates how to import Linux node and install latest version of JBoss in RLCatalyst:**
-
-
-.. raw:: html
-
-    
-    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/ODTQadggt8Q" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-
-
-*****
-
-.. _Install apache2 on imported node and use service to stop-apache2:
-
-Scenario 3 : Install apache2 on imported node and use service to stop apache2
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scenario 2 : Install Apache on imported node and use service to stop, start and re-start Apache
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Create a Service command
  * In Settings, Under Gallery setup -> Service command, create a new service by selecting service command type as **chef cookbook/recipe**. Search for the **service_apache** in service cookbooks dropdown. Select actions **Start,Stop,Restart** and save.
@@ -104,8 +70,8 @@ Scenario 3 : Install apache2 on imported node and use service to stop apache2
 
 
 4. SSH in to the Node from RLCatalyst and check the apache status
- * SSH in to the box from rlcatalyst and run **sudo service apache2 status** to check the apache2 status
-   apache2 is running
+ * SSH in to the box from rlcatalyst and run **sudo service apache2 status** to check the Apache status
+   Apache is running
 
 5. Add the service apache to the node
  * Go to Controlpanel -> Service Tab -> Click on Add New Service. Choose the apache service and save.
@@ -113,17 +79,21 @@ Scenario 3 : Install apache2 on imported node and use service to stop apache2
 
 6. Stop the service and check the status
  * Click on Stop icon
- * SSH in to the box from catalyst and run **sudo service apache2 status** and check the apache2 status.
-   You can see that zpache2 is stopped
+ * SSH in to the box from catalyst and run **sudo service Apache status** and check the Apache status.
+   You can see that Apache is stopped
 
 
 7. Start the service and check the status
  * Go to Controlpanel -> Services and Click on Start icon
- * SSH in to the box from catalyst and run **sudo service apache2 status**
-   apache2 is up and running now
+ * SSH in to the box from catalyst and run **sudo service Apache status**
+   Apache is up and running now
 
+8. Restart the service and check the status
+ * Click on Restart icon
+ * SSH in to the box from catalyst and run **sudo service Apache status**
+   Apache is up and running now  
 
-**Following video demonstrates how to Install apache2 on imported node and use service to stop apache2 in RLCatalyst:**
+**Following video demonstrates how to Install Apache on imported node and use service to stop Apache in RLCatalyst:**
 
 
 .. raw:: html
@@ -182,7 +152,7 @@ Scenario 3: Deploy Petclinic application in the imported node
 
 .. _Update application-version[petclinic]:
 
-Scenario 4 : Update application version[petclinic]
+Scenario 4 : Update application version petclinic
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Import RLCatalyst instance/VM . Ignore this step if you have already executed **Scenario 1**
@@ -237,8 +207,10 @@ Scenario 5 :View History of App deployments & upgrades
 .. _Deploy a composite docker-container(petclinic app with 2 container):
 
 
-Scenario 6 : Deploy a composite docker container(petclinic app with 2 container)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scenario 6 : Deploy a multi-tier application using docker container
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Introduction:** here we are deploying a petclinic app with 2 docker container. 
 
 1. Create docker template for Mysql and petclinic
 
