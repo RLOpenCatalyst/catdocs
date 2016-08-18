@@ -149,9 +149,9 @@ Jenkins is CI/CD tool which can be used for build and deployment automation. It 
 
 * :ref:`Create Composite-Blueprint`
 
-* :ref:`Instance Log-Trail`
+* :ref:`Audit-Trail`
 
-
+* :ref:`Script-Gallery`
 
 *****
 
