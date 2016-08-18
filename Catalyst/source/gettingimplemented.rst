@@ -865,27 +865,60 @@ Design an entire app and launch instance with the app running.
 Scenario 21 : Create Composite-Blueprint
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Launch more than one blueprints at a time one by one.
+The purpose of Composite Blueprint is to launch multi-tier application.
+Here we are going to launch "Petclinic Application", petclinic Data Base, petclinic App and petclinic web(load balancer). for this we need to create blueprint for each of **software stack** type.
 
-1. Create a Composite Blueprint,
-    1. Select AWS Provider.
-    2. Click on "New" tab.
-    3. Select "Composite Blueprint".
-    4. Click on Next.
+1. While creating blueprint for petclinic database add **petclinic_db** role.
 
-2. Now, User can filter  Software Stack Blueprint through Organization, Business Group and Project.
+  .. image:: /images/CB1.png
 
-3. And it has two panels, left side Panel show all filtered Software Stack Bueprints. Now, user can select more than one blueprint and  move to right side panel. 
-select the composed blueprint for edit its attributes and can change the versions.
+2. Add **petclinic_app** role while creating blueprint for petclinic app.
 
-4. Then, click on Save. Now, you will get New Composite Blueprint.
+  .. image:: /images/CB2.png
 
-5. All Composed Blueprints listed inside the Composite accordian at the Blueprint list page.
+3. Add **loadblncr** role while creating blueprint for petclinic web.
 
-6. Composed blueprint card has three icons.
-    1. info: view all blueprint details.
-    2. launch: launch the Instance Composite Blueprint.
-    3. delete: delete the composed blueprint.
+  .. image:: /images/CB3.png
+
+Now, create new **Composite type blueprint**
+
+  .. image:: /images/CB4.png
+
+Add those 3 blueprints in composite type blueprint into Selected Blueprint and Save it.
+
+  .. image:: /images/CB5.png
+
+Once it is created user can see the blueprint under **Composite**. User can delete, Launch the blueprint by clicking on specified buttons.
+
+  .. image:: /images/CB6.png
+
+And user can also see all the details of composite blueprint by clicking on information button.
+
+  .. image:: /images/CB7.png
+
+Launch by clicking on launch button, it will ask for confirmation before start launching it.
+
+  .. image:: /images/CB8.png
+
+Once you will confirm it to launch, it will start launching petclinic_db, petclinic_app and loadbalancer one by one. First it will start launching **petclinic_db**
+
+  .. image:: /images/CB9.png
+
+When **petclinic_db** will be bootstraped successfully then only it will start with petclinic_app.
+
+  .. image:: /images/CB10.png
+
+Similarly when petclinic_app will bootstraped successfully then it will start launching loadbalancer.
+
+  .. image:: /images/CB11.png
+
+Now, user can access the application with ip address petclinic app into new tab type **ip-address:8080/petclinic**
+
+  .. image:: /images/CB12.png
+
+And to access the application with ip address of loadbalancer into new tab type **ip-address/petclinic**
+
+  .. image:: /images/CB13.png
 
 
 *****
