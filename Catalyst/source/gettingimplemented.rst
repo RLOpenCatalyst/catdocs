@@ -935,9 +935,9 @@ There are 2 types of logs available:
 
 Create two dashboards one for instance and one for task log:
 
-*. We need to configure the dashboard links
+* We need to configure the dashboard links
     Go to Track Setup -> dashboard -> + New
-*. Fill all the required details:
+* Fill all the required details:
     Type should be Audit Trail.
     Item Name could be any name.
     Item URL should be like http://<host address>/public/instancelog.html
@@ -977,11 +977,11 @@ Currently we are supporting only bash scripts for installation.
 To add your script:
 Navigate to Design -> Gallery Setup -> Script Gallery -> +New
 Now fill all required details:
-*. Script Name could be any name
-*. Choose Organization Name from drop down
-*. choose Script Type to Bash
-*. enter some Script Description
-*. choose Script file
+* Script Name could be any name
+* Choose Organization Name from drop down
+* choose Script Type to Bash
+* enter some Script Description
+* choose Script file
 
   .. image:: /images/SG1.png
 
