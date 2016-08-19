@@ -108,7 +108,7 @@ RLCatalyst comes with the flexibility to create blueprints to automate dynamic p
 
 * :ref:`Launch New Ubuntu Instance and Install-Jboss`         
 
-* :ref:`Launch Windows Instance and Install-IIS`                
+* :ref:`Deploy Windows App on-IIS`                
 
 * :ref:`Launch New ubuntu Instance,Install Tomcat,upgrade to-v8.0[attribute]` 
 
@@ -116,9 +116,9 @@ RLCatalyst comes with the flexibility to create blueprints to automate dynamic p
            
 * :ref:`AWS Cost,Usage-Dashboards`     
 
-* :ref:`Composite-Docker for Wordpress`
+* :ref:`Deploy Wordpress on multiple docker-container`
 
-* :ref:`Create and launch-Blueprint ( CentOS + Liferay )`
+* :ref:`Create CentOS instance and launch-Liferay`
 
 * :ref:`Create and Launch an AWS CFT Blueprint for 2-node Petclinic`
 

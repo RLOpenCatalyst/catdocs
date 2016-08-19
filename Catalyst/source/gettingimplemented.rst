@@ -210,7 +210,7 @@ Scenario 5 :View History of App deployments & upgrades
 Scenario 6 : Deploy a multi-tier application using docker container
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Introduction:** Here, we are deploying a petclinic application with 2 docker container. 
+**Introduction:** Here, we are deploying a petclinic application with 2 docker container, one for Mysql and one for petclinic. 
 
 1. Create docker template for Mysql and petclinic
 
@@ -319,10 +319,12 @@ Create a blueprint to launch a new Ubuntu instance and install JBoss server on i
 
 
 
-.. _Launch Windows Instance and Install-IIS:
+.. _Deploy Windows App on-IIS:
 
-Scenario 8 : Create a new Windows Instance and Install IIS
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scenario 8 : Deploy Windows App on IIS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+We are deplying MyShopper application with deploy_iis cookbook.
 
 1. Add Provider . Skip this step if Scenario6 is already executed
  * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
@@ -335,10 +337,10 @@ Scenario 8 : Create a new Windows Instance and Install IIS
    Please refer to :ref:`configure-vm` for more details.
 
 3. Create Blueprint using Windows base image by adding IIS cookbook to runlist
- * In Design, under OSImage template type select windows template and create blueprint by entering the other details and by adding **iis** cookbook in configure runlist parameters and save
+ * In Design, under OSImage template type select windows template and create blueprint by entering the other details and by adding **deploy_iis** cookbook in configure runlist parameters and save
 
 4. Launch Blueprint and Verify IIS Installation
- * Launch the Blueprint from Workzone -> Infrastructure -> Blueprints. After launch of Blueprint go to Infrastructure -> Instances, once the node bootstraps RDP to the machine and in search options search for IIS.Internet Information Services Manager should be available.
+ * Launch the Blueprint from Workzone -> Infrastructure -> Blueprints. After launch of Blueprint go to Infrastructure -> Instances, once the node bootstraps enter <ipAddress> of the instance in new tab it will take you to the MyShopper application home page.
 
 
 **Following video demonstrates how to Launch Windows Instance and Install IIS in RLCatalyst:**
@@ -469,10 +471,10 @@ Follow the instructions to configure your dashboards:
 *****
 
 
-.. _Composite-Docker for Wordpress:
+.. _Deploy Wordpress on multiple docker-container:
 
-Scenario 12: Composite Docker for Wordpress 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scenario 12: Deploy Wordpress on multiple docker container 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 1. Create a docker template for MYSQL
  * Go to Settings -> Gallery Setup -> Templates, Enter the Template name -> Choose Template type as **Docker** -> Choose the **Organization**
  * Donot select the **Docker Repo** -> **Add Docker Repo Path** as **relevancelab/wpmysql** and save
@@ -531,10 +533,10 @@ Scenario 12: Composite Docker for Wordpress
 *****
 
 
-.. _Create and launch-Blueprint ( CentOS + Liferay ):
+.. _Create CentOS instance and launch-Liferay:
 
-Scenario 13 : Create and launch Blueprint ( CentOS + Liferay )
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scenario 13 : Create CentOS instance and launch Liferay
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Create template for liferay app
 
