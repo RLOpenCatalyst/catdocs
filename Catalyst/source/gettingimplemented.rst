@@ -866,7 +866,8 @@ Scenario 21 : Create Composite-Blueprint
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The purpose of Composite Blueprint is to launch multi-tier application.
-Here we are going to launch "Petclinic Application", petclinic Data Base, petclinic App and petclinic web(load balancer). for this we need to create blueprint for each of **software stack** type.
+
+Here we are going to launch Petclinic Application. petclinic Data Base, petclinic App and petclinic web(load balancer). for this we need to create blueprint for each of **software stack** type.
 
 1. While creating blueprint for petclinic database add **petclinic_db** role.
 
@@ -876,7 +877,7 @@ Here we are going to launch "Petclinic Application", petclinic Data Base, petcli
 
   .. image:: /images/CB2.png
 
-3. Add **loadblncr** role while creating blueprint for petclinic web.
+3. Add **loadblncr** cookbook while creating blueprint for petclinic web.
 
   .. image:: /images/CB3.png
 
@@ -912,11 +913,11 @@ Similarly when petclinic_app will bootstraped successfully then it will start la
 
   .. image:: /images/CB11.png
 
-Now, user can access the application with ip address petclinic app into new tab type **ip-address:8080/petclinic**
+Now, to access the application, open new tab and access petclinic app with ip address petclinic app **<ipAddress>:8080/petclinic**
 
   .. image:: /images/CB12.png
 
-And to access the application with ip address of loadbalancer into new tab type **ip-address/petclinic**
+And to access the application with ip address of loadbalancer into new tab type **<ipAddress>/petclinic**
 
   .. image:: /images/CB13.png
 
@@ -928,23 +929,28 @@ And to access the application with ip address of loadbalancer into new tab type 
 Scenario 22 : Audit-Trail
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-An audit trail (also called audit log) is a security-relevant chronological record, set of records, and/or destination and source of records that provide documentary evidence of the sequence of activities that have affected at any time a specific operation, procedure, or event.
+In Audit Trial, whatever actions will performed on an instance will be shown here.
+
 There are 2 types of logs available:
-1. Instance Log
-2. Tasks Log
 
-Create two dashboards one for instance and one for task log:
+  1. Instance Log
+  2. Tasks Log
 
-* We need to configure the dashboard links
-    Go to Track Setup -> dashboard -> + New
-* Fill all the required details:
-    Type should be Audit Trail.
-    Item Name could be any name.
-    Item URL should be like http://<host address>/public/instancelog.html
+1. Create one dashboards for instance log:
+
+  * We need to configure the dashboard links
+
+      Go to Track Setup -> dashboard -> + New
+
+  * Fill all the required details:
+
+      Type should be Audit Trail.
+      Item Name could be any name.
+      Item URL should be like http://<host address>/public/instancelog.html
 
     .. image:: /images/AT1.png
 
-  similarly create one dashboard for orchestation task.
+  2. similarly create one dashboard for orchestation task.
 
     .. image:: /images/AT2.png
 
@@ -977,11 +983,12 @@ Currently we are supporting only bash scripts for installation.
 To add your script:
 Navigate to Design -> Gallery Setup -> Script Gallery -> +New
 Now fill all required details:
-* Script Name could be any name
-* Choose Organization Name from drop down
-* choose Script Type to Bash
-* enter some Script Description
-* choose Script file
+
+  * Script Name could be any name
+  * Choose Organization Name from drop down
+  * choose Script Type to Bash
+  * enter some Script Description
+  * choose Script file
 
   .. image:: /images/SG1.png
 
@@ -997,7 +1004,7 @@ Now, create Script Job by choosing Job type, Job Name, select nodes and select s
 
   .. image:: /images/SG4.png
 
-You can edit parameters
+You can add parameters
 
   .. image:: /images/SG5.png
 
