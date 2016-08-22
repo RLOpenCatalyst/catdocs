@@ -22,6 +22,19 @@ You can install RLCatalyst using the installer script ::
     chmod +x installer.sh
     ./installer.sh
 
+**Install using Docker**
+
+Download the docker image from::
+
+    https://hub.docker.com/r/relevancelab/opensc-catalyst/
+
+and run these commands::
+
+    docker pull relevancelab/opensc-catalyst
+    docker run -d --name <any_name> -p <free_port>:3001 relevancelab/opensc-catalyst:3.0.5
+
+******
+
 **Quick install using Vagrant** 
 
 Setup RLCatalyst on your dektop/laptop using vagrant. You need to have vagrant installed in your machine:
