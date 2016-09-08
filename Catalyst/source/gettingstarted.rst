@@ -22,18 +22,17 @@ You can install RLCatalyst using the installer script ::
     chmod +x installer.sh
     ./installer.sh
 
+
 **Install using Docker**
 
 Download the docker image from::
 
-    https://hub.docker.com/r/relevancelab/opensc-catalyst/
+    https://hub.docker.com/r/relevancelab/catalystbaseimagenew/
 
 and run these commands::
 
-    docker pull relevancelab/opensc-catalyst
-    docker run -d --name <any_name> -p <free_port>:3001 relevancelab/opensc-catalyst:3.0.5
-
-******
+    docker pull relevancelab/catalystbaseimagenew:3.3.1
+    docker run -t -i -p 3001:3001 --name catalyst331 relevancelab/catalystbaseimagenew:3.3.1 /bin/bash
 
 **Quick install using Vagrant** 
 
@@ -56,7 +55,7 @@ RL Catalyst Installation on Vagrant without chef::
 
 If you have an AWS account, you can bring up RLCatalyst using the public AMI available. The public image is currently available for US east(N.Virginia) region. This comes with some basic configurations required by RLCatalyst
 
-1. From your EC2 dashboard, select N.California region . In the Images/AMI link, choose "Public Images" in the dropdown . Search for image with AMI ID ``ami-9883c3f8`` and AMI Name ``RLCatalyst3.2.0``
+1. From your EC2 dashboard, select N.California region . In the Images/AMI link, choose "Public Images" in the dropdown . Search for image with AMI ID ``ami-52f4b632`` and AMI Name ``RLCatalyst3.3.1``
 2. Select the image and hit Launch
 3. On the "Instance Type" page ,choose the instance size as t2.medium or bigger . We recommend atleast 4 GB RAM
 4. On the "Configure Instance Details" page, choose your preferred Network and Subnets. If you want to assign a public IP to RLCatalyst, then enable "Auto-assign Public IP"
@@ -123,11 +122,11 @@ RLCatalyst comes with the flexibility to create blueprints to automate dynamic p
 
 * :ref:`Deploy Windows App on-IIS`                
 
-* :ref:`Launch New ubuntu Instance,Install Tomcat,upgrade to-v8.0[attribute]` 
+* :ref:`Launch New ubuntu Instance, Install Tomcat, upgrade to-v8.0[attribute]` 
 
 * :ref:`Provider Sync and-Import Instances`  
            
-* :ref:`AWS Cost,Usage-Dashboards`     
+* :ref:`AWS Cost, Usage-Dashboards`     
 
 * :ref:`Deploy Wordpress on multiple docker-container`
 
@@ -150,7 +149,7 @@ Jenkins is CI/CD tool which can be used for build and deployment automation. It 
 
 **How to Configure, Create, Execute Jenkins Jobs and View History in RLCatalyst ?**
 
-* :ref:`Create & Execute Jenkins Jobs from-RLCatalyst`
+* :ref:`Configure and Execute a Jenkins-Jobs`
 
 * :ref:`Deploy and Promote-a Java Application`
 
@@ -158,17 +157,9 @@ Jenkins is CI/CD tool which can be used for build and deployment automation. It 
 
 * :ref:`Update tags in-AWS`
 
-* :ref:`Application Deployment During Instance Launch using-Nexus Server`
+* :ref:`Design and Launch-Application`
 
-* :ref:`Create Composite-Blueprint`
+* :ref:`Design and Launch 3-tier-Application`
 
 
 *****
-
-
-
-
-
-
-
-

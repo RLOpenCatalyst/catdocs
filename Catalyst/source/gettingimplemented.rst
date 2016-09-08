@@ -359,9 +359,9 @@ We are deplying MyShopper application with deploy_iis cookbook.
 
 
 
-.. _Launch New ubuntu Instance,Install Tomcat,upgrade to-v8.0[attribute]:
+.. _Launch New ubuntu Instance, Install Tomcat, upgrade to-v8.0[attribute]:
 
-Scenario 9 : Create a new Ubuntu Instance,Install Tomcat and upgrade to latest version
+Scenario 9 : Create a new Ubuntu Instance, Install Tomcat and upgrade to latest version
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Add Provider . Skip this step if Scenario6 is already executed
@@ -427,9 +427,9 @@ Please refer to :ref:`providersync and-import` for more details.
 *****
 
 
-.. _AWS Cost,Usage-Dashboards:
+.. _AWS Cost, Usage-Dashboards:
 
-Scenario 11 : AWS Cost,Usage Dashboards
+Scenario 11 : AWS Cost, Usage Dashboards
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 RLCatalyst provides you a consolidated dashboard for tracking your AWS infrastructure cost and usage . This helps you to identify un-used capacity and do better utilization. RLCatalyst summarizes this data for all the AWS provider accounts configured.
 
@@ -625,10 +625,6 @@ Scenario 14 : Create and Launch an AWS CFT Blueprint for 2-node Petclinic
  * Now verify the petclinic application using **http://VM2 Ipaddress:8080/petclinic**. You will be able to access the application
 
 
-
-
-
-
 Following video demonstrates how to Create and Launch an AWS CFT Blueprint for 2-node Petclinic in RLCatalyst:
 
 
@@ -681,8 +677,6 @@ Please refer to :ref:`import-byip`  for more details
  * Now Enter the following command **mysql -u root -p** and enter the same **Root Password** which you provided while editing the cookbook attributes and verify MySql
 
 
-
-
 Following video demonstrates how to Launch New Ubuntu Instance and deploy LAMP[Linux, Apache, MySql, PHP] in RLCatalyst:
 
 
@@ -700,10 +694,10 @@ Following video demonstrates how to Launch New Ubuntu Instance and deploy LAMP[L
 
 
 
-.. _Create & Execute Jenkins Jobs from-RLCatalyst:
+.. _Configure and Execute a Jenkins-Jobs:
 
-Scenario 16 : Configure and Execute a Jenkins Jobs from RLCatalyst
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scenario 16 : Configure and Execute a Jenkins Jobs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Execute your Jenkins job from rlcatalyst and see the history of each jobs. Jenkins server should be configured in rlcatalyst to initiate the job execution. Please refer to * :ref:`Configure-Jenkins`
 
@@ -725,7 +719,9 @@ Please refer to ``Jenkins Task`` under :ref:`Orchestration-JenkinsTask` to **Cre
 .. _Deploy and Promote-a Java Application:
 
 Scenario 17 : Deploy and Promote a Java Application
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Here we are deploying and promoting petclinic app.
 
 1. Import a ubuntu node or Launch a Blueprint. Wait until the Node Bootstrap successfully.
 
@@ -768,6 +764,8 @@ Now, Promote Petclinic in other enviornment:
 
 Scenario 18 : Deploy a 3-tier application
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Here we are deploying petclinic app using petclinic database, petclinic application and loadbalancer.
 
 1. Create  three Blueprints:
 
@@ -830,10 +828,10 @@ By clicking on **Syn Instances** button, you will get 3 tabs, Tags, Mappings and
 
 *****
 
-.. _Application Deployment During Instance Launch using-Nexus Server:
+.. _Design and Launch-Application:
 
-Scenario 20 : Design and Launch Application Stack
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scenario 20 : Design and Launch Application
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Design an entire app and launch instance with the app running.
 
@@ -862,14 +860,12 @@ Design an entire app and launch instance with the app running.
 
 *****
 
-.. _Create Composite-Blueprint:
+.. _Design and Launch 3-tier-Application:
 
-Scenario 21 : Create Composite-Blueprint
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scenario 21 : Design and Launch 3-tier Application
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The purpose of Composite Blueprint is to launch multi-tier application.
-
-Here we are going to launch Petclinic Application. petclinic Data Base, petclinic App and petclinic web(load balancer). for this we need to create blueprint for each of **software stack** type.
+Here we are going to launch Petclinic Application. petclinic Data Base, petclinic App and petclinic web(load balancer), for this we need to create blueprint for each of **software stack** type.
 
 1. While creating blueprint for petclinic database add **petclinic_db** role.
 

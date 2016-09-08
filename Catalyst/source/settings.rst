@@ -4,7 +4,7 @@ Settings
 Add all your organization and asset details in Settings before using RLCatalyst. You can use the system only if you provide all the relevant options provided in the Settings. 
 
 
-Settings provides you six different options:
+Settings provides you seven different options:
 
 .. _org-setup:
 
@@ -12,6 +12,13 @@ Settings provides you six different options:
    :maxdepth: 2
 
    orgSettings
+
+.. _conf-setup:
+
+.. toctree::
+   :maxdepth: 2
+
+   confSettings
 
 .. _devops-setup:
 

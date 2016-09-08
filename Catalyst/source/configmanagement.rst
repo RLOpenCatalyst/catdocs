@@ -1,69 +1,6 @@
 
 
 
-Puppet Server
-^^^^^^^^^^^^^
-
-Puppet Server is an application that runs on the Java Virtual Machine (JVM) and provides the same services as the classic Puppet master application. It mostly does this by running the existing Puppet master code in several JRuby interpreters, but it replaces some parts of the classic application with new services written in Clojure.
-
-If you are using Puppet for your configuration management requirements, configure it in RLCatalyst. You can configure only one puppet server for one organization. Same puppet server cannot be associated with multiple organizations. 
-
-To configure a new puppet server follow the steps below:
-
- * From the main menu click on Settings
- * Once you click on Settings, from the side menu click on Devops Setup
- * Click on Puppet Server
- * Click on New button provided 
- * Enter the puppet server name in the Name box
- * Enter the user name in User Nane field
- * Enter the Hostname in Host Name field
- * Choose the organization from the Organization drop down list
- * Choose the Authentication by selecting Password / Pem file
- * Enter Password / Upload the pem file
-
- .. image:: /images/createPuppet.JPG
-
-
- * Click on Save button
- * Now your Puppet server is configured and listed in the Puppet Server Management page
-
- .. image:: /images/puppetList.JPG
-
-*****
-
-**Import nodes from Puppet Server**
-
-You can import existing nodes from the configured puppet server into RLCatalyst by selecting the required Business Group and Project. These imported nodes can be operated from the Workzone.
-
- * To import the existing nodes click on Import button
- * Select the node and the respective Environment for the dropdown 
- * Select the environment from Environment drop down list for the node to be imported
- * Select the respective checkbox in the Action column
- * Click on the Import Nodes button 
- * Select the business group from Business Group drop down list
- * Select the project from the Project drop down list
- * Enter the user name to access server for import in the User Name box 
- * Choose authentication type from the Choose Authentication Type drop down list. RLCatalyst provide two types of authentication, you can either choose Password or by uploading the PEM file
- * Type Password or upload PEM file 
- * Click on Import button
- * Close the popup containing the success message 'Node imported'
- * The imported node will be available in the respective Environment of the Workzone
-
-
- **Note**: For the imported node using puppet server , Puppet client run icon will be shown.
-
-**Hereby attaching a video which will demonstrate as in how to Create Puppet in RLCatalyst:**
-
-
-.. raw:: html
-
-	
-	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/5YtNPCHEgg4" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-
-*****
-
 .. _configure-nexus:
 
 Nexus Server
@@ -86,14 +23,14 @@ To configure a new Nexus server follow the steps below:
  * Choose the organization from the Organization drop down list
  * Click on + icon present next to Nexus Group ID Details and enter valid Nexus GroupID and save
 
- .. image:: /images/nexusDetails.png
+ .. image:: /images/updated_img/nexusDetails.png
 
 
 
  * Click on Save button
  * Now the Nexus server setup is ready and listed in the Nexus Server page
 
- .. image:: /images/nexusList.JPG
+ .. image:: /images/updated_img/nexusList.png
 
 **Hereby attaching a video which will demonstrate as in how to Create Nexus in RLCatalyst:**
 
@@ -128,8 +65,8 @@ Once Nexus Server is configured you have to associate Repository details to your
  * Click on Save button on Edit Project Page
 
 
-Configure Docker
-^^^^^^^^^^^^^^^^
+Docker
+^^^^^^
 
 Docker is all about making it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package.
 
@@ -146,7 +83,7 @@ You can configure the Docker setup with RLCatalyst. To configure the Docker setu
  * Provide the email address to connect to the Docker in the Email Id field
  * Enter the Docker password in the Password field
 
- .. image:: /images/createDocker.JPG
+ .. image:: /images/updated_img/createDocker.png
 
  * Click Save button
  * Now Docker is successfully configured to RL Catalyst
@@ -167,8 +104,8 @@ You can configure the Docker setup with RLCatalyst. To configure the Docker setu
 
 .. _Configure-Jenkins:
 
-Configure Jenkins
-^^^^^^^^^^^^^^^^^
+Jenkins
+^^^^^^^
 
 Jenkins is CI/CD tool which can be used for build and deployment automation. You can configure the Jenkins setup with RLCatalyst.To configure the Jenkins setup follow the steps below:
 
@@ -182,7 +119,7 @@ Jenkins is CI/CD tool which can be used for build and deployment automation. You
  * Enter the user ID in the User ID field
  * Enter the Jenkins password in the Password field
 
- .. image:: /images/createJenkins.JPG
+ .. image:: /images/updated_img/createJenkins.png
 
  * Click Save button
  * Now Jenkins is successfully configured to RLCatalyst
@@ -204,8 +141,8 @@ Jenkins is CI/CD tool which can be used for build and deployment automation. You
 .. _provider-settings:
 
 
-Providers in RLCatalyst
-^^^^^^^^^^^^^^^^^^^^^^^^
+Providers
+^^^^^^^^^
 
 RLCatalyst supports infra automation across providers like AWS, Azure, VMware, Openstack. Each provider needs to be configured with the proper credentials amd other required details before it can be used. 
 
@@ -237,15 +174,16 @@ To choose this mode, unselect the checkbox **Requires Access Credentials**
 
 To choose this mode select the  checkbox **Requires Access Credentials**
 
- 	* Provide the access key  in the Access Key field 	
- 	* Provide the secret key in the Secret Key field
- 	* Select the organization from the Organization drop down list
- 	* Select the region from the Region drop down list where your provider is located
- 	* Select the key pair for the provider from the Key Pair drop down list
- 	* Upload the .pem file for Provider
+    * Provide the access key  in the Access Key field     
+    * Provide the secret key in the Secret Key field
+    * Provide the bucket name in the S3 Bucket Name field
+    * Select the organization from the Organization drop down list
+    * Select the region from the Region drop down list where your provider is located
+    * Select the key pair for the provider from the Key Pair drop down list
+    * Upload the .pem file for Provider
     
  
-     .. image:: /images/createProvider.PNG
+     .. image:: /images/updated_img/createProvider.png
 
     
     * Click on Save button
@@ -314,63 +252,70 @@ To choose this mode select the  checkbox **Requires Access Credentials**
 
 *****
 
-.. _provider-sync:
 
-Provider Sync for AWS
-^^^^^^^^^^^^^^^^^^^^^
 
-Provider sync allows you to import unmanaged instances to Catalyst. Once you import your node to catalyst appliaction it will bootstrap and will be displayed in Managed instances tab.
+**Provider Sync for AWS**
 
-**Managed Instance** means Node which has been bootstrapped by Catalyst and **Unmanaged instances** means Node which has not been bootstrapped by catalyst.
+Provider sync allows you to import unmanaged instances to Catalyst. 
 
 Follow the below steps for AWS provider sync:
 
 
 * Create an **AWS** provider as shown above. The Created provider will be available in Providers page
 
- .. image:: /images/createAWS.jpg
+ .. image:: /images/updated_img/createAWS.png
 
 
 * Click on the Sync Instance button of the provider.
 
+    1. Tags: you have two sections, left side you will get the tags which are present in ur AWS acccount will shown here and you can add description for your refrence only. And right side you can map the tags with PROJECT ans ENVIRONMENT, Specify which tags represent project name and the environment name. Once you will save it, you can see the refelection in Mapping tab.
 
-* Click on UnManaged instances tab
- 
- .. image:: /images/unManagedIns.PNG
-
-* Select the Instance with the Action to be imported
-
- .. image:: /images/selectInstance.PNG
+    .. image:: /images/updated_img/providers.png
 
 
-* Click on Import Instances button 
+    2. Mappings: In Mapping, all the mapped Tag Values would be visible with respect to Projects and Environment. Select one tag name for project from drop down as well as Environment tag name for Environment And save the changes. Now go to Instances tab.
 
- .. image:: /images/importIns.PNG
-
-
-* A pop up is displayed with the message "Instance Imported"
-
- .. image:: /images/instanceImported.PNG
+    .. image:: /images/updated_img/mapping.png
 
 
-* Verify the Node is imported in the Environment
 
- .. image:: /images/verfiyNode.PNG
+    3. Instances: You have 3 catalyst status:
+
+        * Managed: If catalyst status is ‘Managed’, you will get all “Bootstraped successfull Instances”. You can delete the instances from here.
+        * Assigned: If you want to assign some unassigned Instance then you have to update tags corresponding to the mapping.
+        * Unassigned: Here you will get all other Instances available in your AWS account. Here you can update the tags value by selecting the node.
+
+        **Unassigned Instances**:
+
+        .. image:: /images/updated_img/unassignedInstances.png
+
+        **Assigned Instances**:
+
+        .. image:: /images/updated_img/assignedInstance.png
+
+        **Managed Instances**:
+
+        .. image:: /images/updated_img/managedInstances.png.png
 
 
-* Click on Control panel -> Action History and Wait until the Bootstrap succeeds
+    4. RDS: Amazon Relational Database Service (Amazon RDS) is a web service that makes it easier to set up, operate, and scale a relational database in the cloud. It provides cost-efficient, resizeable capacity for an industry-standard relational database and manages common database administration tasks.
 
- .. image:: /images/bootstrapSuccess.PNG
+        **Unassigned RDS**:
+
+        .. image:: /images/updated_img/unassignedRDS.png
+
+        **Assigned RDS**:
+
+        .. image:: /images/updated_img/assignedRDS.png
+
+    5. S3: A bucket is a logical unit of storage in Amazon Web Services (AWS) object storage service, Simple Storage Solution S3. Buckets are used to store objects, which consist of data and metadata that describes the data.
+    It is the account bucket name, where we store all the information regarding AWS Provider like instances cost and usage.
 
 
-Now click on Back to Instances Tab
-
-* Go to Settings -> Devops Setup -> Providers and click on Sync Instances button
-The Bootstrapped node will be displayed under Managed Instances tab
-
- .. image:: /images/managedInstances.PNG
+        .. image:: /images/updated_img/unassignedS3.png
 
 
+        .. image:: /images/updated_img/S3.png
 
 
 **Following video demonstrates how to do provider sync in RLCatalyst**:
@@ -385,10 +330,22 @@ The Bootstrapped node will be displayed under Managed Instances tab
 
 *****
 
+CMDB
+^^^^
 
+A configuration management database (CMDB) is a repository that acts as a data warehouse for information technology (IT) installations. It holds data relating to a collection of IT assets (commonly referred to as configuration items (CI)), as well as to descriptive relationships between such assets.To configure the CMDB setup follow the steps below:
 
+ * From the main menu click on Settings
+ * Once you click on Settings, from the side menu click on DevOps Setup
+ * Click on CMDB
+ * Click on New button provided 
+ * Select the Organization to which the Jenkins server will be attached to
+ * Enter the name in the Name field
+ * Enter the Jenkins Server URL
+ * Enter the user ID in the User ID field
+ * Enter the Jenkins password in the Password field
 
+ .. image:: /images/updated_img/createJenkins.png
 
-
-
-
+ * Click Save button
+ * Now Jenkins is successfully configured to RLCatalyst
