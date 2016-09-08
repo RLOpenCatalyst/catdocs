@@ -295,7 +295,7 @@ Follow the below steps for AWS provider sync:
 
         **Managed Instances**:
 
-        .. image:: /images/updated_img/managedInstances.png.png
+        .. image:: /images/updated_img/managedInstances.png
 
 
     4. RDS: Amazon Relational Database Service (Amazon RDS) is a web service that makes it easier to set up, operate, and scale a relational database in the cloud. It provides cost-efficient, resizeable capacity for an industry-standard relational database and manages common database administration tasks.
@@ -314,7 +314,7 @@ Follow the below steps for AWS provider sync:
 
         .. image:: /images/updated_img/unassignedS3.png
 
-
+ 
         .. image:: /images/updated_img/S3.png
 
 
