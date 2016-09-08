@@ -17,6 +17,19 @@ You can install RLCatalyst using the installer script ::
     chmod +x installer.sh
     ./installer.sh
 
+.. _install-Docker:
+Install using Docker
+====================
+
+Download the docker image from::
+
+    https://hub.docker.com/r/relevancelab/catalystbaseimagenew/
+
+and run these commands::
+
+    docker pull relevancelab/catalystbaseimagenew:3.3.1
+    docker run -t -i -p 3001:3001 --name catalyst331 relevancelab/catalystbaseimagenew:3.3.1 /bin/bash
+
 .. _install-vagrant:
 Install using Vagrant
 =====================
@@ -65,5 +78,15 @@ If you have an AWS account, you can bring up RLCatalyst using the public AMI ava
 9. This image includes the devops role Nexus at http://<ip>:8081 (default credentials)
 
 
+**Following video demonstrates how to Quick install using RLCatalyst public AWS Image:**
+ 
 
+.. raw:: html
+
+    
+    <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/tj-Ce5o6-So" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+*****
 
