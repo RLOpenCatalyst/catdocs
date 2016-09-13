@@ -114,7 +114,7 @@ Scenario 3: Deploy Petclinic application in the imported node
 
 1. Import RLCatalyst instance/VM . Ignore this step if you have already executed **Scenario 1**
  * Go to Workzone and expand the Organization tree on the left side to get the environments . Click on Import by IP icon 
- * Enter 127.0.0.1 in the IP Address field . User/Password is vagrant/vagrant .Enter all the details and click on import button and wait until **Instance Bootstrap Successfully**
+ * Enter <ip address> of the instance in the IP Address field. enter ubuntu as user name, password or pem file and enter all the details and click on import button and wait until **Instance Bootstrap Successfully**
 
    Please refer to :ref:`import-byip`  for more details.
 
