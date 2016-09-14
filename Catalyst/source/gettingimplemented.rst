@@ -22,7 +22,7 @@ Please refer to :ref:`import-byip`  for more details
  * Search for **tomcat-all-rl** cookbook and add to runlist and click on update runlist button and wait until instance runlist updates . This cookbook will install the latest version of Tomcat
 
 3. Access Tomcat
- * Once the runlist updates go to Controlpanel -> Additional Parameters -> New Application URL and add **Name** and **URL - http://localhost:8080** and save. Now click on your Applink in Infrastructure -> Instances and verify Tomcat running.
+ * Once the runlist updates go to Controlpanel -> Additional Parameters -> New Application URL and add **Name** and **URL - http://$host:8080** and save. Now click on your Applink in Infrastructure -> Instances and verify Tomcat running.
 
 Note: If you want to **Import Linux Node and Install latest version of JBoss**, you can follow the same steps 1 and 2, But to access JBoss you need to follow
 
@@ -124,15 +124,14 @@ Scenario 3: Deploy Petclinic application in the imported node
  * Search for **tomcat-all-rl** cookbook and add to runlist and click on update runlist button and Wait until instance runlist updates
 
 
-3. Create a Chef orchestration task, Choose the node and add the cookbook deploy_war & Edit cookbook attributes and save
-  * In Workzone, Under Orchestration ,create a new Chef task and add **deploy_war** cookbook and edit the following attributes
+3. Create a Chef orchestration task, Choose the node and add the cookbooks **tomcat-all-rl**, **deploy_war** & Edit cookbook attributes and save
+  * In Workzone, Under Orchestration ,create a new Chef task and add **tomcat-all-rl**, **deploy_war** cookbook and edit the following attributes
   * Source code url - **https://s3-us-west-2.amazonaws.com/catalystcode/petclinic-2.02.71.war**
   * Application version – 2.02.71
   * Node publice IP – enter the public IP where tomcat is running and present as node in catalyst.
 
 4. Execute the task 
  * After execution of task, go to Controlpanel -> Additional Parameters -> New and add **Name** and **URL - http://$host:8080/petclinic** and save. Now click on your Applink in Infrastructure -> Instances and verify petclinic installtion.
-
 
 
 **Following video demonstrates how to Import Ubuntu Node and Deploy petclinic in RLCatalyst:**
@@ -166,13 +165,13 @@ Scenario 4 : Update Petclinic application version
  * Search for **tomcat-all-rl** cookbook and add to runlist and click on update runlist button and Wait until instance runlist updates
 
 3. Create a Chef orchestration task. Ignore this step if you have already executed **Scenario 3**. 
- * In Workzone, Under Orchestration Create a New Chef Task and add deploy_war cookbook and edit the following attributes
+ * In Workzone, Under Orchestration Create a New Chef Task and add **tomcat-all-rl**, **deploy_war** cookbooks and edit the following attributes
  * Source code url - https://s3-us-west-2.amazonaws.com/catalystcode/petclinic-2.02.71.war
  * Application version – 2.02.71
  * Node publice IP – enter the public IP where tomcat is running and present as node in catalyst 
 
 
-4. Execute the task.  Ignore this step if you have already executed **Scenario 3**. 
+4. Execute the task. 
  * After execution of task, go to Controlpanel -> Additional Parameters -> New and add Name and URL - http://$host:8080/petclinic and save. Now click on your Applink in Infrastructure -> Instances and verify petclinic installtion.
 
 
