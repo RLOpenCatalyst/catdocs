@@ -222,7 +222,7 @@ Scenario 6 : Deploy a multi-tier application using docker container
  * Go to Design -> Select mysql template -> Click Launch parametrs icon -> Enter container name and add Additional startup as ``init.sh`` -> Click on Add button
 
  * Click on Add button to add tomcat template -> select tomcat template and the tag -> Click on Add button
- * Click Launch parametrs icon -> Enter container name and Port mapping as ``8080:8080`` and Nlnked container as mysqlpet:mysql -> Click on Add button 
+ * Click Launch parametrs icon -> Enter container name and Port mapping as ``8080:8080`` and Linked container as mysqlpet:mysql -> Click on Add button 
  * Click Next button to create blueprint
 
 3. Import Ubuntu Node
@@ -233,7 +233,7 @@ Scenario 6 : Deploy a multi-tier application using docker container
 
 4. Run Docker cookbook on the instance
  
- * Click Chef client run and Run docker by adding ``docker_rl`` cookbook and wait until **Instance Runlist Updates** & docker icon is displayed on card
+ * Click Chef client run and Run docker by adding ``docker_install`` cookbook and wait until **Instance Runlist Updates** & docker icon is displayed on card
 
 
 5. Launch Docker blueprint on Ubuntu node
