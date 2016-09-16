@@ -448,16 +448,16 @@ Follow the instructions to configure your dashboards:
    Please refer to :ref:`provider-settings` for more details.
 
 2. Track -> usage and cost dashboards
- * Click on **Tracks** under provider you will be able to see **Provider Dashboard** and **AWS Summary Dashboard**
-
-
-**Provider Dashboard**
+ 
+**Reports**
+ Click on **Tracks** under Capacity you will be able to see  **Reports**
  This will give you the snapshot of instances - Total Number vs Number of Managed vs Number of Un-Managed.
 
  .. image:: /images/summary.png
 
 
 **AWS Summary Dashboard**
+ Click on **Tracks** under provider in AWS you will be able to see **AWS Summary Dashboard**
  This will give you the snapshot of Total cost, Daily cost etc.
 
  .. image:: /images/summaryDash.png
