@@ -414,12 +414,20 @@ Once the basic data is loaded, you can start exploring RLCatalyst from the Provi
 
 2. Provider Sync. Once the provider account is added, you can start importing the nodes into RLCatalyst . Importing will bootstrap the nodes with the configured chef server . The imported instances can be managed from the workzone, under the project and environment to which the nodes are imported.
 
- * Click on Sync instances button of your provider -> **UnManaged Instances** of the created provider
+ * Click on Sync instances button of your provider
 
-3. Import the instances into Catalyst **[Unmanaged to managed]**
- * Select the Instances and click on Import Instances and enter the valid details and Sync
- * You can see the nodes imported in the respective environments and verify the imported instances is present under **managed instances** tab.
+3. Import the instances into Catalyst **[Unassigned to managed]**
 
+  To import the node from unassigned to managed instances you have to do the following settings:
+
+  * Inside **Tags** tab -> "create tag name to catalyst entity mapping" table, select tag names from dropdown list for Business Group, Project and Environment then save.
+
+  * Now, goto **Mappings** tab, add tag values for each Business Group, Project and Environment then Save.
+
+  * Go to **Instances** tab, select catalyst status as: unassigned
+
+    Enter tag values which you mapped in mappings tab with respect to Business  Group, Project and Environment, select the node and click on "Update tags" then the node will come under Assigned Instances and from here you can select the node and can import that Instance. By clicking on "Import Instances" button it will come under managed Instances,
+ 
 
 Please refer to :ref:`providersync and-import` for more details.
 
