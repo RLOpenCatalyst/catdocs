@@ -295,7 +295,7 @@ Create a blueprint to launch a new Ubuntu instance and install JBoss server on i
    Please refer to :ref:`configure-vm` for more details.
 
 3. Create Blueprint using Ubuntu as base Image by adding Jboss Cookbook to runlist
- * In Design, under OSImage template type select ubuntu template and create blueprint by entering the other details and by adding **jboss7_rl** cookbook in configure runlist parameters and save
+ * In Design, under New tab, OSImage template type select ubuntu template and create blueprint by entering the other details and by adding **jboss7_rl** cookbook in configure runlist parameters and save
 
 4. To verify Jboss installation
  * Launch the Blueprint from Workzone -> Infrastructure -> Blueprints. After launch of Blueprint go to Infrastructure -> Instances, once the node bootstraps go to Controlpanel -> Additional Parameters -> New Application URL and add **Name** and **URL - http://$host:8080** and save. Now click on your Applink in Infrastructure -> Instances and verify Jboss installtion.
@@ -484,25 +484,25 @@ Scenario 12: Deploy Wordpress on multiple docker container
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 1. Create a docker template for MYSQL
  * Go to Settings -> Gallery Setup -> Templates, Enter the Template name -> Choose Template type as **Docker** -> Choose the **Organization**
- * Donot select the **Docker Repo** -> **Add Docker Repo Path** as **relevancelab/wpmysql** and save
+ * Add **Docker Repo Path** as **relevancelab/wpmysql** and save
 
 
 2. Create a docker template for Wordpress
  * Go to Settings -> Gallery Setup -> Templates, Enter the Template name -> Choose Template type as **Docker** -> Choose the **Organization**
- * Donot select the ``Docker Repo`` , **Add Docker Repo Path** as **relevancelab/wordpress** and save
+ * Add **Docker Repo Path** as **relevancelab/wordpress** and save
 
 
 3. Create Docker bluperint for MYSQL
- * In Design -> select **AWS** provider -> select **Docker** Template Type -> select your template, add the details and save
+ * In Design -> New tab -> select **AWS** provider -> select **Docker** Template Type -> select your template, add the details and save
 
 
 4. Create Docker blueprint for wordpress
- * In Design -> select **AWS** provider -> select **Docker** Template Type -> select your template, add the below details and save
+ * In Design, under New tab, select **AWS** provider -> select **Docker** Template Type -> select your template, add the below details and save
  * **Portmapping: 8080:80**
  * **Linked Container: mysql:mysql**
  
 5. Launch Ubuntu Node or Import a Ubuntu node
- * Click on **Chef Client run** -> Run **docker** cookbook on that node
+ * Click on **Chef Client run** -> Run **docker_install** cookbook on that node
 
 6. Launch Mysql Docker Blueprints.
  * Go to Infrastructure -> Blueprints -> Expand Docker -> Select Mysql blueprint and Click on Launch button -> Select the node -> Click on Start button
