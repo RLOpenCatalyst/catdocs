@@ -703,6 +703,8 @@ Following video demonstrates how to Launch New Ubuntu Instance and deploy LAMP[L
 Scenario 16 : Allocate and Track AWS Resources
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+In multi-cloud environmets, it is often tedious to keep track of the resources and to trace back what is allocated to each application/project/team. RLCatalyst lets you allocate your cloud resources across various cloud accounts efficiently with its bulk-synchronization feature. You can do a bulk-import of all resources from an account into RLCatalyst and allocate it to Organisation/Business Group/Projects based on the AWS tags. Moreoever you can update the AWS tags from RLCatalyst, for all the un-tagged resources. This will also give a dashboard on all teh resources, their cost and usage per Org/BU/Project, which can be analysed and take further actions to optimize the resource utilization.
+
 **Prerequisite:** You must have an AWS account.
 
 1. In SETTING -> DevOps Setup -> Providers, youl will get list of providers. And in **Action** colunm you will find **Syn Instances** button.
