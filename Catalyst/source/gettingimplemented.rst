@@ -801,20 +801,21 @@ Here we are deploying petclinic app using petclinic database, petclinic applicat
 
 .. _Update tags in-AWS:
 
-Scenario 19 : Update tags in-AWS
+Scenario 19 : Allocate and Track AWS Resources
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In multi-cloud environmets, it is often tedious to keep track of the resources and to trace back what is allocated to each application/project/team. RLCatalyst lets you allocate your cloud resources across various cloud accounts efficiently with its bulk-synchronization feature. You can do a bulk-import of all resources from an account into RLCatalyst and allocate it to Organisation/Business Group/Projects based on the AWS tags. Moreoever you can update the AWS tags from RLCatalyst, for all the un-tagged resources . This will also give a dashboard on all teh resources, their cost and usage per Org/BU/Project, which can be analysed and take further actions to optimize the resource utilization 
 
 **Prerequisite:** You must have an AWS account.
 
-1. In SETTING -> DevOps Setup -> Providers, youl will get list of providers. And in **Action** colunm you will find **Syn Instances** button.
+1. In SETTING -> DevOps Setup -> Providers, you will get list of providers. And in **Action** column you will find **Syn Instances** button.
 By clicking on **Syn Instances** button, you will get 3 tabs, Tags, Mappings and Instances:
 
   1. Tags: you have two sections, left side you will get the tags which are present in ur AWS acccount will shown here and you can add description for your refrence only. And right side you can map the tags with PROJECT ans ENVIRONMENT, Specify which tags represent project name and the environment name.
-  Once you will save it, you can see the refelection in Mapping tab.
+  Once you will save it, you can see the reflection in Mapping tab.
 
   2. Mappings: In Mapping, all the mapped Tag Values would be visible with respect to Projects and Environment. Select one tag name for project from drop down as well as Environment tag name for Environment And save the changes. Now go to Instances tab.
 
-  3. Instances: You have 3 catalyst status:
+  3. Instances: You have instances with 3 statuses:
 
     * Managed: If catalyst status is 'Managed', you will get all "Bootstraped successfull Instances". You can delete the instances from here.
 
