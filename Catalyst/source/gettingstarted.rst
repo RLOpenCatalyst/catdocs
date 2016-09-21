@@ -136,7 +136,7 @@ RLCatalyst comes with the flexibility to create blueprints to automate dynamic p
 
 * :ref:`Install LAMP Stack on a single-node`
 
-
+* :ref:`Allocate and Track AWS-Resources`
 
 *****
 
@@ -154,8 +154,6 @@ Jenkins is CI/CD tool which can be used for build and deployment automation. It 
 * :ref:`Deploy and Promote-a Java Application`
 
 * :ref:`Deploy-a 3-tier application`
-
-* :ref:`Update tags in-AWS`
 
 * :ref:`Design and Launch-Application`
 
