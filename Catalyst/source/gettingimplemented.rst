@@ -8,7 +8,9 @@ Working with RL Catalyst
 .. _Import Linux Node and Install latest version of-Tomcat:
 
 Scenario 1 : Import Linux Node and Install latest version of Tomcat
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Importing Linux node and installing latest version of tomcat by adding **tomcat-all-rl** cookbook.
 
 1. Import RLCatalyst instance/VM 
 
@@ -50,7 +52,9 @@ Note: If you want to **Import Linux Node and Install latest version of JBoss**, 
 .. _Install Apache on imported node and use service to stop, start and restart-Apache:
 
 Scenario 2 : Install Apache on imported node and use service to stop, start and restart Apache
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To install Apache on imported node and perform stop, start and restart services follow these steps:
 
 1. Create a Service command
  * In Settings, Under Gallery setup -> Service command, create a new service by selecting service command type as **chef cookbook/recipe**. Search for the **service_apache** in service cookbooks dropdown. Select actions **Start,Stop,Restart** and save.
@@ -60,7 +64,7 @@ Scenario 2 : Install Apache on imported node and use service to stop, start and 
 
 2. Import RLCatalyst instance/VM . Ignore this step if you have already executed **Scenario 1**
  * Go to Workzone and expand the Organization tree on the left side to get the environments . Click on Import by IP icon 
- * Enter 127.0.0.1 in the IP Address field . User/Password is vagrant/vagrant .Enter all the details and click on import button and wait until **Instance Bootstrap Successfully**
+ * Enter <ip address> of the instance in the IP Address field. User/Password is vagrant/vagrant .Enter all the details and click on import button and wait until **Instance Bootstrap Successfully**
 
  Please refer to :ref:`import-byip`  for more details.
 
@@ -110,7 +114,9 @@ Scenario 2 : Install Apache on imported node and use service to stop, start and 
 .. _Deploy Pet-clinic application in the imported node:
 
 Scenario 3: Deploy Petclinic application in the imported node
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+By importing a ubuntu node we are deploying here petclinic application: 
 
 1. Import RLCatalyst instance/VM . Ignore this step if you have already executed **Scenario 1**
  * Go to Workzone and expand the Organization tree on the left side to get the environments . Click on Import by IP icon 
@@ -154,6 +160,8 @@ Scenario 3: Deploy Petclinic application in the imported node
 Scenario 4 : Update Petclinic application version
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Here we are updating petclinic application version 2.02.71 to 2.02.72:
+
 1. Import RLCatalyst instance/VM . Ignore this step if you have already executed **Scenario 1**
  * Go to Workzone and expand the Organization tree on the left side to get the environments . Click on Import by IP icon 
  * Enter <ip address> of the instance in the IP Address field. enter ubuntu as user name, password or pem file and enter all the details and click on import button and wait until **Instance Bootstrap Successfully**
@@ -193,10 +201,12 @@ Scenario 4 : Update Petclinic application version
 .. _View History of App deployments &-upgrades:
 
 Scenario 5 :View History of App deployments & upgrades
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To view the history of app deployment follow these steps:
 
 1. Execute **Scenario 3** to deploy Petclinic application in the imported node
-2. Once application is installed on on the node navigate to applications tab and click on **H** icon[History], you will find history of the application deployed
+2. Once application is installed on the node navigate to Orchestration tab and click on **H** icon[History], you will find history of the application deployed
 
 
 *****
@@ -209,7 +219,7 @@ Scenario 5 :View History of App deployments & upgrades
 Scenario 6 : Deploy a multi-tier application using docker container
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Introduction:** Here, we are deploying a petclinic application with 2 docker container, one for Mysql and one for petclinic. 
+Here, we are deploying a petclinic application with 2 docker containers, one for Mysql and one for petclinic. 
 
 1. Create docker template for Mysql and petclinic
 
@@ -259,7 +269,6 @@ Scenario 6 : Deploy a multi-tier application using docker container
 
 
 
-
 Following video demonstrates how to Deploy a composite docker container(petclinic app with 2 container) in RLCatalyst:
 
 
@@ -280,7 +289,7 @@ Following video demonstrates how to Deploy a composite docker container(petclini
 .. _Launch New Ubuntu Instance and Install-Jboss:
 
 Scenario 7 : Create a new Ubuntu Instance  and Install Jboss
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Create a blueprint to launch a new Ubuntu instance and install JBoss server on it  . 
 
@@ -314,9 +323,6 @@ Create a blueprint to launch a new Ubuntu instance and install JBoss server on i
 
 
 *****
-
-
-
 
 .. _Deploy Windows App on-IIS:
 
@@ -361,7 +367,9 @@ We are deplying MyShopper application with deploy_iis cookbook.
 .. _Launch New ubuntu Instance, Install Tomcat, upgrade to-v8.0[attribute]:
 
 Scenario 9 : Create a new Ubuntu Instance, Install Tomcat and upgrade to latest version
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Here we are creating one ubuntu instance, installing tomcat by adding **tomcat-all-rl** cookbook and upgrading to the latest version of tomcat.
 
 1. Add Provider . Skip this step if Scenario6 is already executed
  * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
@@ -404,9 +412,9 @@ Scenario 9 : Create a new Ubuntu Instance, Install Tomcat and upgrade to latest 
 .. _Provider Sync and-Import Instances:
 
 Scenario 10 : Provider Sync and Import Instances
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Once the basic data is loaded, you can start exploring RLCatalyst from the Provider-Sync Feature. You can sync nodes from your AWS provider account and convert the nodes to 'Managed' . This will give a control on your AWS infra by letting you track the capacity, cost and usage . Once sync-ed, you can see the summary dashboard from 'Track'
+Once the basic data is loaded, you can start exploring RLCatalyst from the Provider-Sync Feature. You can sync nodes from your AWS provider account and convert the nodes to 'Managed'. This will give a control on your AWS infra by letting you track the capacity, cost and usage . Once sync-ed, you can see the summary dashboard from 'Track'
 
 1. Add your AWS Provider. Skip this step if Scenario6 is already executed
  * In Settings, under DevopsSetup -> Providers, add a New provider by entering the valid details
@@ -437,7 +445,7 @@ Please refer to :ref:`providersync and-import` for more details.
 .. _AWS Cost, Usage-Dashboards:
 
 Scenario 11 : AWS Cost, Usage Dashboards
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 RLCatalyst provides you a consolidated dashboard for tracking your AWS infrastructure cost and usage . This helps you to identify un-used capacity and do better utilization. RLCatalyst summarizes this data for all the AWS provider accounts configured.
 
 Follow the instructions to configure your dashboards:
@@ -482,6 +490,9 @@ Follow the instructions to configure your dashboards:
 
 Scenario 12: Deploy Wordpress on multiple docker container 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Here, we are creating docker template for mySql, wordpress and deploying on a ubuntu node, accessing it. 
+
 1. Create a docker template for MYSQL
  * Go to Settings -> Gallery Setup -> Templates, Enter the Template name -> Choose Template type as **Docker** -> Choose the **Organization**
  * Add **Docker Repo Path** as **relevancelab/wpmysql** and save
@@ -545,6 +556,8 @@ Scenario 12: Deploy Wordpress on multiple docker container
 Scenario 13 : Create CentOS instance and launch Liferay
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Creating CentOS instance and launching Liferay application.
+
 1. Create template for liferay app
 
  * Go to GallerySetup -> Templates
@@ -569,8 +582,6 @@ Scenario 13 : Create CentOS instance and launch Liferay
  * Access Liferay application by clicking on **APP link URL** present on the Instance card and verify the LifeRay     
 
 
-
-
 Following video demonstrates how to Launch New Centos Instance and deploy LifeRay in RLCatalyst:
 
 
@@ -591,6 +602,8 @@ Following video demonstrates how to Launch New Centos Instance and deploy LifeRa
 
 Scenario 14 : Create and Launch an AWS CFT Blueprint for 2-node Petclinic
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Creating and launching an AWS CloudFormation Template Blueprint for two petclinic VM:
 
 1. Create CloudFormation Template
 
@@ -650,6 +663,8 @@ Following video demonstrates how to Create and Launch an AWS CFT Blueprint for 2
 
 Scenario 15 : Install LAMP Stack on a single node
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Installing LAMP stack on a ubuntu node by adding **lamp_role** cookbook:
 
 1. Import a Ubuntu Node to RLcatalyst
 
