@@ -722,10 +722,10 @@ In multi-cloud environmets, it is often tedious to keep track of the resources a
 
 **Prerequisite:** You must have an AWS account.
 
-1. In SETTING -> DevOps Setup -> Providers, youl will get list of providers. And in **Action** colunm you will find **Syn Instances** button.
+1. In SETTING -> DevOps Setup -> Providers, you will get list of providers. And in **Action** colunm you will find **Syn Instances** button.
 By clicking on **Syn Instances** button, you will get 3 tabs, Tags, Mappings and Instances:
 
-  1. Tags: you have two sections, left side you will get the tags which are present in ur AWS acccount will shown here and you can add description for your refrence only. And right side you can map the tags with PROJECT ans ENVIRONMENT, Specify which tags represent project name and the environment name.
+  1. Tags: you have two sections, left side you will get the tags which are present in your AWS acccount will shown here and you can add description for your refrence only. And right side you can map the tags with PROJECT ans ENVIRONMENT, Specify which tag represent project name and the environment name.
   Once you will save it, you can see the refelection in Mapping tab.
 
   2. Mappings: In Mapping, all the mapped Tag Values would be visible with respect to Projects and Environment. Select one tag name for project from drop down as well as Environment tag name for Environment And save the changes. Now go to Instances tab.
