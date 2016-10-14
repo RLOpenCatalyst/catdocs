@@ -64,7 +64,7 @@ To install Apache on imported node and perform stop, start and restart services 
 
 2. Import RLCatalyst instance/VM . Ignore this step if you have already executed **Scenario 1**
  * Go to Workzone and expand the Organization tree on the left side to get the environments . Click on Import by IP icon 
- * Enter <ip address> of the instance in the IP Address field. User/Password is vagrant/vagrant .Enter all the details and click on import button and wait until **Instance Bootstrap Successfully**
+ * Enter <ip address> of the instance in the IP Address field. enter ubuntu as user name, password or pem file and enter all the details and click on import button and wait until **Instance Bootstrap Successfully**
 
  Please refer to :ref:`import-byip`  for more details.
 
@@ -82,18 +82,18 @@ To install Apache on imported node and perform stop, start and restart services 
  
 
 6. Stop the service and check the status
- * Click on Stop icon
- * SSH in to the box from catalyst and run **sudo service Apache status** and check the Apache status.
+ * Click on Stop icon and wait till "service run success"
+ * SSH in to the box from catalyst and run **sudo service apache2 status** and check the Apache status.
    You can see that Apache is stopped
 
 
 7. Start the service and check the status
- * Go to Controlpanel -> Services and Click on Start icon
- * SSH in to the box from catalyst and run **sudo service Apache status**
+ * Go to Controlpanel -> Services and Click on Start icon and wait till "service run success"
+ * SSH in to the box from catalyst and run **sudo service apache2 status**
    Apache is up and running now
 
 8. Restart the service and check the status
- * Click on Restart icon
+ * Click on Restart icon and wait till "service run success"
  * SSH in to the box from catalyst and run **sudo service Apache status**
    Apache is up and running now  
 
