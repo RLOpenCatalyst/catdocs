@@ -4,7 +4,7 @@ Settings
 Add all your organization and asset details in Settings before using RLCatalyst. You can use the system only if you provide all the relevant options provided in the Settings. 
 
 
-Settings provides you seven different options:
+Settings provides you eight different options:
 
 .. _org-setup:
 

@@ -49,14 +49,6 @@ To configure a new chef server follow the steps below:
 
  .. image:: /images/updated_img/createChefServer.png
 
-
-
- Through Setup & Configuration Wizard:
-
-
- .. image:: /images/updated_img/createChefServer01.png
-
-
  * Click on Save button 
  * Now your chef server is configured successfully and listed in the Chef server management page.
 

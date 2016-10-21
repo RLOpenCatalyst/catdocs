@@ -218,7 +218,6 @@ Once you will save it, it will be visible in the List of Scripts
 
 By clicking on edit button, you can see the script which you added and it would be Read Only.
 
-  .. image:: /images/SG3.png
 
 Now, create Script Job by choosing Job type, Job Name, select nodes and select script which you want to add in your job
 
