@@ -1,9 +1,10 @@
 Analytics
 =========
 
-this section tells you the **cost of RLCatalyst** based on day wise, week wise, month wise or yearly basis.
+This section tells you the **cost of the cloud** based on day wise, week wise, month wise or yearly basis.
 
-Click on **Analytics** link in the header. Page has two tabs Dashboard and Reports. 
+Click on **Analytics** link in the header. 
+Page has two tabs Dashboard and Reports. 
 
 
 1. Dasboard: Bydefault it will show Dashboard details in the form of graph.
