@@ -1,8 +1,8 @@
 .. _user-role:
-Users Setup
-^^^^^^^^^^
+Users Configuration
+^^^^^^^^^^^^^^^^^^^
 
-In Users Setup we can create a user with particular role and assign teams.
+In Users Configuration we can create a user with particular role and assign teams.
 
 
 .. _user-setup:

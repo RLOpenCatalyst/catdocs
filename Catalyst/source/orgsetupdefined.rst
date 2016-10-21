@@ -11,6 +11,19 @@ An Organization can be an enterprise or a business that can have multiple sub gr
 
 **Follow the steps below to create an organization**
 
+Through Setup & Configuration Wizard:
+
+ * From the main menu click on Settings
+ * Click on **+New OrgSetup** in **Setup & Configuration Wizard**
+ * In Create Organization panel enter Name (Organization Name), Domain Name (Website Address) and Planned Cost.
+ 
+ .. image:: /images/updated_img/createOrg01.png
+
+ * Click on Save button
+ * Now Organization is created
+
+Through Menu:
+
  * From the main menu click on Settings
  * Once you click on Settings, from the side menu click on Organization Setup
  * Click Organizations
@@ -54,6 +67,19 @@ In an Organization you can create multiple Business Groups. A Business Groups ca
 
 **Follow the steps below to create a new Business Group in an Organization**
 
+Through Setup & Configuration Wizard:
+
+ * From the main menu click on Settings
+ * After saving the organization click on Next button
+ * Click on **+Add New BG** button in **Create Business Group** panel
+ * Enter the Business Group name in the Business Group name field
+ * Click on Save button
+
+ .. image:: /images/updated_img/editBG01.png
+
+ 
+ Through Menu:
+
  * From the main menu click on Settings
  * Once you click on Settings, from the side menu click on Organization Setup
  * Click on Business Groups
@@ -92,6 +118,17 @@ In a Business Group you can create multiple Projects. A Project in RLCatalyst ca
 
 **Follow the steps below to create a new Project associating with Business Group and Organization**
 
+Through Setup & Configuration Wizard:
+
+ * From the main menu click on Settings
+ * In Create Project panel enter Name of the project, Description and select Organization and Business Group from the drop down
+
+ .. image:: /images/updated_img/createProject01.png
+
+ * Click on Save button
+
+ Through Menu:
+
  * From the main menu click on Settings
  * Once you click on Settings, from the side menu click on Organization Setup
  * Click on Projects
@@ -100,7 +137,7 @@ In a Business Group you can create multiple Projects. A Project in RLCatalyst ca
  * Provide a brief description about the project in the Description field
  * Select the Organization from the Organization drop down list
  * Select the Business Group from the Business Group drop down list
- * Environments and repository details are not mandatory while creating project and will be explained in later section
+ * Environments is not mandatory while creating project and will be explained in later section
 
  .. image:: /images/updated_img/createProject.png
 
@@ -128,56 +165,3 @@ To Remove the Project
 	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
         <iframe src="https://www.youtube.com/embed/khifxeCjPAw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
-
-
-
-.. _env-settings:
-
-Environments
-^^^^^^^^^^^^
-
-In an Organization you can create multiple Environments. These environments need to be linked to Projects back. For example: Production, Development, Testing and so on. 
-
-Follow the steps to setup a new Environment in an Organization:
-
- * From the main menu click on Settings
- * Once you click on Settings, from the side menu click on Organization Setup
- * Click on Environments
- * Click on New button provided
- * Select the Organization from the Organization drop down list
- * Select the server from the Chef Server drop down list
- * You can see a list of environments in the drop down. These are the environments defined in your chef server account. You can select one from this  drop down list **OR** you can Add new Environments to chef server by clicking on **Add** link provided right above the select an Chef Environment drop down
- * Now Enter the Environment name to be created
-
- .. image:: /images/updated_img/addNewEnv.png
-
-*****
-
- * Click on Add button
- * Now select the environment you added to the chef server from the Chef Environment drop down list
-
- .. image:: /images/updated_img/createEnv.png
-
-*****
-
- * Assign the project by toggling to 'Yes'
- * Click on Save button.
- * Now the environment is setup and listed in the Environments page
-
- .. image:: /images/updated_img/env.png
- 
-*****
-
-
-**Hereby attaching a video which will demonstrate as in how to Create Environment in RLCatalyst:**
-
-
-.. raw:: html
-
-	
-	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/LBPj6psKfsw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-
-
-*****

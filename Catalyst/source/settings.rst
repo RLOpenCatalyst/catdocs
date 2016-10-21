@@ -20,19 +20,19 @@ Settings provides you seven different options:
 
    confSettings
 
-.. _devops-setup:
-
-.. toctree::
-   :maxdepth: 2
-
-   devopsSetup
-
 .. _users-setup:
 
 .. toctree::
    :maxdepth: 2
 
    usersSetup
+
+.. _provider-setup:
+
+.. toctree::
+   :maxdepth: 2
+
+   providerSetup
 
 .. _gallery-setup:
 
@@ -41,6 +41,12 @@ Settings provides you seven different options:
 
    gallerySetup
 
+.. _devops-setup:
+
+.. toctree::
+   :maxdepth: 2
+
+   devopsSetup
 
 .. _track-setup:
 
@@ -50,9 +56,9 @@ Settings provides you seven different options:
    trackSetup
 
 
-.. _userinfo-setup:
+.. _cmdb-setup:
 
 .. toctree::
    :maxdepth: 2
 
-   userinformation
+   cmdb

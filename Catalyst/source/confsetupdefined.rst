@@ -49,7 +49,12 @@ To configure a new chef server follow the steps below:
 
  .. image:: /images/updated_img/createChefServer.png
 
-*****
+
+
+ Through Setup & Configuration Wizard:
+
+
+ .. image:: /images/updated_img/createChefServer01.png
 
 
  * Click on Save button 
@@ -225,5 +230,57 @@ You can import existing nodes from the configured puppet server into RLCatalyst 
 	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
         <iframe src="https://www.youtube.com/embed/5YtNPCHEgg4" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
+
+*****
+
+
+.. _env-settings:
+
+Environments
+^^^^^^^^^^^^
+
+In an Organization you can create multiple Environments. These environments need to be linked to Projects back. For example: Production, Development, Testing and so on. 
+
+Follow the steps to setup a new Environment in an Organization:
+
+ * From the main menu click on Settings
+ * Once you click on Settings, from the side menu click on Organization Setup
+ * Click on Environments
+ * Click on New button provided
+ * Select the Organization from the Organization drop down list
+ * Select the server from the Chef Server drop down list
+ * You can see a list of environments in the drop down. These are the environments defined in your chef server account. You can select one from this  drop down list **OR** you can Add new Environments to chef server by clicking on **Add** link provided right above the select an Chef Environment drop down
+ * Now Enter the Environment name to be created
+
+ .. image:: /images/updated_img/addNewEnv.png
+
+*****
+
+ * Click on Add button
+ * Now select the environment you added to the chef server from the Chef Environment drop down list
+
+ .. image:: /images/updated_img/createEnv.png
+
+*****
+
+ * Assign the project by toggling to 'Yes'
+ * Click on Save button.
+ * Now the environment is setup and listed in the Environments page
+
+ .. image:: /images/updated_img/env.png
+ 
+*****
+
+
+**Hereby attaching a video which will demonstrate as in how to Create Environment in RLCatalyst:**
+
+
+.. raw:: html
+
+	
+	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/LBPj6psKfsw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
 
 *****

@@ -1,59 +1,6 @@
 
 
 
-
-.. _user-settings:
-
-User Roles
-^^^^^^^^^^
-
-Below are the permission sets currently available for the user roles in Catalyst.
-
-RL Catalyst provides three types of user roles. 
-
- 1. Admin : Top level user of RL Catalyst
- 2. Consumer : Access rights on Design and Workzone with all permissions
- 3. Designer : Access rights on Workzone with only Execute permission
-
- These roles cannot be modified or deleted at any point of time.
- 
- .. image:: /images/updated_img/roles.png
-
-
-Users
-^^^^^
-
-You can add, update and remove users in RL Catalyst. Follow the steps below to Add, Update and Remove users.
-
-How to add a new user?
-
- * From the main menu click on Settings
- * Once you click on Settings, from the side menu click on User Setup
- * Click on Users
- * Click on New button provided 
- * Enter a login name in the Login Name field
- * Enter the email address of the new user in the Email Address field
- * Enter the password and confirm password fields.
- * Choose the organization from the Organization drop down list
- * Select the appropriate role (Admin / Designer / Consumer) 
- * Select the team.
-
- .. image:: /images/updated_img/createUser.png
-
- * Click on Save button
- * New user is created and is availabe in Users page
-
-**Hereby attaching a video which describes how to Create Users in RLCatalyst:**
-
-.. raw:: html
-
-	
-	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/yBVFLZkDP-w" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div> 
-
-*****
-
 .. _team-settings:
 
 
@@ -99,3 +46,60 @@ To Remove the Team
 	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
         <iframe src="https://www.youtube.com/embed/hgF6_36lW7M" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
+
+*****
+
+.. _user-settings:
+
+User Roles
+^^^^^^^^^^
+
+Below are the permission sets currently available for the user roles in Catalyst.
+
+RL Catalyst provides three types of user roles. 
+
+ 1. Admin : Top level user of RL Catalyst
+ 2. Consumer : Access rights on Design and Workzone with all permissions
+ 3. Designer : Access rights on Workzone with only Execute permission
+
+ These roles cannot be modified or deleted at any point of time.
+ 
+ .. image:: /images/updated_img/roles.png
+ 
+*****
+
+Users
+^^^^^
+
+You can add, update and remove users in RL Catalyst. Follow the steps below to Add, Update and Remove users.
+
+How to add a new user?
+
+ * From the main menu click on Settings
+ * Once you click on Settings, from the side menu click on User Setup
+ * Click on Users
+ * Click on New button provided 
+ * Enter a login name in the Login Name field
+ * Enter the email address of the new user in the Email Address field
+ * Enter the password and confirm password fields.
+ * Choose the organization from the Organization drop down list
+ * Select the appropriate role (Admin / Designer / Consumer) 
+ * Select the team.
+
+ .. image:: /images/updated_img/createUser.png
+
+ * Click on Save button
+ * New user is created and is availabe in Users page
+
+**Hereby attaching a video which describes how to Create Users in RLCatalyst:**
+
+.. raw:: html
+
+	
+	<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/yBVFLZkDP-w" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div> 
+
+*****
+
+

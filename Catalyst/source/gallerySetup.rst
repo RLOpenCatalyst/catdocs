@@ -12,7 +12,7 @@ Gallery Setup
 
  * Service Command: Service command allows you to setup the service running options. You can choose between Chef Cookbooks based services or System service based commands. 
 
- * VM Image:  You can create multiple VM Images in RL Catalyst. RL Catalyst allows you create multiple VM images which is independent of Operating System.
+ * Script Gallery: Where we can keep bash script.
 
 *****
 
