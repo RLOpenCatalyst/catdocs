@@ -13,7 +13,7 @@ You can add, update and remove Teams in RL Catalyst. Follow the steps below to A
 How to add a Team?
 
  * From the main menu click on Settings
- * Once you click on Settings, from the side menu click on User Setup
+ * Once you click on Settings, from the side menu click on Users Configuration
  * Click on Teams
  * Click on New button provided 
  * Enter the name for the team that you want to create in the Name field
@@ -76,7 +76,7 @@ You can add, update and remove users in RL Catalyst. Follow the steps below to A
 How to add a new user?
 
  * From the main menu click on Settings
- * Once you click on Settings, from the side menu click on User Setup
+ * Once you click on Settings, from the side menu click on Users Configuration
  * Click on Users
  * Click on New button provided 
  * Enter a login name in the Login Name field

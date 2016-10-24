@@ -12,7 +12,7 @@ You can configure multiple cloud provider accounts  of type **AWS**, **AZURE**, 
 To configure the Providers setup follow the steps below:
 
  * From the main menu click on Settings
- * Once you click on Settings, from the side menu click on Devops Setup
+ * Once you click on Settings, from the side menu click on Provider Configuration
  * Click on Providers
  * Click on New button provided 
  * Select the provider from the Provider Type drop down list (e.g. AWS)
@@ -203,8 +203,8 @@ An image of a virtual machine is a copy of the VM, which may contain an OS, data
 **Adding a New VMImage**
 
  * From the main menu click on Settings
- * Once you click on Settings, from the side menu click on Gallery Setup
- * Click on VMImage
+ * Once you click on Settings, from the side menu click on Provider Configuration
+ * Click on VMImages
  * Click on New button provided  
  * Enter the image name in the Name field
  * Select the organization from the Organization drop down list

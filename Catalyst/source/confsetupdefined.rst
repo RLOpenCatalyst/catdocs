@@ -33,7 +33,7 @@ Data/File needed for adding a Chef Server account in RLCatalyst
 To configure a new chef server follow the steps below:
 
  * From the main menu click on Settings
- * Once you click on Settings, from the side menu click on Config Setup
+ * Once you click on Settings, from the side menu click on Config Management
  * Click on Chef Server
  * Click on New button provided 
  * Enter the configuration name in the Name field
@@ -172,7 +172,7 @@ If you are using Puppet for your configuration management requirements, configur
 To configure a new puppet server follow the steps below:
 
  * From the main menu click on Settings
- * Once you click on Settings, from the side menu click on Config Setup
+ * Once you click on Settings, from the side menu click on Config Management
  * Click on Puppet Server
  * Click on New button provided 
  * Enter the puppet server name in the Name box
@@ -236,7 +236,7 @@ In an Organization you can create multiple Environments. These environments need
 Follow the steps to setup a new Environment in an Organization:
 
  * From the main menu click on Settings
- * Once you click on Settings, from the side menu click on Organization Setup
+ * Once you click on Settings, from the side menu click on Config Management
  * Click on Environments
  * Click on New button provided
  * Select the Organization from the Organization drop down list

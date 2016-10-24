@@ -25,7 +25,7 @@ Through Setup & Configuration Wizard:
 Through Menu:
 
  * From the main menu click on Settings
- * Once you click on Settings, from the side menu click on Organization Setup
+ * Once you click on Settings, from the side menu click on Organization Configuration
  * Click Organizations
  * Click on New button provided 
  * In Create Organization page enter Name (Organization Name) and Domain Name (Website Address)
@@ -81,7 +81,7 @@ Through Setup & Configuration Wizard:
  Through Menu:
 
  * From the main menu click on Settings
- * Once you click on Settings, from the side menu click on Organization Setup
+ * Once you click on Settings, from the side menu click on Organization Configuration
  * Click on Business Groups
  * Click on New button provided 
  * Enter the Business Group name in the Business Group name field
@@ -130,7 +130,7 @@ Through Setup & Configuration Wizard:
  Through Menu:
 
  * From the main menu click on Settings
- * Once you click on Settings, from the side menu click on Organization Setup
+ * Once you click on Settings, from the side menu click on Organization Configuration
  * Click on Projects
  * Click on New button provided 
  * Enter the Project name in the Name field

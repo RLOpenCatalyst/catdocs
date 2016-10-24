@@ -58,7 +58,7 @@ Docker is all about making it easier to create, deploy, and run applications by 
 You can configure the Docker setup with RLCatalyst. To configure the Docker setup follow the steps below:
 
  * From the main menu click on Settings
- * Once you click on Settings, from the side menu click on Devops Setup
+ * Once you click on Settings, from the side menu click on Devops Roles
  * Click on Docker
  * Click on New button provided 
  * Select the Organization from the Organization drop down list
@@ -67,6 +67,8 @@ You can configure the Docker setup with RLCatalyst. To configure the Docker setu
  * Provide the Docker user ID in the User ID field
  * Provide the email address to connect to the Docker in the Email Id field
  * Enter the Docker password in the Password field
+ * All assigned projects will display in Assign Projects field
+ * Add Repositories Details
 
  .. image:: /images/updated_img/createDocker.png
 
@@ -95,7 +97,7 @@ Jenkins
 Jenkins is CI/CD tool which can be used for build and deployment automation. You can configure the Jenkins setup with RLCatalyst.To configure the Jenkins setup follow the steps below:
 
  * From the main menu click on Settings
- * Once you click on Settings, from the side menu click on DevOps Setup
+ * Once you click on Settings, from the side menu click on DevOps Roles
  * Click on Jenkins
  * Click on New button provided 
  * Select the Organization to which the Jenkins server will be attached to
