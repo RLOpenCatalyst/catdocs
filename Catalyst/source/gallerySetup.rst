@@ -12,7 +12,7 @@ Gallery Setup
 
  * Service Command: Service command allows you to setup the service running options. You can choose between Chef Cookbooks based services or System service based commands. 
 
- * Script Gallery: Where we can keep bash script.
+ * Script Gallery: In Script Gallery we can keep bash script.
 
 *****
 

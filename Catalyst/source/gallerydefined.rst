@@ -227,7 +227,7 @@ You can add parameters
 
   .. image:: /images/SG5.png
 
-Click on Save button and you can see you Script Job in Tasks under Orchestration tab in WORKZONE 
+Click on Save button and you can see your Script Job in Tasks under Orchestration tab in WORKZONE 
 
   .. image:: /images/SG6.png
 
