@@ -13,7 +13,7 @@ RLCatalyst works with different repositories where you have kept your artifacts 
 To configure a new Nexus server follow the steps below:
 
  * From the main menu click on Settings
- * Once you click on Settings, from the side menu click on Devops Setup
+ * Once you click on Settings, from the side menu click on Devops Roles 
  * Click on Nexus Server
  * Click on New button provided
  * Enter the Nexus server name in the Nexus Server Name field
@@ -25,6 +25,10 @@ To configure a new Nexus server follow the steps below:
 
  .. image:: /images/updated_img/nexusDetails.png
 
+ * Assign Projects are optional
+ * Click on + icon present next to Repository Details and select valid Repository Name from the drop down and save
+
+ .. image:: /images/updated_img/nexusDetails01.png
 
 
  * Click on Save button
@@ -44,25 +48,6 @@ To configure a new Nexus server follow the steps below:
 
 
 *****
-
-.. _associate-nexus:
-
-Once Nexus Server is configured you have to associate Repository details to your Project. Follow the below steps:
-
- * Go to Projects Page
-
- * Edit your Project
-
- * Click on + icon present next to Repository Details
-
- * Select your Repository Server and Repository Name
-
-  .. image:: /images/repoDetails.png
-
-
- * Click on Save button on Add Repository Details page
- 
- * Click on Save button on Edit Project Page
 
 
 Docker
