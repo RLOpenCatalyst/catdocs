@@ -20,7 +20,7 @@ In Provider dashboard you will be able to see Total number of Instances , Total 
 * Enter the Description and Item Name 
 * Enter the Item URL in this format  (http://ipaddress:port/public/Dashboard.html)
 
- 
+ .. image:: /images/updated_img/dashboard01.png
 
 
 * Click on Save button
@@ -39,8 +39,7 @@ In Summary Dashboard you will be able to see the Total Cost, Today's Cost, Activ
 * Choose the Type as **Provider**
 * Enter the Description and Item Name 
 * Enter the Item URL in this format (http://ipaddress:port/public/dashing.html )
-
-Click on Save button.
+* Click on Save button.
 
 Once You save the **list of dashboards** will be displayed in table
 
