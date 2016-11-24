@@ -32,6 +32,8 @@ The main documentation for the site is organized into a couple sections:
    design
    workzone
    trackinwrk
+   analytics
+   bots
    
 
 
