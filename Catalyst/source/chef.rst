@@ -109,9 +109,9 @@ Once you setup Chef, the automation libraries need to be uploaded into Chef acco
 
 
 
-* Run the ruby program (cookbooks_upload_chef_server.rb) available in the git repo.
+* Run the ruby program (cookbooks_upload.rb) available in the git repo.
 
- **ruby cookbooks_upload_chef_server.rb**
+ **ruby cookbooks_upload.rb**
 
 It will upload all the cookbooks to the hosted chef server along with the dependencies.
 
