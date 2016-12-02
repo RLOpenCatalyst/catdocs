@@ -38,7 +38,9 @@ Check the Mongo version::
     mongo -version
     3.2.x
     
+Start the mongodb::
 
+    sudo service mongod start
 
 
 
