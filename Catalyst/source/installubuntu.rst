@@ -40,35 +40,39 @@ Start the mongodb:
 
 In order to properly launch MongoDB as a service on Ubuntu 16.04, we additionally need to create a unit file describing the service. A unit file tells system how to manage a resource. The most common unit type is a service, which determines how to start or stop the service, when should it be automatically started at boot, and whether it is dependent on other software to run.
 We'll create a unit file to manage the MongoDB service. 
-Create a configuration file named mongodb.service in the /etc/systemd/system directory using nano or your favorite text editor.:
+
+Create a configuration file named mongodb.service in the /etc/systemd/system directory using nano or your favorite text editor. ::
 
     sudo nano /etc/systemd/system/mongodb.service
 
-Paste in the following contents, then save and close the file.:
+Paste in the following contents, then save and close the file. ::
 
     [Unit]
+
     Description=High-performance, schema-free document-oriented database
     After=network.target
 
 
     [Service]
+
     User=mongodb
     ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf
 
 
     [Install]
+
     WantedBy=multi-user.target
 
 
-Next, start the newly created service with systemctl.:
+Next, start the newly created service with systemctl. ::
 
     sudo systemctl start mongodb
 
-Use systemctl to check that the service has started properly.:
+Use systemctl to check that the service has started properly. ::
 
     sudo systemctl status mongodb
 
-Output:
+Output::
 
     ● mongodb.service - High-performance, schema-free document-oriented database
        Loaded: loaded (/etc/systemd/system/mongodb.service; enabled; vendor preset: enabled)
@@ -80,7 +84,7 @@ Output:
        CGroup: /system.slice/mongodb.service
                └─4093 /usr/bin/mongod --quiet --config /etc/mongod.conf
 
-Enable automatically starting MongoDB when the system starts.:
+Enable automatically starting MongoDB when the system starts. ::
 
     sudo systemctl enable mongodb
 
@@ -131,9 +135,10 @@ Create a Mongodb path::
     
     sudo mkdir -p /data/db/
 
-Install ChefClient:
+Install ChefClient::
 
     sudo curl -L https://www.opscode.com/chef/install.sh | sudo bash
+    
     To Check the chef client version
     knife -v
     It should be 12.6 or above
@@ -179,7 +184,7 @@ To Install forever & start the RLCatalyst Application::
     cd core/server/app
     sudo forever start app.js
 
-Now you can access RLCatalyst at http://localhost:3001
+Now you can access RLCatalyst at http://localhost:3001 ::
 
     Login Credentials
     superadmin/superadmin@123
