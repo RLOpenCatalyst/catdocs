@@ -5,6 +5,7 @@ Install Directly From Source
 ============================
 You can install RLCatalyst locally by downloading the code from our Github Code Repository. The following section gives the instructions to do the RLCatalyst Installation from source
 
+
 Installation Steps for Ubuntu 16.04
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -48,19 +49,16 @@ Create a configuration file named mongodb.service in the /etc/systemd/system dir
 Paste in the following contents, then save and close the file. ::
 
     [Unit]
-
     Description=High-performance, schema-free document-oriented database
     After=network.target
 
 
     [Service]
-
     User=mongodb
     ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf
 
 
     [Install]
-
     WantedBy=multi-user.target
 
 
@@ -82,7 +80,7 @@ Output::
        Memory: 47.1M
           CPU: 1.224s
        CGroup: /system.slice/mongodb.service
-               └─4093 /usr/bin/mongod --quiet --config /etc/mongod.conf
+            └─4093 /usr/bin/mongod --quiet --config /etc/mongod.conf
 
 Enable automatically starting MongoDB when the system starts. ::
 
@@ -96,7 +94,6 @@ Install NodeJs 4.x & Curl::
 To Install Nodejs version 4.x ::
     
     curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
-
     sudo apt-get install -y nodejs
 
 Check the version of node after installation.It should be 4.2.2 ::
@@ -108,11 +105,9 @@ Check the version of npm ::
 
     npm -v
 
-
     NOTE - The npm version required is 3.x . If an older version got installed, upgrade the npm version
            sudo apt-get update
            sudo npm install npm -g
-
 
     Now check the npm version and make sure it is 3.5.x and above
     npm -v
