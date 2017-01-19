@@ -442,7 +442,7 @@ To Install RLCatalyst and to create a db path folder::
 
     To pull the catalyst code
     git clone https://github.com/RLOpenCatalyst/core.git
-    Check the current directory for the presence of catalyst code i.e D4D folder.
+    Check the current directory for the presence of catalyst code i.e core folder.
     
 
     Create a db path folder
