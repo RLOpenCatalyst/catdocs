@@ -171,7 +171,7 @@ Pre-requisites::
     2. sass gem
         sudo gem install sass
 
-Process to bluid the client side::
+Process to build the client side::
 
     cd ~
     cd core/client/cat3
@@ -329,7 +329,7 @@ Pre-requisites::
         sudo gem install sass 
 
 
-Process to bluid the client side::
+Process to build the client side::
 
     cd core/client/cat3
     sudo npm install --production (any other environment)
