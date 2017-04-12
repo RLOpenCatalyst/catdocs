@@ -96,7 +96,7 @@ To Install Nodejs version 4.x ::
     curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
     sudo apt-get install -y nodejs
 
-Check the version of node after installation. It should be 4.2.2 ::
+Check the version of node after installation. It should be 4.2.2 and above ::
 
     node -v
     v4.2.2
@@ -118,8 +118,8 @@ Install Git(1.9.x) ::
 
 NOTE::
 
-    Node Version - 4.2.2
-    npm version - 3.6.x
+    Node Version - 4.2.2 and above
+    npm version - 3.6.x and above
     monogo version - 3.2.x
 
 Clone the repository to get the RLCatalyst code::
@@ -143,6 +143,19 @@ Install the dependencies- make , g++ , Kerberos & library::
     sudo apt-get install make
     sudo apt-get install g++
     sudo apt-get install libkrb5-dev
+    sudo apt-get install build-essential checkinstall
+    sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+    cd /usr/src
+    sudo wget https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tgz
+    sudo tar xzf Python-2.7.13.tgz
+    cd Python-2.7.13
+    sudo ./configure
+    sudo make altinstall
+    python2.7 -V
+    whereis python2.7
+    export PYTHON=/usr/local/bin/python2.7
+    echo $PYTHON
+    sudo ln -s /usr/local/bin/python2.7 /usr/local/bin/python
     sudo npm install -g kerberos
     sudo apt-get install ruby
 
@@ -166,6 +179,7 @@ Process to bluid the client side::
 
 Install Node Packages::
 
+    cd ~
     cd core/server
     sudo npm install
 
@@ -175,7 +189,7 @@ To Install seed data::
 
 To Install forever & start the RLCatalyst Application::
 
-    sudo npm install forever –global
+    sudo npm install -g forever
     cd core/server/app
     sudo forever start app.js
 
