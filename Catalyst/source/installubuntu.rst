@@ -151,10 +151,13 @@ Install the dependencies- make , g++ , Kerberos & library::
     cd Python-2.7.13
     sudo ./configure
     sudo make altinstall
+    
+    To Check the python version
     python2.7 -V
-    whereis python2.7
+    
+    To set python enviornment variable run belaow command
     export PYTHON=/usr/local/bin/python2.7
-    echo $PYTHON
+
     sudo ln -s /usr/local/bin/python2.7 /usr/local/bin/python
     sudo npm install -g kerberos
     sudo apt-get install ruby
@@ -175,8 +178,8 @@ Process to build the client side::
 
     cd ~
     cd core/client/cat3
-    sudo npm install --production (any other environment)
-    sudo npm run-script build-prod (any other environment)
+    sudo npm install --production
+    sudo npm run-script build-prod
 
 Install Node Packages::
 
@@ -332,8 +335,8 @@ Pre-requisites::
 Process to build the client side::
 
     cd core/client/cat3
-    sudo npm install --production (any other environment)
-    sudo npm run-script build-prod (any other environment)
+    sudo npm install --production
+    sudo npm run-script build-prod
 
 
 Install Node Packages::
