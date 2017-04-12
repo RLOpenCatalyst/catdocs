@@ -173,6 +173,7 @@ Pre-requisites::
 
 Process to bluid the client side::
 
+    cd ~
     cd core/client/cat3
     sudo npm install --production (any other environment)
     sudo npm run-script build-prod (any other environment)
@@ -190,6 +191,7 @@ To Install seed data::
 To Install forever & start the RLCatalyst Application::
 
     sudo npm install -g forever
+    cd ~
     cd core/server/app
     sudo forever start app.js
 
