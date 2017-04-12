@@ -96,7 +96,7 @@ To Install Nodejs version 4.x ::
     curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
     sudo apt-get install -y nodejs
 
-Check the version of node after installation.It should be 4.2.2 ::
+Check the version of node after installation. It should be 4.2.2 ::
 
     node -v
     v4.2.2
@@ -237,7 +237,7 @@ To Install Nodejs version 4.x::
      sudo apt-get install -y nodejs
 
 
-Check the version of node after installation.It should be 4.2.2 ::
+Check the version of node after installation. It should be 4.2.2 and above ::
 
     node -v
     v4.2.2
@@ -268,8 +268,8 @@ Install Git(1.9.x) ::
 
 NOTE::
 
-    Node Version - 4.2.2
-    npm version - 3.6.x
+    Node Version - 4.2.2 and above
+    npm version - 3.6.x and above
     monogo version - 3.2.x
 
 
@@ -309,6 +309,7 @@ Pre-requisites::
         sudo npm install -g grunt-cli
 
     2. sass gem
+        sudo apt-get install ruby
         sudo gem install sass 
 
 
@@ -321,6 +322,7 @@ Process to bluid the client side::
 
 Install Node Packages::
 
+    cd ~
     cd core/server
     sudo npm install
 
@@ -333,6 +335,7 @@ To Install seed data::
 To Install forever & start the RLCatalyst Application::
 
     sudo npm install forever --global
+    cd ~
     cd core/server/app
     sudo forever start app.js
 
