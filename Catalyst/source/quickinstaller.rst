@@ -21,14 +21,22 @@ You can install RLCatalyst using the installer script ::
 Install using Docker
 ====================
 
-Download the docker image from::
+You can install RLCatalyst on Containers. Use below commands to pull docker images for catalyst::
 
-    https://hub.docker.com/r/relevancelab/rlcatalyst/
+    docker pull relevancelab/catalyst-db:latest
+    docker pull relevancelab/rlcatalyst:4.0
 
-and run these commands::
+and run below commands. ::
 
-    docker pull relevancelab/rlcatalyst:3.5.0
-    docker run -t -i -p 3001:3001 --name catalyst331 relevancelab/rlcatalyst:3.5.0 /bin/bash
+    docker run --name rlcdb -d relevancelab/catalyst-db:latest
+    docker run --link rlcdb:rlcdb -e DB_HOST=rlcdb --name rlcat -d -p 3001:3001 relevancelab/rlcatalyst:4.0
+
+Now you can access RLCatalyst using http://<hostip>:3001
+
+    Login Credentials
+    
+        UN:  superadmin 
+        PWD: superadmin@123
 
 .. _install-vagrant:
 Install using Vagrant
