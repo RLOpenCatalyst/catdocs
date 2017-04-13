@@ -31,12 +31,12 @@ and run below commands. ::
     docker run --name rlcdb -d relevancelab/catalyst-db:latest
     docker run --link rlcdb:rlcdb -e DB_HOST=rlcdb --name rlcat -d -p 3001:3001 relevancelab/rlcatalyst:4.0
 
-Now you can access RLCatalyst using http://<hostip>:3001
+Now you can access RLCatalyst using http://<hostip>:3001 ::
 
     Login Credentials
-    
-    UN:  superadmin 
-    PWD: superadmin@123
+
+        UN:  superadmin 
+        PWD: superadmin@123
 
 .. _install-vagrant:
 Install using Vagrant
