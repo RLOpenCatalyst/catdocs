@@ -35,8 +35,8 @@ Now you can access RLCatalyst using http://<hostip>:3001
 
     Login Credentials
     
-        UN:  superadmin 
-        PWD: superadmin@123
+    UN:  superadmin 
+    PWD: superadmin@123
 
 .. _install-vagrant:
 Install using Vagrant
