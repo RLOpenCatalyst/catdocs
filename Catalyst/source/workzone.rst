@@ -201,15 +201,17 @@ Import By IP
 ^^^^^^^^^^^^
 In the Instances page, you can import any running instances to the catalyst application using Import By IP option, follow the below steps to import:
 
- * Click on Import by IP icon
+ * Click on Import button in righttop corner of the page.
 
- * In the **Import Instance By IP** window
+ * **Import Instance By IP** window opened.
 
  * Provide the IP address which needs to be Imported
 
  * Choose the operating system from **Choose Operating System** drop down list
 
  * Provide the user name in the **Username** box
+ 
+ * Provide Configuration Management option  like RL Chef Server.
 
  * Choose authentication type from the **Choose Authentication Type** drop down list. RL Catalyst provide two types of authentication, you can choose Password or by uploading PEM file
 
@@ -217,9 +219,11 @@ In the Instances page, you can import any running instances to the catalyst appl
 
  * Provide the application name in the **Name** box and the host **URL** in the URL box
 
- * You can also Add new application by clicking on the Add Application URL option
+ * You can also Add application with  name and URL details.
 
  * Click **Import** to start importing the Instance
+ 
+  .. image:: /images/Import_button.PNG
 
  .. image:: /images/ImportbyIP.jpg
 

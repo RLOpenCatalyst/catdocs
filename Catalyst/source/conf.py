@@ -47,7 +47,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'RLCatalyst'
-copyright = u'2016, Relevance Lab'
+copyright = u'2018, Relevance Lab'
 author = u'Relevance Lab'
 
 # The version info for the project you're documenting, acts as replacement for

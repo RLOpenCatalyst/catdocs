@@ -5,9 +5,7 @@ BOTs is readymade automated scripts.
 
 If you have not configured your BOTs setup, ask your admin to setup BOTs.
 
-We have 4 types of BOTs:
-
-* Task: These type of BOTs used to provide user management, application deployment and chef provider is used to deliver these services
+We have 3 types of BOTs:
 
 * Check: These type of BOTs used to provide service management(start, stop, restart), monitoring services and chef provider is used to deliver these services
 
@@ -17,13 +15,13 @@ We have 4 types of BOTs:
 
 These BOTs are used to provide following services:
 
-* Active Directory: We can create user, delete user and reset password using Task type BOTs
+* Active Directory: We can create user, delete user and reset password using Run type BOTs
 
-* OpenDJ LDAP: We can create user, delete user and reset password using Task type BOTs
+* OpenDJ LDAP: We can create user, delete user and reset password using Run type BOTs
 
 * Monitoring: We can use sensue to monitor any service using check BOTs
 
-* Application Deployment: We can deploy new application on any machine using Task BOTs
+* Application Deployment: We can deploy new application on any machine using Run BOTs
 
 * Service Management: We can start, stop, restart service using check BOTs 
 
@@ -36,11 +34,11 @@ These BOTs are used to provide following services:
 
 * User can select any BOTs for execution
 
-	.. image:: /images/updated_img/bots.png
+	.. image:: /images/bots.png
 
 * click on execute button one popup will appear
 
-.. image:: /images/updated_img/botsexecute.png
+.. image:: /images/botsexecute.png
 
 * Select any Tag Server from the drop down
 
@@ -48,5 +46,23 @@ These BOTs are used to provide following services:
 
 * Now click on ok button 
 
-* Execution will start, and user and check the logs
+* Execution will start.We can the logs through logs tab.
+
+* We can also schedule the bots.
+
+
+**How to schedule the BOT**
+
+*Click on Bots tab.Click on any bot like "Terraform bot".Navigate to schedule tab.Enter the deatils like start date and end date  and choose minutes/hourly/daily/weekly/monthly and howmany times we want execute the bots.If yu want to execute the bot 
+ with remote server enable the checkbox and If you want skip alternate runs in the execution enable the checkbox.Click on "schedule" button.
+ 
+ image:: /images/Schedule_bot.PNG
+ 
+ 
+ 
+ 
+ 
+ 
+
+
 

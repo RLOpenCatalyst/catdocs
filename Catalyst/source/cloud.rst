@@ -1,7 +1,7 @@
-Analytics
+Cloud
 =========
 
-Analytics is the cost, usage and capacity of cloud. Analytics unlocks more insightful questions and produces more accurate outcomes by mapping relationships among high volumes of connected data
+Cloud is the cost, usage and capacity of cloud. It unlocks more insightful questions and produces more accurate outcomes by mapping relationships among high volumes of connected data
 
 **Prerequisites:** A cloud account should be added in RLCatalyst settings.
 
@@ -15,11 +15,11 @@ Analytics is the cost, usage and capacity of cloud. Analytics unlocks more insig
 
 **How to use:**
 
-Click on **Analytics** link in the header. And we have three menu at the left side of the page:
+Navigate to **Cloud** tab in the header. There is Menu at left handside and  under the analytics we can see below options:
 
-1. Cost
+1. Capacity
 
-2. Capacity
+2. Cost
 
 3. Usage
 
