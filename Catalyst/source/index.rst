@@ -28,11 +28,11 @@ The main documentation for the site is organized into a couple sections:
 
    gettingstarted
    menu-options
-   settings
+   workflow
    design
    workzone
    trackinwrk
-   analytics
+   cloud
    bots
    
 
