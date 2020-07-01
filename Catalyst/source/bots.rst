@@ -53,9 +53,9 @@ These BOTs are used to provide following services:
 
 **How to schedule the BOTs**
 
-* Select any BOT in BOTs library than navigate to schedule tab in the BOT.
+* Select any BOT in BOTs library then navigate to schedule tab in the BOT.
 
-* Enter the deatils like start date and end date  and choose minutes/hourly/daily/weekly/monthly and howmany times we want execute the bots.
+* Enter the details like start date and end date  and choose minutes/hourly/daily/weekly/monthly and how many times we want execute the BOT.
 
 * If you want to execute the bot with remote server enable the checkbox .If you want skip alternate runs in the execution enable the checkbox.Click on "schedule" button.
  
