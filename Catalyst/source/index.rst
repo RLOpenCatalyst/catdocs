@@ -28,7 +28,7 @@ The main documentation for the site is organized into a couple sections:
 
    gettingstarted
    menu-options
-   workflow
+   settings
    design
    workzone
    trackinwrk
