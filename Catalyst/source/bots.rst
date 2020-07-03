@@ -34,11 +34,11 @@ These BOTs are used to provide following services:
 
 * User can select any BOTs for execution
 
-	.. image:: /images/bots.png
+	.. image:: /images/updated_img/bots.png
 
 * click on execute button one popup will appear
 
-.. image:: /images/botsexecute.png
+.. image:: /images/updated_img/botsexecute.png
 
 * Select any Tag Server from the drop down
 
@@ -46,17 +46,31 @@ These BOTs are used to provide following services:
 
 * Now click on ok button 
 
-* Execution will start.We can the logs through logs tab.
+* Execution will start.We can see logs through logs tab.
 
-* We can also schedule the bots.
+* We can also schedule the BOTs.
 
 
-**How to schedule the BOT**
+**How to schedule the BOTs**
 
-*Click on Bots tab.Click on any bot like "Terraform bot".Navigate to schedule tab.Enter the deatils like start date and end date  and choose minutes/hourly/daily/weekly/monthly and howmany times we want execute the bots.If yu want to execute the bot 
- with remote server enable the checkbox and If you want skip alternate runs in the execution enable the checkbox.Click on "schedule" button.
+* Select any BOT in BOTs library then navigate to schedule tab in the BOT.
+
+* Enter the details like start date and end date  and choose minutes/hourly/daily/weekly/monthly and how many times we want execute the BOT.
+
+* If you want to execute the bot with remote server enable the checkbox .If you want skip alternate runs in the execution enable the checkbox.Click on "schedule" button.
  
- image:: /images/Schedule_bot.PNG
+   image:: /images/Schedule_bot.png
+ 
+ 
+**Remote Execution of BOTs**
+
+* Select Service Manager BOT in BOTs library 
+
+* Enter the input parameters : 1. Service Name(nginx) 2. Service Action (stop/start)
+
+* select the checkbox : Do you want to execute on Remote Server? - and select the remote intstance that you want to stop the service nginx -192.1.1.2 and click on execute
+ 
+    image:: /images/remote_exe.png
  
  
  
