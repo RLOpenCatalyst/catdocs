@@ -62,3 +62,10 @@ Settings provides you eight different options:
    :maxdepth: 2
 
    cmdb
+
+.. _BOT-setup:
+
+.. toctree::
+   :maxdepth: 2
+
+   BOTssetup

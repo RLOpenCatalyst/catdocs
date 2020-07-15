@@ -34,10 +34,8 @@ The main documentation for the site is organized into a couple sections:
    trackinwrk
    cloud
    BOTs
-   
-
-
-.. _developer-docs:
+ 
+ .. _developer-docs:
 
 .. toctree::
    :maxdepth: 3
