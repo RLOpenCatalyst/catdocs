@@ -9,7 +9,7 @@ Audit trail page is nothing but BOTs history. We can see  the following BOTs inf
 
   .. image:: /images/updated_img/Audit_page.png
   
-There is search option at right corner of the page.We can search the BOT with  BOT name and user etc...If BOT was triggered manually than usertype will be superadmin otherwise user type will be system.
+There is a search option at the right top corner of the page. We can search the table using BOT name, user etc. If BOT was triggered manually the username of the user who triggered the BOT will appear in the User column. If the BOT was triggered by the system, the user will be "System".
 
    .. image:: /images/updated_img/audit_search.png
    

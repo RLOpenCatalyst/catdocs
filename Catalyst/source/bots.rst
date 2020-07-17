@@ -1,7 +1,7 @@
 BOTs
 ====
 
-BOTs is readymade automated scripts.
+BOTs are readymade automated scripts.
 
 If you have not configured your BOTs setup, ask your admin to setup BOTs.
 
@@ -48,7 +48,7 @@ These BOTs are used to provide following services:
 
 * click on execute button one popup will appear
 
-.. image:: /images/updated_img/botsexecute.png
+    .. image:: /images/updated_img/botsexecute.png
 
 * Select any Tag Server from the drop down
 
