@@ -23,7 +23,7 @@ The main documentation for the site is organized into a couple sections:
 .. _user-docs:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: User Documentation
 
    gettingstarted
@@ -35,7 +35,7 @@ The main documentation for the site is organized into a couple sections:
    cloud
    bots
  
- .. _developer-docs:
+.. _developer-docs:
 
 .. toctree::
    :maxdepth: 3

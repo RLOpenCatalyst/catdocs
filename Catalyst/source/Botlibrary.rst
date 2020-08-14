@@ -43,9 +43,9 @@ We can know the  information about the BOTs through the cards color and cards co
 	 
 When you clicked on any card it will display options like total,day,week,month and custom.When you clicked on any option it will display following information:
 
-+------+----------+------------+--------+-----------+------------+------------+
-|Name  + category + Description + status + priority + created at + Resolved at|
-+-------+---------+------------+--------+------------+-----------+------------+
++-------+----------+-------------+--------+------------+------------+-------------+
+| Name  | category | Description | status | priority   | created at | Resolved at |
++-------+----------+-------------+--------+------------+------------+-------------+
 
 We can see the old records with *custom* field.Fill the details like start date and end date later click on search button.
 

@@ -3,9 +3,9 @@ BOTs Audit Trail page
 
 Audit trail page is nothing but BOTs history. We can see  the following BOTs information in the table format.
 
- +------------+----------+---------+----------+---------+------+------+
- | start time + End time + BOT type + BOT name + status + user + logs |
- +------------+----------+----------+----------+--------+-------+-----+
+ +------------+----------+----------+----------+---------+-------+------+
+ | start time | End time | BOT type | BOT name | status  | user  | logs |
+ +------------+----------+----------+----------+---------+-------+------+
 
   .. image:: /images/updated_img/Audit_page.png
   
