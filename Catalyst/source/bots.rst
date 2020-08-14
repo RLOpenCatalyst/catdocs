@@ -1,9 +1,19 @@
 BOTs
 ====
 
-BOTs is readymade automated scripts.
+BOTs are readymade automated scripts.
 
 If you have not configured your BOTs setup, ask your admin to setup BOTs.
+
+* BOTs
+
+	- :ref:`BOT Library <Botlibrary>`
+
+	- :ref:`Audit Trail <Audittrail>`
+
+	- :ref:`BOT Report <BOTreport>`
+
+* :ref:`Runbooks <runbooks>`
 
 We have 3 types of BOTs:
 
@@ -38,7 +48,7 @@ These BOTs are used to provide following services:
 
 * click on execute button one popup will appear
 
-.. image:: /images/updated_img/botsexecute.png
+    .. image:: /images/updated_img/botsexecute.png
 
 * Select any Tag Server from the drop down
 
@@ -59,7 +69,7 @@ These BOTs are used to provide following services:
 
 * If you want to execute the bot with remote server enable the checkbox .If you want skip alternate runs in the execution enable the checkbox.Click on "schedule" button.
  
-   image:: /images/Schedule_bot.png
+   image:: /images/updated_img/Schedule_bot.png
  
  
 **Remote Execution of BOTs**
@@ -70,13 +80,10 @@ These BOTs are used to provide following services:
 
 * select the checkbox : Do you want to execute on Remote Server? - and select the remote intstance that you want to stop the service nginx -192.1.1.2 and click on execute
  
-    image:: /images/remote_exe.png
- 
- 
- 
- 
- 
- 
+    image:: /images/updated_img/remote_exe.png
 
 
-
+ 
+ 
+ 
+ 
