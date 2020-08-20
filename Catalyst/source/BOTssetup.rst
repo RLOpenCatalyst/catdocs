@@ -12,8 +12,7 @@ BOT Executor
 
 BOT is nothing but a piece of an Automation. It would be in the form of scripts, cookbooks etc..It can start the work<<Execute the task<<stop.RLCatalyst BOTs Factory work as the job scheduler.
 
-Connect RLCatalyst to BOT Executor 
----------------------------------
+**Connect RLCatalyst to BOT Executor** 
 
 Please follow the below steps in order to configure the Executor from Catalyst UI
 
@@ -26,8 +25,7 @@ Please follow the below steps in order to configure the Executor from Catalyst U
   .. image:: /images/updated_img/botexecutor_new.png
 
 
-Follow the steps to make your executor Active and Inactive
-----------------------------------------------------------
+**Follow the steps to make your executor Active and Inactive**
 
 * Login to the Catalyst UI >> Go to the Settings >> Move your cursor on Menu (Top left side) >> Click on BOTs >> Click BOTs Executor >> Click on the edit button (Pencil)
 

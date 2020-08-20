@@ -3,7 +3,6 @@
 Welcome to Catalyst Documentation
 =================================
 
-
 The main documentation for the site is organized into a couple sections:
 
 * :ref:`about-docs`
@@ -23,7 +22,7 @@ The main documentation for the site is organized into a couple sections:
 .. _user-docs:
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: User Documentation
 
    gettingstarted

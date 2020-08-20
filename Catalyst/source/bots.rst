@@ -7,13 +7,13 @@ If you have not configured your BOTs setup, ask your admin to setup BOTs.
 
 * BOTs
 
-	* :ref:`BOT Library <Botlibrary>`
+	* :doc:`BOT Library <Botlibrary>`
 
-	* :ref:`Audit Trail <Audittrail>`
+	* :doc:`Audit Trail <Audittrail>`
 
-	* :ref:`BOT Report <BOTreport>`
+	* :doc:`BOT Report <BOTreport>`
 
-* :ref:`Runbooks <runbooks>`
+* :doc:`Runbooks <runbooks>`
 
 We have 3 types of BOTs:
 
