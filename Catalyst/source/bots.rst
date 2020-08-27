@@ -3,9 +3,11 @@ BOTs
 
 BOTs are readymade automated scripts.
 
-If you have not configured your BOTs setup, ask your admin to setup BOTs.
+If you have not configured your BOTs setup, ask your admin to setup BOTs.In the BOTs page Navigate to top right menu there is option called "Menu".
 
-* BOTs
+Here you will able to see 
+
+* :doc:`BOTs <bots>`
 
 	* :doc:`BOT Library <Botlibrary>`
 
